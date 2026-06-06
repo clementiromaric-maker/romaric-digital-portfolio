@@ -257,7 +257,7 @@ footer{
 .systems-intro{margin-top:clamp(1.8rem,4vw,3rem);border:1px solid var(--line);border-radius:20px;background:linear-gradient(135deg,var(--ink),color-mix(in srgb,var(--ink) 86%,var(--clay)));color:var(--paper);padding:clamp(1.35rem,3vw,2rem);box-shadow:var(--shadow)}
 .systems-intro .mono{color:rgba(244,239,229,.6)}
 .systems-intro h3{font-family:var(--font-fraunces),serif;font-weight:600;font-size:clamp(1.45rem,3.2vw,2.2rem);line-height:1.06;letter-spacing:-.015em;margin:.55rem 0 .65rem;text-wrap:balance}
-.systems-intro p:not(.mono){margin:0;max-width:78ch;color:rgba(244,239,229,.78);font-size:.96rem;line-height:1.5}
+.systems-intro p:not(.mono){margin:0;max-width:78ch;color:rgba(244,239,229,.78);font-size:.96rem;line-height:1.5}.systems-intro .systems-guard{margin-top:.85rem!important;color:rgba(244,239,229,.62)!important;font-style:italic}
 .systems-grid .pcard{padding:1.45rem 1.35rem 1.35rem}
 .system-proof-list{list-style:none;margin:.1rem 0 1rem;padding:0;display:grid;gap:.42rem}
 .system-proof-list li{position:relative;padding-left:1.05rem;color:var(--ink-soft);font-size:.84rem;line-height:1.42}

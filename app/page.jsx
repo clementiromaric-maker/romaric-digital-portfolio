@@ -4,8 +4,6 @@ import { useEffect } from 'react';
 
 const liveLinks = {
   marzieh: 'https://marziehnail-atelier.dk/en/',
-  clementi: 'https://clementi-ai-workflow-pages-preview.pages.dev/',
-  foerstematch: 'https://foerstematch-pilot.pages.dev/',
 };
 
 const proofSignals = [
@@ -62,7 +60,7 @@ const roleFitLanes = [
 const pilotProjects = [
   {
     eyebrow: 'Service system',
-    status: 'Controlled preview',
+    status: 'Walkthrough on request',
     title: 'Clementi AI Workflow',
     role: 'SME visibility, workflow audit and safe AI-control system',
     flow: ['Friction', 'Audit', 'Owner review'],
@@ -73,13 +71,13 @@ const pilotProjects = [
       'Notes hub, tools and PDF deliverables',
       'Source-of-truth and safe AI boundaries',
     ],
-    link: liveLinks.clementi,
-    linkLabel: 'Open preview',
+    link: null,
+    linkLabel: 'Walkthrough available on request',
     bestFor: 'Shows service architecture, AI-workflow judgement and productized business clarity.',
   },
   {
     eyebrow: 'Stakeholder-flow system',
-    status: 'Pilot',
+    status: 'Walkthrough on request',
     title: 'FørsteMatch',
     role: 'Candidate, company and actor clarity before official handoff',
     flow: ['Role', 'Manual review', 'Brief'],
@@ -90,8 +88,8 @@ const pilotProjects = [
       'Match brief, forms and documents',
       'Privacy boundaries with no sensitive case data',
     ],
-    link: liveLinks.foerstematch,
-    linkLabel: 'Open pilot',
+    link: null,
+    linkLabel: 'Walkthrough available on request',
     bestFor: 'Shows public-sector-style clarity, boundary design and human-reviewed decision flow.',
   },
   {
@@ -446,6 +444,7 @@ export default function Home() {
               <p>
                 Beyond individual websites, I build service journeys, intake flows, trust layers, pilot logic, documentation routes and review points that make unclear ideas easier to test without overbuilding.
               </p>
+              <p className="systems-guard">Some pilot details are intentionally simplified in public. Deeper walkthroughs are available on request.</p>
             </div>
 
             <div className="pilots systems-grid" aria-label="System pilot projects">

@@ -4,8 +4,6 @@ import { useEffect } from 'react';
 
 const liveLinks = {
   marzieh: 'https://marziehnail-atelier.dk/',
-  clementi: 'https://clementi-ai-workflow-pages-preview.pages.dev/da/',
-  foerstematch: 'https://foerstematch-pilot.pages.dev/foerstematch/',
 };
 
 const proofSignals = [
@@ -43,7 +41,7 @@ const roleFitLanes = [
 const pilotProjects = [
   {
     eyebrow: 'Servicesystem',
-    status: 'Afgrænset preview',
+    status: 'Gennemgang efter aftale',
     title: 'Clementi AI Workflow',
     role: 'SME-synlighed, workflow-audit og sikker AI-kontrol',
     flow: ['Friktion', 'Audit', 'Ejer-godkendelse'],
@@ -54,13 +52,13 @@ const pilotProjects = [
       'Noter, værktøjer og PDF-leverancer',
       'Én pålidelig kilde og sikre AI-grænser',
     ],
-    link: liveLinks.clementi,
-    linkLabel: 'Åbn preview',
+    link: null,
+    linkLabel: 'Gennemgang efter aftale',
     bestFor: 'Viser servicearkitektur, sund AI-workflow-vurdering og konkret forretningsklarhed som service.',
   },
   {
     eyebrow: 'Aktørflow',
-    status: 'Pilot',
+    status: 'Gennemgang efter aftale',
     title: 'FørsteMatch',
     role: 'Kandidat, virksomhed og aktør får klarhed før officiel overdragelse',
     flow: ['Rolle', 'Manuel vurdering', 'Brief'],
@@ -71,8 +69,8 @@ const pilotProjects = [
       'Matchbrief, formularer og dokumenter',
       'Privatlivsgrænser uden følsomme sagsdata',
     ],
-    link: liveLinks.foerstematch,
-    linkLabel: 'Åbn pilot',
+    link: null,
+    linkLabel: 'Gennemgang efter aftale',
     bestFor: 'Viser offentlig-sektor-lignende klarhed, tydelige grænser og menneskeligt vurderet beslutningsflow.',
   },
   {
@@ -344,6 +342,7 @@ export default function DanishPortfolio() {
               <p className="mono">Systemer jeg har bygget</p>
               <h3>Ikke kun sider. Brugbare første versioner.</h3>
               <p>Ud over enkeltstående websites bygger jeg service-rejser, intake-forløb, tillidslag, pilotlogik, dokumentationsruter og vurderingspunkter, der gør uklare ideer lettere at teste uden at overbygge.</p>
+              <p className="systems-guard">Nogle pilotdetaljer er bevidst forenklet offentligt. En dybere gennemgang kan aftales.</p>
             </div>
 
             <div className="pilots systems-grid" aria-label="Systempiloter">

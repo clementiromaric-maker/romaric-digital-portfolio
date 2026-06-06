@@ -1,14 +1,28 @@
-Romaric Clementi Web Digital Portfolio V5.10.2
+Romaric Clementi Web Digital Portfolio V5.10.3
 
 QA status:
 - Source package inspected before editing.
-- Patch scope limited to Danish native-language micro-polish.
+- Patch scope limited to IP-safe public portfolio exposure.
 - EN route present.
 - DA route present.
+- V5.10.2 Danish native polish preserved.
 - V5.10.1 system-card CTA alignment preserved.
-- No new content sections or strategy changes.
-- Guardrails preserved: no Google Fonts, no Tailwind CDN, no public HamdamBridge URL, no fake metrics.
+- Marzieh Nail Atelier remains the only public external project link in the portfolio cards and JSON-LD work examples.
+- Clementi AI Workflow and FørsteMatch are now walkthrough-on-request in the public cards.
+- Public source constants and JSON-LD no longer include Clementi AI Workflow or FørsteMatch URLs.
+- HamdamBridge remains walkthrough-only.
+- Guardrails preserved: no Google Fonts, no Tailwind CDN, no public HamdamBridge URL, no fake metrics, no senior-developer or AI-expert overclaim.
 
-Sandbox note:
-- Local pnpm build could not be executed in this environment because pnpm is not installed and Corepack could not download pnpm without registry access.
-- Static source QA was completed instead; run pnpm install --no-frozen-lockfile && pnpm run build before deploying.
+Build verification:
+- npm install completed in the sandbox for local verification.
+- npm run build completed successfully with Next.js 16.2.7.
+- Static export generated routes: /, /da, /_not-found and /icon.png.
+
+Static QA scan:
+- Required source files present.
+- No public Clementi AI Workflow URL in app/public source.
+- No public FørsteMatch URL in app/public source.
+- No public HamdamBridge URL in app/public source.
+- No direct public pilot/preview CTA labels remain.
+- No missing local asset references found.
+- No node_modules, .next or out included in the final ZIP.

@@ -76,8 +76,6 @@ const personSchema = {
   url: 'https://marziehnail-atelier.dk/en/',
   workExample: [
     'https://marziehnail-atelier.dk/en/',
-    'https://clementi-ai-workflow-pages-preview.pages.dev/',
-    'https://foerstematch-pilot.pages.dev/',
   ],
 };
 
