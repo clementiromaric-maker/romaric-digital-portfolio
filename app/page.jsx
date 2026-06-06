@@ -8,74 +8,138 @@ const liveLinks = {
   foerstematch: 'https://foerstematch-pilot.pages.dev/',
 };
 
+const proofSignals = [
+  {
+    value: 'Live business',
+    label: 'Marzieh Nail Atelier in production',
+  },
+  {
+    value: '3 built pilots',
+    label: 'Workflow, employment and private-introduction systems',
+  },
+  {
+    value: '5.0 / 16',
+    label: 'Google rating and Google reviews',
+  },
+  {
+    value: 'Multilingual routes',
+    label: 'DA / EN plus Farsi/English pilot logic',
+  },
+  {
+    value: 'Cloudflare + GitHub',
+    label: 'Static builds, assets, metadata and QA',
+  },
+  {
+    value: 'Operations backbone',
+    label: 'ERP, suppliers, handovers and documentation',
+  },
+];
+
+
+const roleFitLanes = [
+  {
+    label: '01',
+    title: 'Website production support',
+    text: 'Page builds, service sections, content hierarchy, forms, local proof, CMS-ready structure and mobile checks.',
+  },
+  {
+    label: '02',
+    title: 'UX and content implementation',
+    text: 'Customer journeys, trust sections, navigation, page hierarchy, CTA logic and clearer handover from brief to build.',
+  },
+  {
+    label: '03',
+    title: 'Digital workflow and QA support',
+    text: 'Link checks, anchor checks, deployment notes, source material cleanup, version notes and practical acceptance checks.',
+  },
+  {
+    label: '04',
+    title: 'AI-assisted first-version work',
+    text: 'Structured briefs, draft pages, source maps, approval points and useful prototypes with human review before use.',
+  },
+];
+
 const pilotProjects = [
   {
     eyebrow: 'Service system',
     status: 'Controlled preview',
     title: 'Clementi AI Workflow',
-    role: 'Multilingual service and workflow system',
-    flow: ['Audit', 'Signal', 'Source', 'Flow'],
+    role: 'SME visibility, workflow audit and safe AI-control system',
+    flow: ['Friction', 'Audit', 'Owner review'],
     text:
-      'A service site and workflow concept for small businesses that need clearer offers, cleaner source material and safer AI use.',
-    tags: ['Offer structure', 'AEO / schema', 'Notes hub', 'QA / versioning'],
+      'Built around a simple insight: many small businesses do not need another tool first. They need clearer offers, better source material, owner approval points and a safer next step.',
+    systemProof: [
+      'Services, pricing and audit paths',
+      'Notes hub, tools and PDF deliverables',
+      'Source-of-truth and safe AI boundaries',
+    ],
     link: liveLinks.clementi,
     linkLabel: 'Open preview',
-    bestFor: 'Strongest for AI-forward teams, Webflow/AEO agencies and startups.',
+    bestFor: 'Shows service architecture, AI-workflow judgement and productized business clarity.',
   },
   {
-    eyebrow: 'Public-sector style pilot',
+    eyebrow: 'Stakeholder-flow system',
     status: 'Pilot',
     title: 'FørsteMatch',
-    role: 'Candidate, company and advisor clarity flow',
-    flow: ['Candidate', 'Company', 'Advisor', 'Brief', 'Meeting'],
+    role: 'Candidate, company and actor clarity before official handoff',
+    flow: ['Role', 'Manual review', 'Brief'],
     text:
-      'A first-conversation flow before official praktik or employment steps, with visible boundaries, data handling and role separation.',
-    tags: ['Stakeholder map', 'DA / EN', 'Form logic', 'Data and privacy'],
+      'Built for situations where interest exists, but the task, language, supervision, first week or official process owner is still unclear.',
+    systemProof: [
+      'Role router and pilot process',
+      'Match brief, forms and documents',
+      'Privacy boundaries with no sensitive case data',
+    ],
     link: liveLinks.foerstematch,
     linkLabel: 'Open pilot',
-    bestFor: 'Strongest for delivery, project support and structured-flow roles.',
+    bestFor: 'Shows public-sector-style clarity, boundary design and human-reviewed decision flow.',
   },
   {
-    eyebrow: 'Selective UX proof',
+    eyebrow: 'Privacy-first social system',
     status: 'Walkthrough on request',
     title: 'HamdamBridge',
-    role: 'Privacy-first introduction pilot',
-    flow: ['Signal', 'Review', 'Circle', 'Two yeses', 'Meet'],
+    role: 'Consent-led cultural introduction system',
+    flow: ['Signal', 'Human review', 'Two yeses'],
     text:
-      'A consent-led introduction concept for cross-cultural and diaspora users, shared selectively because the topic is personal.',
-    tags: ['Trust UX', 'Consent flow', 'Emotional safety', 'Farsi / EN'],
+      'Built around the real need behind connection: people want context, dignity and privacy before exposure, not another public profile wall.',
+    systemProof: [
+      'Private signals and Bridge Notes',
+      'Café Circle, games and soft onboarding',
+      'Trust center, safety logic and Persian/English routes',
+    ],
     link: null,
     linkLabel: 'Walkthrough available on request',
-    bestFor: 'Best shared with culture, community, product and privacy-minded teams.',
+    bestFor: 'Shows emotional UX, consent architecture, niche-product thinking and cultural trust design.',
   },
 ];
 
-const capabilities = [
+
+
+
+const systemSteps = [
   {
-    title: 'Website production',
-    text: 'Landing pages, service pages, route logic, forms, FAQ, policy paths, multilingual content and basic SEO structure.',
+    label: 'Source',
+    title: 'Find the real material',
+    text: 'Services, policies, examples, constraints, owner decisions and the questions users actually ask.',
   },
   {
-    title: 'UX implementation',
-    text: 'Audience paths, trust barriers, mobile navigation, form friction and content hierarchy.',
+    label: 'Structure',
+    title: 'Make the path readable',
+    text: 'Routes, page hierarchy, trust blocks, CTA logic, forms and the order people need to understand.',
   },
   {
-    title: 'QA and deployment',
-    text: 'Mobile checks, link review, copy consistency, structured-data sanity, version notes and Cloudflare/GitHub flow.',
+    label: 'Build',
+    title: 'Ship the useful first version',
+    text: 'Responsive pages, local assets, metadata, schema awareness, link checks and mobile QA.',
   },
   {
-    title: 'AI-assisted prototypes',
-    text: 'Small prototypes, source-of-truth logic, reusable prompts, approval points and safe-use boundaries before automation.',
-  },
-  {
-    title: 'Operational translation',
-    text: 'Turning vague client input into scope, ownership, handovers, next actions and build-ready notes.',
-  },
-  {
-    title: 'Niche and trust thinking',
-    text: 'Spotting underserved friction, unclear offers, privacy concerns and customer hesitation early.',
+    label: 'Handover',
+    title: 'Leave it easier to run',
+    text: 'Version notes, reusable decisions, next-step lists and owner control after the first launch.',
   },
 ];
+
+
 
 const weeks = [
   {
@@ -135,8 +199,8 @@ export default function Home() {
             <span>Romaric Clementi</span>
           </a>
           <nav className="navlinks" aria-label="Primary navigation">
-            <a href="#approach">Approach</a>
             <a href="#work">Work</a>
+            <a href="#approach">Approach</a>
             <a href="#fit">Fit</a>
             <a href="#process">First 30 days</a>
             <a className="btn" href="mailto:clementiromaric@protonmail.com">
@@ -161,10 +225,10 @@ export default function Home() {
                 <em>unclear</em> needs.
               </h1>
               <p className="lede reveal" style={{ transitionDelay: '.22s' }}>
-                I turn messy briefs into useful first versions that teams can test, hand over and improve.
+                I find the real friction behind messy briefs, then turn it into useful first systems teams can test, hand over and improve.
               </p>
               <p className="sub reveal" style={{ transitionDelay: '.3s' }}>
-                Websites, UX flows, content systems, forms and QA notes, built with an operations mindset.
+                Website production, UX structure and controlled first-version systems for teams with messy input and real deadlines.
               </p>
               <div className="hero__cta reveal" style={{ transitionDelay: '.38s' }}>
                 <a className="btn" href="#work">
@@ -180,7 +244,7 @@ export default function Home() {
               <dl>
                 <div className="row">
                   <dt className="mono">Best fit</dt>
-                  <dd>Website production, UX implementation, digital delivery support and QA</dd>
+                  <dd>Website production, UX implementation, digital systems, delivery support and QA</dd>
                 </div>
                 <div className="row">
                   <dt className="mono">Proof</dt>
@@ -199,81 +263,23 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="proof-strip" aria-label="Proof signals">
-          <div className="wrap proof-grid reveal">
-            <div>
-              <b>Live business</b>
-              <span>Not a tutorial project</span>
-            </div>
-            <div>
-              <b>Real booking path</b>
-              <span>Service, trust, policy and CTA flow</span>
-            </div>
-            <div>
-              <b>3 focused pilots</b>
-              <span>AI workflow, employment clarity and trust UX</span>
-            </div>
-            <div>
-              <b>Operations brain</b>
-              <span>Flow, owners, handovers and QA</span>
-            </div>
-          </div>
-        </section>
-
-        <section id="approach">
+        <section id="proof" className="proof-strip" aria-labelledby="proof-title">
           <div className="wrap">
-            <div className="sec-head">
-              <span className="sec-no">01</span>
-              <h2>How I work</h2>
-              <p className="note">Operations-trained thinking applied to websites, content and digital flows.</p>
-            </div>
-            <div className="approach-grid">
-              <p className="approach reveal">
-                I think in <b>flow, handovers, execution and visible next actions</b>, then build the structure underneath.
-              </p>
-              <div className="reveal">
+            <div className="proof-dash reveal">
+              <div className="proof-dash__head">
+                <p className="mono">Proof dashboard</p>
+                <h2 id="proof-title">Scan the value in 20 seconds.</h2>
                 <p>
-                  Operations, ERP, planning, master data and supplier work trained me to read a process, find where it breaks, and turn vague input into ownership and build-ready notes.
-                </p>
-                <p>
-                  I use the same rhythm for web work: understand the real need, build the first useful version, test it on mobile and document the next step.
+                  Real work, system thinking and delivery proof in one scan.
                 </p>
               </div>
-            </div>
-
-            <div className="backbone reveal" aria-label="Operations backbone proof">
-              <div className="backbone__copy">
-                <p className="mono">Operations backbone</p>
-                <h3>Friction first. Tools second.</h3>
-                <p>
-                  Before building a page, flow or prototype, I look for weak sources, unclear owners and fragile handovers. The numbers here are background proof from ERP, MRP, master data and supplier follow-up work.
-                </p>
-                <div className="method-strip" aria-label="Working rhythm">
-                  {['Friction', 'Source', 'Owner', 'Review', 'Reuse'].map((step, index) => (
-                    <span key={step}>
-                      {step}
-                      {index < 4 ? <i aria-hidden="true">→</i> : null}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <div className="metric-grid" aria-label="Operations proof metrics">
-                <div>
-                  <b>2,000+</b>
-                  <span>ERP item structures</span>
-                </div>
-                <div>
-                  <b>200+</b>
-                  <span>multi-level parts set up</span>
-                </div>
-                <div>
-                  <b>30+</b>
-                  <span>EU/US suppliers coordinated</span>
-                </div>
-                <div>
-                  <b>5 / 40+</b>
-                  <span>production lines and variants supported</span>
-                </div>
+              <div className="proof-grid" aria-label="Portfolio proof signals">
+                {proofSignals.map((item) => (
+                  <div key={item.value}>
+                    <b>{item.value}</b>
+                    <span>{item.label}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -282,9 +288,9 @@ export default function Home() {
         <section id="work">
           <div className="wrap">
             <div className="sec-head">
-              <span className="sec-no">02</span>
-              <h2>Selected work</h2>
-              <p className="note">One live business first, focused pilots second.</p>
+              <span className="sec-no">01</span>
+              <h2>Selected work and systems</h2>
+              <p className="note">A live business first, then controlled systems built around trust, workflow and review.</p>
             </div>
 
             <article className="feature reveal" aria-labelledby="marzieh-title">
@@ -333,7 +339,7 @@ export default function Home() {
                 <dl className="field">
                   <dt>Problem</dt>
                   <dd>
-                    A premium one-to-one nail atelier needed clear services, booking confidence, local trust, policies and mobile readability.
+                    A premium one-to-one nail atelier needed clearer services, booking confidence, local trust, policies and mobile readability.
                   </dd>
                 </dl>
                 <dl className="field">
@@ -348,30 +354,49 @@ export default function Home() {
                     Homepage, services and pricing, work gallery, bridal route, FAQ, policies, privacy, visit path, booking links, local SEO signals and schema awareness.
                   </dd>
                 </dl>
-                <dl className="field">
+                <dl className="field field--highlight">
                   <dt>Agency relevance</dt>
                   <dd>
-                    Shows practical production: real business content, trust UX, mobile journey, SEO/schema awareness, booking CTA logic and repeated QA.
+                    For an agency, this shows I can turn loose client material into a structured, mobile-ready customer journey with trust proof, booking logic and handover discipline.
                   </dd>
                 </dl>
+
+                <div className="case-proof-row" aria-label="Marzieh Nail Atelier production proof areas">
+                  <div>
+                    <span className="mono">Offer</span>
+                    <b>Services and pricing</b>
+                  </div>
+                  <div>
+                    <span className="mono">Journey</span>
+                    <b>Booking and visit path</b>
+                  </div>
+                  <div>
+                    <span className="mono">Trust</span>
+                    <b>Reviews, policies and FAQ</b>
+                  </div>
+                  <div>
+                    <span className="mono">QA</span>
+                    <b>Mobile, links and handover</b>
+                  </div>
+                </div>
 
                 <div className="before-after" aria-label="Marzieh Nail Atelier before and after proof">
                   <div>
                     <span className="mono">Before</span>
                     <p>
-                      Strong service skill and visual taste existed, but the public system needed one source of truth for services, policies, booking, trust proof and local visibility.
+                      Strong service skill existed, but services, policies, booking, trust proof and local visibility needed one clear source.
                     </p>
                   </div>
                   <div>
                     <span className="mono">After</span>
                     <p>
-                      A bilingual customer journey aligned services, appointment path, policies, trust signals, Google Business, Planway/Jazzy logic and calmer brand language.
+                      A bilingual journey aligned services, appointment path, policies, trust signals, Planway/Jazzy logic and calmer brand language.
                     </p>
                   </div>
                   <div>
                     <span className="mono">What it proves</span>
                     <p>
-                      The output looks like a website. The real work is customer flow, policy clarity, trust proof and repeatable owner control.
+                      The visible output is a website. The deeper work is understanding what clients need before booking: trust, price clarity, service confidence and owner control.
                     </p>
                   </div>
                 </div>
@@ -389,7 +414,7 @@ export default function Home() {
                 </div>
 
                 <div className="case-foot">
-                  <a className="linkclay" href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">
+                  <a className="linkclay case-cta" href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">
                     Open Marzieh Nail Atelier →
                   </a>
                   <div className="stat" aria-label="Public proof facts">
@@ -399,7 +424,7 @@ export default function Home() {
                     </div>
                     <div className="s">
                       <b>16</b>
-                      <span>Client reviews</span>
+                      <span>Google reviews</span>
                     </div>
                     <div className="s">
                       <b>DA / EN</b>
@@ -410,7 +435,15 @@ export default function Home() {
               </div>
             </article>
 
-            <div className="pilots" aria-label="Pilot projects">
+            <div id="systems" className="systems-intro reveal" aria-label="Systems built from unclear needs">
+              <p className="mono">Systems I have built</p>
+              <h3>Not only pages. Controlled first-version systems.</h3>
+              <p>
+                Beyond individual websites, I build service journeys, intake flows, trust layers, pilot logic, documentation routes and review points that make unclear ideas easier to test without overbuilding.
+              </p>
+            </div>
+
+            <div className="pilots systems-grid" aria-label="System pilot projects">
               {pilotProjects.map((project) => (
                 <article className="pcard reveal" key={project.title}>
                   <div className="pcard__top">
@@ -423,17 +456,17 @@ export default function Home() {
                     {project.flow.map((step, index) => (
                       <span key={step}>
                         {step}
-                        {index < project.flow.length - 1 ? <i aria-hidden="true">→</i> : null}
+                        {index < project.flow.length - 1 ? <i aria-hidden="true"> → </i> : null}
                       </span>
                     ))}
                   </div>
                   <p>{project.text}</p>
-                  <p className="best-for">{project.bestFor}</p>
-                  <div className="tags">
-                    {project.tags.map((tag) => (
-                      <b key={tag}>{tag}</b>
+                  <ul className="system-proof-list" aria-label={`${project.title} system proof`}>
+                    {project.systemProof.map((item) => (
+                      <li key={item}>{item}</li>
                     ))}
-                  </div>
+                  </ul>
+                  <p className="best-for">{project.bestFor}</p>
                   {project.link ? (
                     <a className="linkclay pcard__link" href={project.link} target="_blank" rel="noopener noreferrer">
                       {project.linkLabel} →
@@ -447,42 +480,159 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="fit">
+        <section id="approach">
+          <div className="wrap">
+            <div className="sec-head">
+              <span className="sec-no">02</span>
+              <h2>How I work</h2>
+              <p className="note">Operations-trained thinking applied to websites, content and digital flows.</p>
+            </div>
+            <div className="approach-grid">
+              <p className="approach reveal">
+                I think in <b>flow, handovers, execution and visible next actions</b>, then build the structure underneath.
+              </p>
+              <div className="reveal">
+                <p>
+                  Operations, ERP, planning, master data and supplier work trained me to map a process, find where it breaks and turn vague input into ownership and build-ready notes.
+                </p>
+                <p>
+                  I use the same rhythm for web work: understand the real need, build the first useful version, test it on mobile and document the next step.
+                </p>
+              </div>
+            </div>
+
+            <div className="friction-lens reveal" aria-label="Hidden friction lens">
+              <div>
+                <p className="mono">Hidden friction lens</p>
+                <h3>I do not only build from the brief.</h3>
+                <p>
+                  I look for what the customer needs to trust, what the owner needs to control, what the team needs to hand over and what the system needs to make clear.
+                </p>
+              </div>
+              <div className="lens-grid" aria-label="Four friction-mapping questions">
+                <article><span>Customer</span><b>What must feel safe or clear before action?</b></article>
+                <article><span>Owner</span><b>What needs one reliable source and decision point?</b></article>
+                <article><span>Team</span><b>What must be easy to hand over or repeat?</b></article>
+                <article><span>System</span><b>What should be visible, reusable and reviewed?</b></article>
+              </div>
+            </div>
+
+            <div className="backbone reveal" aria-label="Operations backbone proof">
+              <div className="backbone__copy">
+                <p className="mono">Operations backbone</p>
+                <h3>Friction first. Tools second.</h3>
+                <p>
+                  Before building a page, flow or prototype, I look for weak sources, unclear owners and fragile handovers. The numbers here are background proof from ERP, MRP, master data and supplier follow-up work.
+                </p>
+                <p className="sr-only">Working rhythm: Friction to Source to Owner to Review to Reuse.</p>
+                <div className="method-strip" aria-hidden="true">
+                  {['Friction', 'Source', 'Owner', 'Review', 'Reuse'].map((step, index) => (
+                    <span key={step}>
+                      {step}
+                      {index < 4 ? <i> → </i> : null}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="metric-grid" aria-label="Operations proof metrics">
+                <div aria-label="2,000 plus ERP item structures">
+                  <b>2,000+ </b>
+                  <span>ERP item structures</span>
+                </div>
+                <div aria-label="200 plus multi-level parts set up">
+                  <b>200+ </b>
+                  <span>multi-level parts set up</span>
+                </div>
+                <div aria-label="30 plus EU and US suppliers coordinated">
+                  <b>30+ </b>
+                  <span>EU/US suppliers coordinated</span>
+                </div>
+                <div aria-label="5 production lines and 40 plus variants supported">
+                  <b>5 / 40+ </b>
+                  <span>production lines and variants supported</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="system" aria-labelledby="system-title">
           <div className="wrap">
             <div className="sec-head">
               <span className="sec-no">03</span>
-              <h2>Target fit</h2>
-              <p className="note">Where I can create value fastest.</p>
+              <h2 id="system-title">From unclear input to live system</h2>
+              <p className="note">A compact view of how real friction becomes something people can use.</p>
+            </div>
+
+            <div className="system-board reveal">
+              <div className="system-intro">
+                <p className="mono">Proof logic</p>
+                <h3>More than pages. A working first system.</h3>
+                <p>
+                  The strongest proof is not only the final screen. It is the logic that turns unclear human and business needs into a clear path, a live build and a handover the owner can keep using.
+                </p>
+              </div>
+              <div className="system-steps" aria-label="From unclear input to live system process">
+                {systemSteps.map((step, index) => (
+                  <article className="system-step" key={step.label}>
+                    <span className="system-index">{String(index + 1).padStart(2, '0')}</span>
+                    <p className="mono">{step.label}</p>
+                    <h3>{step.title}</h3>
+                    <p>{step.text}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="fit">
+          <div className="wrap">
+            <div className="sec-head">
+              <span className="sec-no">04</span>
+              <h2>Where I fit</h2>
+              <p className="note">A practical decision path for agencies, studios and startups.</p>
             </div>
 
             <div className="fit-summary reveal">
               <p className="mono">Best match right now</p>
-              <h3>Teams that need reliable digital production support when the brief is messy, content is scattered or a first version needs to ship.</h3>
+              <h3>Teams that need useful digital output from messy input.</h3>
               <p>
-                I bring operations discipline to web work: structure the input, make the journey readable, test the details and leave a useful handover. For deeper engineering, I contribute best inside a team with technical leadership.
+                I connect human needs, client input, content, UX, QA and handover. The value is not replacing senior specialists. It is making scattered material easier to understand, build, test, launch and improve.
               </p>
             </div>
 
+            <div className="fit-lanes reveal" aria-label="Practical role fit lanes">
+              {roleFitLanes.map((lane) => (
+                <article key={lane.title}>
+                  <span className="mono">{lane.label}</span>
+                  <h3>{lane.title}</h3>
+                  <p>{lane.text}</p>
+                </article>
+              ))}
+            </div>
+
+            <p className="mono audience-label reveal">Best audience fit</p>
             <div className="target-grid reveal">
               <article>
                 <span className="mono">Established agencies</span>
-                <h3>Production muscle and operational discipline</h3>
+                <h3>Production support with handover discipline</h3>
                 <p>
-                  I support client work with page structure, service flows, trust sections, mobile QA and handover notes. You get dependable execution across client input, content, UX and delivery.
+                  Useful for client pages, service flows, trust sections, mobile QA and practical delivery support.
                 </p>
               </article>
               <article>
                 <span className="mono">Webflow / WordPress / Shopify shops</span>
-                <h3>Fast structure and platform adaptability</h3>
+                <h3>Structure that transfers across tools</h3>
                 <p>
-                  I help organize service pages, content hierarchy, forms, SEO basics and mobile checks. I learn tools quickly because the core work transfers across platforms: flow and QA.
+                  Useful for content hierarchy, forms, service pages, SEO basics, mobile checks and CMS-ready thinking.
                 </p>
               </article>
               <article>
                 <span className="mono">Startups and product teams</span>
-                <h3>Useful first versions before overbuilding</h3>
+                <h3>First versions before overbuilding</h3>
                 <p>
-                  I turn fuzzy ideas into concrete landing pages, onboarding flows, customer journeys, prototypes and documentation that make the next decision easier.
+                  Useful for landing pages, onboarding flows, prototypes and documentation that make the next decision easier.
                 </p>
               </article>
             </div>
@@ -492,18 +642,27 @@ export default function Home() {
         <section id="capabilities">
           <div className="wrap">
             <div className="sec-head">
-              <span className="sec-no">04</span>
-              <h2>Where I help a team</h2>
-              <p className="note">Strongest where client input, content, UX and QA need to connect.</p>
+              <span className="sec-no">05</span>
+              <h2>Build and QA proof</h2>
+              <p className="note">Supporting evidence, not a senior-engineering claim.</p>
             </div>
-            <div className="caps reveal">
-              {capabilities.map((capability, index) => (
-                <div className="cap" key={capability.title}>
-                  <div className="n">{String(index + 1).padStart(2, '0')}</div>
-                  <h3>{capability.title}</h3>
-                  <p>{capability.text}</p>
-                </div>
-              ))}
+
+            <div className="implementation-proof reveal" aria-label="Technical implementation proof">
+              <div>
+                <p className="mono">Technical implementation proof</p>
+                <h3>This portfolio is also a working build sample.</h3>
+                <p>
+                  Static Next.js export, Cloudflare deployment, local assets, npm-served fonts, Open Graph metadata, responsive layout, internal anchors and JSON-LD awareness.
+                </p>
+                <p className="implementation-note">
+                  Not a senior-engineering claim. A working sample of clean static web build, packaging and practical QA discipline.
+                </p>
+              </div>
+              <div className="implementation-chips" aria-label="Technical implementation signals">
+                {['Static export', 'Cloudflare', 'GitHub flow', 'Local assets', 'OG / metadata', 'Responsive QA'].map((item) => (
+                  <b key={item}>{item}</b>
+                ))}
+              </div>
             </div>
 
             <div className="exposure reveal">
@@ -519,10 +678,8 @@ export default function Home() {
                   'SEO metadata',
                   'JSON-LD / schema',
                   'Forms & journeys',
-                  'PDF deliverables',
                   'Multilingual content',
                   'Mobile QA',
-                  'AI-assisted prototyping',
                   'Documentation',
                 ].map((item) => (
                   <b key={item}>{item}</b>
@@ -538,7 +695,7 @@ export default function Home() {
         <section id="process">
           <div className="wrap">
             <div className="sec-head">
-              <span className="sec-no">05</span>
+              <span className="sec-no">06</span>
               <h2>How I would start, first 30 days</h2>
               <p className="note">A simple structure that makes it easy to say yes. Tasks adapt to the team.</p>
             </div>
@@ -585,7 +742,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="avail">
-                Best fit: website production, UX implementation, digital delivery support, practical prototypes, QA and documentation. Open to a scoped trial or <b>virksomhedspraktik</b> when that is the right practical route to test cooperation.
+                Best fit: website production, UX implementation, controlled first-version systems, digital delivery support, QA and documentation. Open to scoped project support, digital production roles or a short <b>praktik</b> when that is the cleanest way to test cooperation.
               </p>
             </div>
           </div>
@@ -596,9 +753,9 @@ export default function Home() {
         <div className="wrap foot">
           <div className="mark">
             <b>RC</b>
-            <span>Unclear business need → clear digital structure.</span>
+            <span>Unclear human and business need → clear digital system.</span>
           </div>
-          <p className="fine">Hand-built. Consider this portfolio itself case study 05. © 2026 Romaric Clementi</p>
+          <p className="fine">Hand-built as live proof of friction mapping, system structure, UX flow, QA and deployment discipline. © 2026 Romaric Clementi</p>
         </div>
       </footer>
     </>

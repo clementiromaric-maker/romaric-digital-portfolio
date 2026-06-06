@@ -9,14 +9,14 @@ export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://romaric-digital-portfolio.clementiromaric.workers.dev'),
   title: 'Romaric Clementi | Website & Digital Workflow Builder',
   description:
-    'Portfolio for web agencies, digital teams and startups. Romaric Clementi turns unclear business input into useful first versions: websites, UX flows, content systems, QA notes and AI-assisted prototypes.',
+    'Portfolio for web agencies, digital teams and startups. Romaric Clementi turns unclear human and business needs into useful first-version systems: websites, UX flows, content systems, QA notes and AI-assisted prototypes.',
   authors: [{ name: 'Romaric Clementi' }],
   creator: 'Romaric Clementi',
   publisher: 'Romaric Clementi',
   openGraph: {
     title: 'Romaric Clementi | Website & Digital Workflow Builder',
     description:
-      'Live business website, UX structure, content systems, workflow prototypes, mobile QA and AI-assisted digital production.',
+      'Live business website, UX structure, controlled first-version systems, workflow prototypes, mobile QA and AI-assisted digital production.',
     type: 'website',
     images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Romaric Clementi portfolio preview' }],
   },
@@ -49,11 +49,14 @@ const personSchema = {
     addressLocality: 'Greater Copenhagen / Tune',
     addressCountry: 'DK',
   },
-  jobTitle: 'Website & Digital Workflow Builder',
+  jobTitle: 'Website & Digital Systems Builder',
   knowsAbout: [
     'Website production',
     'UX implementation',
     'Digital workflow',
+    'First-version systems',
+    'Trust UX',
+    'Service-system design',
     'Mobile QA',
     'Content structure',
     'Cloudflare Pages',
