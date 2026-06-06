@@ -1,11 +1,11 @@
-# Romaric Clementi Web Digital Portfolio V5.10.1
+# Romaric Clementi Web Digital Portfolio V5.10.2
 
-Final micro-fix after Danish trust layer.
+Controlled Danish native-language micro-polish after V5.10.1.
 
 Scope:
-- Keep V5.10 EN/DA route, portrait trust detail and footer line fix.
-- Align system-card bottom actions so `Open preview`, `Open pilot` and walkthrough note sit on the same baseline.
-- No copy strategy changes, no new sections, no redesign.
+- Preserve V5.10.1 EN/DA route, portrait trust detail, footer line fix and system-card CTA alignment.
+- Polish visible Danish hybrid wording such as proof, trust, routes, owner review, source maps and walkthrough.
+- No layout changes, no new sections, no strategy changes.
 
 Build:
 ```bash
