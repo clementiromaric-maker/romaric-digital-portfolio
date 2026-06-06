@@ -228,7 +228,7 @@ export default function Home() {
                 I find the real friction behind messy briefs, then turn it into useful first systems teams can test, hand over and improve.
               </p>
               <p className="sub reveal" style={{ transitionDelay: '.3s' }}>
-                Website production, UX structure and controlled first-version systems for teams with messy input and real deadlines.
+                Website production, UX structure and working first versions for teams with messy input and real deadlines.
               </p>
               <div className="hero__cta reveal" style={{ transitionDelay: '.38s' }}>
                 <a className="btn" href="#work">

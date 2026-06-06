@@ -1,6 +1,6 @@
-Romaric Clementi Web Digital Portfolio V5.9.1
+Romaric Clementi Web Digital Portfolio V5.9.2
 
-Package: V5.9.1 Language Clarity Polish
+Package: V5.9.2 Language Clarity Polish
 Source package created from V5.9 Systems + Hidden Friction Positioning.
 
 Scope:

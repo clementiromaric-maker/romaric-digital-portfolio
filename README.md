@@ -1,4 +1,4 @@
-# Romaric Clementi Web Digital Portfolio V5.9.1
+# Romaric Clementi Web Digital Portfolio V5.9.2
 
 Tiny language clarity polish on top of V5.9. Keeps the deeper systems-builder layer without redesigning the portfolio.
 

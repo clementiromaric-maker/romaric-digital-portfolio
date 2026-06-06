@@ -1,8 +1,11 @@
 import '@fontsource-variable/fraunces';
+import '@fontsource-variable/fraunces/wght-italic.css';
 import '@fontsource-variable/hanken-grotesk';
+import '@fontsource-variable/hanken-grotesk/wght-italic.css';
 import '@fontsource/ibm-plex-mono/400.css';
 import '@fontsource/ibm-plex-mono/500.css';
 import '@fontsource/ibm-plex-mono/600.css';
+import '@fontsource/ibm-plex-mono/700.css';
 import './globals.css';
 
 export const metadata = {
@@ -16,7 +19,7 @@ export const metadata = {
   openGraph: {
     title: 'Romaric Clementi | Website & Digital Workflow Builder',
     description:
-      'Live business website, UX structure, controlled first-version systems, workflow prototypes, mobile QA and AI-assisted digital production.',
+      'Live business website, UX structure, working first versions, workflow prototypes, mobile QA and AI-assisted digital production.',
     type: 'website',
     images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Romaric Clementi portfolio preview' }],
   },
