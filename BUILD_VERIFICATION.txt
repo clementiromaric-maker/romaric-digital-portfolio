@@ -1,0 +1,19 @@
+Build verification
+==================
+
+Commands run in this environment:
+
+npm install
+NEXT_TELEMETRY_DISABLED=1 npm run build
+npm audit --omit=dev
+
+Result:
+- Next.js production build completed successfully.
+- Static export generated in /out.
+- npm audit returned 0 vulnerabilities after pinning Next 16.2.7 and overriding PostCSS to 8.5.10.
+
+Deploy:
+- Cloudflare Pages build command: npm run build
+- Cloudflare Pages output directory: out
+- Recommended environment variable after choosing final portfolio domain:
+  NEXT_PUBLIC_SITE_URL=https://your-final-portfolio-domain
