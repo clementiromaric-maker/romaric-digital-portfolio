@@ -1,19 +1,15 @@
-Build verification
-==================
+Romaric Clementi Web Digital Portfolio V5.3.2
 
-Commands run in this environment:
+Patch scope:
+- Final micro-polish after V5.3.1.
+- Copy compression, hero punch, spacing and CTA hierarchy.
+- Operations Backbone made more proof-strip-like and less CV-like.
+- Typography restored through npm-installed @fontsource packages.
+- No Google Fonts, no Tailwind CDN, no public HamdamBridge link, no unsupported metrics.
+- Unused original nail product images removed from public/assets.
 
-npm install
-NEXT_TELEMETRY_DISABLED=1 npm run build
-npm audit --omit=dev
+Recommended Cloudflare build command:
+pnpm install --no-frozen-lockfile && pnpm run build
 
-Result:
-- Next.js production build completed successfully.
-- Static export generated in /out.
-- npm audit returned 0 vulnerabilities after pinning Next 16.2.7 and overriding PostCSS to 8.5.10.
-
-Deploy:
-- Cloudflare Pages build command: npm run build
-- Cloudflare Pages output directory: out
-- Recommended environment variable after choosing final portfolio domain:
-  NEXT_PUBLIC_SITE_URL=https://your-final-portfolio-domain
+Recommended Cloudflare deploy command:
+pnpm dlx wrangler deploy --assets ./out --compatibility-date 2026-06-06

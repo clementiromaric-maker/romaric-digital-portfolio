@@ -6,7 +6,6 @@ const liveLinks = {
   marzieh: 'https://marziehnail-atelier.dk/en/',
   clementi: 'https://clementi-ai-workflow-pages-preview.pages.dev/',
   foerstematch: 'https://foerstematch-pilot.pages.dev/',
-  hamdam: 'https://hamdambridge-private-pilot.clementiromaric.workers.dev/',
 };
 
 const pilotProjects = [
@@ -14,87 +13,90 @@ const pilotProjects = [
     eyebrow: 'Service system',
     status: 'Controlled preview',
     title: 'Clementi AI Workflow',
-    role: 'Multilingual service + workflow system',
+    role: 'Multilingual service and workflow system',
     flow: ['Audit', 'Signal', 'Source', 'Flow'],
     text:
-      'Practical AI readiness for SMEs: service architecture, notes, audit products, source-of-truth logic and owner approval points — value before automation, not autonomous-agent hype.',
-    tags: ['Offer architecture', 'AEO / schema thinking', 'Notes hub', 'QA / versioning'],
+      'A service site and workflow concept for small businesses that need clearer offers, cleaner source material and safer AI use.',
+    tags: ['Offer structure', 'AEO / schema', 'Notes hub', 'QA / versioning'],
     link: liveLinks.clementi,
-    bestFor: 'Best for Kvalifik, startups and AI-forward teams.',
+    linkLabel: 'Open preview',
+    bestFor: 'Strongest for AI-forward teams, Webflow/AEO agencies and startups.',
   },
   {
     eyebrow: 'Public-sector style pilot',
     status: 'Pilot',
     title: 'FørsteMatch',
-    role: 'Candidate · company · advisor clarity flow',
+    role: 'Candidate, company and advisor clarity flow',
     flow: ['Candidate', 'Company', 'Advisor', 'Brief', 'Meeting'],
     text:
-      'A bounded, privacy-aware first conversation before official praktik/employment processes — with consent, role separation and data handling kept visible.',
-    tags: ['Stakeholder map', 'DA / EN', 'Form logic', 'Data & privacy'],
+      'A first-conversation flow before official praktik or employment steps, with visible boundaries, data handling and role separation.',
+    tags: ['Stakeholder map', 'DA / EN', 'Form logic', 'Data and privacy'],
     link: liveLinks.foerstematch,
-    bestFor: 'Best for delivery, project and structured-flow roles.',
+    linkLabel: 'Open pilot',
+    bestFor: 'Strongest for delivery, project support and structured-flow roles.',
   },
   {
-    eyebrow: 'Experimental UX',
-    status: 'Selective proof',
+    eyebrow: 'Selective UX proof',
+    status: 'Walkthrough on request',
     title: 'HamdamBridge',
     role: 'Privacy-first introduction pilot',
-    flow: ['Signal', 'Review', 'Circle', 'Two yes', 'Meet'],
+    flow: ['Signal', 'Review', 'Circle', 'Two yeses', 'Meet'],
     text:
-      'Trust as UX for cross-cultural and diaspora users: human review, consent-before-contact, safety pages and Farsi/English routes — softer discovery, not swipe-based performance.',
-    tags: ['Information architecture', 'Consent flow', 'Emotional UX', 'Farsi / EN'],
-    link: liveLinks.hamdam,
-    bestFor: 'Best for culture, community, product and privacy-minded teams.',
+      'A consent-led introduction concept for cross-cultural and diaspora users, shared selectively because the topic is personal.',
+    tags: ['Trust UX', 'Consent flow', 'Emotional safety', 'Farsi / EN'],
+    link: null,
+    linkLabel: 'Walkthrough available on request',
+    bestFor: 'Best shared with culture, community, product and privacy-minded teams.',
   },
 ];
 
 const capabilities = [
   {
     title: 'Website production',
-    text: 'Landing and service pages, route structure, internal links, forms, FAQ/policy logic, multilingual content and basic SEO structure.',
+    text: 'Landing pages, service pages, route logic, forms, FAQ, policy paths, multilingual content and basic SEO structure.',
   },
   {
     title: 'UX implementation',
-    text: 'Audience paths, trust barriers, next-step clarity, mobile navigation, form friction, content hierarchy and user-flow notes.',
+    text: 'Audience paths, trust barriers, mobile navigation, form friction and content hierarchy.',
   },
   {
-    title: 'QA & deployment',
-    text: 'Mobile checks, link/anchor review, copy consistency, structured-data sanity, version notes and Cloudflare/GitHub deploy flow.',
+    title: 'QA and deployment',
+    text: 'Mobile checks, link review, copy consistency, structured-data sanity, version notes and Cloudflare/GitHub flow.',
   },
   {
     title: 'AI-assisted prototypes',
-    text: 'Practical prototypes, source-of-truth logic, prompt/workflow structure, approval gates and safe-use boundaries before automation.',
+    text: 'Small prototypes, source-of-truth logic, reusable prompts, approval points and safe-use boundaries before automation.',
   },
   {
     title: 'Operational translation',
-    text: 'Turning vague client input into scope, flow, ownership, data needs, handovers and implementation-ready notes.',
+    text: 'Turning vague client input into scope, ownership, handovers, next actions and build-ready notes.',
   },
   {
-    title: 'Niche & trust thinking',
-    text: 'Spotting underserved friction, unclear offers, privacy concerns and customer hesitation before the solution becomes obvious.',
+    title: 'Niche and trust thinking',
+    text: 'Spotting underserved friction, unclear offers, privacy concerns and customer hesitation early.',
   },
 ];
 
 const weeks = [
   {
     label: 'Week 01',
-    title: 'Understand & audit',
-    text: 'Learn the team workflow, review one site or client flow, map pages, forms and mobile friction, and write a short clarity/QA note.',
+    title: 'Understand and audit',
+    text: 'Learn the workflow, review one site or client flow, map pages, forms and mobile friction, then write a short QA note.',
   },
   {
     label: 'Week 02',
     title: 'Support production',
-    text: 'Help with page updates, service/content structure, landing-page copy, internal links, simple UX improvements and multilingual cleanup.',
+    text: 'Help with page updates, service/content structure, landing-page copy, internal links, UX fixes and multilingual cleanup.',
   },
   {
     label: 'Week 03',
-    title: 'Test & document',
-    text: 'Mobile checks, link/anchor QA, form-journey review, proofreading and structured-data/metadata sanity checks.',
+    title: 'Test and document',
+    text: 'Mobile checks, link/anchor QA, form-journey review, proofreading and metadata sanity checks.',
   },
   {
     label: 'Week 04',
     title: 'Deliver useful output',
-    text: 'A final improvement list, prototype or implementation package, clear handover notes and suggested next steps.',
+    text: 'A final improvement list, prototype or implementation package, handover notes and next steps.',
   },
 ];
 
@@ -149,7 +151,7 @@ export default function Home() {
           <div className="wrap hero__grid">
             <div>
               <p className="mono kicker reveal" style={{ transitionDelay: '.04s' }}>
-                Portfolio — web agencies · digital teams · startups
+                Portfolio for web agencies, digital teams and startups
               </p>
               <h1 id="hero-title" className="reveal" style={{ transitionDelay: '.12s' }}>
                 Clear digital
@@ -159,11 +161,10 @@ export default function Home() {
                 <em>unclear</em> needs.
               </h1>
               <p className="lede reveal" style={{ transitionDelay: '.22s' }}>
-                I see the real need behind a messy idea — and make the first useful version concrete.
+                I turn messy briefs into useful first versions that teams can test, hand over and improve.
               </p>
               <p className="sub reveal" style={{ transitionDelay: '.3s' }}>
-                Websites, customer journeys, content systems, forms, trust pages, QA notes and AI-assisted
-                prototypes — built with an operations mindset.
+                Websites, UX flows, content systems, forms and QA notes, built with an operations mindset.
               </p>
               <div className="hero__cta reveal" style={{ transitionDelay: '.38s' }}>
                 <a className="btn" href="#work">
@@ -179,11 +180,11 @@ export default function Home() {
               <dl>
                 <div className="row">
                   <dt className="mono">Best fit</dt>
-                  <dd>Website production · UX implementation · digital delivery · QA</dd>
+                  <dd>Website production, UX implementation, digital delivery support and QA</dd>
                 </div>
                 <div className="row">
                   <dt className="mono">Proof</dt>
-                  <dd>Live local business site · 5.0 rating · 16 reviews · DA/EN</dd>
+                  <dd>Live local business site, 5.0 rating, 16 reviews and DA/EN routes</dd>
                 </div>
                 <div className="row">
                   <dt className="mono">Based</dt>
@@ -209,12 +210,12 @@ export default function Home() {
               <span>Service, trust, policy and CTA flow</span>
             </div>
             <div>
-              <b>3 bounded pilots</b>
-              <span>AI workflow, employment clarity, trust UX</span>
+              <b>3 focused pilots</b>
+              <span>AI workflow, employment clarity and trust UX</span>
             </div>
             <div>
               <b>Operations brain</b>
-              <span>Flow, handovers, QA and next actions</span>
+              <span>Flow, owners, handovers and QA</span>
             </div>
           </div>
         </section>
@@ -223,25 +224,56 @@ export default function Home() {
           <div className="wrap">
             <div className="sec-head">
               <span className="sec-no">01</span>
-              <h2>How I think</h2>
-              <p className="note">An operations background, pointed at the web.</p>
+              <h2>How I work</h2>
+              <p className="note">Operations-trained thinking applied to websites, content and digital flows.</p>
             </div>
             <div className="approach-grid">
               <p className="approach reveal">
-                I think in <b>flow, handovers, execution and visible next actions</b> — then build the structure
-                underneath.
+                I think in <b>flow, handovers, execution and visible next actions</b>, then build the structure underneath.
               </p>
               <div className="reveal">
                 <p>
-                  My background is in operations, ERP, planning, master data and supplier coordination. That trained
-                  me to read a process, find where the work actually breaks, and turn vague input into scope,
-                  ownership, data needs and implementation-ready notes.
+                  Operations, ERP, planning, master data and supplier work trained me to read a process, find where it breaks, and turn vague input into ownership and build-ready notes.
                 </p>
                 <p>
-                  I now apply that same mindset to website production, UX implementation and practical digital
-                  prototypes: take a messy idea, find the real structure, build a useful first version, test it on
-                  mobile, and document the next step.
+                  I use the same rhythm for web work: understand the real need, build the first useful version, test it on mobile and document the next step.
                 </p>
+              </div>
+            </div>
+
+            <div className="backbone reveal" aria-label="Operations backbone proof">
+              <div className="backbone__copy">
+                <p className="mono">Operations backbone</p>
+                <h3>Friction first. Tools second.</h3>
+                <p>
+                  Before building a page, flow or prototype, I look for weak sources, unclear owners and fragile handovers. The numbers here are background proof from ERP, MRP, master data and supplier follow-up work.
+                </p>
+                <div className="method-strip" aria-label="Working rhythm">
+                  {['Friction', 'Source', 'Owner', 'Review', 'Reuse'].map((step, index) => (
+                    <span key={step}>
+                      {step}
+                      {index < 4 ? <i aria-hidden="true">→</i> : null}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="metric-grid" aria-label="Operations proof metrics">
+                <div>
+                  <b>2,000+</b>
+                  <span>ERP item structures</span>
+                </div>
+                <div>
+                  <b>200+</b>
+                  <span>multi-level parts set up</span>
+                </div>
+                <div>
+                  <b>30+</b>
+                  <span>EU/US suppliers coordinated</span>
+                </div>
+                <div>
+                  <b>5 / 40+</b>
+                  <span>production lines and variants supported</span>
+                </div>
               </div>
             </div>
           </div>
@@ -252,7 +284,7 @@ export default function Home() {
             <div className="sec-head">
               <span className="sec-no">02</span>
               <h2>Selected work</h2>
-              <p className="note">One live business first. Three bounded pilots second.</p>
+              <p className="note">One live business first, focused pilots second.</p>
             </div>
 
             <article className="feature reveal" aria-labelledby="marzieh-title">
@@ -274,15 +306,16 @@ export default function Home() {
                       <br />
                       Care You Remember.
                     </h3>
-                    <p>A refined, multilingual presence with a calm booking journey — the site as I built and shipped it.</p>
+                    <p>A refined bilingual presence with clear services, trust signals and a calm booking path.</p>
                     <a className="pill" href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">
                       Visit live site
                     </a>
                   </div>
                   <div className="browser__media">
                     <img
-                      src="/assets/gallery-pearl-satin-glaze-almond.webp"
-                      alt="Pearl satin glaze almond nails from Marzieh Nail Atelier"
+                      src="/assets/marzieh-homepage-ui-snapshot.webp"
+                      alt="Marzieh Nail Atelier homepage UI snapshot showing navigation, hero, booking path and service cards"
+                      className="ui-shot"
                       loading="eager"
                     />
                   </div>
@@ -300,41 +333,58 @@ export default function Home() {
                 <dl className="field">
                   <dt>Problem</dt>
                   <dd>
-                    A premium one-to-one nail atelier needed a clearer digital presence: service choice, booking
-                    confidence, local trust, policies and mobile readability.
+                    A premium one-to-one nail atelier needed clear services, booking confidence, local trust, policies and mobile readability.
                   </dd>
                 </dl>
                 <dl className="field">
                   <dt>My role</dt>
                   <dd>
-                    Concept structure, service architecture, multilingual copy support, UX flow, trust sections, mobile
-                    review, QA and deployment-safe iteration.
+                    I shaped the concept, service structure, copy flow, trust sections, mobile QA and deployment-safe iterations.
                   </dd>
                 </dl>
                 <dl className="field">
                   <dt>Built</dt>
                   <dd>
-                    Homepage, service and pricing structure, gallery/work and bridal routes, FAQ, policies, privacy,
-                    visit/contact journey, booking links, local SEO signals and structured-data awareness.
+                    Homepage, services and pricing, work gallery, bridal route, FAQ, policies, privacy, visit path, booking links, local SEO signals and schema awareness.
                   </dd>
                 </dl>
                 <dl className="field">
                   <dt>Agency relevance</dt>
                   <dd>
-                    Shows practical production: real business content, trust architecture, mobile-first customer journey,
-                    SEO/schema awareness, booking CTA logic and repeated QA.
+                    Shows practical production: real business content, trust UX, mobile journey, SEO/schema awareness, booking CTA logic and repeated QA.
                   </dd>
                 </dl>
 
-                <div className="gallery" aria-label="Marzieh Nail Atelier project images">
+                <div className="before-after" aria-label="Marzieh Nail Atelier before and after proof">
+                  <div>
+                    <span className="mono">Before</span>
+                    <p>
+                      Strong service skill and visual taste existed, but the public system needed one source of truth for services, policies, booking, trust proof and local visibility.
+                    </p>
+                  </div>
+                  <div>
+                    <span className="mono">After</span>
+                    <p>
+                      A bilingual customer journey aligned services, appointment path, policies, trust signals, Google Business, Planway/Jazzy logic and calmer brand language.
+                    </p>
+                  </div>
+                  <div>
+                    <span className="mono">What it proves</span>
+                    <p>
+                      The output looks like a website. The real work is customer flow, policy clarity, trust proof and repeatable owner control.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="gallery" aria-label="Marzieh Nail Atelier UI snapshots">
                   <div className="g">
-                    <img src="/assets/gallery-tortoise-ivory-almond.webp" alt="Tortoise ivory almond nail design" loading="lazy" />
+                    <img src="/assets/marzieh-services-ui-snapshot.webp" alt="Marzieh Nail Atelier services UI snapshot" loading="lazy" />
                   </div>
                   <div className="g">
-                    <img src="/assets/gallery-gilded-bridal-french.webp" alt="Gilded bridal French nails" loading="lazy" />
+                    <img src="/assets/marzieh-work-ui-snapshot.webp" alt="Marzieh Nail Atelier work gallery UI snapshot" loading="lazy" />
                   </div>
                   <div className="g">
-                    <img src="/assets/founder-marzieh-hand-face.webp" alt="Marzieh Nail Atelier founder portrait with nails" loading="lazy" />
+                    <img src="/assets/marzieh-booking-ui-snapshot.webp" alt="Marzieh Nail Atelier visit and booking UI snapshot" loading="lazy" />
                   </div>
                 </div>
 
@@ -384,9 +434,13 @@ export default function Home() {
                       <b key={tag}>{tag}</b>
                     ))}
                   </div>
-                  <a className="linkclay pcard__link" href={project.link} target="_blank" rel="noopener noreferrer">
-                    Open project →
-                  </a>
+                  {project.link ? (
+                    <a className="linkclay pcard__link" href={project.link} target="_blank" rel="noopener noreferrer">
+                      {project.linkLabel} →
+                    </a>
+                  ) : (
+                    <span className="pcard__note">{project.linkLabel}</span>
+                  )}
                 </article>
               ))}
             </div>
@@ -398,28 +452,37 @@ export default function Home() {
             <div className="sec-head">
               <span className="sec-no">03</span>
               <h2>Target fit</h2>
-              <p className="note">Different teams need different proof. This is how I would position the same portfolio.</p>
+              <p className="note">Where I can create value fastest.</p>
             </div>
+
+            <div className="fit-summary reveal">
+              <p className="mono">Best match right now</p>
+              <h3>Teams that need reliable digital production support when the brief is messy, content is scattered or a first version needs to ship.</h3>
+              <p>
+                I bring operations discipline to web work: structure the input, make the journey readable, test the details and leave a useful handover. For deeper engineering, I contribute best inside a team with technical leadership.
+              </p>
+            </div>
+
             <div className="target-grid reveal">
               <article>
                 <span className="mono">Established agencies</span>
-                <h3>Production, UX implementation and QA</h3>
+                <h3>Production muscle and operational discipline</h3>
                 <p>
-                  Lead with the live Marzieh site, then show operational translation, QA discipline and the first-30-days plan. Relevant for Twentyfour, Adapt and Dwarf-style teams.
+                  I support client work with page structure, service flows, trust sections, mobile QA and handover notes. You get dependable execution across client input, content, UX and delivery.
                 </p>
               </article>
               <article>
                 <span className="mono">Webflow / WordPress / Shopify shops</span>
-                <h3>Structure, content and platform learning</h3>
+                <h3>Fast structure and platform adaptability</h3>
                 <p>
-                  I am not claiming senior platform mastery. I can learn the tool fast because the transferable work is service structure, content hierarchy, SEO/schema basics and mobile QA.
+                  I help organize service pages, content hierarchy, forms, SEO basics and mobile checks. I learn tools quickly because the core work transfers across platforms: flow and QA.
                 </p>
               </article>
               <article>
-                <span className="mono">Startups</span>
-                <h3>Ship useful first versions</h3>
+                <span className="mono">Startups and product teams</span>
+                <h3>Useful first versions before overbuilding</h3>
                 <p>
-                  Useful when the work is undefined: landing pages, onboarding copy, forms, email/customer flows, AI-assisted prototypes and practical growth experiments.
+                  I turn fuzzy ideas into concrete landing pages, onboarding flows, customer journeys, prototypes and documentation that make the next decision easier.
                 </p>
               </article>
             </div>
@@ -444,7 +507,7 @@ export default function Home() {
             </div>
 
             <div className="exposure reveal">
-              <p className="mono lab">Working exposure — hands-on, not senior-level mastery</p>
+              <p className="mono lab">Working exposure, hands-on and honest</p>
               <div className="chips" aria-label="Working exposure">
                 {[
                   'HTML / CSS',
@@ -466,9 +529,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="caveat">
-                Presented honestly: recent builds are custom static/Cloudflare style. I am comfortable learning a
-                team&apos;s platform — Webflow, WordPress, Shopify or Umbraco — because the structure-and-QA thinking
-                transfers.
+                Presented honestly: recent builds are custom static and Cloudflare-based. I can learn Webflow, WordPress, Shopify or Umbraco because the content, flow and QA thinking transfers.
               </p>
             </div>
           </div>
@@ -478,7 +539,7 @@ export default function Home() {
           <div className="wrap">
             <div className="sec-head">
               <span className="sec-no">05</span>
-              <h2>How I would start — first 30 days</h2>
+              <h2>How I would start, first 30 days</h2>
               <p className="note">A simple structure that makes it easy to say yes. Tasks adapt to the team.</p>
             </div>
             <div className="weeks reveal">
@@ -524,9 +585,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="avail">
-                Open to a junior or entry role — or a short <b>virksomhedspraktik</b> / scoped trial if useful — in
-                website production, UX implementation, digital delivery and AI-assisted web prototyping. Best fit:
-                turning business input into usable web structure, content, prototypes, QA and documentation.
+                Best fit: website production, UX implementation, digital delivery support, practical prototypes, QA and documentation. Open to a scoped trial or <b>virksomhedspraktik</b> when that is the right practical route to test cooperation.
               </p>
             </div>
           </div>
@@ -539,7 +598,7 @@ export default function Home() {
             <b>RC</b>
             <span>Unclear business need → clear digital structure.</span>
           </div>
-          <p className="fine">Hand-built — consider this portfolio itself case study 05 · © 2026 Romaric Clementi</p>
+          <p className="fine">Hand-built. Consider this portfolio itself case study 05. © 2026 Romaric Clementi</p>
         </div>
       </footer>
     </>
