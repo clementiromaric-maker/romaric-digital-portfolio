@@ -1,12 +1,12 @@
-# Romaric Clementi Web Digital Portfolio V5.9.2
+# Romaric Clementi Web Digital Portfolio V5.9.3
 
-Tiny language clarity polish on top of V5.9. Keeps the deeper systems-builder layer without redesigning the portfolio.
+Final deployment QA polish on top of V5.9.2.
 
-Core changes:
-- Reframes selected pilots as controlled first-version systems.
-- Renames the hidden-friction language into clearer friction-mapping wording where helpful.
-- Keeps the hero and metadata around unclear human/business needs becoming useful first systems.
-- Preserves Marzieh as strongest live proof and HamdamBridge as walkthrough-on-request only.
+Scope:
+- Fixed the contact anchor / sticky-header overlap risk by adding stronger contact scroll margin, top padding and bottom scroll room.
+- Reduced the maximum hero headline size slightly so the first screen feels powerful but less heavy.
+- Replaced the remaining heavier systems wording with clearer "working first-version systems" language.
+- Preserved the V5.9 systems positioning, Marzieh proof, proof dashboard, self-hosted fonts and visual hierarchy polish.
 
 Build:
 ```bash

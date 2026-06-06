@@ -290,7 +290,7 @@ export default function Home() {
             <div className="sec-head">
               <span className="sec-no">01</span>
               <h2>Selected work and systems</h2>
-              <p className="note">A live business first, then controlled systems built around trust, workflow and review.</p>
+              <p className="note">A live business first, then working systems built around trust, workflow and review.</p>
             </div>
 
             <article className="feature reveal" aria-labelledby="marzieh-title">
@@ -437,7 +437,7 @@ export default function Home() {
 
             <div id="systems" className="systems-intro reveal" aria-label="Systems built from unclear needs">
               <p className="mono">Systems I have built</p>
-              <h3>Not only pages. Controlled first-version systems.</h3>
+              <h3>Not only pages. Working first-version systems.</h3>
               <p>
                 Beyond individual websites, I build service journeys, intake flows, trust layers, pilot logic, documentation routes and review points that make unclear ideas easier to test without overbuilding.
               </p>
@@ -742,7 +742,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="avail">
-                Best fit: website production, UX implementation, controlled first-version systems, digital delivery support, QA and documentation. Open to scoped project support, digital production roles or a short <b>praktik</b> when that is the cleanest way to test cooperation.
+                Best fit: website production, UX implementation, working first-version systems, digital delivery support, QA and documentation. Open to scoped project support, digital production roles or a short <b>praktik</b> when that is the cleanest way to test cooperation.
               </p>
             </div>
           </div>

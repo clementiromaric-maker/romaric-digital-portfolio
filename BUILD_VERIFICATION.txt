@@ -1,14 +1,12 @@
-Romaric Clementi Web Digital Portfolio V5.9.2
+Romaric Clementi Web Digital Portfolio V5.9.3
 
-Package: V5.9.2 Language Clarity Polish
-Source package created from V5.9 Systems + Hidden Friction Positioning.
+Package: V5.9.3 Final Deployment QA Polish
+Source package created from V5.9.2 Visual Hierarchy + Typography Fix.
 
 Scope:
-- Tiny wording polish only.
-- Changed "read hidden friction" to clearer "find real friction" language in the hero.
-- Changed the proof-dashboard pilot label to "3 built pilots" for faster scanning.
-- Replaced the older footer wording with clearer "friction mapping" wording.
-- Kept the systems-builder positioning, selected systems, Marzieh proof, Operations Backbone and V5.9 structure.
+- Contact section sticky-header overlap fix.
+- Slight hero max-size reduction.
+- Remaining heavier systems wording replaced with "working first-version systems".
 - No new sections, no redesign and no new claims.
 
 Build verification:
