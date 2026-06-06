@@ -1,12 +1,11 @@
-# Romaric Clementi Web Digital Portfolio V5.9.3
+# Romaric Clementi Web Digital Portfolio V5.10.1
 
-Final deployment QA polish on top of V5.9.2.
+Final micro-fix after Danish trust layer.
 
 Scope:
-- Fixed the contact anchor / sticky-header overlap risk by adding stronger contact scroll margin, top padding and bottom scroll room.
-- Reduced the maximum hero headline size slightly so the first screen feels powerful but less heavy.
-- Replaced the remaining heavier systems wording with clearer "working first-version systems" language.
-- Preserved the V5.9 systems positioning, Marzieh proof, proof dashboard, self-hosted fonts and visual hierarchy polish.
+- Keep V5.10 EN/DA route, portrait trust detail and footer line fix.
+- Align system-card bottom actions so `Open preview`, `Open pilot` and walkthrough note sit on the same baseline.
+- No copy strategy changes, no new sections, no redesign.
 
 Build:
 ```bash

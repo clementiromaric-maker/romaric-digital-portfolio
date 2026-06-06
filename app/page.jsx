@@ -203,6 +203,11 @@ export default function Home() {
             <a href="#approach">Approach</a>
             <a href="#fit">Fit</a>
             <a href="#process">First 30 days</a>
+            <span className="lang-switch" aria-label="Language switch">
+              <a aria-current="page" href="/">EN</a>
+              <span aria-hidden="true">/</span>
+              <a href="/da/">DA</a>
+            </span>
             <a className="btn" href="mailto:clementiromaric@protonmail.com">
               Email me
             </a>
@@ -714,7 +719,13 @@ export default function Home() {
         <section id="contact" className="contact-section">
           <div className="wrap">
             <div className="contact reveal">
-              <p className="mono">Contact</p>
+              <div className="contact__identity">
+                <img src="/assets/romaric-portrait.webp" alt="Portrait of Romaric Clementi" loading="lazy" />
+                <div>
+                  <p className="mono">Contact</p>
+                  <b>Romaric Clementi</b>
+                </div>
+              </div>
               <h2>
                 Let&apos;s build the first <em>useful</em> version.
               </h2>

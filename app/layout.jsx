@@ -16,6 +16,13 @@ export const metadata = {
   authors: [{ name: 'Romaric Clementi' }],
   creator: 'Romaric Clementi',
   publisher: 'Romaric Clementi',
+  alternates: {
+    canonical: '/',
+    languages: {
+      en: '/',
+      da: '/da/',
+    },
+  },
   openGraph: {
     title: 'Romaric Clementi | Website & Digital Workflow Builder',
     description:

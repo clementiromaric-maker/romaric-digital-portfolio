@@ -1,30 +1,10 @@
-Romaric Clementi Web Digital Portfolio V5.9.3
+Romaric Clementi Web Digital Portfolio V5.10.1
 
-Package: V5.9.3 Final Deployment QA Polish
-Source package created from V5.9.2 Visual Hierarchy + Typography Fix.
-
-Scope:
-- Contact section sticky-header overlap fix.
-- Slight hero max-size reduction.
-- Remaining heavier systems wording replaced with "working first-version systems".
-- No new sections, no redesign and no new claims.
-
-Build verification:
-- npm install completed in sandbox.
-- npm run build completed successfully with Next.js static export.
-- Static out/ generated during QA, then excluded from the source ZIP.
-
-Guardrail checks:
-- No Google Fonts external requests.
-- No Tailwind CDN.
-- No public HamdamBridge URL in source.
-- No unsupported percentage metric.
-- No inflated review-count claim.
-- No em dash punctuation in source copy.
-- Source ZIP excludes node_modules, .next and out directories.
-
-Cloudflare build command:
-pnpm install --no-frozen-lockfile && pnpm run build
-
-Cloudflare deploy command:
-pnpm dlx wrangler deploy --assets ./out --compatibility-date 2026-06-06
+QA status:
+- Build passed with npm run build.
+- Static export generated.
+- EN route present.
+- DA route present.
+- System-card CTA alignment rule added for Open preview / Open pilot / walkthrough note.
+- No new content sections or strategy changes.
+- Guardrails preserved: no Google Fonts, no Tailwind CDN, no public HamdamBridge URL, no fake metrics.

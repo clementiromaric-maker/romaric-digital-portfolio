@@ -1,6 +1,6 @@
 {
   "name": "romaric-clementi-web-digital-portfolio",
-  "version": "5.9.3",
+  "version": "5.10.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
