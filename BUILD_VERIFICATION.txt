@@ -1,36 +1,55 @@
-Romaric Clementi Web Digital Portfolio V5.11.2
-Deployment Registry & Lockfile Portability Fix
+Romaric Clementi Web Digital Portfolio V5.11.6
+Final Source, Build, Cross-Device, Accessibility, Danish-Language and Deployment Hardening
 
 SOURCE
-- Built directly from V5.11.1 QA, Metadata, Language Routing & Deployment Hardening.
-- The uploaded V5.11.1 source ZIP was inspected before editing.
+- Built directly from V5.11.5 Case Study Rhythm Compression.
+- The uploaded V5.11.5 source was inspected before editing.
 - No rebuild from memory.
 
-ROOT CAUSE CORRECTED
-- V5.11.1 lockfiles contained OpenAI-internal Artifactory tarball URLs generated inside the build sandbox.
-- Cloudflare could not reliably reach those non-portable internal URLs and failed with ERR_SOCKET_TIMEOUT.
-- pnpm-lock.yaml now keeps package integrity hashes without environment-specific tarball URLs.
-- package-lock.json now uses standard https://registry.npmjs.org/ resolved URLs.
-- .npmrc selects the public npm registry and adds resilient fetch retry/timeout values.
+V5.11.6 CHANGES
+- Added robust wrapping to evidence-board cards and labels.
+- Increased mobile EN/DA link hit areas to at least 24 x 44 CSS pixels.
+- Preserved responsive navigation visibility while enlarging real pointer areas.
+- Added scripts/postbuild.mjs and the postbuild lifecycle command.
+- Exported Danish HTML now contains lang="da" statically.
+- Applied a focused native-Danish language cleanup.
+- Replaced stale package documentation with an accurate current-version record.
 
-UNCHANGED APPLICATION
-- All 18 application/design/content source files match V5.11.1 byte-for-byte.
-- No visual, copy, route, metadata, schema, privacy or external-link behaviour changed.
+PRESERVED
+- V5.11 editorial systems storytelling.
+- Signature unclear-input to clear-system hero visual.
+- Quick scan / Deep dive control.
+- Dedicated EN/DA Marzieh case routes.
+- Desktop hero zoom containment.
+- Case chapter-marker spacing and no-hyphen hero typography.
+- Re-composed flagship Marzieh homepage snapshot.
+- Case-study desktop rhythm compression.
+- IP-safe public project-link behaviour.
+- Deployment-registry portability and public npm registry configuration.
 
-INSTALL AND BUILD VERIFICATION
-- Node 22.16.0.
-- pnpm 10.11.1.
-- Fresh pnpm install --frozen-lockfile --offline: passed.
-- Lockfile reported up to date; 28 packages installed from cache with 0 downloads.
-- Next.js 16.2.7 production build: passed.
-- npm ci --offline: passed.
-- npm audit --offline: 0 known vulnerabilities.
-- package.json and package-lock.json JSON parsing: passed.
-- pnpm-lock.yaml YAML parsing: passed.
-- Internal registry URL scan: 0 matches.
-- pnpm tarball field scan: 0 matches.
+FINAL LOCAL QA
+- Node: 22.16.0.
+- Next.js: 16.2.7.
+- npm clean dependency installation completed during the audit.
+- npm production build: passed.
+- Automatic Danish HTML postbuild patch: passed for 2 exported pages.
+- npm audit --omit=dev: 0 known vulnerabilities.
+- Static HTML pages audited: 7.
+- Missing titles/descriptions/canonicals: 0.
+- H1-count errors: 0.
+- Duplicate IDs: 0.
+- JSON-LD parse errors: 0.
+- Images without alt text or explicit dimensions: 0.
+- Broken internal routes, page anchors or local assets: 0.
+- Unsafe target=_blank links: 0.
+- 404 noindex errors: 0.
+- Forbidden pilot URLs, internal registry URLs, Google Fonts and Tailwind CDN references: 0.
+- Full rendered matrix: 98 route/view/viewport combinations, 320px to 1440px, 0 document overflow, 0 visible internal overflow and 0 undersized detected links/buttons.
+- Final Danish rendered matrix after native-language polish: 42 route/view/viewport combinations, 0 problems.
+- Mobile EN/DA targets: at least 24px wide and 44px high.
+- Source/public files over 1 MB: 0.
 
-STATIC EXPORT
+EXPECTED STATIC EXPORT
 - /
 - /da/
 - /work/marzieh-nail-atelier/
@@ -40,33 +59,11 @@ STATIC EXPORT
 - /robots.txt
 - /sitemap.xml
 
-STATIC QA
-- 7 rendered HTML files checked.
-- 0 missing internal routes or local assets.
-- 0 broken in-page anchors.
-- 0 duplicate IDs.
-- 0 images without alt text.
-- 0 unsafe target="_blank" links.
-- JSON-LD parsed successfully.
-- 0 public Clementi AI Workflow, FørsteMatch or HamdamBridge URLs.
-- 0 Google Fonts or Tailwind CDN references.
-
-PRESERVED
-- V5.11 editorial systems storytelling.
-- Signature unclear-input to clear-system hero visual.
-- Quick scan / Deep dive control.
-- Dedicated EN/DA Marzieh case routes.
-- V5.10.3 IP-safe public portfolio mode.
-- V5.10.4 Marzieh snapshot containment.
-- V5.10.5 Android contact fit.
-- V5.10.6 system-card alignment.
-- V5.10.7 platform workflow and mobile hardening.
-- V5.11.1 metadata, language-routing and deployment hardening.
-
 FINAL ZIP EXCLUSIONS
 - node_modules
 - .next
 - out
 
 LIVE QA STILL REQUIRED
-- Real deployed Android Chrome and iPhone Safari verification remains required before outreach.
+- Final verification on the deployed Cloudflare URL using real Android Chrome, iPhone Safari and desktop Chrome/Edge.
+- Confirm the deployed Cloudflare build executes the pnpm frozen-lockfile installation and postbuild lifecycle successfully.

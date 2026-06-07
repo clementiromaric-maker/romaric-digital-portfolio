@@ -661,7 +661,7 @@ button,
 .case-browser{margin-top:clamp(2rem,5vw,4rem);border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--white);box-shadow:var(--shadow)}
 .case-browser__canvas{background:linear-gradient(135deg,#e9dece,#fbf8f1);padding:clamp(.7rem,2vw,1.4rem)}
 .case-browser__canvas img{width:100%;max-height:760px;object-fit:contain;object-position:top center;border-radius:12px;border:1px solid var(--line-soft);background:#fff}
-.case-chapter{padding:clamp(4rem,8vw,7.5rem) 0}
+.case-chapter{padding:clamp(4rem,7.2vw,6.75rem) 0}
 .case-chapter__grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,6vw,5rem);align-items:start}
 .case-chapter__title{position:relative;padding-left:clamp(2.6rem,5vw,4.6rem)}
 .case-number{position:absolute;left:0;top:.1rem;font-family:var(--font-fraunces),serif;font-size:clamp(2rem,4.5vw,3.8rem);font-weight:900;line-height:1;color:color-mix(in srgb,var(--clay) 70%,var(--paper-3))}
@@ -785,3 +785,137 @@ button,
 .not-found-card>p:not(.mono){color:var(--ink-soft);margin:0 auto;max-width:42ch}
 .not-found-actions{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin-top:1.6rem}
 @media(max-width:520px){.not-found-actions .btn{width:100%}}
+
+
+/* ---- V5.11.3 desktop hero zoom and medium-width containment ---- */
+.hero__grid{
+  grid-template-columns:minmax(0,1.38fr) minmax(320px,.82fr);
+  gap:clamp(1.55rem,3.6vw,3.25rem);
+}
+.hero__grid > *{min-width:0}
+.hero h1{
+  max-width:100%;
+  font-size:clamp(3.05rem,7.2vw,6rem);
+  overflow-wrap:normal;
+  word-break:normal;
+}
+.spec{min-width:0}
+
+@media(max-width:1120px) and (min-width:881px){
+  .hero__grid{
+    grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr);
+    gap:clamp(1.35rem,2.8vw,2.15rem);
+  }
+  .hero h1{font-size:clamp(3rem,6.85vw,4.95rem)}
+  .lede{font-size:clamp(1.18rem,2.15vw,1.55rem)}
+  .spec{padding:1.25rem 1.2rem 1.05rem}
+}
+
+@media(max-width:880px){
+  .hero__grid{grid-template-columns:minmax(0,1fr);gap:2.2rem}
+  .hero h1{max-width:12.5ch}
+  .spec{width:100%;max-width:42rem}
+}
+
+@media(max-width:480px){
+  .hero h1{
+    max-width:100%;
+    font-size:clamp(2.65rem,14.2vw,3.25rem);
+    line-height:.94;
+  }
+}
+
+/* ---- V5.11.4 case typography, chapter-marker spacing and flagship mockup polish ---- */
+.case-hero h1{
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:normal;
+  text-wrap:balance;
+}
+.case-chapter h2{
+  hyphens:none;
+  word-break:normal;
+  overflow-wrap:break-word;
+}
+.case-chapter__title{
+  display:grid;
+  grid-template-columns:clamp(3.8rem,5.2vw,5.2rem) minmax(0,1fr);
+  column-gap:clamp(.75rem,1.4vw,1.2rem);
+  align-items:start;
+  padding-left:0;
+}
+.case-number{
+  position:static;
+  grid-column:1;
+  grid-row:1 / span 2;
+  align-self:start;
+  justify-self:start;
+  margin-top:-.08em;
+}
+.case-chapter__title>.mono{
+  grid-column:2;
+  margin:.2rem 0 0;
+  line-height:1.35;
+}
+.case-chapter__title h2{
+  grid-column:2;
+  margin:.65rem 0 0;
+}
+@media(max-width:520px){
+  .case-chapter__title{
+    grid-template-columns:2.55rem minmax(0,1fr);
+    column-gap:.65rem;
+    padding-left:0;
+  }
+  .case-chapter__title>.mono{font-size:.62rem;letter-spacing:.11em}
+  .case-chapter__title h2{margin-top:.5rem}
+}
+
+
+/* ---- V5.11.5 case-study desktop rhythm compression ----
+   Keeps the 4rem mobile floor while reducing fluid/max chapter spacing by roughly 10% on laptop and desktop. */
+
+
+/* ---- V5.11.6 final cross-device QA hardening ---- */
+/* Prevent long Danish evidence labels from extending beyond their grid cards. */
+.evidence-board__grid article,
+.evidence-board__grid b,
+.evidence-board__grid small{
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+
+/* WCAG-sized pointer areas without overriding responsive visibility rules. */
+.navlinks > a:not(.btn),
+.case-nav > a:not(.btn),
+.case-back,
+.case-live-link,
+.contact .meta a{
+  min-width:24px;
+  min-height:24px;
+  align-items:center;
+}
+.lang-switch a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:24px;
+  min-height:24px;
+}
+
+@media(max-width:760px){
+  .lang-switch{
+    padding-block:0;
+    padding-inline:.12rem;
+    gap:0;
+  }
+  .lang-switch a{
+    min-width:24px;
+    min-height:44px;
+  }
+  .lang-switch > span{padding-inline:0}
+}
+.contact .meta a{
+  display:inline-flex;
+  align-items:center;
+}

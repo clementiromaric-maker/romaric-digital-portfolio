@@ -1,25 +1,39 @@
-# Romaric Clementi Web Digital Portfolio V5.11.2
+# Romaric Clementi Web Digital Portfolio V5.11.6
 
-Deployment Registry & Lockfile Portability Fix built directly from V5.11.1 QA, Metadata, Language Routing & Deployment Hardening.
+Final Source, Build, Cross-Device, Accessibility, Danish-Language and Deployment Hardening, built directly from V5.11.5 Case Study Rhythm Compression.
 
 ## Purpose
-Preserve the complete V5.11.1 portfolio while removing environment-specific package-registry URLs that prevented Cloudflare from installing dependencies.
+Preserve the V5.11.5 editorial portfolio while correcting the remaining issues found in a fresh source, build, static-export, rendered-layout, accessibility and package audit.
 
-## V5.11.2 deployment correction
-- Removed every OpenAI-internal Artifactory tarball URL from `pnpm-lock.yaml`.
-- Replaced every environment-specific `package-lock.json` resolved URL with the standard `registry.npmjs.org` URL.
-- Added a portable `.npmrc` selecting the public npm registry with resilient retry and timeout values.
-- Kept all application source, visual design, copy, routes, metadata and public-link behaviour unchanged from V5.11.1.
+## V5.11.6 corrections
+- Prevented long Danish evidence-board labels from overflowing their cards around tablet/laptop widths.
+- Increased the real clickable area of the EN/DA language links while preserving the compact phone header.
+- Preserved responsive visibility rules so mobile navigation items remain correctly hidden.
+- Reinforced 24px minimum pointer areas for relevant text links and 44px-high mobile language controls.
+- Added an automatic post-build step that writes `lang="da"` into the exported Danish HTML, rather than relying only on client-side JavaScript.
+- Applied a focused native-Danish polish to visible technical and portfolio wording.
+- Replaced stale package documentation with an accurate current-version record.
 
-## Preserved V5.11.1 improvements
-- Editorial systems storytelling and signature unclear-input to clear-system visual.
+## Preserved
+- Editorial systems storytelling and the unclear-input to clear-system visual signature.
 - Quick scan / Deep dive control.
 - Dedicated English and Danish Marzieh case-study routes.
-- Corrected Open Graph image, schema, sitemap, robots and 404 handling.
-- Mobile language-switch and 44px control hardening.
-- IP-safe public presentation: Marzieh is the only public external project link.
+- V5.11.3 desktop hero zoom containment.
+- V5.11.4 case typography, chapter-marker spacing and flagship mockup polish.
+- V5.11.5 case-study rhythm compression.
+- IP-safe public presentation: Marzieh is the only publicly linked external project.
 - Clementi AI Workflow, FørsteMatch and HamdamBridge remain walkthrough-on-request only.
 - No Google Fonts, Tailwind CDN, fake metrics, senior-developer claim or AI-expert claim.
+
+## Verified static routes
+- `/`
+- `/da/`
+- `/work/marzieh-nail-atelier/`
+- `/da/arbejde/marzieh-nail-atelier/`
+- `/_not-found`
+- `/icon.png`
+- `/robots.txt`
+- `/sitemap.xml`
 
 ## Cloudflare build settings
 Build variables:
@@ -42,7 +56,9 @@ Deploy command:
 pnpm dlx wrangler deploy --assets ./out --compatibility-date 2026-06-06
 ```
 
-After changing the source package, clear the Cloudflare build cache before redeploying.
+The `postbuild` lifecycle script runs automatically after `next build` and patches the exported Danish pages to use the correct static HTML language attribute.
+
+Clear the Cloudflare build cache before redeploying a replaced source package.
 
 ## Final live check
-After deployment, verify Android Chrome, iPhone Safari, desktop Chrome/Edge, the EN/DA switch, case-study links and social sharing preview.
+After deployment, verify Android Chrome, iPhone Safari and desktop Chrome/Edge, including the sticky header, EN/DA switch, Quick scan / Deep dive control, case-study links, Danish HTML language and social-sharing preview.

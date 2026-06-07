@@ -1,11 +1,12 @@
 {
   "name": "romaric-clementi-web-digital-portfolio",
-  "version": "5.11.2",
+  "version": "5.11.6",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postbuild": "node scripts/postbuild.mjs"
   },
   "dependencies": {
     "@fontsource-variable/fraunces": "5.2.9",
