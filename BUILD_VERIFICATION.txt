@@ -1,45 +1,34 @@
-Romaric Clementi Web Digital Portfolio V5.11.1
-QA, Metadata, Language Routing & Deployment Hardening
+Romaric Clementi Web Digital Portfolio V5.11.2
+Deployment Registry & Lockfile Portability Fix
 
 SOURCE
-- Built directly from V5.11.0 Editorial Systems Storytelling.
-- Source ZIP inspected before editing.
+- Built directly from V5.11.1 QA, Metadata, Language Routing & Deployment Hardening.
+- The uploaded V5.11.1 source ZIP was inspected before editing.
 - No rebuild from memory.
 
-CORRECTED
-- Reproducible pnpm deployment: added pnpm-lock.yaml and pnpm-specific PostCSS 8.5.10 override.
-- Open Graph image rebuilt with safe text boundaries and current Marzieh proof.
-- Danish Marzieh live links corrected to https://marziehnail-atelier.dk/da/.
-- Danish runtime document language correction added; Danish page content remains wrapped with lang="da".
-- Person schema URL corrected to the portfolio URL; Marzieh remains workExample.
-- EN and DA case schemas now describe the case-study routes and reference the live Marzieh site as the subject.
-- Added robots.txt, sitemap.xml and a custom noindex 404 page.
-- Mobile language switch selector made robust by limiting hidden nav links to direct children.
-- Quick scan / Deep dive controls increased to 44px minimum height.
-- Quick-scan visible section numbers now remain sequential.
-- Explicit image width/height, decoding and below-fold lazy loading added.
-- “npm-served fonts” wording corrected to locally bundled fonts.
+ROOT CAUSE CORRECTED
+- V5.11.1 lockfiles contained OpenAI-internal Artifactory tarball URLs generated inside the build sandbox.
+- Cloudflare could not reliably reach those non-portable internal URLs and failed with ERR_SOCKET_TIMEOUT.
+- pnpm-lock.yaml now keeps package integrity hashes without environment-specific tarball URLs.
+- package-lock.json now uses standard https://registry.npmjs.org/ resolved URLs.
+- .npmrc selects the public npm registry and adds resilient fetch retry/timeout values.
 
-PRESERVED
-- V5.11 editorial systems storytelling.
-- Signature unclear-input to clear-system hero visual.
-- Quick scan / Deep dive control.
-- Dedicated EN/DA Marzieh case routes.
-- V5.10.3 IP-safe public portfolio mode.
-- V5.10.4 Marzieh snapshot containment.
-- V5.10.5 Android contact fit.
-- V5.10.6 system-card alignment.
-- V5.10.7 platform workflow and mobile hardening.
-- Marzieh Nail Atelier remains the only public external project link.
-- Clementi AI Workflow, FørsteMatch and HamdamBridge remain walkthrough-on-request.
+UNCHANGED APPLICATION
+- All 18 application/design/content source files match V5.11.1 byte-for-byte.
+- No visual, copy, route, metadata, schema, privacy or external-link behaviour changed.
 
-BUILD VERIFICATION
+INSTALL AND BUILD VERIFICATION
 - Node 22.16.0.
-- pnpm 10.11.1 frozen-lock installation passed.
-- Next.js 16.2.7 production build passed.
-- npm package-lock verification passed.
-- pnpm audit: 0 known vulnerabilities after the transitive PostCSS override.
-- npm audit: 0 known vulnerabilities.
+- pnpm 10.11.1.
+- Fresh pnpm install --frozen-lockfile --offline: passed.
+- Lockfile reported up to date; 28 packages installed from cache with 0 downloads.
+- Next.js 16.2.7 production build: passed.
+- npm ci --offline: passed.
+- npm audit --offline: 0 known vulnerabilities.
+- package.json and package-lock.json JSON parsing: passed.
+- pnpm-lock.yaml YAML parsing: passed.
+- Internal registry URL scan: 0 matches.
+- pnpm tarball field scan: 0 matches.
 
 STATIC EXPORT
 - /
@@ -52,23 +41,32 @@ STATIC EXPORT
 - /sitemap.xml
 
 STATIC QA
-- CSS parsed successfully.
+- 7 rendered HTML files checked.
 - 0 missing internal routes or local assets.
 - 0 broken in-page anchors.
 - 0 duplicate IDs.
 - 0 images without alt text.
 - 0 unsafe target="_blank" links.
-- JSON-LD parsed successfully on all indexed routes.
-- No public Clementi AI Workflow, FørsteMatch or HamdamBridge URLs.
-- No Google Fonts or Tailwind CDN.
-- Current Marzieh proof retained: 5.0 rating and 16 Google reviews.
+- JSON-LD parsed successfully.
+- 0 public Clementi AI Workflow, FørsteMatch or HamdamBridge URLs.
+- 0 Google Fonts or Tailwind CDN references.
 
-VISUAL QA STATUS
-- Existing V5.11 desktop/mobile screenshots were reviewed and remain the visual baseline.
-- V5.11.1 does not redesign the page; visual changes are limited to the OG image, 44px view controls and small QA corrections.
-- Real deployed Android Chrome and iPhone Safari verification is still required before outreach.
+PRESERVED
+- V5.11 editorial systems storytelling.
+- Signature unclear-input to clear-system hero visual.
+- Quick scan / Deep dive control.
+- Dedicated EN/DA Marzieh case routes.
+- V5.10.3 IP-safe public portfolio mode.
+- V5.10.4 Marzieh snapshot containment.
+- V5.10.5 Android contact fit.
+- V5.10.6 system-card alignment.
+- V5.10.7 platform workflow and mobile hardening.
+- V5.11.1 metadata, language-routing and deployment hardening.
 
 FINAL ZIP EXCLUSIONS
 - node_modules
 - .next
 - out
+
+LIVE QA STILL REQUIRED
+- Real deployed Android Chrome and iPhone Safari verification remains required before outreach.
