@@ -25,5 +25,10 @@ export const metadata = {
 };
 
 export default function DanishLayout({ children }) {
-  return <div lang="da">{children}</div>;
+  return (
+    <>
+      <script dangerouslySetInnerHTML={{ __html: "document.documentElement.lang='da';" }} />
+      <div lang="da">{children}</div>
+    </>
+  );
 }

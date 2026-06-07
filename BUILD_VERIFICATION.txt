@@ -1,28 +1,74 @@
-Romaric Clementi Web Digital Portfolio V5.10.3
+Romaric Clementi Web Digital Portfolio V5.11.1
+QA, Metadata, Language Routing & Deployment Hardening
 
-QA status:
-- Source package inspected before editing.
-- Patch scope limited to IP-safe public portfolio exposure.
-- EN route present.
-- DA route present.
-- V5.10.2 Danish native polish preserved.
-- V5.10.1 system-card CTA alignment preserved.
-- Marzieh Nail Atelier remains the only public external project link in the portfolio cards and JSON-LD work examples.
-- Clementi AI Workflow and FørsteMatch are now walkthrough-on-request in the public cards.
-- Public source constants and JSON-LD no longer include Clementi AI Workflow or FørsteMatch URLs.
-- HamdamBridge remains walkthrough-only.
-- Guardrails preserved: no Google Fonts, no Tailwind CDN, no public HamdamBridge URL, no fake metrics, no senior-developer or AI-expert overclaim.
+SOURCE
+- Built directly from V5.11.0 Editorial Systems Storytelling.
+- Source ZIP inspected before editing.
+- No rebuild from memory.
 
-Build verification:
-- npm install completed in the sandbox for local verification.
-- npm run build completed successfully with Next.js 16.2.7.
-- Static export generated routes: /, /da, /_not-found and /icon.png.
+CORRECTED
+- Reproducible pnpm deployment: added pnpm-lock.yaml and pnpm-specific PostCSS 8.5.10 override.
+- Open Graph image rebuilt with safe text boundaries and current Marzieh proof.
+- Danish Marzieh live links corrected to https://marziehnail-atelier.dk/da/.
+- Danish runtime document language correction added; Danish page content remains wrapped with lang="da".
+- Person schema URL corrected to the portfolio URL; Marzieh remains workExample.
+- EN and DA case schemas now describe the case-study routes and reference the live Marzieh site as the subject.
+- Added robots.txt, sitemap.xml and a custom noindex 404 page.
+- Mobile language switch selector made robust by limiting hidden nav links to direct children.
+- Quick scan / Deep dive controls increased to 44px minimum height.
+- Quick-scan visible section numbers now remain sequential.
+- Explicit image width/height, decoding and below-fold lazy loading added.
+- “npm-served fonts” wording corrected to locally bundled fonts.
 
-Static QA scan:
-- Required source files present.
-- No public Clementi AI Workflow URL in app/public source.
-- No public FørsteMatch URL in app/public source.
-- No public HamdamBridge URL in app/public source.
-- No direct public pilot/preview CTA labels remain.
-- No missing local asset references found.
-- No node_modules, .next or out included in the final ZIP.
+PRESERVED
+- V5.11 editorial systems storytelling.
+- Signature unclear-input to clear-system hero visual.
+- Quick scan / Deep dive control.
+- Dedicated EN/DA Marzieh case routes.
+- V5.10.3 IP-safe public portfolio mode.
+- V5.10.4 Marzieh snapshot containment.
+- V5.10.5 Android contact fit.
+- V5.10.6 system-card alignment.
+- V5.10.7 platform workflow and mobile hardening.
+- Marzieh Nail Atelier remains the only public external project link.
+- Clementi AI Workflow, FørsteMatch and HamdamBridge remain walkthrough-on-request.
+
+BUILD VERIFICATION
+- Node 22.16.0.
+- pnpm 10.11.1 frozen-lock installation passed.
+- Next.js 16.2.7 production build passed.
+- npm package-lock verification passed.
+- pnpm audit: 0 known vulnerabilities after the transitive PostCSS override.
+- npm audit: 0 known vulnerabilities.
+
+STATIC EXPORT
+- /
+- /da/
+- /work/marzieh-nail-atelier/
+- /da/arbejde/marzieh-nail-atelier/
+- /_not-found
+- /icon.png
+- /robots.txt
+- /sitemap.xml
+
+STATIC QA
+- CSS parsed successfully.
+- 0 missing internal routes or local assets.
+- 0 broken in-page anchors.
+- 0 duplicate IDs.
+- 0 images without alt text.
+- 0 unsafe target="_blank" links.
+- JSON-LD parsed successfully on all indexed routes.
+- No public Clementi AI Workflow, FørsteMatch or HamdamBridge URLs.
+- No Google Fonts or Tailwind CDN.
+- Current Marzieh proof retained: 5.0 rating and 16 Google reviews.
+
+VISUAL QA STATUS
+- Existing V5.11 desktop/mobile screenshots were reviewed and remain the visual baseline.
+- V5.11.1 does not redesign the page; visual changes are limited to the OG image, 44px view controls and small QA corrections.
+- Real deployed Android Chrome and iPhone Safari verification is still required before outreach.
+
+FINAL ZIP EXCLUSIONS
+- node_modules
+- .next
+- out

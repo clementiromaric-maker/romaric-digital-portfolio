@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const liveLinks = {
   marzieh: 'https://marziehnail-atelier.dk/en/',
@@ -24,8 +24,8 @@ const proofSignals = [
     label: 'DA / EN plus Farsi/English pilot logic',
   },
   {
-    value: 'Cloudflare + GitHub',
-    label: 'Static builds, assets, metadata and QA',
+    value: 'GitHub / GitLab aware',
+    label: 'Source packages, version notes, deploy QA and handover',
   },
   {
     value: 'Operations backbone',
@@ -38,7 +38,7 @@ const roleFitLanes = [
   {
     label: '01',
     title: 'Website production support',
-    text: 'Page builds, service sections, content hierarchy, forms, local proof, CMS-ready structure and mobile checks.',
+    text: 'Page builds, service/product sections, Webflow/Shopify/CMS support, local proof, content structure and mobile checks.',
   },
   {
     label: '02',
@@ -48,7 +48,7 @@ const roleFitLanes = [
   {
     label: '03',
     title: 'Digital workflow and QA support',
-    text: 'Link checks, anchor checks, deployment notes, source material cleanup, version notes and practical acceptance checks.',
+    text: 'GitHub/GitLab-style workflow support, link checks, anchor checks, deployment notes, source cleanup and practical acceptance checks.',
   },
   {
     label: '04',
@@ -148,7 +148,7 @@ const weeks = [
   {
     label: 'Week 02',
     title: 'Support production',
-    text: 'Help with page updates, service/content structure, landing-page copy, internal links, UX fixes and multilingual cleanup.',
+    text: 'Help with page updates, product/service pages, Webflow/Shopify/CMS structure, GitHub/GitLab handover notes, internal links, UX fixes and multilingual cleanup.',
   },
   {
     label: 'Week 03',
@@ -163,7 +163,12 @@ const weeks = [
 ];
 
 export default function Home() {
+  const [viewMode, setViewMode] = useState('quick');
+
   useEffect(() => {
+    if (['#approach', '#system', '#capabilities'].includes(window.location.hash)) {
+      setViewMode('deep');
+    }
     const els = Array.from(document.querySelectorAll('.reveal'));
     if (!('IntersectionObserver' in window)) {
       els.forEach((e) => e.classList.add('in'));
@@ -198,10 +203,10 @@ export default function Home() {
           </a>
           <nav className="navlinks" aria-label="Primary navigation">
             <a href="#work">Work</a>
-            <a href="#approach">Approach</a>
+            <a href="#approach" onClick={() => setViewMode('deep')}>Approach</a>
             <a href="#fit">Fit</a>
             <a href="#process">First 30 days</a>
-            <span className="lang-switch" aria-label="Language switch">
+            <span className="lang-switch" role="group" aria-label="Language switch">
               <a aria-current="page" href="/">EN</a>
               <span aria-hidden="true">/</span>
               <a href="/da/">DA</a>
@@ -213,7 +218,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main>
+      <main className={`portfolio-view is-${viewMode}`}>
         <section className="hero" id="top" aria-labelledby="hero-title">
           <div className="wrap hero__grid">
             <div>
@@ -231,7 +236,7 @@ export default function Home() {
                 I find the real friction behind messy briefs, then turn it into useful first systems teams can test, hand over and improve.
               </p>
               <p className="sub reveal" style={{ transitionDelay: '.3s' }}>
-                Website production, UX structure and working first versions for teams with messy input and real deadlines.
+                Website production, UX structure, Webflow/Shopify/CMS support and working first versions for teams with messy input and real deadlines.
               </p>
               <div className="hero__cta reveal" style={{ transitionDelay: '.38s' }}>
                 <a className="btn" href="#work">
@@ -241,13 +246,25 @@ export default function Home() {
                   How I would start
                 </a>
               </div>
+              <div className="view-switch reveal" style={{ transitionDelay: '.46s' }} role="group" aria-label="Choose portfolio depth">
+                <span className="mono">Choose your view</span>
+                <button type="button" aria-pressed={viewMode === 'quick'} onClick={() => setViewMode('quick')}>Quick scan</button>
+                <button type="button" aria-pressed={viewMode === 'deep'} onClick={() => setViewMode('deep')}>Deep dive</button>
+              </div>
             </div>
 
             <aside className="spec reveal" style={{ transitionDelay: '.28s' }} aria-label="Portfolio quick facts">
+              <div className="signal-map" aria-label="Unclear input becoming a clear digital system">
+                <div className="signal-map__input" aria-hidden="true">
+                  <span>brief</span><span>content</span><span>trust</span><span>booking</span><span>QA</span>
+                </div>
+                <div className="signal-map__route" aria-hidden="true"><i /></div>
+                <div className="signal-map__output"><span className="mono">Output</span><b>Clear system</b><small>usable · reviewable · ready to hand over</small></div>
+              </div>
               <dl>
                 <div className="row">
                   <dt className="mono">Best fit</dt>
-                  <dd>Website production, UX implementation, digital systems, delivery support and QA</dd>
+                  <dd>Website production, UX implementation, Webflow/Shopify/CMS support, delivery support and QA</dd>
                 </div>
                 <div className="row">
                   <dt className="mono">Proof</dt>
@@ -316,16 +333,20 @@ export default function Home() {
                       Care You Remember.
                     </h3>
                     <p>A refined bilingual presence with clear services, trust signals and a calm booking path.</p>
-                    <a className="pill" href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">
-                      Visit live site
-                    </a>
+                    <div className="case-actions">
+                      <a className="pill" href="/work/marzieh-nail-atelier/">View case study</a>
+                      <a className="case-live-link" href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">Live site ↗</a>
+                    </div>
                   </div>
                   <div className="browser__media">
                     <img
                       src="/assets/marzieh-homepage-ui-snapshot.webp"
                       alt="Marzieh Nail Atelier homepage UI snapshot showing navigation, hero, booking path and service cards"
-                      className="ui-shot"
+                      className="ui-shot case-transition-image"
+                      width="1600"
+                      height="1050"
                       loading="eager"
+                      decoding="async"
                     />
                   </div>
                 </div>
@@ -406,20 +427,21 @@ export default function Home() {
 
                 <div className="gallery" aria-label="Marzieh Nail Atelier UI snapshots">
                   <div className="g">
-                    <img src="/assets/marzieh-services-ui-snapshot.webp" alt="Marzieh Nail Atelier services UI snapshot" loading="lazy" />
+                    <img src="/assets/marzieh-services-ui-snapshot.webp" width="760" height="520" decoding="async" alt="Marzieh Nail Atelier services UI snapshot" loading="lazy" />
                   </div>
                   <div className="g">
-                    <img src="/assets/marzieh-work-ui-snapshot.webp" alt="Marzieh Nail Atelier work gallery UI snapshot" loading="lazy" />
+                    <img src="/assets/marzieh-work-ui-snapshot.webp" width="760" height="520" decoding="async" alt="Marzieh Nail Atelier work gallery UI snapshot" loading="lazy" />
                   </div>
                   <div className="g">
-                    <img src="/assets/marzieh-booking-ui-snapshot.webp" alt="Marzieh Nail Atelier visit and booking UI snapshot" loading="lazy" />
+                    <img src="/assets/marzieh-booking-ui-snapshot.webp" width="760" height="520" decoding="async" alt="Marzieh Nail Atelier visit and booking UI snapshot" loading="lazy" />
                   </div>
                 </div>
 
                 <div className="case-foot">
-                  <a className="linkclay case-cta" href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">
-                    Open Marzieh Nail Atelier →
-                  </a>
+                  <div className="case-foot__actions">
+                    <a className="linkclay case-cta" href="/work/marzieh-nail-atelier/">View full case study →</a>
+                    <a className="linkclay case-secondary-cta" href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">Open live website ↗</a>
+                  </div>
                   <div className="stat" aria-label="Public proof facts">
                     <div className="s">
                       <b>5.0</b>
@@ -481,10 +503,17 @@ export default function Home() {
                 </article>
               ))}
             </div>
+
+            {viewMode === 'quick' ? (
+              <div className="deep-dive-gate reveal" aria-live="polite">
+                <div><p className="mono">More behind the screens</p><h3>Need the reasoning, QA evidence and operating logic?</h3><p>The quick scan keeps the decision path short. Deep dive reveals how I map friction, structure systems and prepare work for handover.</p></div>
+                <button className="btn" type="button" onClick={() => setViewMode('deep')}>Open deep dive ↓</button>
+              </div>
+            ) : null}
           </div>
         </section>
 
-        <section id="approach">
+        <section id="approach" className="deep-dive-section">
           <div className="wrap">
             <div className="sec-head">
               <span className="sec-no">02</span>
@@ -505,7 +534,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="friction-lens reveal" aria-label="Hidden friction lens">
+            <div className="friction-lens reveal" aria-label="Friction-mapping lens">
               <div>
                 <p className="mono">Hidden friction lens</p>
                 <h3>I do not only build from the brief.</h3>
@@ -560,7 +589,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="system" aria-labelledby="system-title">
+        <section id="system" className="deep-dive-section" aria-labelledby="system-title">
           <div className="wrap">
             <div className="sec-head">
               <span className="sec-no">03</span>
@@ -593,7 +622,7 @@ export default function Home() {
         <section id="fit">
           <div className="wrap">
             <div className="sec-head">
-              <span className="sec-no">04</span>
+              <span className="sec-no">{viewMode === 'quick' ? '02' : '04'}</span>
               <h2>Where I fit</h2>
               <p className="note">A practical decision path for agencies, studios and startups.</p>
             </div>
@@ -627,9 +656,9 @@ export default function Home() {
               </article>
               <article>
                 <span className="mono">Webflow / WordPress / Shopify shops</span>
-                <h3>Structure that transfers across tools</h3>
+                <h3>CMS and ecommerce production support</h3>
                 <p>
-                  Useful for content hierarchy, forms, service pages, SEO basics, mobile checks and CMS-ready thinking.
+                  Useful for page updates, product/service pages, content hierarchy, forms, SEO basics, mobile checks and CMS-ready thinking.
                 </p>
               </article>
               <article>
@@ -643,7 +672,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="capabilities">
+        <section id="capabilities" className="deep-dive-section">
           <div className="wrap">
             <div className="sec-head">
               <span className="sec-no">05</span>
@@ -656,16 +685,32 @@ export default function Home() {
                 <p className="mono">Technical implementation proof</p>
                 <h3>This portfolio is also a working build sample.</h3>
                 <p>
-                  Static Next.js export, Cloudflare deployment, local assets, npm-served fonts, Open Graph metadata, responsive layout, internal anchors and JSON-LD awareness.
+                  Static Next.js export, Cloudflare deployment, local assets, locally bundled fonts, Open Graph metadata, responsive layout, internal anchors, JSON-LD awareness and GitHub/GitLab-style handover discipline.
                 </p>
                 <p className="implementation-note">
                   Not a senior-engineering claim. A working sample of clean static web build, packaging and practical QA discipline.
                 </p>
               </div>
               <div className="implementation-chips" aria-label="Technical implementation signals">
-                {['Static export', 'Cloudflare', 'GitHub flow', 'Local assets', 'OG / metadata', 'Responsive QA'].map((item) => (
+                {['Static export', 'Cloudflare', 'GitHub / GitLab flow', 'Local assets', 'OG / metadata', 'Responsive QA'].map((item) => (
                   <b key={item}>{item}</b>
                 ))}
+              </div>
+            </div>
+
+            <div className="evidence-board reveal" aria-label="Delivery evidence board">
+              <div className="evidence-board__intro">
+                <p className="mono">Evidence board</p>
+                <h3>The work behind the screen.</h3>
+                <p>Small production artefacts that make a build easier to review, deploy and hand over.</p>
+              </div>
+              <div className="evidence-board__grid">
+                <article><span>01</span><b>Route map</b><small>Pages, anchors and decision paths</small></article>
+                <article><span>02</span><b>Mobile QA</b><small>Android, iPhone and narrow-width checks</small></article>
+                <article><span>03</span><b>Language parity</b><small>EN / DA routes and visible-copy review</small></article>
+                <article><span>04</span><b>Deploy note</b><small>Build command, version and release state</small></article>
+                <article><span>05</span><b>Owner control</b><small>Clear sources, links and next decisions</small></article>
+                <article><span>06</span><b>Handover package</b><small>Clean source, README and verification</small></article>
               </div>
             </div>
 
@@ -679,6 +724,9 @@ export default function Home() {
                   'Basic JavaScript',
                   'Cloudflare Pages / Workers',
                   'GitHub deploy',
+                  'GitLab-style workflow',
+                  'Webflow support',
+                  'Shopify support',
                   'SEO metadata',
                   'JSON-LD / schema',
                   'Forms & journeys',
@@ -690,7 +738,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="caveat">
-                Presented honestly: recent builds are custom static and Cloudflare-based. I can learn Webflow, WordPress, Shopify or Umbraco because the content, flow and QA thinking transfers.
+                Presented honestly: recent builds are custom static and Cloudflare-based. I am comfortable around Webflow, Shopify and CMS-style site structures, and with GitHub/GitLab-style workflow, source packages, deployment notes and QA handover.
               </p>
             </div>
           </div>
@@ -699,7 +747,7 @@ export default function Home() {
         <section id="process">
           <div className="wrap">
             <div className="sec-head">
-              <span className="sec-no">06</span>
+              <span className="sec-no">{viewMode === 'quick' ? '03' : '06'}</span>
               <h2>How I would start, first 30 days</h2>
               <p className="note">A simple structure that makes it easy to say yes. Tasks adapt to the team.</p>
             </div>
@@ -719,7 +767,7 @@ export default function Home() {
           <div className="wrap">
             <div className="contact reveal">
               <div className="contact__identity">
-                <img src="/assets/romaric-portrait.webp" alt="Portrait of Romaric Clementi" loading="lazy" />
+                <img src="/assets/romaric-portrait.webp" width="512" height="512" decoding="async" alt="Portrait of Romaric Clementi" loading="lazy" />
                 <div>
                   <p className="mono">Contact</p>
                   <b>Romaric Clementi</b>
@@ -729,10 +777,17 @@ export default function Home() {
                 Let&apos;s build the first <em>useful</em> version.
               </h2>
               <div className="row2">
-                <a className="btn" href="mailto:clementiromaric@protonmail.com">
-                  clementiromaric@protonmail.com
+                <a className="btn email-cta" href="mailto:clementiromaric@protonmail.com">
+                  <span className="email-cta__desktop">clementiromaric@protonmail.com</span>
+                  <span className="email-cta__mobile">Email me</span>
                 </a>
                 <div className="meta">
+                  <div className="m contact-email-row">
+                    <span className="mono">Email</span>
+                    <b>
+                      <a href="mailto:clementiromaric@protonmail.com">clementiromaric@protonmail.com</a>
+                    </b>
+                  </div>
                   <div className="m">
                     <span className="mono">Location</span>
                     <b>Greater Copenhagen · Tune, Denmark</b>
@@ -752,7 +807,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="avail">
-                Best fit: website production, UX implementation, working first-version systems, digital delivery support, QA and documentation. Open to scoped project support, digital production roles or a short <b>praktik</b> when that is the cleanest way to test cooperation.
+                Best fit: website production, UX implementation, Webflow/Shopify/CMS support, GitHub/GitLab-style workflow, working first-version systems, digital delivery support, QA and documentation. Open to scoped project support, digital production roles or a short <b>praktik</b> when that is the cleanest way to test cooperation.
               </p>
             </div>
           </div>

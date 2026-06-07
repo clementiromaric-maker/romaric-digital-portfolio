@@ -1,6 +1,6 @@
 {
   "name": "romaric-clementi-web-digital-portfolio",
-  "version": "5.10.3",
+  "version": "5.11.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -19,5 +19,10 @@
   "overrides": {
     "postcss": "8.5.10"
   },
-  "packageManager": "pnpm@10.11.1"
+  "packageManager": "pnpm@10.11.1",
+  "pnpm": {
+    "overrides": {
+      "postcss": "8.5.10"
+    }
+  }
 }

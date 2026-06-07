@@ -73,7 +73,8 @@ const personSchema = {
     'GitHub deployment',
     'AI-assisted prototyping',
   ],
-  url: 'https://marziehnail-atelier.dk/en/',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://romaric-digital-portfolio.clementiromaric.workers.dev',
+  mainEntityOfPage: process.env.NEXT_PUBLIC_SITE_URL || 'https://romaric-digital-portfolio.clementiromaric.workers.dev',
   workExample: [
     'https://marziehnail-atelier.dk/en/',
   ],
@@ -83,7 +84,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Fonts are installed through npm and served from the static build. No Google Fonts or external font requests. */}
+        {/* Fonts are installed through npm and bundled locally into the static build. No Google Fonts or external font requests. */}
       </head>
       <body>
         <script
@@ -96,7 +97,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
         <noscript>
-          <style>{'.reveal{opacity:1!important;transform:none!important}'}</style>
+          <style>{'.reveal{opacity:1!important;transform:none!important}.portfolio-view.is-quick .deep-dive-section{display:block!important}'}</style>
         </noscript>
         {children}
       </body>
