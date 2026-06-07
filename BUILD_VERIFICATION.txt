@@ -1,4 +1,4 @@
-Romaric Clementi Web Digital Portfolio V5.11.6
+Romaric Clementi Web Digital Portfolio V5.11.7
 Final Source, Build, Cross-Device, Accessibility, Danish-Language and Deployment Hardening
 
 SOURCE
@@ -6,7 +6,7 @@ SOURCE
 - The uploaded V5.11.5 source was inspected before editing.
 - No rebuild from memory.
 
-V5.11.6 CHANGES
+V5.11.7 CHANGES
 - Added robust wrapping to evidence-board cards and labels.
 - Increased mobile EN/DA link hit areas to at least 24 x 44 CSS pixels.
 - Preserved responsive navigation visibility while enlarging real pointer areas.
@@ -67,3 +67,9 @@ FINAL ZIP EXCLUSIONS
 LIVE QA STILL REQUIRED
 - Final verification on the deployed Cloudflare URL using real Android Chrome, iPhone Safari and desktop Chrome/Edge.
 - Confirm the deployed Cloudflare build executes the pnpm frozen-lockfile installation and postbuild lifecycle successfully.
+
+V5.11.7 CROSS-PORTFOLIO CHECKS
+- Operations portfolio URL appears only in approved companion links.
+- External links use target=_blank with rel=noopener noreferrer.
+- EN/DA contact and Marzieh case-footer wording added.
+- No protected pilot URLs or commercial methods exposed.

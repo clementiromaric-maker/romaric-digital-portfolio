@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 
 const liveLinks = {
+  operations: 'https://romaric-operations-portfolio.clementiromaric.workers.dev/',
   marzieh: 'https://marziehnail-atelier.dk/da/',
 };
 
@@ -425,6 +426,7 @@ export default function DanishPortfolio() {
                 <p className="mono">Driftsbaggrund</p>
                 <h3>Friktion først. Værktøjer bagefter.</h3>
                 <p>Før jeg bygger en side, et flow eller en prototype, kigger jeg efter svage kilder, uklare ejere og skrøbelige overdragelser. Tallene er baggrundsdokumentation fra ERP, MRP, master data og leverandøropfølgning.</p>
+                <p className="backbone__bridge"><b>Jeg tager QA-, ejerskabs- og overdragelsesdisciplin fra driftsarbejde med ind i digital produktion.</b></p>
                 <p className="sr-only">Arbejdsrytme: Friktion til kilde til ejer til vurdering til genbrug.</p>
                 <div className="method-strip" aria-hidden="true">{['Friktion', 'Kilde', 'Ejer', 'Vurdering', 'Genbrug'].map((step, index) => <span key={step}>{step}{index < 4 ? <i> → </i> : null}</span>)}</div>
               </div>
@@ -511,6 +513,11 @@ export default function DanishPortfolio() {
                 </div>
               </div>
               <p className="avail">Bedste match: website-produktion, UX-implementering, Webflow/Shopify/CMS-support, GitHub/GitLab-lignende arbejdsgange, brugbare første versioner, digital leveringssupport, QA og dokumentation. Åben for afgrænset projektsupport, digitale produktionsroller eller en kort <b>praktik</b>, når det er den reneste måde at teste samarbejdet på.</p>
+              <div className="portfolio-companion">
+                <span className="mono">Tilhørende portfolio</span>
+                <p>Leder I efter min baggrund inden for ERP, stamdata og drift?</p>
+                <a href={liveLinks.operations} target="_blank" rel="noopener noreferrer">Se portfolioen for drift, ERP og arbejdsgange ↗</a>
+              </div>
             </div>
           </div>
         </section>

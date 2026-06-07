@@ -1,0 +1,13 @@
+DIGITAL V5.11.7
+HTML pages: 7
+Links checked: 66
+Approved companion links: 4
+CSS parse errors: 0
+Errors: 0
+Warnings: 0
+
+Production build: passed with Next.js 16.2.7
+Danish postbuild language patch: passed for 2 pages
+npm audit --omit=dev: 0 vulnerabilities
+Approved operations companion URL visible on EN/DA home and EN/DA Marzieh case routes
+Final live cross-site click check required after deployment

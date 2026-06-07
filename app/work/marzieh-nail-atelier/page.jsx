@@ -1,3 +1,4 @@
+const operationsPortfolioUrl = 'https://romaric-operations-portfolio.clementiromaric.workers.dev/';
 const liveUrl = 'https://marziehnail-atelier.dk/en/';
 
 export const metadata = {
@@ -137,7 +138,7 @@ export default function MarziehCaseStudy() {
         </section>
       </main>
 
-      <footer><div className="wrap foot"><div className="mark"><b>RC</b><span>Unclear human and business need → clear digital system.</span></div><div className="fine">Marzieh Nail Atelier case study · Romaric Clementi</div></div></footer>
+      <footer><div className="wrap foot"><div className="mark"><b>RC</b><span>Unclear human and business need → clear digital system.</span></div><div className="case-footer-meta"><a className="companion-foot-link" href={operationsPortfolioUrl} target="_blank" rel="noopener noreferrer">Operations, ERP &amp; Workflow Portfolio ↗</a><div className="fine">Marzieh Nail Atelier case study · Romaric Clementi</div></div></div></footer>
     </>
   );
 }

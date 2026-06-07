@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 
 const liveLinks = {
+  operations: 'https://romaric-operations-portfolio.clementiromaric.workers.dev/',
   marzieh: 'https://marziehnail-atelier.dk/en/',
 };
 
@@ -557,6 +558,7 @@ export default function Home() {
                 <p>
                   Before building a page, flow or prototype, I look for weak sources, unclear owners and fragile handovers. The numbers here are background proof from ERP, MRP, master data and supplier follow-up work.
                 </p>
+                <p className="backbone__bridge"><b>I bring operations-trained QA, ownership and handover discipline to digital production.</b></p>
                 <p className="sr-only">Working rhythm: Friction to Source to Owner to Review to Reuse.</p>
                 <div className="method-strip" aria-hidden="true">
                   {['Friction', 'Source', 'Owner', 'Review', 'Reuse'].map((step, index) => (
@@ -809,6 +811,11 @@ export default function Home() {
               <p className="avail">
                 Best fit: website production, UX implementation, Webflow/Shopify/CMS support, GitHub/GitLab-style workflow, working first-version systems, digital delivery support, QA and documentation. Open to scoped project support, digital production roles or a short <b>praktik</b> when that is the cleanest way to test cooperation.
               </p>
+              <div className="portfolio-companion">
+                <span className="mono">Companion portfolio</span>
+                <p>Looking for my ERP, master-data and operations background?</p>
+                <a href={liveLinks.operations} target="_blank" rel="noopener noreferrer">View the Operations, ERP &amp; Workflow Portfolio ↗</a>
+              </div>
             </div>
           </div>
         </section>

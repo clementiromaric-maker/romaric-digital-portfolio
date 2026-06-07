@@ -1,11 +1,11 @@
-# Romaric Clementi Web Digital Portfolio V5.11.6
+# Romaric Clementi Web Digital Portfolio V5.11.7
 
-Final Source, Build, Cross-Device, Accessibility, Danish-Language and Deployment Hardening, built directly from V5.11.5 Case Study Rhythm Compression.
+Companion Portfolio Positioning & Cross-Link Polish, built directly from V5.11.6 Final QA Hardening.
 
 ## Purpose
 Preserve the V5.11.5 editorial portfolio while correcting the remaining issues found in a fresh source, build, static-export, rendered-layout, accessibility and package audit.
 
-## V5.11.6 corrections
+## V5.11.7 changes
 - Prevented long Danish evidence-board labels from overflowing their cards around tablet/laptop widths.
 - Increased the real clickable area of the EN/DA language links while preserving the compact phone header.
 - Preserved responsive visibility rules so mobile navigation items remain correctly hidden.
@@ -62,3 +62,8 @@ Clear the Cloudflare build cache before redeploying a replaced source package.
 
 ## Final live check
 After deployment, verify Android Chrome, iPhone Safari and desktop Chrome/Edge, including the sticky header, EN/DA switch, Quick scan / Deep dive control, case-study links, Danish HTML language and social-sharing preview.
+
+## V5.11.7 companion-portfolio changes
+- Added a discreet EN/DA companion link to the Operations, ERP & Workflow Portfolio in the contact area and Marzieh case footer.
+- Added the approved operations-trained QA, ownership and handover positioning line.
+- Preserved IP-safe project presentation, route structure and existing deployment settings.

@@ -919,3 +919,16 @@ button,
   display:inline-flex;
   align-items:center;
 }
+
+
+/* ---- V5.11.7 companion-portfolio positioning ---- */
+.backbone__bridge{margin-top:.9rem!important;padding-left:.9rem;border-left:2px solid var(--clay);color:var(--ink)!important;max-width:55ch!important}
+.portfolio-companion{margin-top:1.45rem;padding-top:1.3rem;border-top:1px solid rgba(244,239,229,.16);display:grid;gap:.35rem;max-width:72ch}
+.portfolio-companion .mono{color:rgba(244,239,229,.58)}
+.portfolio-companion p{margin:0;color:rgba(244,239,229,.78);font-size:.92rem}
+.portfolio-companion a{width:fit-content;color:var(--paper);font-weight:800;border-bottom:1px solid rgba(244,239,229,.42);padding:.15rem 0;overflow-wrap:anywhere}
+.portfolio-companion a:hover{color:#E79376;border-color:#E79376}
+.case-footer-meta{display:grid;justify-items:end;gap:.35rem;text-align:right}
+.companion-foot-link{font-size:.78rem;font-weight:800;color:var(--ink-soft);border-bottom:1px solid var(--line-soft);padding-bottom:.15rem}
+.companion-foot-link:hover{color:var(--clay);border-color:var(--clay)}
+@media(max-width:700px){.case-footer-meta{justify-items:start;text-align:left;width:100%}.portfolio-companion a{line-height:1.4}}

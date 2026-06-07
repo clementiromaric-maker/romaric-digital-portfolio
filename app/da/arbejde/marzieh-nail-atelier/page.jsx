@@ -1,3 +1,4 @@
+const operationsPortfolioUrl = 'https://romaric-operations-portfolio.clementiromaric.workers.dev/';
 const liveUrl = 'https://marziehnail-atelier.dk/da/';
 
 export const metadata = {
@@ -61,7 +62,7 @@ export default function MarziehCaseStudyDa() {
         <section className="case-outcome"><div className="wrap case-outcome__grid"><div><p className="mono">Hvad casen viser</p><h2>Det færdige website er synligt. Den dybere værdi er den operationelle klarhed under det.</h2></div><div><p>Jeg kan tage løst kundemateriale, finde mangler i tillid og beslutningsvej, strukturere en tosproget kunderejse, bygge en responsiv første version, teste detaljerne og efterlade en tydeligere overdragelse.</p><div className="case-outcome__actions"><a className="btn" href={liveUrl} target="_blank" rel="noopener noreferrer">Åbn live website ↗</a><a className="btn btn--ghost" href="/da/#contact">Tal om en rolle eller opgave</a></div></div></div></section>
       </main>
 
-      <footer><div className="wrap foot"><div className="mark"><b>RC</b><span>Uklart menneskeligt og forretningsmæssigt behov → klart digitalt system.</span></div><div className="fine">Marzieh Nail Atelier case · Romaric Clementi</div></div></footer>
+      <footer><div className="wrap foot"><div className="mark"><b>RC</b><span>Uklart menneskeligt og forretningsmæssigt behov → klart digitalt system.</span></div><div className="case-footer-meta"><a className="companion-foot-link" href={operationsPortfolioUrl} target="_blank" rel="noopener noreferrer">Portfolio for drift, ERP og arbejdsgange ↗</a><div className="fine">Marzieh Nail Atelier case · Romaric Clementi</div></div></div></footer>
     </>
   );
 }
