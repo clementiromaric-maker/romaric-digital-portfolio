@@ -39,22 +39,22 @@ const roleFitLanes = [
   {
     label: '01',
     title: 'Website production support',
-    text: 'Page builds, service/product sections, Webflow/Shopify/CMS support, local proof, content structure and mobile checks.',
+    text: 'Pages, service/product sections, Webflow/Shopify/CMS support, content structure and mobile checks.',
   },
   {
     label: '02',
     title: 'UX and content implementation',
-    text: 'Customer journeys, trust sections, navigation, page hierarchy, CTA logic and clearer handover from brief to build.',
+    text: 'Customer journeys, trust, navigation, hierarchy, CTA logic and clearer handover from brief to build.',
   },
   {
     label: '03',
     title: 'Digital workflow and QA support',
-    text: 'GitHub/GitLab-style workflow support, link checks, anchor checks, deployment notes, source cleanup and practical acceptance checks.',
+    text: 'GitHub/GitLab workflow, link and anchor checks, deployment notes, source cleanup and acceptance checks.',
   },
   {
     label: '04',
     title: 'AI-assisted first-version work',
-    text: 'Structured briefs, draft pages, source maps, approval points and useful prototypes with human review before use.',
+    text: 'Structured briefs, draft pages, source maps, approval points and human-reviewed prototypes.',
   },
 ];
 
@@ -66,7 +66,7 @@ const pilotProjects = [
     role: 'SME visibility, workflow audit and safe AI-control system',
     flow: ['Friction', 'Audit', 'Owner review'],
     text:
-      'Built around a simple insight: many small businesses do not need another tool first. They need clearer offers, better source material, owner approval points and a safer next step.',
+      'Built on a simple insight: small businesses often need clearer offers, reliable source material, owner approvals and a safer next step before another tool.',
     systemProof: [
       'Services, pricing and audit paths',
       'Notes hub, tools and PDF deliverables',
@@ -74,7 +74,7 @@ const pilotProjects = [
     ],
     link: null,
     linkLabel: 'Walkthrough available on request',
-    bestFor: 'Shows service architecture, AI-workflow judgement and productized business clarity.',
+    bestFor: 'Shows service architecture, AI-workflow judgement and practical business clarity.',
   },
   {
     eyebrow: 'Stakeholder-flow system',
@@ -83,7 +83,7 @@ const pilotProjects = [
     role: 'Candidate, company and actor clarity before official handoff',
     flow: ['Role', 'Manual review', 'Brief'],
     text:
-      'Built for situations where interest exists, but the task, language, supervision, first week or official process owner is still unclear.',
+      'Built where interest exists but the task, language, supervision, first week or process ownership remains unclear.',
     systemProof: [
       'Role router and pilot process',
       'Match brief, forms and documents',
@@ -91,7 +91,7 @@ const pilotProjects = [
     ],
     link: null,
     linkLabel: 'Walkthrough available on request',
-    bestFor: 'Shows public-sector-style clarity, boundary design and human-reviewed decision flow.',
+    bestFor: 'Shows structured clarity, firm boundaries and human-reviewed decisions.',
   },
   {
     eyebrow: 'Privacy-first social system',
@@ -100,7 +100,7 @@ const pilotProjects = [
     role: 'Consent-led cultural introduction system',
     flow: ['Signal', 'Human review', 'Two yeses'],
     text:
-      'Built around the real need behind connection: people want context, dignity and privacy before exposure, not another public profile wall.',
+      'Built for people who need context, dignity and privacy before exposure, not another public profile wall.',
     systemProof: [
       'Private signals and Bridge Notes',
       'Café Circle, games and soft onboarding',
@@ -108,7 +108,7 @@ const pilotProjects = [
     ],
     link: null,
     linkLabel: 'Walkthrough available on request',
-    bestFor: 'Shows emotional UX, consent architecture, niche-product thinking and cultural trust design.',
+    bestFor: 'Shows emotional UX, consent architecture and culturally aware trust design.',
   },
 ];
 
@@ -119,22 +119,22 @@ const systemSteps = [
   {
     label: 'Source',
     title: 'Find the real material',
-    text: 'Services, policies, examples, constraints, owner decisions and the questions users actually ask.',
+    text: 'Services, policies, constraints, owner decisions and real user questions.',
   },
   {
     label: 'Structure',
     title: 'Make the path readable',
-    text: 'Routes, page hierarchy, trust blocks, CTA logic, forms and the order people need to understand.',
+    text: 'Routes, hierarchy, trust blocks, CTA logic, forms and reading order.',
   },
   {
     label: 'Build',
     title: 'Ship the useful first version',
-    text: 'Responsive pages, local assets, metadata, schema awareness, link checks and mobile QA.',
+    text: 'Responsive pages, local assets, metadata, link checks and mobile QA.',
   },
   {
     label: 'Handover',
     title: 'Leave it easier to run',
-    text: 'Version notes, reusable decisions, next-step lists and owner control after the first launch.',
+    text: 'Version notes, reusable decisions, next steps and owner control after launch.',
   },
 ];
 
@@ -144,22 +144,22 @@ const weeks = [
   {
     label: 'Week 01',
     title: 'Understand and audit',
-    text: 'Learn the workflow, review one site or client flow, map pages, forms and mobile friction, then write a short QA note.',
+    text: 'Learn the workflow, review one site or flow, map pages, forms and mobile friction, then write a QA note.',
   },
   {
     label: 'Week 02',
     title: 'Support production',
-    text: 'Help with page updates, product/service pages, Webflow/Shopify/CMS structure, GitHub/GitLab handover notes, internal links, UX fixes and multilingual cleanup.',
+    text: 'Support page updates, product/service pages, CMS structure, handover notes, internal links, UX fixes and multilingual cleanup.',
   },
   {
     label: 'Week 03',
     title: 'Test and document',
-    text: 'Mobile checks, link/anchor QA, form-journey review, proofreading and metadata sanity checks.',
+    text: 'Mobile, link and anchor QA, form journeys, proofreading and metadata checks.',
   },
   {
     label: 'Week 04',
     title: 'Deliver useful output',
-    text: 'A final improvement list, prototype or implementation package, handover notes and next steps.',
+    text: 'An improvement list, prototype or implementation package with handover notes and next steps.',
   },
 ];
 
@@ -234,10 +234,10 @@ export default function Home() {
                 <em>unclear</em> needs.
               </h1>
               <p className="lede reveal" style={{ transitionDelay: '.22s' }}>
-                I find the real friction behind messy briefs, then turn it into useful first systems teams can test, hand over and improve.
+                I find the real friction in messy briefs and turn it into useful first systems teams can test, hand over and improve.
               </p>
               <p className="sub reveal" style={{ transitionDelay: '.3s' }}>
-                Website production, UX structure, Webflow/Shopify/CMS support and working first versions for teams with messy input and real deadlines.
+                Website production, UX structure and Webflow/Shopify/CMS support for teams with messy input and real deadlines.
               </p>
               <div className="hero__cta reveal" style={{ transitionDelay: '.38s' }}>
                 <a className="btn" href="#work">
@@ -364,25 +364,25 @@ export default function Home() {
                 <dl className="field">
                   <dt>Problem</dt>
                   <dd>
-                    A premium one-to-one nail atelier needed clearer services, booking confidence, local trust, policies and mobile readability.
+                    A premium nail atelier needed clearer services, booking confidence, local trust, policies and mobile readability.
                   </dd>
                 </dl>
                 <dl className="field">
                   <dt>My role</dt>
                   <dd>
-                    I shaped the concept, service structure, copy flow, trust sections, mobile QA and deployment-safe iterations.
+                    I shaped the concept, service structure, copy flow, trust, mobile QA and deployment-safe iterations.
                   </dd>
                 </dl>
                 <dl className="field">
                   <dt>Built</dt>
                   <dd>
-                    Homepage, services and pricing, work gallery, bridal route, FAQ, policies, privacy, visit path, booking links, local SEO signals and schema awareness.
+                    Homepage, services, pricing, gallery, bridal route, FAQ, policies, visit path, booking links, local SEO signals and schema awareness.
                   </dd>
                 </dl>
                 <dl className="field field--highlight">
                   <dt>Agency relevance</dt>
                   <dd>
-                    For an agency, this shows I can turn loose client material into a structured, mobile-ready customer journey with trust proof, booking logic and handover discipline.
+                    This shows I can turn loose client material into a mobile-ready journey with trust proof, booking logic and handover discipline.
                   </dd>
                 </dl>
 
@@ -409,19 +409,19 @@ export default function Home() {
                   <div>
                     <span className="mono">Before</span>
                     <p>
-                      Strong service skill existed, but services, policies, booking, trust proof and local visibility needed one clear source.
+                      Strong service skill existed, but services, policies, booking, trust and local visibility needed one source.
                     </p>
                   </div>
                   <div>
                     <span className="mono">After</span>
                     <p>
-                      A bilingual journey aligned services, appointment path, policies, trust signals, Planway/Jazzy logic and calmer brand language.
+                      A bilingual journey aligned services, booking, policies, trust signals, Planway/Jazzy logic and calmer brand language.
                     </p>
                   </div>
                   <div>
                     <span className="mono">What it proves</span>
                     <p>
-                      The visible output is a website. The deeper work is understanding what clients need before booking: trust, price clarity, service confidence and owner control.
+                      The website is visible. The deeper work is clarifying trust, price, service confidence and owner control before booking.
                     </p>
                   </div>
                 </div>
@@ -465,7 +465,7 @@ export default function Home() {
               <p className="mono">Systems I have built</p>
               <h3>Not only pages. Working first-version systems.</h3>
               <p>
-                Beyond individual websites, I build service journeys, intake flows, trust layers, pilot logic, documentation routes and review points that make unclear ideas easier to test without overbuilding.
+                Beyond websites, I build service journeys, intake flows, trust layers, documentation routes and review points that make ideas easier to test without overbuilding.
               </p>
               <p className="systems-guard">Some pilot details are intentionally simplified in public. Deeper walkthroughs are available on request.</p>
             </div>
@@ -507,7 +507,7 @@ export default function Home() {
 
             {viewMode === 'quick' ? (
               <div className="deep-dive-gate reveal" aria-live="polite">
-                <div><p className="mono">More behind the screens</p><h3>Need the reasoning, QA evidence and operating logic?</h3><p>The quick scan keeps the decision path short. Deep dive reveals how I map friction, structure systems and prepare work for handover.</p></div>
+                <div><p className="mono">More behind the screens</p><h3>Need the reasoning, QA and operating logic?</h3><p>Deep dive shows how I map friction, structure systems and prepare handover.</p></div>
                 <button className="btn" type="button" onClick={() => setViewMode('deep')}>Open deep dive ↓</button>
               </div>
             ) : null}
@@ -527,10 +527,10 @@ export default function Home() {
               </p>
               <div className="reveal">
                 <p>
-                  Operations, ERP, planning, master data and supplier work trained me to map a process, find where it breaks and turn vague input into ownership and build-ready notes.
+                  Operations, ERP, planning and supplier work trained me to map processes, find breaks and turn vague input into ownership and build-ready notes.
                 </p>
                 <p>
-                  I use the same rhythm for web work: understand the real need, build the first useful version, test it on mobile and document the next step.
+                  I use the same rhythm for web work: understand the need, build a useful first version, test it and document the next step.
                 </p>
               </div>
             </div>
@@ -540,7 +540,7 @@ export default function Home() {
                 <p className="mono">Hidden friction lens</p>
                 <h3>I do not only build from the brief.</h3>
                 <p>
-                  I look for what the customer needs to trust, what the owner needs to control, what the team needs to hand over and what the system needs to make clear.
+                  I look for what the customer must trust, the owner must control, the team must hand over and the system must clarify.
                 </p>
               </div>
               <div className="lens-grid" aria-label="Four friction-mapping questions">
@@ -556,7 +556,7 @@ export default function Home() {
                 <p className="mono">Operations backbone</p>
                 <h3>Friction first. Tools second.</h3>
                 <p>
-                  Before building a page, flow or prototype, I look for weak sources, unclear owners and fragile handovers. The numbers here are background proof from ERP, MRP, master data and supplier follow-up work.
+                  Before building, I look for weak sources, unclear owners and fragile handovers. These figures come from ERP, MRP, master-data and supplier work.
                 </p>
                 <p className="backbone__bridge"><b>I bring operations-trained QA, ownership and handover discipline to digital production.</b></p>
                 <p className="sr-only">Working rhythm: Friction to Source to Owner to Review to Reuse.</p>
@@ -604,7 +604,7 @@ export default function Home() {
                 <p className="mono">Proof logic</p>
                 <h3>More than pages. A working first system.</h3>
                 <p>
-                  The strongest proof is not only the final screen. It is the logic that turns unclear human and business needs into a clear path, a live build and a handover the owner can keep using.
+                  Proof is not only the final screen. It is the logic that turns unclear needs into a clear path, a shipped first version and usable handover.
                 </p>
               </div>
               <div className="system-steps" aria-label="From unclear input to live system process">
@@ -633,7 +633,7 @@ export default function Home() {
               <p className="mono">Best match right now</p>
               <h3>Teams that need useful digital output from messy input.</h3>
               <p>
-                I connect human needs, client input, content, UX, QA and handover. The value is not replacing senior specialists. It is making scattered material easier to understand, build, test, launch and improve.
+                I connect client input, content, UX, QA and handover so scattered material is easier to build, test, launch and improve.
               </p>
             </div>
 
@@ -660,7 +660,7 @@ export default function Home() {
                 <span className="mono">Webflow / WordPress / Shopify shops</span>
                 <h3>CMS and ecommerce production support</h3>
                 <p>
-                  Useful for page updates, product/service pages, content hierarchy, forms, SEO basics, mobile checks and CMS-ready thinking.
+                  Useful for page updates, product/service pages, hierarchy, forms, SEO basics and mobile checks.
                 </p>
               </article>
               <article>
@@ -687,10 +687,10 @@ export default function Home() {
                 <p className="mono">Technical implementation proof</p>
                 <h3>This portfolio is also a working build sample.</h3>
                 <p>
-                  Static Next.js export, Cloudflare deployment, local assets, locally bundled fonts, Open Graph metadata, responsive layout, internal anchors, JSON-LD awareness and GitHub/GitLab-style handover discipline.
+                  Static Next.js export, Cloudflare deployment, local assets and fonts, Open Graph metadata, responsive layout, anchors, JSON-LD awareness and GitHub/GitLab handover.
                 </p>
                 <p className="implementation-note">
-                  Not a senior-engineering claim. A working sample of clean static web build, packaging and practical QA discipline.
+                  Not a senior-engineering claim. A working sample of clean static build, packaging and QA discipline.
                 </p>
               </div>
               <div className="implementation-chips" aria-label="Technical implementation signals">
@@ -740,7 +740,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="caveat">
-                Presented honestly: recent builds are custom static and Cloudflare-based. I am comfortable around Webflow, Shopify and CMS-style site structures, and with GitHub/GitLab-style workflow, source packages, deployment notes and QA handover.
+                Recent builds are custom static and Cloudflare-based. I am comfortable with Webflow, Shopify and CMS structures, GitHub/GitLab workflow, source packages, deployment notes and QA handover.
               </p>
             </div>
           </div>
@@ -809,7 +809,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="avail">
-                Best fit: website production, UX implementation, Webflow/Shopify/CMS support, GitHub/GitLab-style workflow, working first-version systems, digital delivery support, QA and documentation. Open to scoped project support, digital production roles or a short <b>praktik</b> when that is the cleanest way to test cooperation.
+                Best fit: website production, UX implementation, Webflow/Shopify/CMS support, GitHub/GitLab workflow, digital delivery, QA and documentation. Open to scoped projects, production roles or a short <b>praktik</b> to test cooperation.
               </p>
               <div className="portfolio-companion">
                 <span className="mono">Companion portfolio</span>

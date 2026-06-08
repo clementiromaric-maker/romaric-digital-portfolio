@@ -1,0 +1,18 @@
+V5.11.8 QA SUMMARY
+
+CONTENT
+- Selected long homepage blocks reduced approximately 10–15%.
+- EN homepage source prose reduced approximately 8%; DA homepage approximately 6%; EN/DA case copy approximately 8–9% overall, while proof labels and metrics were preserved.
+- No sections, proof cases or protected-pilot boundaries removed.
+
+DANISH
+- “Operations-trænet tænkning” removed.
+- Natural “Driftsorienteret tænkning” wording applied.
+- 2.000+ Danish formatting applied.
+- Old wording/format scan in exported Danish HTML: 0 hits.
+
+TECHNICAL
+- Production build passed.
+- 0 npm production vulnerabilities.
+- Static routes, metadata, JSON-LD, local assets and anchors passed.
+- Two-portfolio 72-combination render matrix: 0 document overflow and 0 undersized detected links/buttons.

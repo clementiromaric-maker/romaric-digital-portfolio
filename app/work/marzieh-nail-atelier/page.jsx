@@ -21,17 +21,17 @@ export const metadata = {
 };
 
 const decisions = [
-  ['Offer clarity', 'Services and prices were grouped around the questions a client needs answered before booking.'],
-  ['Trust before action', 'Reviews, policies, visit information and founder context were placed before the booking decision.'],
-  ['Bilingual parity', 'Danish and English routes follow the same service and trust logic without feeling mechanically translated.'],
-  ['Owner control', 'Booking links, policies, visit details and business facts stay visible and easy to update.'],
+  ['Offer clarity', 'Services and prices were grouped around the questions clients ask before booking.'],
+  ['Trust before action', 'Reviews, policies and visit information appear before the booking decision.'],
+  ['Bilingual parity', 'Danish and English routes share the same service and trust logic without feeling mechanical.'],
+  ['Owner control', 'Booking links, policies, visit details and business facts stay visible and updateable.'],
 ];
 
 const evidence = [
-  ['Route map', 'Homepage, services, work, FAQ, policies, privacy, visit and booking paths'],
-  ['Mobile QA', 'Navigation, cards, screenshots, tap targets, long labels and booking actions'],
-  ['Trust layer', '5.0 rating, 16 Google reviews, CVR, policies and local visit information'],
-  ['Handover', 'Versioned source package, build verification, deployment notes and clear next steps'],
+  ['Route map', 'Homepage, services, work, FAQ, policies, visit and booking paths'],
+  ['Mobile QA', 'Navigation, cards, tap targets, long labels and booking actions'],
+  ['Trust layer', '5.0 rating, 16 reviews, CVR, policies and visit information'],
+  ['Handover', 'Versioned source, build verification, deployment notes and next steps'],
 ];
 
 export default function MarziehCaseStudy() {
@@ -73,7 +73,7 @@ export default function MarziehCaseStudy() {
               <div>
                 <p className="mono">Case 01 · Live local business</p>
                 <h1>From loose business material to a calm, credible booking journey.</h1>
-                <p className="case-hero__lede">Marzieh Nail Atelier needed more than a polished homepage. It needed one reliable place for services, prices, trust, policies, visit information and booking decisions.</p>
+                <p className="case-hero__lede">Marzieh Nail Atelier needed one reliable place for services, prices, trust, policies, visit information and booking.</p>
                 <div className="case-hero__actions">
                   <a className="btn" href={liveUrl} target="_blank" rel="noopener noreferrer">Open live website ↗</a>
                   <a className="btn btn--ghost" href="#story">Read the case ↓</a>
@@ -97,7 +97,7 @@ export default function MarziehCaseStudy() {
         <section id="story" className="case-chapter">
           <div className="wrap case-chapter__grid">
             <div className="case-chapter__title"><span className="case-number">01</span><p className="mono">The input</p><h2>A strong service with scattered customer information.</h2></div>
-            <div className="case-copy"><p>Clients needed to understand service differences, prices, timing, nail-art options, policies, location and how to book. The business owner also needed control over what remained the official source.</p><p>The challenge was to create premium calm without hiding practical information or making the journey feel complicated.</p></div>
+            <div className="case-copy"><p>Clients needed clear service differences, prices, timing, policies, location and booking. The owner also needed control of the official source.</p><p>The challenge was premium calm without hiding practical information.</p></div>
           </div>
         </section>
 
@@ -133,7 +133,7 @@ export default function MarziehCaseStudy() {
         <section className="case-outcome">
           <div className="wrap case-outcome__grid">
             <div><p className="mono">What this proves</p><h2>The final website is visible. The deeper value is the operational clarity underneath.</h2></div>
-            <div><p>I can take loose client material, identify the trust and decision gaps, structure a bilingual customer journey, build a responsive first version, test the details and leave a clearer handover.</p><div className="case-outcome__actions"><a className="btn" href={liveUrl} target="_blank" rel="noopener noreferrer">Open live website ↗</a><a className="btn btn--ghost" href="/#contact">Discuss a role or project</a></div></div>
+            <div><p>I can turn loose client material into a bilingual journey, responsive first version, tested details and a clearer handover.</p><div className="case-outcome__actions"><a className="btn" href={liveUrl} target="_blank" rel="noopener noreferrer">Open live website ↗</a><a className="btn btn--ghost" href="/#contact">Discuss a role or project</a></div></div>
           </div>
         </section>
       </main>

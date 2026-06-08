@@ -932,3 +932,6 @@ button,
 .companion-foot-link{font-size:.78rem;font-weight:800;color:var(--ink-soft);border-bottom:1px solid var(--line-soft);padding-bottom:.15rem}
 .companion-foot-link:hover{color:var(--clay);border-color:var(--clay)}
 @media(max-width:700px){.case-footer-meta{justify-items:start;text-align:left;width:100%}.portfolio-companion a{line-height:1.4}}
+
+/* V5.11.8 companion-link touch-target polish */
+.companion-foot-link{display:inline-flex;align-items:center;min-height:44px;padding-top:.3rem;padding-bottom:.3rem}

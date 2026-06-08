@@ -1,63 +1,43 @@
-Romaric Clementi Web Digital Portfolio V5.11.7
-Final Source, Build, Cross-Device, Accessibility, Danish-Language and Deployment Hardening
+ROMARIC CLEMENTI WEB & DIGITAL PORTFOLIO V5.11.8
+TEXT DENSITY & DANISH LANGUAGE CONSISTENCY
 
 SOURCE
-- Built directly from V5.11.5 Case Study Rhythm Compression.
-- The uploaded V5.11.5 source was inspected before editing.
+- Built directly from V5.11.7 Companion Portfolio Positioning & Cross-Link Polish.
 - No rebuild from memory.
 
-V5.11.7 CHANGES
-- Added robust wrapping to evidence-board cards and labels.
-- Increased mobile EN/DA link hit areas to at least 24 x 44 CSS pixels.
-- Preserved responsive navigation visibility while enlarging real pointer areas.
-- Added scripts/postbuild.mjs and the postbuild lifecycle command.
-- Exported Danish HTML now contains lang="da" statically.
-- Applied a focused native-Danish language cleanup.
-- Replaced stale package documentation with an accurate current-version record.
+PATCH SCOPE
+- Selective 10–15% compression of long/repetitive explanatory blocks.
+- Proof, metrics, routes, pilot protection and case evidence preserved.
+- Danish “Operations-trænet tænkning” replaced with natural driftsorienteret wording.
+- Danish 2.000+ number formatting applied.
+- EN/DA Marzieh case narratives tightened where visuals already explain the decision.
+- Companion footer link target enlarged to at least 44px high.
 
-PRESERVED
-- V5.11 editorial systems storytelling.
-- Signature unclear-input to clear-system hero visual.
-- Quick scan / Deep dive control.
-- Dedicated EN/DA Marzieh case routes.
-- Desktop hero zoom containment.
-- Case chapter-marker spacing and no-hyphen hero typography.
-- Re-composed flagship Marzieh homepage snapshot.
-- Case-study desktop rhythm compression.
-- IP-safe public project-link behaviour.
-- Deployment-registry portability and public npm registry configuration.
+BUILD VERIFICATION
+- Next.js 16.2.7 production build: PASS
+- Static routes generated: 9
+- Danish postbuild language patch: PASS for 2 pages
+- npm audit --omit=dev: 0 vulnerabilities
 
-FINAL LOCAL QA
-- Node: 22.16.0.
-- Next.js: 16.2.7.
-- npm clean dependency installation completed during the audit.
-- npm production build: passed.
-- Automatic Danish HTML postbuild patch: passed for 2 exported pages.
-- npm audit --omit=dev: 0 known vulnerabilities.
-- Static HTML pages audited: 7.
-- Missing titles/descriptions/canonicals: 0.
-- H1-count errors: 0.
-- Duplicate IDs: 0.
-- JSON-LD parse errors: 0.
-- Images without alt text or explicit dimensions: 0.
-- Broken internal routes, page anchors or local assets: 0.
-- Unsafe target=_blank links: 0.
-- 404 noindex errors: 0.
-- Forbidden pilot URLs, internal registry URLs, Google Fonts and Tailwind CDN references: 0.
-- Full rendered matrix: 98 route/view/viewport combinations, 320px to 1440px, 0 document overflow, 0 visible internal overflow and 0 undersized detected links/buttons.
-- Final Danish rendered matrix after native-language polish: 42 route/view/viewport combinations, 0 problems.
-- Mobile EN/DA targets: at least 24px wide and 44px high.
-- Source/public files over 1 MB: 0.
+STATIC QA
+- Static HTML pages audited: 7
+- Titles/descriptions/canonicals: PASS
+- One H1 per public page: PASS
+- Duplicate IDs: 0
+- JSON-LD errors: 0
+- Images without alt text or dimensions: 0
+- Missing routes, assets or anchors: 0
+- Unsafe target=_blank links: 0
+- Old Danish wording/number-format residues: 0
+- Protected pilot URLs exposed: 0
+- Internal OpenAI registry URLs: 0
+- Google Fonts or Tailwind CDN: 0
 
-EXPECTED STATIC EXPORT
-- /
-- /da/
-- /work/marzieh-nail-atelier/
-- /da/arbejde/marzieh-nail-atelier/
-- /_not-found
-- /icon.png
-- /robots.txt
-- /sitemap.xml
+RESPONSIVE QA
+- EN/DA homepage and case routes checked at 360, 390, 430, 768, 1024 and 1366px
+- Included in a 72-combination two-portfolio static-render matrix
+- Document-level horizontal overflow: 0
+- Undersized detected links/buttons after final target polish: 0
 
 FINAL ZIP EXCLUSIONS
 - node_modules
@@ -65,11 +45,4 @@ FINAL ZIP EXCLUSIONS
 - out
 
 LIVE QA STILL REQUIRED
-- Final verification on the deployed Cloudflare URL using real Android Chrome, iPhone Safari and desktop Chrome/Edge.
-- Confirm the deployed Cloudflare build executes the pnpm frozen-lockfile installation and postbuild lifecycle successfully.
-
-V5.11.7 CROSS-PORTFOLIO CHECKS
-- Operations portfolio URL appears only in approved companion links.
-- External links use target=_blank with rel=noopener noreferrer.
-- EN/DA contact and Marzieh case-footer wording added.
-- No protected pilot URLs or commercial methods exposed.
+- Verify the deployed Cloudflare versions on Android Chrome, iPhone Safari and desktop Chrome/Edge after pushing the new packages.

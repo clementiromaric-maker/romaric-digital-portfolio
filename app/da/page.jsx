@@ -20,22 +20,22 @@ const roleFitLanes = [
   {
     label: '01',
     title: 'Website-produktion',
-    text: 'Sider, service-/produktsider, Webflow/Shopify/CMS-support, lokal troværdighed, indholdsstruktur og mobilcheck.',
+    text: 'Sider, service-/produktsider, Webflow/Shopify/CMS-support, indholdsstruktur og mobilcheck.',
   },
   {
     label: '02',
     title: 'UX- og indholdsstruktur',
-    text: 'Kunderejser, tillidssektioner, navigation, sidehierarki, CTA-logik og en klarere vej fra oplæg til produktion.',
+    text: 'Kunderejser, tillid, navigation, sidehierarki, CTA-logik og en klarere vej fra oplæg til produktion.',
   },
   {
     label: '03',
     title: 'Digitale arbejdsgange og QA',
-    text: 'GitHub/GitLab-lignende arbejdsgange, linkcheck, ankercheck, udgivelsesnoter, oprydning i kildemateriale og praktiske accepttjek.',
+    text: 'GitHub/GitLab-arbejdsgange, link- og ankercheck, udgivelsesnoter, kildeoprydning og accepttjek.',
   },
   {
     label: '04',
     title: 'AI-assisterede første versioner',
-    text: 'Strukturerede oplæg, sideudkast, kildemateriale, godkendelsespunkter og brugbare prototyper med menneskelig vurdering.',
+    text: 'Strukturerede oplæg, sideudkast, kildemateriale, godkendelsespunkter og menneskevurderede prototyper.',
   },
 ];
 
@@ -47,7 +47,7 @@ const pilotProjects = [
     role: 'SMV-synlighed, gennemgang af arbejdsgange og sikker AI-kontrol',
     flow: ['Friktion', 'Gennemgang', 'Ejergodkendelse'],
     text:
-      'Bygget på en enkel indsigt: Mange mindre virksomheder har ikke brug for endnu et værktøj først. De har brug for tydeligere tilbud, bedre kildemateriale, ejergodkendelser og et tryggere næste skridt.',
+      'Bygget på en enkel indsigt: Mindre virksomheder har ofte brug for tydelige tilbud, pålideligt kildemateriale, ejergodkendelser og et trygt næste skridt før endnu et værktøj.',
     systemProof: [
       'Ydelser, priser og gennemgangsforløb',
       'Noter, værktøjer og PDF-leverancer',
@@ -55,7 +55,7 @@ const pilotProjects = [
     ],
     link: null,
     linkLabel: 'Gennemgang efter aftale',
-    bestFor: 'Viser servicearkitektur, sund vurdering af AI-arbejdsgange og konkret forretningsklarhed som service.',
+    bestFor: 'Viser servicearkitektur, sund AI-vurdering og praktisk forretningsklarhed.',
   },
   {
     eyebrow: 'Aktørflow',
@@ -64,7 +64,7 @@ const pilotProjects = [
     role: 'Kandidat, virksomhed og aktør får klarhed før officiel overdragelse',
     flow: ['Rolle', 'Manuel vurdering', 'Oplæg'],
     text:
-      'Bygget til situationer, hvor interessen findes, men opgaven, sproget, supervisionen, den første uge eller den officielle procesejer stadig er uklar.',
+      'Bygget, hvor interessen findes, men opgave, sprog, supervision, første uge eller procesejerskab stadig er uklart.',
     systemProof: [
       'Rollevej og pilotproces',
       'Matchoplæg, formularer og dokumenter',
@@ -72,7 +72,7 @@ const pilotProjects = [
     ],
     link: null,
     linkLabel: 'Gennemgang efter aftale',
-    bestFor: 'Viser klarhed som i den offentlige sektor, tydelige grænser og et beslutningsforløb med menneskelig vurdering.',
+    bestFor: 'Viser struktureret klarhed, tydelige grænser og menneskevurderede beslutninger.',
   },
   {
     eyebrow: 'Privatlivsfokuseret socialt system',
@@ -81,7 +81,7 @@ const pilotProjects = [
     role: 'Kulturelt introduktionssystem med samtykke før kontakt',
     flow: ['Signal', 'Menneskelig vurdering', 'To ja-svar'],
     text:
-      'Bygget omkring det reelle behov bag kontakt: mennesker vil have kontekst, værdighed og privatliv før eksponering, ikke endnu en offentlig profilvæg.',
+      'Bygget til mennesker, der ønsker kontekst, værdighed og privatliv før eksponering, ikke endnu en offentlig profilvæg.',
     systemProof: [
       'Private signaler og Bridge Notes',
       'Café Circle, spil og en rolig introduktion',
@@ -89,7 +89,7 @@ const pilotProjects = [
     ],
     link: null,
     linkLabel: 'Gennemgang efter aftale',
-    bestFor: 'Viser emotionel UX, samtykkearkitektur, tænkning for nicheprodukter og kulturel tillid.',
+    bestFor: 'Viser emotionel UX, samtykkearkitektur og kulturelt bevidst tillidsdesign.',
   },
 ];
 
@@ -97,22 +97,22 @@ const systemSteps = [
   {
     label: 'Kilde',
     title: 'Find det reelle materiale',
-    text: 'Services, politikker, eksempler, begrænsninger, ejerbeslutninger og de spørgsmål brugerne faktisk stiller.',
+    text: 'Services, politikker, begrænsninger, ejerbeslutninger og reelle brugerspørgsmål.',
   },
   {
     label: 'Struktur',
     title: 'Gør vejen læsbar',
-    text: 'Sider, sidehierarki, tillidsblokke, CTA-logik, formularer og den rækkefølge mennesker har brug for.',
+    text: 'Sider, hierarki, tillidsblokke, CTA-logik, formularer og læserækkefølge.',
   },
   {
     label: 'Byg',
     title: 'Lancér den første brugbare version',
-    text: 'Responsive sider, lokale filer, metadata, forståelse for strukturerede data, linkcheck og mobil QA.',
+    text: 'Responsive sider, lokale filer, metadata, linkcheck og mobil QA.',
   },
   {
     label: 'Overdragelse',
     title: 'Gør det lettere at drive videre',
-    text: 'Versionsnoter, genbrugelige beslutninger, næste skridt og ejerkontrol efter første lancering.',
+    text: 'Versionsnoter, genbrugelige beslutninger, næste skridt og ejerkontrol efter lancering.',
   },
 ];
 
@@ -120,22 +120,22 @@ const weeks = [
   {
     label: 'Uge 01',
     title: 'Forstå og gennemgå',
-    text: 'Forstå arbejdsgangen, gennemgå én side eller kunderejse, kortlægge sider, formularer og mobilfriktion og skrive en kort QA-note.',
+    text: 'Forstå arbejdsgangen, gennemgå én side eller rejse, kortlægge sider, formularer og mobilfriktion og skrive en QA-note.',
   },
   {
     label: 'Uge 02',
     title: 'Støtte produktion',
-    text: 'Hjælpe med sideopdateringer, produkt-/servicesider, Webflow/Shopify/CMS-struktur, GitHub/GitLab-noter, interne links, UX-rettelser og flersproget oprydning.',
+    text: 'Støtte sideopdateringer, produkt-/servicesider, CMS-struktur, overdragelsesnoter, interne links, UX-rettelser og flersproget oprydning.',
   },
   {
     label: 'Uge 03',
     title: 'Teste og dokumentere',
-    text: 'Mobilcheck, link- og anker-QA, formularrejser, korrektur og metadata-tjek.',
+    text: 'Mobil-, link- og anker-QA, formularrejser, korrektur og metadata-tjek.',
   },
   {
     label: 'Uge 04',
     title: 'Levere et brugbart resultat',
-    text: 'En konkret forbedringsliste, prototype eller implementeringspakke, overdragelsesnoter og næste skridt.',
+    text: 'En forbedringsliste, prototype eller implementeringspakke med overdragelsesnoter og næste skridt.',
   },
 ];
 
@@ -210,10 +210,10 @@ export default function DanishPortfolio() {
                 <em>uklare</em> behov.
               </h1>
               <p className="lede reveal" style={{ transitionDelay: '.22s' }}>
-                Jeg finder den reelle friktion bag uklare oplæg og omsætter den til brugbare første versioner, som teams kan teste, overdrage og forbedre.
+                Jeg finder den reelle friktion i uklare oplæg og omsætter den til første versioner, teams kan teste, overdrage og forbedre.
               </p>
               <p className="sub reveal" style={{ transitionDelay: '.3s' }}>
-                Website-produktion, UX-struktur, Webflow/Shopify/CMS-support og første brugbare versioner for teams med uklart input og rigtige deadlines.
+                Website-produktion, UX-struktur og Webflow/Shopify/CMS-support for teams med uklart input og rigtige deadlines.
               </p>
               <div className="hero__cta reveal" style={{ transitionDelay: '.38s' }}>
                 <a className="btn" href="#work">
@@ -249,7 +249,7 @@ export default function DanishPortfolio() {
                 </div>
                 <div className="row">
                   <dt className="mono">Base</dt>
-                  <dd>Greater Copenhagen · Tune, Denmark</dd>
+                  <dd>Storkøbenhavn · Tune, Danmark</dd>
                 </div>
                 <div className="row">
                   <dt className="mono">Sprog</dt>
@@ -402,7 +402,7 @@ export default function DanishPortfolio() {
 
         <section id="approach" className="deep-dive-section">
           <div className="wrap">
-            <div className="sec-head"><span className="sec-no">02</span><h2>Sådan arbejder jeg</h2><p className="note">Operations-trænet tænkning brugt på websites, indhold og digitale flows.</p></div>
+            <div className="sec-head"><span className="sec-no">02</span><h2>Sådan arbejder jeg</h2><p className="note">Driftsorienteret tænkning anvendt på websites, indhold og digitale flows.</p></div>
             <div className="approach-grid">
               <p className="approach reveal">Jeg tænker i <b>flow, overdragelser, eksekvering og synlige næste handlinger</b>, og bygger derefter strukturen under det.</p>
               <div className="reveal">
@@ -431,7 +431,7 @@ export default function DanishPortfolio() {
                 <div className="method-strip" aria-hidden="true">{['Friktion', 'Kilde', 'Ejer', 'Vurdering', 'Genbrug'].map((step, index) => <span key={step}>{step}{index < 4 ? <i> → </i> : null}</span>)}</div>
               </div>
               <div className="metric-grid" aria-label="Dokumentation fra driftsarbejde">
-                <div aria-label="2,000 plus ERP-varestrukturer"><b>2,000+ </b><span>ERP-varestrukturer</span></div>
+                <div aria-label="2.000 plus ERP-varestrukturer"><b>2.000+ </b><span>ERP-varestrukturer</span></div>
                 <div aria-label="200 plus multi-level parts set up"><b>200+ </b><span>flerniveaudele oprettet</span></div>
                 <div aria-label="30 plus EU and US suppliers coordinated"><b>30+ </b><span>EU/US leverandører koordineret</span></div>
                 <div aria-label="5 production lines and 40 plus variants supported"><b>5 / 40+ </b><span>produktionslinjer og varianter understøttet</span></div>
@@ -444,7 +444,7 @@ export default function DanishPortfolio() {
           <div className="wrap">
             <div className="sec-head"><span className="sec-no">03</span><h2 id="system-title-da">Fra uklart input til et system i drift</h2><p className="note">Et kompakt billede af, hvordan reel friktion bliver til noget, mennesker kan bruge.</p></div>
             <div className="system-board reveal">
-              <div className="system-intro"><p className="mono">Dokumentationslogik</p><h3>Mere end sider. En brugbar første version.</h3><p>Den stærkeste dokumentation er ikke kun den færdige skærm. Det er logikken, der gør uklare menneskelige og forretningsmæssige behov til en tydelig vej, en lanceret førsteversion og en overdragelse, ejeren kan bruge videre.</p></div>
+              <div className="system-intro"><p className="mono">Dokumentationslogik</p><h3>Mere end sider. En brugbar første version.</h3><p>Dokumentation er også logikken, der gør uklare behov til en tydelig vej, en lanceret første version og en overdragelse, ejeren kan bruge.</p></div>
               <div className="system-steps" aria-label="Proces fra uklart input til et system i drift">
                 {systemSteps.map((step, index) => (
                   <article className="system-step" key={step.label}><span className="system-index">{String(index + 1).padStart(2, '0')}</span><p className="mono">{step.label}</p><h3>{step.title}</h3><p>{step.text}</p></article>
@@ -457,12 +457,12 @@ export default function DanishPortfolio() {
         <section id="fit">
           <div className="wrap">
             <div className="sec-head"><span className="sec-no">{viewMode === 'quick' ? '02' : '04'}</span><h2>Hvor jeg passer ind</h2><p className="note">En praktisk beslutningsvej for bureauer, digitale studier og startups.</p></div>
-            <div className="fit-summary reveal"><p className="mono">Bedst match lige nu</p><h3>Teams der har brug for brugbare digitale leverancer fra rodet input.</h3><p>Jeg forbinder menneskelige behov, kundemateriale, indhold, UX, QA og overdragelse. Værdien er ikke at erstatte seniorspecialister. Det er at gøre spredt materiale lettere at forstå, bygge, teste, lancere og forbedre.</p></div>
+            <div className="fit-summary reveal"><p className="mono">Bedst match lige nu</p><h3>Teams der har brug for brugbare digitale leverancer fra rodet input.</h3><p>Jeg forbinder kundemateriale, indhold, UX, QA og overdragelse, så spredt input bliver lettere at bygge, teste, lancere og forbedre.</p></div>
             <div className="fit-lanes reveal" aria-label="Praktiske rolleområder">{roleFitLanes.map((lane) => <article key={lane.title}><span className="mono">{lane.label}</span><h3>{lane.title}</h3><p>{lane.text}</p></article>)}</div>
             <p className="mono audience-label reveal">Bedste målgruppe</p>
             <div className="target-grid reveal">
               <article><span className="mono">Etablerede bureauer</span><h3>Produktionssupport med overdragelsesdisciplin</h3><p>Nyttigt til kundesider, serviceforløb, tillidssektioner, mobil QA og praktisk leveringssupport.</p></article>
-              <article><span className="mono">Webflow-, WordPress- og Shopify-bureauer</span><h3>CMS- og webshop-produktionssupport</h3><p>Nyttigt til sideopdateringer, produkt-/servicesider, indholdshierarki, formularer, grundlæggende SEO, mobilcheck og CMS-klar tænkning.</p></article>
+              <article><span className="mono">Webflow-, WordPress- og Shopify-bureauer</span><h3>CMS- og webshop-produktionssupport</h3><p>Nyttigt til sideopdateringer, produkt-/servicesider, hierarki, formularer, grundlæggende SEO og mobilcheck.</p></article>
               <article><span className="mono">Startups og produktteams</span><h3>Første versioner før overbygning</h3><p>Nyttigt til landingssider, onboardingforløb, prototyper og dokumentation, der gør næste beslutning lettere.</p></article>
             </div>
           </div>
@@ -472,7 +472,7 @@ export default function DanishPortfolio() {
           <div className="wrap">
             <div className="sec-head"><span className="sec-no">05</span><h2>Implementering og QA-dokumentation</h2><p className="note">Understøttende dokumentation, ikke en påstand om seniorudviklerniveau.</p></div>
             <div className="implementation-proof reveal" aria-label="Teknisk implementeringsdokumentation">
-              <div><p className="mono">Teknisk implementeringsdokumentation</p><h3>Portfolioen er også et fungerende webeksempel.</h3><p>Statisk Next.js-eksport, udgivelse på Cloudflare, lokale filer, lokalt bundtede fonte, Open Graph metadata, responsivt layout, interne ankre, JSON-LD-forståelse og GitHub/GitLab-lignende overdragelsesdisciplin.</p><p className="implementation-note">Ikke en påstand om seniorudviklerniveau. Et fungerende eksempel på et rent statisk website, en ryddelig kildepakke og praktisk QA-disciplin.</p></div>
+              <div><p className="mono">Teknisk implementeringsdokumentation</p><h3>Portfolioen er også et fungerende webeksempel.</h3><p>Statisk Next.js-eksport, Cloudflare, lokale filer og fonte, Open Graph-metadata, responsivt layout, ankre, JSON-LD-forståelse og GitHub/GitLab-overdragelse.</p><p className="implementation-note">Ikke en seniorudviklerpåstand. Et fungerende eksempel på ren statisk opbygning, kildepakke og QA-disciplin.</p></div>
               <div className="implementation-chips" aria-label="Tekniske implementeringssignaler">{['Statisk eksport', 'Cloudflare', 'GitHub / GitLab-arbejdsgang', 'Lokale filer', 'OG / metadata', 'Responsiv QA'].map((item) => <b key={item}>{item}</b>)}</div>
             </div>
             <div className="evidence-board reveal" aria-label="Dokumentationstavle">
@@ -487,7 +487,7 @@ export default function DanishPortfolio() {
               </div>
             </div>
 
-            <div className="exposure reveal"><p className="mono lab">Praktisk erfaring, ærligt beskrevet</p><div className="chips" aria-label="Arbejdseksponering">{['HTML / CSS','Responsivt layout','Statisk websitestruktur','Grundlæggende JavaScript','Cloudflare Pages / Workers','GitHub-udgivelse','GitLab-arbejdsgang','Webflow-support','Shopify-support','SEO-metadata','JSON-LD / strukturerede data','Formularer og brugerrejser','Flersproget indhold','Mobil QA','Dokumentation'].map((item) => <b key={item}>{item}</b>)}</div><p className="caveat">Præsenteret ærligt: de seneste builds er specialbyggede, statiske og Cloudflare-baserede. Jeg er tryg ved Webflow, Shopify og CMS-lignende sitestrukturer samt GitHub/GitLab-lignende arbejdsgange, kildepakker, udgivelsesnoter og QA-overdragelse.</p></div>
+            <div className="exposure reveal"><p className="mono lab">Praktisk erfaring, ærligt beskrevet</p><div className="chips" aria-label="Arbejdseksponering">{['HTML / CSS','Responsivt layout','Statisk websitestruktur','Grundlæggende JavaScript','Cloudflare Pages / Workers','GitHub-udgivelse','GitLab-arbejdsgang','Webflow-support','Shopify-support','SEO-metadata','JSON-LD / strukturerede data','Formularer og brugerrejser','Flersproget indhold','Mobil QA','Dokumentation'].map((item) => <b key={item}>{item}</b>)}</div><p className="caveat">De seneste builds er specialbyggede, statiske og Cloudflare-baserede. Jeg er tryg ved Webflow-, Shopify- og CMS-strukturer, GitHub/GitLab-arbejdsgange, kildepakker, udgivelsesnoter og QA-overdragelse.</p></div>
           </div>
         </section>
 
@@ -512,7 +512,7 @@ export default function DanishPortfolio() {
                   <div className="m"><span className="mono">Live dokumentation</span><b><a href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">marziehnail-atelier.dk</a></b></div>
                 </div>
               </div>
-              <p className="avail">Bedste match: website-produktion, UX-implementering, Webflow/Shopify/CMS-support, GitHub/GitLab-lignende arbejdsgange, brugbare første versioner, digital leveringssupport, QA og dokumentation. Åben for afgrænset projektsupport, digitale produktionsroller eller en kort <b>praktik</b>, når det er den reneste måde at teste samarbejdet på.</p>
+              <p className="avail">Bedste match: website-produktion, UX-implementering, Webflow/Shopify/CMS-support, GitHub/GitLab-arbejdsgange, digital levering, QA og dokumentation. Åben for afgrænsede projekter, produktionsroller eller en kort <b>praktik</b> til at teste samarbejdet.</p>
               <div className="portfolio-companion">
                 <span className="mono">Tilhørende portfolio</span>
                 <p>Leder I efter min baggrund inden for ERP, stamdata og drift?</p>
