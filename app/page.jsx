@@ -337,7 +337,7 @@ export default function Home() {
                 <div className="featured-case__copy">
                   <p className="mono">Selected project</p>
                   <h3 id="marzieh-title">Marzieh Nail Atelier</h3>
-                  <p className="featured-case__headline">Website strategy, structure and production for a real local business.</p>
+                  <p className="featured-case__headline">Website strategy, structure and production for an independent nail atelier in Valby.</p>
                   <p className="featured-case__summary">I turned scattered service, pricing, policy and booking information into a bilingual customer journey that is clear on mobile and practical for the owner to maintain.</p>
                   <div className="featured-case__facts" aria-label="Project facts">
                     <span><b>Live</b> production website</span>
@@ -352,12 +352,12 @@ export default function Home() {
               </div>
 
               <div className="featured-case__details">
-                <article><h4>Challenge</h4><p>Clients needed clearer services, prices, policies, location details and a more confident path to booking.</p></article>
+                <article><h4>Challenge</h4><p>The atelier needed clearer services, prices, policies, location details and a more confident path to booking.</p></article>
                 <article><h4>My contribution</h4><p>I set the direction and information structure, reviewed content and implementation, completed responsive QA, deployed the site and prepared the handover.</p></article>
                 <article><h4>Delivered</h4><p>A live bilingual website with service and pricing routes, booking links, trust content, policies, local information and mobile-ready navigation.</p></article>
               </div>
 
-              <p className="featured-case__method"><b>Production approach:</b> AI tools supported research, drafting and code assistance. I remained responsible for the brief, decisions, review, testing, deployment and final delivery.</p>
+              <p className="featured-case__method"><b>Production approach:</b> AI tools supported research, drafting and code assistance; I owned the brief, decisions, review, testing, deployment and handover.</p>
             </article>
 
             <div id="systems" className="systems-intro reveal" aria-label="Systems built from unclear needs">

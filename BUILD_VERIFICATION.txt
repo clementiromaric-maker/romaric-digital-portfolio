@@ -1,33 +1,25 @@
-Romaric Clementi Web Digital Portfolio V5.11.4
-Case Simplification, CTA Clarity & Editorial Separation Patch
+Romaric Clementi Web Digital Portfolio V5.11.5
+Featured Case Copy & Proportion Polish
 
 SOURCE
-- Built directly from V5.11.3 Case Clarity, AI Disclosure & Agency Trust Patch.
-- The uploaded V5.11.2 source and the previously generated V5.11.3 source were inspected before editing.
+- Built directly from V5.11.4 Case Simplification, CTA Clarity & Editorial Separation.
 - No rebuild from memory.
 
 PATCH SCOPE
-- Simplified the Marzieh homepage presentation instead of adding more explanatory labels.
-- Removed: Featured live case, Close/self-owned project, Live website preview, Strongest proof, duplicate project heading, duplicate CTA row and rating/review metrics as website-performance proof.
-- Added one clear project identity, one screenshot, concise project facts, three contribution areas and one calm AI-production disclosure.
-- Rebuilt the EN/DA Marzieh case pages with a distinct editorial visual system and clearer project-at-a-glance context.
-- Replaced awkward or proof-heavy action labels with direct human wording:
-  Read case study / Læs casen
-  Visit live website / Besøg live website
-  View project details / Se projektdetaljer
-  Back to portfolio / Tilbage til portfolio
-  View detailed experience / Se detaljeret erfaring
-- Replaced the contact label Live proof with Live website.
-- Reframed the project relationship naturally as a real implementation for Romaric's wife's independent business, not a paid external client engagement.
-- Kept one explicit AI-assisted production explanation and clearly separated tool assistance from Romaric's decisions, review, QA, deployment and handover responsibility.
-- Preserved routes, local assets, bilingual parity, metadata, JSON-LD, static Next.js export and Cloudflare deployment architecture.
+- Replaced generic “real local business” wording with the more specific “independent nail atelier in Valby” and a natural Danish equivalent.
+- Replaced plural customer-language in the homepage challenge with singular atelier-focused wording.
+- Updated the case-study context language so the business need is described as one atelier’s need, not an undefined group of clients.
+- Reduced the Marzieh feature title scale and increased its usable line length so the name reads in two balanced lines on desktop.
+- Rebalanced the feature columns and reduced image padding so the live-site screenshot is larger and positioned higher.
+- Shortened the homepage AI-production disclosure while preserving transparent ownership.
+- Preserved the plain CTA system from V5.11.4: Read case study / Læs casen, Visit live website / Besøg live website, View project details / Se projektdetaljer and Back to portfolio / Tilbage til portfolio.
 
 INSTALL AND BUILD VERIFICATION
 - Node 22 environment.
 - Next.js 16.2.7 production build: passed.
 - TypeScript validation: passed.
 - Static generation: passed.
-- package.json and package-lock.json updated to 5.11.4.
+- package.json and package-lock.json updated to 5.11.5.
 
 STATIC ROUTES
 - /
@@ -47,19 +39,16 @@ STATIC QA
 - Exactly 1 H1 per public page.
 - 0 images without alt text.
 - JSON-LD parsed successfully.
-- 0 remaining Open live / live-proof / Featured live case / Strongest proof / Close-self-owned / Live website preview / View full case / Explore the case / Open deep dive strings.
-- 0 remaining 5.0 / 16 rating-review proof metric blocks.
-- CTA text reviewed on EN and DA home and case routes.
+- 0 remaining Open live-proof case / live-proof / Open live site / Explore the case / Featured live case / Strongest proof / Close-self-owned / Live website preview strings.
+- EN/DA copy parity checked for the featured case and dedicated case pages.
 
 VISUAL / RESPONSIVE QA
-- Chromium render checked at 1440px and 390px.
-- Homepage featured project checked in desktop and mobile viewports.
-- Dedicated case-study hero checked in desktop and mobile viewports.
-- Screenshot assets rendered correctly after viewport paint.
+- Feature layout rendered and inspected at 1440px and 390px.
+- Title now breaks naturally into two lines on desktop and mobile.
+- CTA hierarchy preserved and mobile actions remain full-width.
+- Screenshot area enlarged through reduced padding and improved top alignment.
 - 0 horizontal overflow at 1440px or 390px.
-- Case-study mobile header, language switch and website CTA fit correctly.
-- Featured project actions align on desktop and stack on mobile.
-- Case study is visually distinct from the portfolio through a clean editorial layout, sans-serif case headings, teal case theme, project-at-a-glance row and separate content structure.
+- Dedicated case-study hero checked at desktop and mobile sizes.
 
 ZIP EXCLUSIONS
 - node_modules
@@ -68,4 +57,4 @@ ZIP EXCLUSIONS
 
 DEPLOYMENT
 - Clear the Cloudflare build cache before deployment.
-- Verify EN/DA routes, Marzieh screenshots, live-site links, mobile navigation and social preview after deployment.
+- Verify EN/DA routes, live-site links, mobile navigation and social preview after deployment.

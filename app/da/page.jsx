@@ -311,7 +311,7 @@ export default function DanishPortfolio() {
                 <div className="featured-case__copy">
                   <p className="mono">Udvalgt projekt</p>
                   <h3 id="marzieh-title-da">Marzieh Nail Atelier</h3>
-                  <p className="featured-case__headline">Website-strategi, struktur og produktion for en reel lokal virksomhed.</p>
+                  <p className="featured-case__headline">Website-strategi, struktur og produktion for et selvstændigt negleatelier i Valby.</p>
                   <p className="featured-case__summary">Jeg samlede spredt information om services, priser, politikker og booking i en tosproget kunderejse, der er tydelig på mobil og praktisk for ejeren at vedligeholde.</p>
                   <div className="featured-case__facts" aria-label="Projektfakta">
                     <span><b>Live</b> website i produktion</span>
@@ -326,12 +326,12 @@ export default function DanishPortfolio() {
               </div>
 
               <div className="featured-case__details">
-                <article><h4>Udfordring</h4><p>Kunderne havde brug for tydeligere services, priser, politikker, besøgsinformation og en mere tryg vej til booking.</p></article>
+                <article><h4>Udfordring</h4><p>Atelieret havde brug for tydeligere services, priser, politikker, besøgsinformation og en mere tryg vej til booking.</p></article>
                 <article><h4>Mit bidrag</h4><p>Jeg fastlagde retning og informationsstruktur, gennemgik indhold og implementering, udførte responsiv QA, deployede sitet og forberedte overdragelsen.</p></article>
                 <article><h4>Leveret</h4><p>Et live tosproget website med service- og prisruter, bookinglinks, tillidsindhold, politikker, lokal information og mobilklar navigation.</p></article>
               </div>
 
-              <p className="featured-case__method"><b>Produktionsform:</b> AI-værktøjer understøttede research, udkast og kodehjælp. Jeg havde ansvaret for brief, beslutninger, review, test, deployment og endelig levering.</p>
+              <p className="featured-case__method"><b>Produktionsform:</b> AI-værktøjer understøttede research, udkast og kodehjælp; jeg havde ansvaret for brief, beslutninger, review, test, deployment og overdragelse.</p>
             </article>
 
             <div id="systems" className="systems-intro reveal" aria-label="Systemer bygget fra uklare behov">

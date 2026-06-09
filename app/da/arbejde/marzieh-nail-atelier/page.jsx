@@ -2,7 +2,7 @@ const liveUrl = 'https://marziehnail-atelier.dk/da/';
 
 export const metadata = {
   title: 'Marzieh Nail Atelier case | Romaric Clementi',
-  description: 'Website-strategi, struktur og produktion for Marzieh Nail Atelier, et live tosproget website for en lokal virksomhed.',
+  description: 'Website-strategi, struktur og produktion for Marzieh Nail Atelier, et live tosproget website for et selvstændigt negleatelier i Valby.',
   alternates: {
     canonical: '/da/arbejde/marzieh-nail-atelier/',
     languages: { en: '/work/marzieh-nail-atelier/', da: '/da/arbejde/marzieh-nail-atelier/' },
@@ -39,7 +39,7 @@ export default function MarziehCaseStudyDa() {
     mainEntityOfPage: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://romaric-digital-portfolio.clementiromaric.workers.dev'}/da/arbejde/marzieh-nail-atelier/`,
     about: { '@type': 'WebSite', name: 'Marzieh Nail Atelier', url: liveUrl },
     inLanguage: ['da', 'en'],
-    description: 'Tosproget website for en lokal virksomhed med service-, booking-, tillids- og mobil-QA-arbejde.',
+    description: 'Tosproget website for et selvstændigt negleatelier med service-, booking-, tillids- og mobil-QA-arbejde.',
   };
 
   return (
@@ -48,13 +48,13 @@ export default function MarziehCaseStudyDa() {
       <header className="bar case-bar"><div className="wrap bar__in"><a className="brand" href="/da/#work" aria-label="Tilbage til Romaric Clementis portfolio"><b>RC</b><span>Romaric Clementi</span></a><nav className="case-nav" aria-label="Case-navigation"><a href="/da/#work">← Tilbage til portfolio</a><span className="lang-switch" role="group" aria-label="Sprogvalg"><a href="/work/marzieh-nail-atelier/">EN</a><span aria-hidden="true">/</span><a aria-current="page" href="/da/arbejde/marzieh-nail-atelier/">DA</a></span><a className="btn case-live-cta" href={liveUrl} target="_blank" rel="noopener noreferrer"><span className="case-live-cta__desktop">Besøg website ↗</span><span className="case-live-cta__mobile">Website ↗</span></a></nav></div></header>
 
       <main className="case-page case-page--editorial">
-        <section className="case-hero case-hero--editorial"><div className="wrap"><nav className="case-breadcrumb" aria-label="Brødkrummer"><a href="/da/">Portfolio</a><span>/</span><strong>Marzieh Nail Atelier</strong></nav><div className="case-title-block"><p className="mono">Case 01</p><h1>Marzieh Nail Atelier</h1><p className="case-subtitle">Website-strategi, struktur og produktion for en reel lokal virksomhed.</p><p className="case-hero__lede">Jeg samlede spredt information om services, priser, politikker og booking i en tosproget kunderejse, der er tydelig på mobil og praktisk for ejeren at vedligeholde.</p><div className="case-hero__actions"><a className="btn" href="#project">Se projektdetaljer</a><a className="text-link" href={liveUrl} target="_blank" rel="noopener noreferrer">Besøg live website ↗</a></div></div>
+        <section className="case-hero case-hero--editorial"><div className="wrap"><nav className="case-breadcrumb" aria-label="Brødkrummer"><a href="/da/">Portfolio</a><span>/</span><strong>Marzieh Nail Atelier</strong></nav><div className="case-title-block"><p className="mono">Case 01</p><h1>Marzieh Nail Atelier</h1><p className="case-subtitle">Website-strategi, struktur og produktion for et selvstændigt negleatelier i Valby.</p><p className="case-hero__lede">Jeg samlede spredt information om services, priser, politikker og booking i en tosproget kunderejse, der er tydelig på mobil og praktisk for ejeren at vedligeholde.</p><div className="case-hero__actions"><a className="btn" href="#project">Se projektdetaljer</a><a className="text-link" href={liveUrl} target="_blank" rel="noopener noreferrer">Besøg live website ↗</a></div></div>
 
         <div className="project-glance" aria-label="Projektet kort fortalt"><div><span>Kontekst</span><p>Et reelt implementeret projekt for min kones selvstændige virksomhed; ikke en betalt ekstern kundeopgave.</p></div><div><span>Mit ansvar</span><p>Retning, informationsarkitektur, indholdsbeslutninger, implementeringsreview, responsiv QA, deployment og overdragelse.</p></div><div><span>Levering</span><p>Live dansk og engelsk website med service-, booking-, tillids-, politik- og besøgsruter.</p></div></div>
 
         <figure className="case-cover"><img className="case-transition-image" src="/assets/marzieh-homepage-ui-snapshot.webp" width="1600" height="1050" fetchPriority="high" decoding="async" alt="Marzieh Nail Atelier forside med navigation, servicekort og bookingrejse" /><figcaption>Live produktionswebsite · danske og engelske ruter</figcaption></figure></div></section>
 
-        <section id="project" className="case-section"><div className="wrap case-section__grid"><div className="case-section__heading"><p className="mono">01 / Kontekst</p><h2>En stærk service med spredt kundeinformation.</h2></div><div className="case-copy"><p>Kunderne skulle forstå forskelle mellem services, priser, tidsforbrug, nail-art-muligheder, politikker, placering og booking. Ejeren havde også brug for én pålidelig kilde til den information, der vises gennem websitet og bookingrejsen.</p><p>Udfordringen var at skabe en rolig premium-oplevelse uden at skjule de praktiske detaljer, mennesker har brug for før en aftale.</p></div></div></section>
+        <section id="project" className="case-section"><div className="wrap case-section__grid"><div className="case-section__heading"><p className="mono">01 / Kontekst</p><h2>En stærk service med spredt kundeinformation.</h2></div><div className="case-copy"><p>Atelieret skulle gøre forskelle mellem services, priser, tidsforbrug, nail-art-muligheder, politikker, placering og booking lettere at forstå. Ejeren havde også brug for én pålidelig kilde til den information, der vises gennem websitet og bookingrejsen.</p><p>Udfordringen var at skabe en rolig premium-oplevelse uden at skjule de praktiske detaljer, mennesker har brug for før en aftale.</p></div></div></section>
 
         <section className="case-section case-section--role"><div className="wrap case-section__grid"><div className="case-section__heading"><p className="mono">02 / Mit bidrag</p><h2>Fra løst materiale til et fungerende website og en overdragelse.</h2></div><div className="case-copy"><ul className="case-contribution-list"><li>Definerede projektretning, sidestruktur og kunderejse.</li><li>Organiserede services, priser, booking, politikker og lokal information.</li><li>Gennemgik og reviderede indhold og implementeringsbeslutninger.</li><li>Testede navigation, responsiv adfærd, links, labels og bookinghandlinger.</li><li>Forberedte produktionsreleases, deploy-noter og ejeroverdragelse.</li></ul></div></div></section>
 

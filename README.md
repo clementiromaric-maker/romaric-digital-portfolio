@@ -1,18 +1,18 @@
-# Romaric Clementi Web Digital Portfolio V5.11.4
+# Romaric Clementi Web Digital Portfolio V5.11.5
 
-Case Simplification, CTA Clarity & Editorial Separation Patch built directly from V5.11.3.
+Featured Case Copy & Proportion Polish built directly from V5.11.4.
 
 ## Purpose
-Respond to concrete agency feedback without solving a hierarchy problem by adding more labels. This patch simplifies the Marzieh presentation, makes the dedicated case page visually and structurally distinct, and replaces awkward proof-oriented link wording with plain human actions.
+Apply the final copy and visual refinements to the Marzieh feature without adding labels or redesigning the portfolio again.
 
-## V5.11.4 changes
-- Replaced the over-labelled featured case with one simple project identity, one screenshot, three concise project facts and two clear actions.
-- Removed `Featured live case`, `Close/self-owned project`, `Live website preview`, `Strongest proof`, duplicate project headings, duplicate CTA rows and Google-rating/review metrics from the portfolio presentation.
-- Reframed the relationship naturally as a real implemented project for the founder’s wife’s independent business, not a paid external client engagement.
-- Rebuilt the EN/DA case pages as cleaner editorial case studies with a distinct visual theme, a project-at-a-glance row, clear personal contribution, interface evidence, production/handover evidence and one calm AI-production disclosure.
-- Standardised CTAs to direct language such as `Read case study`, `Visit live website`, `View project details`, `Back to portfolio` and their natural Danish equivalents.
-- Replaced contact label `Live proof` with `Live website` and changed `Open deep dive` to `View detailed experience`.
-- Preserved routes, assets, language parity, metadata, static Next.js export and Cloudflare deployment architecture.
+## V5.11.5 changes
+- Replaced generic “real local business” wording with the more specific “independent nail atelier in Valby” in English and natural Danish equivalent.
+- Replaced plural “Clients needed” wording with singular atelier-focused language on the homepage and case pages.
+- Reduced the Marzieh feature title size and widened its usable line length so the name reads more naturally.
+- Rebalanced the feature columns and reduced screenshot padding so the live-site image is larger and sits higher.
+- Shortened the homepage AI-production disclosure while preserving clear ownership and transparency.
+- Preserved the simplified CTA wording from V5.11.4, including Read case study / Læs casen and Visit live website / Besøg live website.
+- Preserved EN/DA parity, routes, assets, metadata, static export and Cloudflare deployment architecture.
 
 ## Cloudflare build settings
 

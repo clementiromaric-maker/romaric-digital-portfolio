@@ -3,7 +3,7 @@ const liveUrl = 'https://marziehnail-atelier.dk/en/';
 export const metadata = {
   title: 'Marzieh Nail Atelier Case Study | Romaric Clementi',
   description:
-    'Website strategy, structure and production for Marzieh Nail Atelier, a live bilingual local business website.',
+    'Website strategy, structure and production for Marzieh Nail Atelier, a live bilingual website for an independent nail atelier in Valby.',
   alternates: {
     canonical: '/work/marzieh-nail-atelier/',
     languages: {
@@ -43,7 +43,7 @@ export default function MarziehCaseStudy() {
     mainEntityOfPage: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://romaric-digital-portfolio.clementiromaric.workers.dev'}/work/marzieh-nail-atelier/`,
     about: { '@type': 'WebSite', name: 'Marzieh Nail Atelier', url: liveUrl },
     inLanguage: ['en', 'da'],
-    description: 'Bilingual local business website with service, booking, trust and mobile QA work.',
+    description: 'Bilingual website for an independent nail atelier, covering services, booking, trust and mobile QA.',
   };
 
   return (
@@ -67,7 +67,7 @@ export default function MarziehCaseStudy() {
             <div className="case-title-block">
               <p className="mono">Case study 01</p>
               <h1>Marzieh Nail Atelier</h1>
-              <p className="case-subtitle">Website strategy, structure and production for a real local business.</p>
+              <p className="case-subtitle">Website strategy, structure and production for an independent nail atelier in Valby.</p>
               <p className="case-hero__lede">I turned scattered service, pricing, policy and booking information into a bilingual customer journey that is clear on mobile and practical for the owner to maintain.</p>
               <div className="case-hero__actions"><a className="btn" href="#project">View project details</a><a className="text-link" href={liveUrl} target="_blank" rel="noopener noreferrer">Visit live website ↗</a></div>
             </div>
@@ -88,7 +88,7 @@ export default function MarziehCaseStudy() {
         <section id="project" className="case-section">
           <div className="wrap case-section__grid">
             <div className="case-section__heading"><p className="mono">01 / Context</p><h2>A strong service with scattered customer information.</h2></div>
-            <div className="case-copy"><p>Clients needed to understand service differences, prices, timing, nail-art options, policies, location and how to book. The owner also needed one reliable source for the information shown across the website and booking journey.</p><p>The challenge was to create a premium, calm experience without hiding the practical details people need before making an appointment.</p></div>
+            <div className="case-copy"><p>The atelier needed to make service differences, prices, timing, nail-art options, policies, location and booking easier to understand. The owner also needed one reliable source for the information shown across the website and booking journey.</p><p>The challenge was to create a premium, calm experience without hiding the practical details people need before making an appointment.</p></div>
           </div>
         </section>
 

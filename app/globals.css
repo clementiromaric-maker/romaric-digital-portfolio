@@ -834,15 +834,15 @@ button,
   .field--wide{grid-column:auto}
 }
 
-/* V5.11.4 — simplified featured project and editorial case-study separation */
+/* V5.11.5 — featured-case copy and proportion polish */
 .feature--marzieh{overflow:hidden;background:var(--white)}
-.featured-case{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);align-items:stretch}
+.featured-case{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(360px,.92fr);align-items:stretch}
 .featured-case__visual{min-width:0;background:linear-gradient(135deg,#e9dece,#fbf8f1);border-right:1px solid var(--line-soft)}
-.featured-case__screen{padding:clamp(.85rem,2.2vw,1.35rem);height:100%;display:flex;align-items:center}
-.featured-case__screen img{width:100%;height:auto;max-height:620px;object-fit:contain;object-position:top center;border:1px solid var(--line-soft);border-radius:12px;background:#fff;box-shadow:0 24px 58px -42px rgba(23,19,13,.55)}
+.featured-case__screen{padding:clamp(.55rem,1.35vw,.85rem);height:100%;display:flex;align-items:flex-start}
+.featured-case__screen img{width:100%;height:auto;max-height:660px;object-fit:contain;object-position:top center;border:1px solid var(--line-soft);border-radius:12px;background:#fff;box-shadow:0 24px 58px -42px rgba(23,19,13,.55)}
 .featured-case__copy{padding:clamp(1.8rem,4.2vw,3.4rem);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
 .featured-case__copy>.mono{margin:0 0 .75rem;color:var(--clay)}
-.featured-case__copy h3{font-family:var(--font-fraunces),serif;font-size:clamp(2rem,4.2vw,3.45rem);font-weight:650;letter-spacing:-.026em;line-height:.98;margin:0;max-width:12ch}
+.featured-case__copy h3{font-family:var(--font-fraunces),serif;font-size:clamp(2rem,3.75vw,3.12rem);font-weight:650;letter-spacing:-.026em;line-height:1;margin:0;max-width:15ch}
 .featured-case__headline{font-family:var(--font-fraunces),serif;font-size:clamp(1.1rem,2.25vw,1.45rem);line-height:1.28;color:var(--ink);margin:1rem 0 .8rem;max-width:28ch}
 .featured-case__summary{margin:0;color:var(--ink-soft);font-size:.96rem;line-height:1.6;max-width:45ch}
 .featured-case__facts{display:grid;gap:.5rem;margin:1.3rem 0 0;padding:1rem 0;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);width:100%}
@@ -936,7 +936,7 @@ button,
 }
 @media(max-width:640px){
   .featured-case__copy{padding:1.55rem}
-  .featured-case__copy h3{font-size:2.25rem}
+  .featured-case__copy h3{font-size:2.15rem;max-width:15ch}
   .featured-case__actions{display:grid;grid-template-columns:1fr;width:100%;gap:.55rem}
   .featured-case__actions .btn,.featured-case__actions .text-link{width:100%;justify-content:center}
   .featured-case__facts{gap:.7rem}
