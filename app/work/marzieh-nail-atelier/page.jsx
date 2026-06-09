@@ -1,4 +1,3 @@
-const operationsPortfolioUrl = 'https://romaric-operations-portfolio.clementiromaric.workers.dev/';
 const liveUrl = 'https://marziehnail-atelier.dk/en/';
 
 export const metadata = {
@@ -21,17 +20,17 @@ export const metadata = {
 };
 
 const decisions = [
-  ['Offer clarity', 'Services and prices were grouped around the questions clients ask before booking.'],
-  ['Trust before action', 'Reviews, policies and visit information appear before the booking decision.'],
-  ['Bilingual parity', 'Danish and English routes share the same service and trust logic without feeling mechanical.'],
-  ['Owner control', 'Booking links, policies, visit details and business facts stay visible and updateable.'],
+  ['Offer clarity', 'Services and prices were grouped around the questions a client needs answered before booking.'],
+  ['Trust before action', 'Reviews, policies, visit information and founder context were placed before the booking decision.'],
+  ['Bilingual parity', 'Danish and English routes follow the same service and trust logic without feeling mechanically translated.'],
+  ['Owner control', 'Booking links, policies, visit details and business facts stay visible and easy to update.'],
 ];
 
 const evidence = [
-  ['Route map', 'Homepage, services, work, FAQ, policies, visit and booking paths'],
-  ['Mobile QA', 'Navigation, cards, tap targets, long labels and booking actions'],
-  ['Trust layer', '5.0 rating, 16 reviews, CVR, policies and visit information'],
-  ['Handover', 'Versioned source, build verification, deployment notes and next steps'],
+  ['Route map', 'Homepage, services, work, FAQ, policies, privacy, visit and booking paths'],
+  ['Mobile QA', 'Navigation, cards, screenshots, tap targets, long labels and booking actions'],
+  ['Trust layer', '5.0 rating, 16 Google reviews, CVR, policies and local visit information'],
+  ['Handover', 'Versioned source package, build verification, deployment notes and clear next steps'],
 ];
 
 export default function MarziehCaseStudy() {
@@ -53,7 +52,7 @@ export default function MarziehCaseStudy() {
       <header className="bar case-bar">
         <div className="wrap bar__in">
           <a className="brand" href="/#work" aria-label="Back to Romaric Clementi portfolio">
-            <b>RC</b><span>Romaric Clementi</span>
+            <b>RC</b><span>Romaric Clementi · Case study</span>
           </a>
           <nav className="case-nav" aria-label="Case study navigation">
             <a href="/#work">← Portfolio</a>
@@ -68,15 +67,15 @@ export default function MarziehCaseStudy() {
       <main className="case-page">
         <section className="case-hero">
           <div className="wrap">
-            <a className="case-back" href="/#work">← Selected work</a>
+            <nav className="case-breadcrumb" aria-label="Breadcrumb"><a href="/">Portfolio</a><span>/</span><a href="/#work">Selected work</a><span>/</span><strong>Marzieh Nail Atelier</strong></nav>
             <div className="case-hero__grid">
               <div>
-                <p className="mono">Case 01 · Live local business</p>
-                <h1>From loose business material to a calm, credible booking journey.</h1>
-                <p className="case-hero__lede">Marzieh Nail Atelier needed one reliable place for services, prices, trust, policies, visit information and booking.</p>
+                <p className="mono">Portfolio case study · Case 01 · Live local business</p>
+                <h1>Marzieh Nail Atelier: a clearer bilingual booking journey.</h1>
+                <p className="case-hero__lede">This page explains the problem, decisions, implementation evidence and my contribution. The live client website opens separately.</p>
                 <div className="case-hero__actions">
-                  <a className="btn" href={liveUrl} target="_blank" rel="noopener noreferrer">Open live website ↗</a>
-                  <a className="btn btn--ghost" href="#story">Read the case ↓</a>
+                  <a className="btn" href="#story">Read the case study ↓</a>
+                  <a className="btn btn--ghost" href={liveUrl} target="_blank" rel="noopener noreferrer">Open live website ↗</a>
                 </div>
               </div>
               <div className="case-hero__stats" aria-label="Case proof">
@@ -85,6 +84,11 @@ export default function MarziehCaseStudy() {
                 <div><b>DA / EN</b><span>Bilingual routes</span></div>
                 <div><b>Live</b><span>Production website</span></div>
               </div>
+            </div>
+
+            <div className="case-context-card" aria-label="Case study context">
+              <div><span className="mono">What you are viewing</span><b>A dedicated portfolio case study</b><p>Not another portfolio homepage: this page documents one implemented project and the decisions behind it.</p></div>
+              <dl><div><dt>Project relationship</dt><dd>Close/self-owned business case</dd></div><div><dt>Status</dt><dd>Live production website</dd></div><div><dt>My responsibility</dt><dd>Direction, structure, review, QA, deployment and handover</dd></div></dl>
             </div>
 
             <div className="case-browser case-browser--hero">
@@ -97,7 +101,7 @@ export default function MarziehCaseStudy() {
         <section id="story" className="case-chapter">
           <div className="wrap case-chapter__grid">
             <div className="case-chapter__title"><span className="case-number">01</span><p className="mono">The input</p><h2>A strong service with scattered customer information.</h2></div>
-            <div className="case-copy"><p>Clients needed clear service differences, prices, timing, policies, location and booking. The owner also needed control of the official source.</p><p>The challenge was premium calm without hiding practical information.</p></div>
+            <div className="case-copy"><p>Clients needed to understand service differences, prices, timing, nail-art options, policies, location and how to book. The business owner also needed control over what remained the official source.</p><p>The challenge was to create premium calm without hiding practical information or making the journey feel complicated.</p><aside className="case-ai-note"><span className="mono">AI-assisted production disclosure</span><p>Claude, ChatGPT and other AI tools supported research, drafting, code assistance, comparison and iteration. I defined the brief and direction, made the final structure and content decisions, reviewed and tested the implementation, and remained responsible for deployment and handover.</p></aside></div>
           </div>
         </section>
 
@@ -133,12 +137,12 @@ export default function MarziehCaseStudy() {
         <section className="case-outcome">
           <div className="wrap case-outcome__grid">
             <div><p className="mono">What this proves</p><h2>The final website is visible. The deeper value is the operational clarity underneath.</h2></div>
-            <div><p>I can turn loose client material into a bilingual journey, responsive first version, tested details and a clearer handover.</p><div className="case-outcome__actions"><a className="btn" href={liveUrl} target="_blank" rel="noopener noreferrer">Open live website ↗</a><a className="btn btn--ghost" href="/#contact">Discuss a role or project</a></div></div>
+            <div><p>I can take loose client material, define the customer and business decisions, direct an AI-assisted production workflow, test the implementation and leave a clear, reviewable handover.</p><div className="case-outcome__actions"><a className="btn" href={liveUrl} target="_blank" rel="noopener noreferrer">Open live website ↗</a><a className="btn btn--ghost" href="/#contact">Discuss a role or project</a></div></div>
           </div>
         </section>
       </main>
 
-      <footer><div className="wrap foot"><div className="mark"><b>RC</b><span>Unclear human and business need → clear digital system.</span></div><div className="case-footer-meta"><a className="companion-foot-link" href={operationsPortfolioUrl} target="_blank" rel="noopener noreferrer">Operations, ERP &amp; Workflow Portfolio ↗</a><div className="fine">Marzieh Nail Atelier case study · Romaric Clementi</div></div></div></footer>
+      <footer><div className="wrap foot"><div className="mark"><b>RC</b><span>Unclear human and business need → clear digital system.</span></div><div className="fine">Portfolio case study · AI-assisted production disclosed · Romaric Clementi</div></div></footer>
     </>
   );
 }

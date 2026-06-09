@@ -1,40 +1,28 @@
-# Romaric Clementi Web & Digital Portfolio V5.11.8
+# Romaric Clementi Web Digital Portfolio V5.11.3
 
-Text Density & Danish Language Consistency patch, built directly from V5.11.7 Companion Portfolio Positioning & Cross-Link Polish.
+Case Clarity, AI Disclosure & Agency Trust Patch built directly from V5.11.2 Deployment Registry & Lockfile Portability Fix.
 
-## V5.11.8 changes
+## Purpose
+Correct the concrete agency feedback received after a Kvalifik outreach:
+- the Marzieh case-study entry point did not feel visually aligned enough;
+- the dedicated case-study route looked too similar to the main portfolio and was not immediately recognisable as a separate case;
+- AI-assisted production and the division of responsibility were not explicit enough;
+- Webflow, Shopify and GitLab-style wording needed tighter, more defensible calibration.
 
-- Tightens only genuinely repetitive explanatory copy on the EN/DA homepages and both Marzieh case-study routes.
-- Reduces selected long explanatory blocks by roughly 10–15%; total page-copy reduction is smaller because proof, navigation, metrics and case evidence remain intact.
-- Preserves the Quick scan / Deep dive architecture instead of deleting useful deep proof.
-- Replaces translated-sounding Danish wording with `Driftsorienteret tænkning` and more natural supporting copy.
-- Uses Danish number formatting `2.000+` on the Danish route.
-- Shortens repeated case explanations where the heading, diagram or interface image already communicates the point.
-- Enlarges the companion Operations Portfolio footer link to a 44px minimum target height.
-
-## Preserved
-
-- Editorial systems storytelling and unclear-input to clear-system visual signature.
-- Dedicated English and Danish Marzieh case-study routes.
-- Real Marzieh interface proof and live-site link.
-- IP-safe public presentation: Clementi AI Workflow, FørsteMatch and HamdamBridge remain walkthrough-on-request only.
-- Operations-trained QA, ownership and handover positioning.
-- Companion Operations, ERP & Workflow Portfolio links.
-- Self-hosted fonts, static Next.js export and Cloudflare deployment.
-- No Google Fonts, Tailwind CDN, fake metrics, senior-developer claim or AI-expert claim.
-
-## Verified routes
-
-- `/`
-- `/da/`
-- `/work/marzieh-nail-atelier/`
-- `/da/arbejde/marzieh-nail-atelier/`
-- `/_not-found`
-- `/icon.png`
-- `/robots.txt`
-- `/sitemap.xml`
+## V5.11.3 changes
+- Rebuilt the featured Marzieh entry as a clear **Featured live case** with a stronger case title, aligned actions and a separate live-site action.
+- Added a visible **Live website preview** label to distinguish the client-site screenshot from the portfolio interface.
+- Added explicit project relationship and personal responsibility language for the real close/self-owned Marzieh case.
+- Added project-level and portfolio-level **AI-assisted production disclosures** in English and Danish.
+- Replaced `Hand-built` wording with accurate direction, review and delivery ownership language.
+- Recalibrated Webflow and Shopify wording from support claims to familiarity/readiness.
+- Replaced GitLab-style claims with verified GitHub-based workflow and structured handover wording.
+- Added dedicated EN/DA case-study breadcrumbs, case-study identity, project context panel and clearer read-case/live-site action hierarchy.
+- Strengthened the visual separation between the main portfolio and the Marzieh case-study route.
+- Preserved the existing static Next.js / Cloudflare architecture, routes, assets, metadata, language parity and IP-safe public-link strategy.
 
 ## Cloudflare build settings
+Build variables:
 
 ```text
 NODE_VERSION = 22.16.0
@@ -54,4 +42,14 @@ Deploy command:
 pnpm dlx wrangler deploy --assets ./out --compatibility-date 2026-06-06
 ```
 
-The `postbuild` lifecycle script writes `lang="da"` into the exported Danish pages.
+After replacing the source package, clear the Cloudflare build cache before redeploying.
+
+## Final live check
+After deployment, verify:
+- EN and DA homepages;
+- the featured Marzieh case actions;
+- `/work/marzieh-nail-atelier/` and `/da/arbejde/marzieh-nail-atelier/`;
+- Android Chrome, iPhone Safari and desktop Chrome/Edge;
+- all screenshots and local assets;
+- the AI disclosure blocks;
+- social sharing preview and language switching.

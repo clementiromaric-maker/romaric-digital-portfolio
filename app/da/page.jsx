@@ -3,39 +3,38 @@
 import { useEffect, useState } from 'react';
 
 const liveLinks = {
-  operations: 'https://romaric-operations-portfolio.clementiromaric.workers.dev/',
   marzieh: 'https://marziehnail-atelier.dk/da/',
 };
 
 const proofSignals = [
   { value: 'Live virksomhed', label: 'Marzieh Nail Atelier i produktion' },
-  { value: '3 byggede piloter', label: 'Arbejdsgange, praktikmatch og private introduktioner' },
-  { value: '5.0 / 16', label: 'Google-bedømmelse og Google-anmeldelser' },
+  { value: '3 byggede piloter', label: 'Workflow, praktikmatch og privat introduktion' },
+  { value: '5.0 / 16', label: 'Google-rating og Google-anmeldelser' },
   { value: 'Flersprogede sider', label: 'DA / EN plus persisk/engelsk pilotlogik' },
-  { value: 'GitHub / GitLab-klar', label: 'Kildepakker, udgivelsesnoter, versionsspor og QA' },
-  { value: 'Driftsbaggrund', label: 'ERP, leverandører, overdragelser og dokumentation' },
+  { value: 'GitHub workflow-klar', label: 'Source packages, deploy-noter, versionsspor og QA' },
+  { value: 'Operationsbaggrund', label: 'ERP, leverandører, overdragelser og dokumentation' },
 ];
 
 const roleFitLanes = [
   {
     label: '01',
     title: 'Website-produktion',
-    text: 'Sider, service-/produktsider, Webflow/Shopify/CMS-support, indholdsstruktur og mobilcheck.',
+    text: 'Sider, service-/produktsider, CMS- og indholdsimplementering, lokal troværdighed, indholdsstruktur og mobilcheck.',
   },
   {
     label: '02',
     title: 'UX- og indholdsstruktur',
-    text: 'Kunderejser, tillid, navigation, sidehierarki, CTA-logik og en klarere vej fra oplæg til produktion.',
+    text: 'Kunderejser, tillidssektioner, navigation, sidehierarki, CTA-logik og en klarere vej fra brief til produktion.',
   },
   {
     label: '03',
-    title: 'Digitale arbejdsgange og QA',
-    text: 'GitHub/GitLab-arbejdsgange, link- og ankercheck, udgivelsesnoter, kildeoprydning og accepttjek.',
+    title: 'Digitalt workflow og QA',
+    text: 'GitHub-baserede arbejdsgange, linkcheck, ankercheck, deploy-noter, oprydning i kildemateriale og praktiske accepttjek.',
   },
   {
     label: '04',
     title: 'AI-assisterede første versioner',
-    text: 'Strukturerede oplæg, sideudkast, kildemateriale, godkendelsespunkter og menneskevurderede prototyper.',
+    text: 'Strukturerede briefs, sideudkast, kildemateriale, godkendelsespunkter og brugbare prototyper med menneskelig vurdering.',
   },
 ];
 
@@ -44,35 +43,35 @@ const pilotProjects = [
     eyebrow: 'Servicesystem',
     status: 'Gennemgang efter aftale',
     title: 'Clementi AI Workflow',
-    role: 'SMV-synlighed, gennemgang af arbejdsgange og sikker AI-kontrol',
-    flow: ['Friktion', 'Gennemgang', 'Ejergodkendelse'],
+    role: 'SME-synlighed, workflow-audit og sikker AI-kontrol',
+    flow: ['Friktion', 'Audit', 'Ejer-godkendelse'],
     text:
-      'Bygget på en enkel indsigt: Mindre virksomheder har ofte brug for tydelige tilbud, pålideligt kildemateriale, ejergodkendelser og et trygt næste skridt før endnu et værktøj.',
+      'Bygget på en enkel indsigt: Mange mindre virksomheder har ikke brug for endnu et værktøj først. De har brug for tydeligere tilbud, bedre kildemateriale, ejer-godkendelse og et tryggere næste skridt.',
     systemProof: [
-      'Ydelser, priser og gennemgangsforløb',
+      'Services, priser og audit-forløb',
       'Noter, værktøjer og PDF-leverancer',
       'Én pålidelig kilde og sikre AI-grænser',
     ],
     link: null,
     linkLabel: 'Gennemgang efter aftale',
-    bestFor: 'Viser servicearkitektur, sund AI-vurdering og praktisk forretningsklarhed.',
+    bestFor: 'Viser servicearkitektur, sund AI-workflow-vurdering og konkret forretningsklarhed som service.',
   },
   {
     eyebrow: 'Aktørflow',
     status: 'Gennemgang efter aftale',
     title: 'FørsteMatch',
     role: 'Kandidat, virksomhed og aktør får klarhed før officiel overdragelse',
-    flow: ['Rolle', 'Manuel vurdering', 'Oplæg'],
+    flow: ['Rolle', 'Manuel vurdering', 'Brief'],
     text:
-      'Bygget, hvor interessen findes, men opgave, sprog, supervision, første uge eller procesejerskab stadig er uklart.',
+      'Bygget til situationer, hvor interessen findes, men opgaven, sproget, supervisionen, den første uge eller den officielle procesejer stadig er uklar.',
     systemProof: [
       'Rollevej og pilotproces',
-      'Matchoplæg, formularer og dokumenter',
+      'Matchbrief, formularer og dokumenter',
       'Privatlivsgrænser uden følsomme sagsdata',
     ],
     link: null,
     linkLabel: 'Gennemgang efter aftale',
-    bestFor: 'Viser struktureret klarhed, tydelige grænser og menneskevurderede beslutninger.',
+    bestFor: 'Viser offentlig-sektor-lignende klarhed, tydelige grænser og menneskeligt vurderet beslutningsflow.',
   },
   {
     eyebrow: 'Privatlivsfokuseret socialt system',
@@ -81,15 +80,15 @@ const pilotProjects = [
     role: 'Kulturelt introduktionssystem med samtykke før kontakt',
     flow: ['Signal', 'Menneskelig vurdering', 'To ja-svar'],
     text:
-      'Bygget til mennesker, der ønsker kontekst, værdighed og privatliv før eksponering, ikke endnu en offentlig profilvæg.',
+      'Bygget omkring det reelle behov bag kontakt: mennesker vil have kontekst, værdighed og privatliv før eksponering, ikke endnu en offentlig profilvæg.',
     systemProof: [
       'Private signaler og Bridge Notes',
-      'Café Circle, spil og en rolig introduktion',
+      'Café Circle, spil og blød onboarding',
       'Tillidscenter, sikkerhedslogik og persisk/engelsk sprogstruktur',
     ],
     link: null,
     linkLabel: 'Gennemgang efter aftale',
-    bestFor: 'Viser emotionel UX, samtykkearkitektur og kulturelt bevidst tillidsdesign.',
+    bestFor: 'Viser emotionel UX, samtykkearkitektur, nicheprodukt-tænkning og kulturel tillid.',
   },
 ];
 
@@ -97,45 +96,45 @@ const systemSteps = [
   {
     label: 'Kilde',
     title: 'Find det reelle materiale',
-    text: 'Services, politikker, begrænsninger, ejerbeslutninger og reelle brugerspørgsmål.',
+    text: 'Services, politikker, eksempler, begrænsninger, ejerbeslutninger og de spørgsmål brugerne faktisk stiller.',
   },
   {
     label: 'Struktur',
     title: 'Gør vejen læsbar',
-    text: 'Sider, hierarki, tillidsblokke, CTA-logik, formularer og læserækkefølge.',
+    text: 'Sider, sidehierarki, tillidsblokke, CTA-logik, formularer og den rækkefølge mennesker har brug for.',
   },
   {
-    label: 'Byg',
+    label: 'Build',
     title: 'Lancér den første brugbare version',
-    text: 'Responsive sider, lokale filer, metadata, linkcheck og mobil QA.',
+    text: 'Responsive sider, lokale assets, metadata, schema-forståelse, linkcheck og mobil QA.',
   },
   {
     label: 'Overdragelse',
     title: 'Gør det lettere at drive videre',
-    text: 'Versionsnoter, genbrugelige beslutninger, næste skridt og ejerkontrol efter lancering.',
+    text: 'Versionsnoter, genbrugelige beslutninger, næste skridt og ejerkontrol efter første launch.',
   },
 ];
 
 const weeks = [
   {
     label: 'Uge 01',
-    title: 'Forstå og gennemgå',
-    text: 'Forstå arbejdsgangen, gennemgå én side eller rejse, kortlægge sider, formularer og mobilfriktion og skrive en QA-note.',
+    title: 'Forstå og auditere',
+    text: 'Lære workflowet, gennemgå én side eller kunderejse, mappe sider, formularer og mobilfriktion, og skrive en kort QA-note.',
   },
   {
     label: 'Uge 02',
     title: 'Støtte produktion',
-    text: 'Støtte sideopdateringer, produkt-/servicesider, CMS-struktur, overdragelsesnoter, interne links, UX-rettelser og flersproget oprydning.',
+    text: 'Hjælpe med sideopdateringer, produkt-/servicesider, CMS-struktur, GitHub-baserede overdragelsesnoter, interne links, UX-fixes og flersproget oprydning.',
   },
   {
     label: 'Uge 03',
     title: 'Teste og dokumentere',
-    text: 'Mobil-, link- og anker-QA, formularrejser, korrektur og metadata-tjek.',
+    text: 'Mobilcheck, link- og anker-QA, formularrejser, korrektur og metadata-tjek.',
   },
   {
     label: 'Uge 04',
-    title: 'Levere et brugbart resultat',
-    text: 'En forbedringsliste, prototype eller implementeringspakke med overdragelsesnoter og næste skridt.',
+    title: 'Levere brugbart output',
+    text: 'En konkret forbedringsliste, prototype eller implementeringspakke, overdragelsesnoter og næste skridt.',
   },
 ];
 
@@ -210,10 +209,10 @@ export default function DanishPortfolio() {
                 <em>uklare</em> behov.
               </h1>
               <p className="lede reveal" style={{ transitionDelay: '.22s' }}>
-                Jeg finder den reelle friktion i uklare oplæg og omsætter den til første versioner, teams kan teste, overdrage og forbedre.
+                Jeg finder den reelle friktion bag uklare briefs og gør den til første brugbare systemer, teams kan teste, overdrage og forbedre.
               </p>
               <p className="sub reveal" style={{ transitionDelay: '.3s' }}>
-                Website-produktion, UX-struktur og Webflow/Shopify/CMS-support for teams med uklart input og rigtige deadlines.
+                Website-produktion, UX-struktur, CMS- og indholdsimplementering, QA og første brugbare versioner for teams med uklart input og rigtige deadlines.
               </p>
               <div className="hero__cta reveal" style={{ transitionDelay: '.38s' }}>
                 <a className="btn" href="#work">
@@ -233,23 +232,23 @@ export default function DanishPortfolio() {
             <aside className="spec reveal" style={{ transitionDelay: '.28s' }} aria-label="Portfolio hurtige fakta">
               <div className="signal-map" aria-label="Uklart input bliver til et klart digitalt system">
                 <div className="signal-map__input" aria-hidden="true">
-                  <span>oplæg</span><span>indhold</span><span>tillid</span><span>booking</span><span>QA</span>
+                  <span>brief</span><span>indhold</span><span>tillid</span><span>booking</span><span>QA</span>
                 </div>
                 <div className="signal-map__route" aria-hidden="true"><i /></div>
-                <div className="signal-map__output"><span className="mono">Resultat</span><b>Klart system</b><small>brugbart · vurderbart · klar til overdragelse</small></div>
+                <div className="signal-map__output"><span className="mono">Output</span><b>Klart system</b><small>brugbart · vurderbart · klar til overdragelse</small></div>
               </div>
               <dl>
                 <div className="row">
                   <dt className="mono">Bedst match</dt>
-                  <dd>Website-produktion, UX-implementering, Webflow/Shopify/CMS-support, leveringssupport og QA</dd>
+                  <dd>Website-produktion, UX-implementering, CMS- og indholdssupport, leveringssupport og QA</dd>
                 </div>
                 <div className="row">
                   <dt className="mono">Dokumentation</dt>
-                  <dd>Live lokal virksomhedssite, 5.0-bedømmelse, 16 anmeldelser og DA/EN-sider</dd>
+                  <dd>Live lokal virksomhedssite, 5.0 rating, 16 anmeldelser og DA/EN-sider</dd>
                 </div>
                 <div className="row">
                   <dt className="mono">Base</dt>
-                  <dd>Storkøbenhavn · Tune, Danmark</dd>
+                  <dd>Greater Copenhagen · Tune, Denmark</dd>
                 </div>
                 <div className="row">
                   <dt className="mono">Sprog</dt>
@@ -265,10 +264,10 @@ export default function DanishPortfolio() {
             <div className="proof-dash reveal">
               <div className="proof-dash__head">
                 <p className="mono">Dokumentationsoverblik</p>
-                <h2 id="proof-title-da">Få overblikket på 20 sekunder.</h2>
+                <h2 id="proof-title-da">Scan værdien på 20 sekunder.</h2>
                 <p>Rigtigt arbejde, systemtænkning og leveringsdokumentation i ét hurtigt overblik.</p>
               </div>
-              <div className="proof-grid" aria-label="Dokumentation i portfolioen">
+              <div className="proof-grid" aria-label="Portfolio proof signals">
                 {proofSignals.map((item) => (
                   <div key={item.value}>
                     <b>{item.value}</b>
@@ -285,7 +284,7 @@ export default function DanishPortfolio() {
             <div className="sec-head">
               <span className="sec-no">01</span>
               <h2>Udvalgt arbejde og systemer</h2>
-              <p className="note">Først et live virksomhedssite, derefter brugbare systemer bygget omkring tillid, arbejdsgange og menneskelig vurdering.</p>
+              <p className="note">Først et live virksomhedssite, derefter brugbare systemer bygget omkring tillid, workflow og menneskelig vurdering.</p>
             </div>
 
             <article className="feature reveal" aria-labelledby="marzieh-title-da">
@@ -297,12 +296,13 @@ export default function DanishPortfolio() {
                 </div>
                 <div className="browser__view">
                   <div className="browser__copy">
-                    <span className="eyebrow">Privat negleatelier · Valby</span>
-                    <h3>Art You Wear.<br />Care You Remember.</h3>
-                    <p>En rolig tosproget tilstedeværelse med tydelige services, tillidssignaler og en enkel bookingvej.</p>
-                    <div className="case-actions"><a className="pill" href="/da/arbejde/marzieh-nail-atelier/">Se casen</a><a className="case-live-link" href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">Åbn website ↗</a></div>
+                    <span className="eyebrow">Udvalgt live-case · Nært virksomhedscaseprojekt</span>
+                    <h3>Marzieh Nail Atelier</h3>
+                    <p>Et rigtigt tosproget virksomhedssite bygget omkring serviceklarhed, tillid og en rolig bookingrejse.</p>
+                    <div className="case-actions"><a className="pill" href="/da/arbejde/marzieh-nail-atelier/">Udforsk casen →</a><a className="case-live-link" href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">Åbn live site ↗</a></div>
                   </div>
                   <div className="browser__media">
+                    <span className="browser__media-label">Preview af live website</span>
                     <img
                       src="/assets/marzieh-homepage-ui-snapshot.webp"
                       alt="Marzieh Nail Atelier hjemmeside UI snapshot med navigation, hero, bookingvej og servicekort"
@@ -325,8 +325,9 @@ export default function DanishPortfolio() {
                 </div>
 
                 <dl className="field"><dt>Problem</dt><dd>Et premium one-to-one negleatelier havde brug for tydeligere services, mere bookingtryghed, lokal tillid, politikker og mobil læsbarhed.</dd></dl>
-                <dl className="field"><dt>Min rolle</dt><dd>Jeg formede koncept, servicestruktur, tekstflow, tillidssektioner, mobil QA og udgivelsessikre iterationer.</dd></dl>
-                <dl className="field"><dt>Bygget</dt><dd>Forside, services og priser, galleri, brudeside, FAQ, politikker, privatliv, besøgsvej, bookinglinks, lokale SEO-signaler og forståelse for strukturerede data.</dd></dl>
+                <dl className="field"><dt>Min rolle</dt><dd>Jeg havde ansvar for retning, informationsstruktur, service- og indholdsbeslutninger, review, mobil QA, deployment og overdragelse i denne reelle case for en nærtstående virksomhed.</dd></dl>
+                <dl className="field"><dt>Bygget</dt><dd>Forside, services og priser, galleri, brudeside, FAQ, politikker, privatliv, besøgsvej, bookinglinks, lokale SEO-signaler og schema-forståelse.</dd></dl>
+                <dl className="field field--ai field--wide"><dt>AI-assisteret produktion</dt><dd>Claude, ChatGPT og andre AI-værktøjer understøttede research, udkast, kodehjælp og sammenligning. Jeg definerede brief og struktur, udvalgte og reviderede output, testede implementeringen og godkendte den endelige levering.</dd></dl>
                 <dl className="field field--highlight"><dt>Bureau-relevans</dt><dd>For et bureau viser det, at jeg kan gøre løst kundemateriale til en struktureret, mobilklar kunderejse med dokumenteret tillid, bookinglogik og overdragelsesdisciplin.</dd></dl>
 
                 <div className="case-proof-row" aria-label="Marzieh Nail Atelier produktionsdokumentation">
@@ -343,15 +344,15 @@ export default function DanishPortfolio() {
                 </div>
 
                 <div className="gallery" aria-label="Marzieh Nail Atelier UI snapshots">
-                  <div className="g"><img src="/assets/marzieh-services-ui-snapshot.webp" width="760" height="520" decoding="async" alt="Marzieh Nail Atelier visning af ydelser og priser" loading="lazy" /></div>
-                  <div className="g"><img src="/assets/marzieh-work-ui-snapshot.webp" width="760" height="520" decoding="async" alt="Marzieh Nail Atelier visning af arbejdsgalleri" loading="lazy" /></div>
-                  <div className="g"><img src="/assets/marzieh-booking-ui-snapshot.webp" width="760" height="520" decoding="async" alt="Marzieh Nail Atelier visning af besøg og booking" loading="lazy" /></div>
+                  <div className="g"><img src="/assets/marzieh-services-ui-snapshot.webp" width="760" height="520" decoding="async" alt="Marzieh Nail Atelier services UI snapshot" loading="lazy" /></div>
+                  <div className="g"><img src="/assets/marzieh-work-ui-snapshot.webp" width="760" height="520" decoding="async" alt="Marzieh Nail Atelier work gallery UI snapshot" loading="lazy" /></div>
+                  <div className="g"><img src="/assets/marzieh-booking-ui-snapshot.webp" width="760" height="520" decoding="async" alt="Marzieh Nail Atelier visit and booking UI snapshot" loading="lazy" /></div>
                 </div>
 
                 <div className="case-foot">
                   <div className="case-foot__actions"><a className="linkclay case-cta" href="/da/arbejde/marzieh-nail-atelier/">Se hele casen →</a><a className="linkclay case-secondary-cta" href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">Åbn live website ↗</a></div>
                   <div className="stat" aria-label="Offentlige dokumentationsfakta">
-                    <div className="s"><b>5.0</b><span>Google-bedømmelse</span></div>
+                    <div className="s"><b>5.0</b><span>Google-rating</span></div>
                     <div className="s"><b>16</b><span>Google-anmeldelser</span></div>
                     <div className="s"><b>DA / EN</b><span>Flersproget</span></div>
                   </div>
@@ -362,7 +363,7 @@ export default function DanishPortfolio() {
             <div id="systems" className="systems-intro reveal" aria-label="Systemer bygget fra uklare behov">
               <p className="mono">Systemer jeg har bygget</p>
               <h3>Ikke kun sider. Brugbare første versioner.</h3>
-              <p>Ud over enkeltstående websites bygger jeg servicerejser, henvendelsesforløb, tillidslag, pilotlogik, dokumentationsruter og vurderingspunkter, der gør uklare ideer lettere at teste uden at overbygge.</p>
+              <p>Ud over enkeltstående websites bygger jeg service-rejser, intake-forløb, tillidslag, pilotlogik, dokumentationsruter og vurderingspunkter, der gør uklare ideer lettere at teste uden at overbygge.</p>
               <p className="systems-guard">Nogle pilotdetaljer er bevidst forenklet offentligt. En dybere gennemgang kan aftales.</p>
             </div>
 
@@ -378,7 +379,7 @@ export default function DanishPortfolio() {
                     ))}
                   </div>
                   <p>{project.text}</p>
-                  <ul className="system-proof-list" aria-label={`${project.title} systemdokumentation`}>
+                  <ul className="system-proof-list" aria-label={`${project.title} systemproof`}>
                     {project.systemProof.map((item) => <li key={item}>{item}</li>)}
                   </ul>
                   <p className="best-for">{project.bestFor}</p>
@@ -402,17 +403,17 @@ export default function DanishPortfolio() {
 
         <section id="approach" className="deep-dive-section">
           <div className="wrap">
-            <div className="sec-head"><span className="sec-no">02</span><h2>Sådan arbejder jeg</h2><p className="note">Driftsorienteret tænkning anvendt på websites, indhold og digitale flows.</p></div>
+            <div className="sec-head"><span className="sec-no">02</span><h2>Sådan arbejder jeg</h2><p className="note">Operations-trænet tænkning brugt på websites, indhold og digitale flows.</p></div>
             <div className="approach-grid">
               <p className="approach reveal">Jeg tænker i <b>flow, overdragelser, eksekvering og synlige næste handlinger</b>, og bygger derefter strukturen under det.</p>
               <div className="reveal">
-                <p>Drift, ERP, planlægning, masterdata og leverandørarbejde har trænet mig i at mappe en proces, finde hvor den går i stykker og gøre uklart input til ejerskab og noter, der er klar til produktion.</p>
+                <p>Operations, ERP, planlægning, master data og leverandørarbejde har trænet mig i at mappe en proces, finde hvor den går i stykker og gøre uklart input til ejerskab og noter, der er klar til produktion.</p>
                 <p>Jeg bruger samme rytme i webarbejde: forstå det reelle behov, bygge første brugbare version, teste på mobil og dokumentere næste skridt.</p>
               </div>
             </div>
 
             <div className="friction-lens reveal" aria-label="Friktionslinse">
-              <div><p className="mono">Friktionslinse</p><h3>Jeg bygger ikke kun ud fra oplægget.</h3><p>Jeg ser efter, hvad kunden skal kunne stole på, hvad ejeren skal kunne styre, hvad teamet skal kunne overdrage, og hvad systemet skal gøre tydeligt.</p></div>
+              <div><p className="mono">Friktionslinse</p><h3>Jeg bygger ikke kun ud fra briefet.</h3><p>Jeg ser efter, hvad kunden skal kunne stole på, hvad ejeren skal kunne styre, hvad teamet skal kunne overdrage, og hvad systemet skal gøre tydeligt.</p></div>
               <div className="lens-grid" aria-label="Fire spørgsmål til friktionskortlægning">
                 <article><span>Kunde</span><b>Hvad skal føles trygt eller klart før handling?</b></article>
                 <article><span>Ejer</span><b>Hvad kræver én pålidelig kilde og beslutning?</b></article>
@@ -421,20 +422,19 @@ export default function DanishPortfolio() {
               </div>
             </div>
 
-            <div className="backbone reveal" aria-label="Dokumentation fra driftsbaggrunden">
+            <div className="backbone reveal" aria-label="Operationsbaggrund dokumentation">
               <div className="backbone__copy">
-                <p className="mono">Driftsbaggrund</p>
+                <p className="mono">Operationsbaggrund</p>
                 <h3>Friktion først. Værktøjer bagefter.</h3>
                 <p>Før jeg bygger en side, et flow eller en prototype, kigger jeg efter svage kilder, uklare ejere og skrøbelige overdragelser. Tallene er baggrundsdokumentation fra ERP, MRP, master data og leverandøropfølgning.</p>
-                <p className="backbone__bridge"><b>Jeg tager QA-, ejerskabs- og overdragelsesdisciplin fra driftsarbejde med ind i digital produktion.</b></p>
                 <p className="sr-only">Arbejdsrytme: Friktion til kilde til ejer til vurdering til genbrug.</p>
                 <div className="method-strip" aria-hidden="true">{['Friktion', 'Kilde', 'Ejer', 'Vurdering', 'Genbrug'].map((step, index) => <span key={step}>{step}{index < 4 ? <i> → </i> : null}</span>)}</div>
               </div>
-              <div className="metric-grid" aria-label="Dokumentation fra driftsarbejde">
-                <div aria-label="2.000 plus ERP-varestrukturer"><b>2.000+ </b><span>ERP-varestrukturer</span></div>
-                <div aria-label="200 plus multi-level parts set up"><b>200+ </b><span>flerniveaudele oprettet</span></div>
+              <div className="metric-grid" aria-label="Operations proof metrics">
+                <div aria-label="2,000 plus ERP item structures"><b>2,000+ </b><span>ERP item structures</span></div>
+                <div aria-label="200 plus multi-level parts set up"><b>200+ </b><span>multi-level parts sat op</span></div>
                 <div aria-label="30 plus EU and US suppliers coordinated"><b>30+ </b><span>EU/US leverandører koordineret</span></div>
-                <div aria-label="5 production lines and 40 plus variants supported"><b>5 / 40+ </b><span>produktionslinjer og varianter understøttet</span></div>
+                <div aria-label="5 production lines and 40 plus variants supported"><b>5 / 40+ </b><span>produktionslinjer og varianter supporteret</span></div>
               </div>
             </div>
           </div>
@@ -442,10 +442,10 @@ export default function DanishPortfolio() {
 
         <section id="system" className="deep-dive-section" aria-labelledby="system-title-da">
           <div className="wrap">
-            <div className="sec-head"><span className="sec-no">03</span><h2 id="system-title-da">Fra uklart input til et system i drift</h2><p className="note">Et kompakt billede af, hvordan reel friktion bliver til noget, mennesker kan bruge.</p></div>
+            <div className="sec-head"><span className="sec-no">03</span><h2 id="system-title-da">Fra uklart input til live system</h2><p className="note">Et kompakt billede af, hvordan reel friktion bliver til noget, mennesker kan bruge.</p></div>
             <div className="system-board reveal">
-              <div className="system-intro"><p className="mono">Dokumentationslogik</p><h3>Mere end sider. En brugbar første version.</h3><p>Dokumentation er også logikken, der gør uklare behov til en tydelig vej, en lanceret første version og en overdragelse, ejeren kan bruge.</p></div>
-              <div className="system-steps" aria-label="Proces fra uklart input til et system i drift">
+              <div className="system-intro"><p className="mono">Dokumentationslogik</p><h3>Mere end sider. En brugbar første version.</h3><p>Den stærkeste dokumentation er ikke kun den færdige skærm. Det er logikken, der gør uklare menneskelige og forretningsmæssige behov til en tydelig vej, en lanceret førsteversion og en overdragelse, ejeren kan bruge videre.</p></div>
+              <div className="system-steps" aria-label="Fra uklart input til live system process">
                 {systemSteps.map((step, index) => (
                   <article className="system-step" key={step.label}><span className="system-index">{String(index + 1).padStart(2, '0')}</span><p className="mono">{step.label}</p><h3>{step.title}</h3><p>{step.text}</p></article>
                 ))}
@@ -456,38 +456,43 @@ export default function DanishPortfolio() {
 
         <section id="fit">
           <div className="wrap">
-            <div className="sec-head"><span className="sec-no">{viewMode === 'quick' ? '02' : '04'}</span><h2>Hvor jeg passer ind</h2><p className="note">En praktisk beslutningsvej for bureauer, digitale studier og startups.</p></div>
-            <div className="fit-summary reveal"><p className="mono">Bedst match lige nu</p><h3>Teams der har brug for brugbare digitale leverancer fra rodet input.</h3><p>Jeg forbinder kundemateriale, indhold, UX, QA og overdragelse, så spredt input bliver lettere at bygge, teste, lancere og forbedre.</p></div>
+            <div className="sec-head"><span className="sec-no">{viewMode === 'quick' ? '02' : '04'}</span><h2>Hvor jeg passer ind</h2><p className="note">En praktisk beslutningsvej for bureauer, studios og startups.</p></div>
+            <div className="fit-summary reveal"><p className="mono">Bedst match lige nu</p><h3>Teams der har brug for brugbart digitalt output fra rodet input.</h3><p>Jeg forbinder menneskelige behov, kundemateriale, indhold, UX, QA og overdragelse. Værdien er ikke at erstatte seniorspecialister. Det er at gøre spredt materiale lettere at forstå, bygge, teste, lancere og forbedre.</p></div>
             <div className="fit-lanes reveal" aria-label="Praktiske rolleområder">{roleFitLanes.map((lane) => <article key={lane.title}><span className="mono">{lane.label}</span><h3>{lane.title}</h3><p>{lane.text}</p></article>)}</div>
             <p className="mono audience-label reveal">Bedste målgruppe</p>
             <div className="target-grid reveal">
-              <article><span className="mono">Etablerede bureauer</span><h3>Produktionssupport med overdragelsesdisciplin</h3><p>Nyttigt til kundesider, serviceforløb, tillidssektioner, mobil QA og praktisk leveringssupport.</p></article>
-              <article><span className="mono">Webflow-, WordPress- og Shopify-bureauer</span><h3>CMS- og webshop-produktionssupport</h3><p>Nyttigt til sideopdateringer, produkt-/servicesider, hierarki, formularer, grundlæggende SEO og mobilcheck.</p></article>
-              <article><span className="mono">Startups og produktteams</span><h3>Første versioner før overbygning</h3><p>Nyttigt til landingssider, onboardingforløb, prototyper og dokumentation, der gør næste beslutning lettere.</p></article>
+              <article><span className="mono">Etablerede bureauer</span><h3>Produktionssupport med overdragelsesdisciplin</h3><p>Nyttigt til kundesider, serviceflows, tillidssektioner, mobil QA og praktisk leveringssupport.</p></article>
+              <article><span className="mono">Webflow / WordPress / Shopify shops</span><h3>CMS- og webshop-produktionssupport</h3><p>Nyttigt til sideopdateringer, produkt-/servicesider, indholdshierarki, formularer, SEO-basics, mobilcheck og CMS-klar tænkning.</p></article>
+              <article><span className="mono">Startups og produktteams</span><h3>Første versioner før overbygning</h3><p>Nyttigt til landing pages, onboarding flows, prototyper og dokumentation, der gør næste beslutning lettere.</p></article>
             </div>
           </div>
         </section>
 
         <section id="capabilities" className="deep-dive-section">
           <div className="wrap">
-            <div className="sec-head"><span className="sec-no">05</span><h2>Implementering og QA-dokumentation</h2><p className="note">Understøttende dokumentation, ikke en påstand om seniorudviklerniveau.</p></div>
+            <div className="sec-head"><span className="sec-no">05</span><h2>Build og QA-dokumentation</h2><p className="note">Understøttende dokumentation, ikke en senior engineering-påstand.</p></div>
             <div className="implementation-proof reveal" aria-label="Teknisk implementeringsdokumentation">
-              <div><p className="mono">Teknisk implementeringsdokumentation</p><h3>Portfolioen er også et fungerende webeksempel.</h3><p>Statisk Next.js-eksport, Cloudflare, lokale filer og fonte, Open Graph-metadata, responsivt layout, ankre, JSON-LD-forståelse og GitHub/GitLab-overdragelse.</p><p className="implementation-note">Ikke en seniorudviklerpåstand. Et fungerende eksempel på ren statisk opbygning, kildepakke og QA-disciplin.</p></div>
-              <div className="implementation-chips" aria-label="Tekniske implementeringssignaler">{['Statisk eksport', 'Cloudflare', 'GitHub / GitLab-arbejdsgang', 'Lokale filer', 'OG / metadata', 'Responsiv QA'].map((item) => <b key={item}>{item}</b>)}</div>
+              <div><p className="mono">Teknisk implementeringsdokumentation</p><h3>Portfolioen er også et arbejdende build-eksempel.</h3><p>Statisk Next.js export, Cloudflare deployment, lokale assets, lokalt bundtede fonte, Open Graph metadata, responsivt layout, interne ankre, JSON-LD-forståelse og GitHub-baseret overdragelsesdisciplin.</p><p className="implementation-note">Ikke en senior engineering-påstand. Et arbejdende eksempel på et rent statisk web-build, pakning og praktisk QA-disciplin.</p></div>
+              <div className="implementation-chips" aria-label="Tekniske implementeringssignaler">{['Static export', 'Cloudflare', 'GitHub workflow', 'Local assets', 'OG / metadata', 'Responsive QA'].map((item) => <b key={item}>{item}</b>)}</div>
             </div>
+            <aside className="ai-disclosure reveal" aria-label="Oplysning om AI-assisteret produktion">
+              <div><p className="mono">AI-assisteret produktion</p><h3>AI understøtter workflowet. Jeg har ansvaret for arbejdet.</h3></div>
+              <p>Claude, ChatGPT og andre AI-værktøjer understøtter research, udkast, kodehjælp, sammenligning og iteration. Jeg definerer brief og retning, træffer de endelige indholds- og designbeslutninger, gennemgår og tester implementeringen og har ansvaret for deployment og overdragelse.</p>
+            </aside>
+
             <div className="evidence-board reveal" aria-label="Dokumentationstavle">
-              <div className="evidence-board__intro"><p className="mono">Dokumentationstavle</p><h3>Arbejdet bag skærmen.</h3><p>Små produktionsleverancer, der gør arbejdet lettere at gennemgå, udgive og overdrage.</p></div>
+              <div className="evidence-board__intro"><p className="mono">Dokumentationstavle</p><h3>Arbejdet bag skærmen.</h3><p>Små produktionsleverancer, der gør et build lettere at gennemgå, deploye og overdrage.</p></div>
               <div className="evidence-board__grid">
                 <article><span>01</span><b>Rutekort</b><small>Sider, ankre og beslutningsveje</small></article>
                 <article><span>02</span><b>Mobil QA</b><small>Android, iPhone og smalle skærme</small></article>
                 <article><span>03</span><b>Sprogparitet</b><small>EN / DA-sider og synlig tekstgennemgang</small></article>
-                <article><span>04</span><b>Udgivelsesnote</b><small>Byggekommando, version og udgivelsesstatus</small></article>
+                <article><span>04</span><b>Deploy-note</b><small>Build-kommando, version og release-status</small></article>
                 <article><span>05</span><b>Ejerkontrol</b><small>Tydelige kilder, links og næste beslutninger</small></article>
                 <article><span>06</span><b>Overdragelsespakke</b><small>Ren kilde, README og verifikation</small></article>
               </div>
             </div>
 
-            <div className="exposure reveal"><p className="mono lab">Praktisk erfaring, ærligt beskrevet</p><div className="chips" aria-label="Arbejdseksponering">{['HTML / CSS','Responsivt layout','Statisk websitestruktur','Grundlæggende JavaScript','Cloudflare Pages / Workers','GitHub-udgivelse','GitLab-arbejdsgang','Webflow-support','Shopify-support','SEO-metadata','JSON-LD / strukturerede data','Formularer og brugerrejser','Flersproget indhold','Mobil QA','Dokumentation'].map((item) => <b key={item}>{item}</b>)}</div><p className="caveat">De seneste builds er specialbyggede, statiske og Cloudflare-baserede. Jeg er tryg ved Webflow-, Shopify- og CMS-strukturer, GitHub/GitLab-arbejdsgange, kildepakker, udgivelsesnoter og QA-overdragelse.</p></div>
+            <div className="exposure reveal"><p className="mono lab">Arbejdseksponering, hands-on og ærlig</p><div className="chips" aria-label="Arbejdseksponering">{['HTML / CSS','Responsive layouts','Static site structure','Basic JavaScript','Cloudflare Pages / Workers','GitHub deploy','Struktureret overdragelsesworkflow','Webflow-kendskab','Shopify-kendskab','SEO-metadata','JSON-LD / schema','Forms & journeys','Multilingual content','Mobile QA','Documentation'].map((item) => <b key={item}>{item}</b>)}</div><p className="caveat">Præsenteret ærligt: de seneste builds er custom static og Cloudflare-baserede. Jeg kender Webflow- og Shopify-leveringsmønstre og er klar til at arbejde i etablerede CMS-workflows med GitHub-baserede source packages, deploy-noter og QA-overdragelse.</p></div>
           </div>
         </section>
 
@@ -507,17 +512,12 @@ export default function DanishPortfolio() {
                 <a className="btn email-cta" href="mailto:clementiromaric@protonmail.com"><span className="email-cta__desktop">clementiromaric@protonmail.com</span><span className="email-cta__mobile">Skriv til mig</span></a>
                 <div className="meta">
                   <div className="m contact-email-row"><span className="mono">E-mail</span><b><a href="mailto:clementiromaric@protonmail.com">clementiromaric@protonmail.com</a></b></div>
-                  <div className="m"><span className="mono">Lokation</span><b>Storkøbenhavn · Tune, Danmark</b></div>
+                  <div className="m"><span className="mono">Lokation</span><b>Greater Copenhagen · Tune, Denmark</b></div>
                   <div className="m"><span className="mono">Sprog</span><b>Fransk modersmål · flydende engelsk · operationelt dansk</b></div>
                   <div className="m"><span className="mono">Live dokumentation</span><b><a href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">marziehnail-atelier.dk</a></b></div>
                 </div>
               </div>
-              <p className="avail">Bedste match: website-produktion, UX-implementering, Webflow/Shopify/CMS-support, GitHub/GitLab-arbejdsgange, digital levering, QA og dokumentation. Åben for afgrænsede projekter, produktionsroller eller en kort <b>praktik</b> til at teste samarbejdet.</p>
-              <div className="portfolio-companion">
-                <span className="mono">Tilhørende portfolio</span>
-                <p>Leder I efter min baggrund inden for ERP, stamdata og drift?</p>
-                <a href={liveLinks.operations} target="_blank" rel="noopener noreferrer">Se portfolioen for drift, ERP og arbejdsgange ↗</a>
-              </div>
+              <p className="avail">Bedste match: website-produktion, UX-implementering, CMS- og indholdssupport, GitHub-baseret workflow, brugbare første versioner, digital leveringssupport, QA og dokumentation. Åben for afgrænset projektsupport, digitale produktionsroller eller en kort <b>praktik</b>, når det er den reneste måde at teste samarbejdet på.</p>
             </div>
           </div>
         </section>
@@ -526,7 +526,7 @@ export default function DanishPortfolio() {
       <footer>
         <div className="wrap foot">
           <div className="mark"><b>RC</b><span>Uklart menneskeligt og forretningsmæssigt behov → klart digitalt system.</span></div>
-          <p className="fine">Håndbygget som live dokumentation af friktionskortlægning, systemstruktur, UX-flow, QA og udgivelsesdisciplin. © 2026 Romaric Clementi</p>
+          <p className="fine">Ledet, gennemgået og leveret af Romaric Clementi med tydelig oplysning om AI-assisteret produktion, hvor den er brugt. © 2026 Romaric Clementi</p>
         </div>
       </footer>
     </>

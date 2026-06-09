@@ -1,48 +1,67 @@
-ROMARIC CLEMENTI WEB & DIGITAL PORTFOLIO V5.11.8
-TEXT DENSITY & DANISH LANGUAGE CONSISTENCY
+Romaric Clementi Web Digital Portfolio V5.11.3
+Case Clarity, AI Disclosure & Agency Trust Patch
 
 SOURCE
-- Built directly from V5.11.7 Companion Portfolio Positioning & Cross-Link Polish.
+- Built directly from the uploaded V5.11.2 Deployment Registry & Lockfile Portability Fix source package.
+- Uploaded ZIP inspected before editing.
 - No rebuild from memory.
 
 PATCH SCOPE
-- Selective 10–15% compression of long/repetitive explanatory blocks.
-- Proof, metrics, routes, pilot protection and case evidence preserved.
-- Danish “Operations-trænet tænkning” replaced with natural driftsorienteret wording.
-- Danish 2.000+ number formatting applied.
-- EN/DA Marzieh case narratives tightened where visuals already explain the decision.
-- Companion footer link target enlarged to at least 44px high.
+- Corrected the featured Marzieh case entry and CTA hierarchy.
+- Added dedicated case-study identity, breadcrumbs and project-context panel.
+- Added explicit EN/DA AI-assisted production disclosure.
+- Clarified Romaric Clementi's responsibility for direction, structure, decisions, review, QA, deployment and handover.
+- Replaced Hand-built wording.
+- Recalibrated Webflow and Shopify to familiarity/readiness language.
+- Replaced GitLab-style claims with GitHub-based workflow / structured handover wording.
+- Preserved routes, live Marzieh link, metadata, static export and bilingual architecture.
 
-BUILD VERIFICATION
-- Next.js 16.2.7 production build: PASS
-- Static routes generated: 9
-- Danish postbuild language patch: PASS for 2 pages
-- npm audit --omit=dev: 0 vulnerabilities
+INSTALL AND BUILD VERIFICATION
+- Node 22.16.0.
+- npm 10.9.2.
+- npm ci: passed.
+- Next.js 16.2.7 production build: passed.
+- Static routes generated successfully.
+- package.json and package-lock.json version updated to 5.11.3.
+
+STATIC EXPORT
+- /
+- /da/
+- /work/marzieh-nail-atelier/
+- /da/arbejde/marzieh-nail-atelier/
+- /_not-found
+- /icon.png
+- /robots.txt
+- /sitemap.xml
 
 STATIC QA
-- Static HTML pages audited: 7
-- Titles/descriptions/canonicals: PASS
-- One H1 per public page: PASS
-- Duplicate IDs: 0
-- JSON-LD errors: 0
-- Images without alt text or dimensions: 0
-- Missing routes, assets or anchors: 0
-- Unsafe target=_blank links: 0
-- Old Danish wording/number-format residues: 0
-- Protected pilot URLs exposed: 0
-- Internal OpenAI registry URLs: 0
-- Google Fonts or Tailwind CDN: 0
+- 7 rendered HTML files checked.
+- 0 missing internal routes or local assets.
+- 0 broken in-page anchors.
+- 0 duplicate IDs.
+- Exactly 1 H1 per rendered HTML page.
+- 0 images without alt text.
+- 0 unsafe target="_blank" links.
+- JSON-LD parsed successfully.
+- Required EN/DA case identity and AI disclosure wording present.
+- 0 remaining Hand-built / Håndbygget strings.
+- 0 remaining Webflow support / Shopify support claims.
+- 0 remaining GitLab-style or GitHub/GitLab-style workflow claims.
 
-RESPONSIVE QA
-- EN/DA homepage and case routes checked at 360, 390, 430, 768, 1024 and 1366px
-- Included in a 72-combination two-portfolio static-render matrix
-- Document-level horizontal overflow: 0
-- Undersized detected links/buttons after final target polish: 0
+VISUAL / RESPONSIVE QA
+- Generated HTML and CSS rendered in a Chromium browser simulation at 1440px and 390px widths.
+- Homepage and dedicated case-study pages checked in desktop and mobile layouts.
+- 0 horizontal overflow at 1440px or 390px in the simulated render.
+- Featured case actions align on desktop and stack cleanly on mobile.
+- Dedicated case-study context remains visible and readable on mobile.
+- AI disclosure blocks remain readable on desktop and mobile.
+- Local screenshots did not load in the isolated file-based visual simulation; production build asset references passed static QA. Real deployed asset QA is still required.
 
-FINAL ZIP EXCLUSIONS
+ZIP EXCLUSIONS
 - node_modules
 - .next
 - out
 
 LIVE QA STILL REQUIRED
-- Verify the deployed Cloudflare versions on Android Chrome, iPhone Safari and desktop Chrome/Edge after pushing the new packages.
+- Clear Cloudflare build cache before deployment.
+- Verify the deployed Marzieh images, EN/DA routes, mobile navigation, case-study transition, external live-site link and social preview on real browsers/devices.
