@@ -834,12 +834,15 @@ button,
   .field--wide{grid-column:auto}
 }
 
-/* V5.11.5 — featured-case copy and proportion polish */
+/* V5.11.7 — fresh live homepage capture + featured-case visual balance */
 .feature--marzieh{overflow:hidden;background:var(--white)}
 .featured-case{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(360px,.92fr);align-items:stretch}
-.featured-case__visual{min-width:0;background:linear-gradient(135deg,#e9dece,#fbf8f1);border-right:1px solid var(--line-soft)}
-.featured-case__screen{padding:clamp(.55rem,1.35vw,.85rem);height:100%;display:flex;align-items:flex-start}
-.featured-case__screen img{width:100%;height:auto;max-height:660px;object-fit:contain;object-position:top center;border:1px solid var(--line-soft);border-radius:12px;background:#fff;box-shadow:0 24px 58px -42px rgba(23,19,13,.55)}
+.featured-case__visual{min-width:0;display:flex;flex-direction:column;background:linear-gradient(135deg,#e9dece,#fbf8f1);border-right:1px solid var(--line-soft)}
+.featured-case__screen{padding:clamp(.55rem,1.35vw,.85rem);padding-bottom:.55rem;display:block}
+.featured-case__screen img{display:block;width:100%;height:auto;object-fit:contain;object-position:top center;border:1px solid var(--line-soft);border-radius:12px;background:#fff;box-shadow:0 24px 58px -42px rgba(23,19,13,.55)}
+.featured-case__supporting{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem;padding:0 clamp(.55rem,1.35vw,.85rem) clamp(.55rem,1.35vw,.85rem);margin-top:auto}
+.featured-case__supporting figure{margin:0;min-width:0;overflow:hidden;border:1px solid var(--line-soft);border-radius:10px;background:#fff;box-shadow:0 18px 44px -38px rgba(23,19,13,.48)}
+.featured-case__supporting img{display:block;width:100%;height:auto;aspect-ratio:760/520;object-fit:cover;object-position:top center}
 .featured-case__copy{padding:clamp(1.8rem,4.2vw,3.4rem);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
 .featured-case__copy>.mono{margin:0 0 .75rem;color:var(--clay)}
 .featured-case__copy h3{font-family:var(--font-fraunces),serif;font-size:clamp(2rem,3.75vw,3.12rem);font-weight:650;letter-spacing:-.026em;line-height:1;margin:0;max-width:15ch}
@@ -925,6 +928,7 @@ button,
 @media(max-width:900px){
   .featured-case{grid-template-columns:1fr}
   .featured-case__visual{border-right:0;border-bottom:1px solid var(--line-soft)}
+  .featured-case__supporting{display:none}
   .featured-case__screen img{max-height:none}
   .featured-case__details{grid-template-columns:1fr}
   .featured-case__details article{border-right:0;border-bottom:1px solid var(--line-soft)}

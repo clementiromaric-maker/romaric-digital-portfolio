@@ -324,13 +324,23 @@ export default function Home() {
                   <div className="featured-case__screen">
                     <img
                       src="/assets/marzieh-homepage-ui-snapshot.webp"
-                      alt="Marzieh Nail Atelier homepage showing navigation, service cards and booking journey"
+                      alt="Marzieh Nail Atelier live homepage hero with navigation, booking actions and nail imagery"
                       className="case-transition-image"
-                      width="1600"
-                      height="1050"
+                      width="2048"
+                      height="1119"
                       loading="eager"
                       decoding="async"
                     />
+                  </div>
+                  <div className="featured-case__supporting" aria-label="Additional website interface previews">
+                    <figure>
+                      <img src="/assets/marzieh-services-ui-snapshot.webp" alt="Marzieh Nail Atelier services and pricing interface" width="760" height="520" loading="lazy" decoding="async" />
+                      <figcaption className="sr-only">Services and pricing interface</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="/assets/marzieh-booking-ui-snapshot.webp" alt="Marzieh Nail Atelier booking and visit interface" width="760" height="520" loading="lazy" decoding="async" />
+                      <figcaption className="sr-only">Booking and visit interface</figcaption>
+                    </figure>
                   </div>
                 </div>
 

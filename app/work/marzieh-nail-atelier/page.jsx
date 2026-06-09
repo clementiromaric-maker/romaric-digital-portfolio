@@ -79,7 +79,7 @@ export default function MarziehCaseStudy() {
             </div>
 
             <figure className="case-cover">
-              <img className="case-transition-image" src="/assets/marzieh-homepage-ui-snapshot.webp" width="1600" height="1050" fetchPriority="high" decoding="async" alt="Marzieh Nail Atelier homepage showing navigation, service cards and booking journey" />
+              <img className="case-transition-image" src="/assets/marzieh-homepage-ui-snapshot.webp" width="2048" height="1119" fetchPriority="high" decoding="async" alt="Marzieh Nail Atelier live homepage hero with navigation, booking actions and nail imagery" />
               <figcaption>Live production website · English and Danish routes</figcaption>
             </figure>
           </div>

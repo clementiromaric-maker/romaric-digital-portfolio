@@ -1,18 +1,16 @@
-# Romaric Clementi Web Digital Portfolio V5.11.5
+# Romaric Clementi Web Digital Portfolio V5.11.7
 
-Featured Case Copy & Proportion Polish built directly from V5.11.4.
+Fresh Live Homepage Capture built directly from V5.11.6.
 
 ## Purpose
-Apply the final copy and visual refinements to the Marzieh feature without adding labels or redesigning the portfolio again.
+Replace the older composited Marzieh homepage preview with a fresh capture from the current live website, removing the half-covered CTA issue while preserving the simplified case-study hierarchy and visual balance.
 
-## V5.11.5 changes
-- Replaced generic “real local business” wording with the more specific “independent nail atelier in Valby” in English and natural Danish equivalent.
-- Replaced plural “Clients needed” wording with singular atelier-focused language on the homepage and case pages.
-- Reduced the Marzieh feature title size and widened its usable line length so the name reads more naturally.
-- Rebalanced the feature columns and reduced screenshot padding so the live-site image is larger and sits higher.
-- Shortened the homepage AI-production disclosure while preserving clear ownership and transparency.
-- Preserved the simplified CTA wording from V5.11.4, including Read case study / Læs casen and Visit live website / Besøg live website.
-- Preserved EN/DA parity, routes, assets, metadata, static export and Cloudflare deployment architecture.
+## V5.11.7 changes
+- Replaced `marzieh-homepage-ui-snapshot.webp` with a fresh 2048 × 1119 capture from the current live English Marzieh Nail Atelier homepage.
+- The new capture shows the current navigation, complete hero copy, both CTA buttons, current proof row and nail image without the previous overlapping card treatment.
+- Updated image dimensions and English/Danish alt text on the homepage and dedicated case-study routes.
+- Preserved the supporting services and booking previews introduced in V5.11.6.
+- Preserved all V5.11.6 routes, copy, CTA wording, AI-production disclosure, EN/DA parity, metadata and Cloudflare deployment architecture.
 
 ## Cloudflare build settings
 
@@ -35,3 +33,10 @@ pnpm dlx wrangler deploy --assets ./out --compatibility-date 2026-06-06
 ```
 
 Clear the Cloudflare build cache before redeploying.
+
+
+## Verification
+- Production build passed with Next.js 16.2.7.
+- Seven exported HTML files checked.
+- Internal routes, anchors, local assets, alt text, H1 structure and JSON-LD passed static QA.
+- The `#work` anchor and Quick scan / Deep dive controls were confirmed in source.

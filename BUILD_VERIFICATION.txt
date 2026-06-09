@@ -1,54 +1,38 @@
-Romaric Clementi Web Digital Portfolio V5.11.5
-Featured Case Copy & Proportion Polish
+Romaric Clementi Web Digital Portfolio V5.11.7
+Fresh Live Homepage Capture
 
 SOURCE
-- Built directly from V5.11.4 Case Simplification, CTA Clarity & Editorial Separation.
+- Built directly from V5.11.6 Featured Case Visual Balance.
 - No rebuild from memory.
 
 PATCH SCOPE
-- Replaced generic “real local business” wording with the more specific “independent nail atelier in Valby” and a natural Danish equivalent.
-- Replaced plural customer-language in the homepage challenge with singular atelier-focused wording.
-- Updated the case-study context language so the business need is described as one atelier’s need, not an undefined group of clients.
-- Reduced the Marzieh feature title scale and increased its usable line length so the name reads in two balanced lines on desktop.
-- Rebalanced the feature columns and reduced image padding so the live-site screenshot is larger and positioned higher.
-- Shortened the homepage AI-production disclosure while preserving transparent ownership.
-- Preserved the plain CTA system from V5.11.4: Read case study / Læs casen, Visit live website / Besøg live website, View project details / Se projektdetaljer and Back to portfolio / Tilbage til portfolio.
+- Replaced the older Marzieh homepage interface mockup with a fresh capture from the current live English homepage.
+- Removed the old screenshot's partially obscured hero actions.
+- Updated image dimensions to 2048 x 1119 and refreshed EN/DA alt text.
+- Preserved the featured-case layout, supporting interface previews, case-study structure, CTA wording and AI transparency.
 
 INSTALL AND BUILD VERIFICATION
 - Node 22 environment.
-- Next.js 16.2.7 production build: passed.
-- TypeScript validation: passed.
-- Static generation: passed.
-- package.json and package-lock.json updated to 5.11.5.
+- Next.js 16.2.7 production build: PASSED with npm run build.
+- Static export generated all expected public routes.
 
-STATIC ROUTES
-- /
-- /da/
-- /work/marzieh-nail-atelier/
-- /da/arbejde/marzieh-nail-atelier/
-- /_not-found/
-- /icon.png
-- /robots.txt
-- /sitemap.xml
-
-STATIC QA
+STATIC QA RESULTS
 - 7 exported HTML files checked.
-- 0 missing internal routes or local assets.
-- 0 broken in-page anchors.
+- 0 missing internal routes.
+- 0 broken same-page anchors.
+- 0 missing referenced local images.
 - 0 duplicate IDs.
-- Exactly 1 H1 per public page.
+- Exactly 1 H1 per exported page.
 - 0 images without alt text.
 - JSON-LD parsed successfully.
-- 0 remaining Open live-proof case / live-proof / Open live site / Explore the case / Featured live case / Strongest proof / Close-self-owned / Live website preview strings.
-- EN/DA copy parity checked for the featured case and dedicated case pages.
+- Fresh capture referenced across EN/DA homepage and case-study output.
+- Fresh capture dimensions verified at 2048 x 1119.
 
-VISUAL / RESPONSIVE QA
-- Feature layout rendered and inspected at 1440px and 390px.
-- Title now breaks naturally into two lines on desktop and mobile.
-- CTA hierarchy preserved and mobile actions remain full-width.
-- Screenshot area enlarged through reduced padding and improved top alignment.
-- 0 horizontal overflow at 1440px or 390px.
-- Dedicated case-study hero checked at desktop and mobile sizes.
+SOURCE REVIEW OF EXTERNAL AUDIT CLAIMS
+- #work navigation is present and valid: links point to section id="work".
+- Quick scan / Deep dive are functional buttons, not placeholder labels.
+- The portfolio includes embedded Marzieh screenshots and supporting interface previews.
+- No invented performance or conversion metrics were added.
 
 ZIP EXCLUSIONS
 - node_modules
@@ -57,4 +41,4 @@ ZIP EXCLUSIONS
 
 DEPLOYMENT
 - Clear the Cloudflare build cache before deployment.
-- Verify EN/DA routes, live-site links, mobile navigation and social preview after deployment.
+- Verify the featured case at desktop, tablet and mobile widths after deployment.

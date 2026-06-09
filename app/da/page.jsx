@@ -298,13 +298,23 @@ export default function DanishPortfolio() {
                   <div className="featured-case__screen">
                     <img
                       src="/assets/marzieh-homepage-ui-snapshot.webp"
-                      alt="Marzieh Nail Atelier forside med navigation, servicekort og bookingrejse"
+                      alt="Marzieh Nail Atelier live-forside med navigation, bookinghandlinger og neglebillede"
                       className="case-transition-image"
-                      width="1600"
-                      height="1050"
+                      width="2048"
+                      height="1119"
                       loading="eager"
                       decoding="async"
                     />
+                  </div>
+                  <div className="featured-case__supporting" aria-label="Flere visninger af website-interfacet">
+                    <figure>
+                      <img src="/assets/marzieh-services-ui-snapshot.webp" alt="Marzieh Nail Atelier service- og prisinterface" width="760" height="520" loading="lazy" decoding="async" />
+                      <figcaption className="sr-only">Service- og prisinterface</figcaption>
+                    </figure>
+                    <figure>
+                      <img src="/assets/marzieh-booking-ui-snapshot.webp" alt="Marzieh Nail Atelier booking- og besøgsinterface" width="760" height="520" loading="lazy" decoding="async" />
+                      <figcaption className="sr-only">Booking- og besøgsinterface</figcaption>
+                    </figure>
                   </div>
                 </div>
 
