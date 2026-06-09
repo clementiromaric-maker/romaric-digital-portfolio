@@ -1,28 +1,20 @@
-# Romaric Clementi Web Digital Portfolio V5.11.3
+# Romaric Clementi Web Digital Portfolio V5.11.4
 
-Case Clarity, AI Disclosure & Agency Trust Patch built directly from V5.11.2 Deployment Registry & Lockfile Portability Fix.
+Case Simplification, CTA Clarity & Editorial Separation Patch built directly from V5.11.3.
 
 ## Purpose
-Correct the concrete agency feedback received after a Kvalifik outreach:
-- the Marzieh case-study entry point did not feel visually aligned enough;
-- the dedicated case-study route looked too similar to the main portfolio and was not immediately recognisable as a separate case;
-- AI-assisted production and the division of responsibility were not explicit enough;
-- Webflow, Shopify and GitLab-style wording needed tighter, more defensible calibration.
+Respond to concrete agency feedback without solving a hierarchy problem by adding more labels. This patch simplifies the Marzieh presentation, makes the dedicated case page visually and structurally distinct, and replaces awkward proof-oriented link wording with plain human actions.
 
-## V5.11.3 changes
-- Rebuilt the featured Marzieh entry as a clear **Featured live case** with a stronger case title, aligned actions and a separate live-site action.
-- Added a visible **Live website preview** label to distinguish the client-site screenshot from the portfolio interface.
-- Added explicit project relationship and personal responsibility language for the real close/self-owned Marzieh case.
-- Added project-level and portfolio-level **AI-assisted production disclosures** in English and Danish.
-- Replaced `Hand-built` wording with accurate direction, review and delivery ownership language.
-- Recalibrated Webflow and Shopify wording from support claims to familiarity/readiness.
-- Replaced GitLab-style claims with verified GitHub-based workflow and structured handover wording.
-- Added dedicated EN/DA case-study breadcrumbs, case-study identity, project context panel and clearer read-case/live-site action hierarchy.
-- Strengthened the visual separation between the main portfolio and the Marzieh case-study route.
-- Preserved the existing static Next.js / Cloudflare architecture, routes, assets, metadata, language parity and IP-safe public-link strategy.
+## V5.11.4 changes
+- Replaced the over-labelled featured case with one simple project identity, one screenshot, three concise project facts and two clear actions.
+- Removed `Featured live case`, `Close/self-owned project`, `Live website preview`, `Strongest proof`, duplicate project headings, duplicate CTA rows and Google-rating/review metrics from the portfolio presentation.
+- Reframed the relationship naturally as a real implemented project for the founder’s wife’s independent business, not a paid external client engagement.
+- Rebuilt the EN/DA case pages as cleaner editorial case studies with a distinct visual theme, a project-at-a-glance row, clear personal contribution, interface evidence, production/handover evidence and one calm AI-production disclosure.
+- Standardised CTAs to direct language such as `Read case study`, `Visit live website`, `View project details`, `Back to portfolio` and their natural Danish equivalents.
+- Replaced contact label `Live proof` with `Live website` and changed `Open deep dive` to `View detailed experience`.
+- Preserved routes, assets, language parity, metadata, static Next.js export and Cloudflare deployment architecture.
 
 ## Cloudflare build settings
-Build variables:
 
 ```text
 NODE_VERSION = 22.16.0
@@ -42,14 +34,4 @@ Deploy command:
 pnpm dlx wrangler deploy --assets ./out --compatibility-date 2026-06-06
 ```
 
-After replacing the source package, clear the Cloudflare build cache before redeploying.
-
-## Final live check
-After deployment, verify:
-- EN and DA homepages;
-- the featured Marzieh case actions;
-- `/work/marzieh-nail-atelier/` and `/da/arbejde/marzieh-nail-atelier/`;
-- Android Chrome, iPhone Safari and desktop Chrome/Edge;
-- all screenshots and local assets;
-- the AI disclosure blocks;
-- social sharing preview and language switching.
+Clear the Cloudflare build cache before redeploying.

@@ -16,8 +16,8 @@ const proofSignals = [
     label: 'Workflow, employment and private-introduction systems',
   },
   {
-    value: '5.0 / 16',
-    label: 'Google rating and Google reviews',
+    value: 'Service to booking',
+    label: 'Offer, pricing, policies, visit and booking path',
   },
   {
     value: 'Multilingual routes',
@@ -240,10 +240,10 @@ export default function Home() {
               </p>
               <div className="hero__cta reveal" style={{ transitionDelay: '.38s' }}>
                 <a className="btn" href="#work">
-                  Selected work ↓
+                  View selected work
                 </a>
                 <a className="btn btn--ghost" href="#process">
-                  How I would start
+                  See first 30 days
                 </a>
               </div>
               <div className="view-switch reveal" style={{ transitionDelay: '.46s' }} role="group" aria-label="Choose portfolio depth">
@@ -268,7 +268,7 @@ export default function Home() {
                 </div>
                 <div className="row">
                   <dt className="mono">Proof</dt>
-                  <dd>Live local business site, 5.0 rating, 16 reviews and DA/EN routes</dd>
+                  <dd>Live local business website, EN/DA routes, booking path and owner handover</dd>
                 </div>
                 <div className="row">
                   <dt className="mono">Based</dt>
@@ -313,33 +313,19 @@ export default function Home() {
               <p className="note">A live business first, then working systems built around trust, workflow and review.</p>
             </div>
 
-            <article className="feature reveal" aria-labelledby="marzieh-title">
-              <div className="browser">
-                <div className="browser__bar">
-                  <div className="browser__dots" aria-hidden="true">
-                    <i />
-                    <i />
-                    <i />
+            <article className="feature feature--marzieh reveal" aria-labelledby="marzieh-title">
+              <div className="featured-case">
+                <div className="featured-case__visual">
+                  <div className="browser__bar">
+                    <div className="browser__dots" aria-hidden="true"><i /><i /><i /></div>
+                    <span className="browser__url">marziehnail-atelier.dk</span>
+                    <span className="browser__live">● Live</span>
                   </div>
-                  <span className="browser__url">marziehnail-atelier.dk</span>
-                  <span className="browser__live">● Live</span>
-                </div>
-                <div className="browser__view">
-                  <div className="browser__copy">
-                    <span className="eyebrow">Featured live case · Close/self-owned project</span>
-                    <h3>Marzieh Nail Atelier</h3>
-                    <p>A real bilingual business website shaped around service clarity, trust and a calm booking journey.</p>
-                    <div className="case-actions">
-                      <a className="pill" href="/work/marzieh-nail-atelier/">Explore the case →</a>
-                      <a className="case-live-link" href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">Open live site ↗</a>
-                    </div>
-                  </div>
-                  <div className="browser__media">
-                    <span className="browser__media-label">Live website preview</span>
+                  <div className="featured-case__screen">
                     <img
                       src="/assets/marzieh-homepage-ui-snapshot.webp"
-                      alt="Marzieh Nail Atelier homepage UI snapshot showing navigation, hero, booking path and service cards"
-                      className="ui-shot case-transition-image"
+                      alt="Marzieh Nail Atelier homepage showing navigation, service cards and booking journey"
+                      className="case-transition-image"
                       width="1600"
                       height="1050"
                       loading="eager"
@@ -347,120 +333,31 @@ export default function Home() {
                     />
                   </div>
                 </div>
-              </div>
 
-              <div className="case-body">
-                <div className="case-head">
-                  <div id="marzieh-title" className="ttl">
-                    Marzieh Nail Atelier<span>Real local business website · live in production</span>
+                <div className="featured-case__copy">
+                  <p className="mono">Selected project</p>
+                  <h3 id="marzieh-title">Marzieh Nail Atelier</h3>
+                  <p className="featured-case__headline">Website strategy, structure and production for a real local business.</p>
+                  <p className="featured-case__summary">I turned scattered service, pricing, policy and booking information into a bilingual customer journey that is clear on mobile and practical for the owner to maintain.</p>
+                  <div className="featured-case__facts" aria-label="Project facts">
+                    <span><b>Live</b> production website</span>
+                    <span><b>EN / DA</b> bilingual routes</span>
+                    <span><b>End to end</b> structure to handover</span>
                   </div>
-                  <span className="badge badge--live">Strongest proof</span>
-                </div>
-
-                <dl className="field">
-                  <dt>Problem</dt>
-                  <dd>
-                    A premium one-to-one nail atelier needed clearer services, booking confidence, local trust, policies and mobile readability.
-                  </dd>
-                </dl>
-                <dl className="field">
-                  <dt>My role</dt>
-                  <dd>
-                    I led the direction, information structure, service and content decisions, review, mobile QA, deployment and handover for this real close/self-owned business case.
-                  </dd>
-                </dl>
-                <dl className="field">
-                  <dt>Built</dt>
-                  <dd>
-                    Homepage, services and pricing, work gallery, bridal route, FAQ, policies, privacy, visit path, booking links, local SEO signals and schema awareness.
-                  </dd>
-                </dl>
-                <dl className="field field--ai field--wide">
-                  <dt>AI-assisted production</dt>
-                  <dd>
-                    Claude, ChatGPT and other AI tools supported research, drafting, code assistance and comparison. I defined the brief and structure, selected and revised the outputs, tested the implementation and approved the final delivery.
-                  </dd>
-                </dl>
-                <dl className="field field--highlight">
-                  <dt>Agency relevance</dt>
-                  <dd>
-                    For an agency, this shows I can turn loose client material into a structured, mobile-ready customer journey with trust proof, booking logic and handover discipline.
-                  </dd>
-                </dl>
-
-                <div className="case-proof-row" aria-label="Marzieh Nail Atelier production proof areas">
-                  <div>
-                    <span className="mono">Offer</span>
-                    <b>Services and pricing</b>
-                  </div>
-                  <div>
-                    <span className="mono">Journey</span>
-                    <b>Booking and visit path</b>
-                  </div>
-                  <div>
-                    <span className="mono">Trust</span>
-                    <b>Reviews, policies and FAQ</b>
-                  </div>
-                  <div>
-                    <span className="mono">QA</span>
-                    <b>Mobile, links and handover</b>
-                  </div>
-                </div>
-
-                <div className="before-after" aria-label="Marzieh Nail Atelier before and after proof">
-                  <div>
-                    <span className="mono">Before</span>
-                    <p>
-                      Strong service skill existed, but services, policies, booking, trust proof and local visibility needed one clear source.
-                    </p>
-                  </div>
-                  <div>
-                    <span className="mono">After</span>
-                    <p>
-                      A bilingual journey aligned services, appointment path, policies, trust signals, Planway/Jazzy logic and calmer brand language.
-                    </p>
-                  </div>
-                  <div>
-                    <span className="mono">What it proves</span>
-                    <p>
-                      The visible output is a website. The deeper work is understanding what clients need before booking: trust, price clarity, service confidence and owner control.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="gallery" aria-label="Marzieh Nail Atelier UI snapshots">
-                  <div className="g">
-                    <img src="/assets/marzieh-services-ui-snapshot.webp" width="760" height="520" decoding="async" alt="Marzieh Nail Atelier services UI snapshot" loading="lazy" />
-                  </div>
-                  <div className="g">
-                    <img src="/assets/marzieh-work-ui-snapshot.webp" width="760" height="520" decoding="async" alt="Marzieh Nail Atelier work gallery UI snapshot" loading="lazy" />
-                  </div>
-                  <div className="g">
-                    <img src="/assets/marzieh-booking-ui-snapshot.webp" width="760" height="520" decoding="async" alt="Marzieh Nail Atelier visit and booking UI snapshot" loading="lazy" />
-                  </div>
-                </div>
-
-                <div className="case-foot">
-                  <div className="case-foot__actions">
-                    <a className="linkclay case-cta" href="/work/marzieh-nail-atelier/">View full case study →</a>
-                    <a className="linkclay case-secondary-cta" href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">Open live website ↗</a>
-                  </div>
-                  <div className="stat" aria-label="Public proof facts">
-                    <div className="s">
-                      <b>5.0</b>
-                      <span>Google rating</span>
-                    </div>
-                    <div className="s">
-                      <b>16</b>
-                      <span>Google reviews</span>
-                    </div>
-                    <div className="s">
-                      <b>DA / EN</b>
-                      <span>Multilingual</span>
-                    </div>
+                  <div className="featured-case__actions">
+                    <a className="btn" href="/work/marzieh-nail-atelier/">Read case study</a>
+                    <a className="text-link" href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">Visit live website ↗</a>
                   </div>
                 </div>
               </div>
+
+              <div className="featured-case__details">
+                <article><h4>Challenge</h4><p>Clients needed clearer services, prices, policies, location details and a more confident path to booking.</p></article>
+                <article><h4>My contribution</h4><p>I set the direction and information structure, reviewed content and implementation, completed responsive QA, deployed the site and prepared the handover.</p></article>
+                <article><h4>Delivered</h4><p>A live bilingual website with service and pricing routes, booking links, trust content, policies, local information and mobile-ready navigation.</p></article>
+              </div>
+
+              <p className="featured-case__method"><b>Production approach:</b> AI tools supported research, drafting and code assistance. I remained responsible for the brief, decisions, review, testing, deployment and final delivery.</p>
             </article>
 
             <div id="systems" className="systems-intro reveal" aria-label="Systems built from unclear needs">
@@ -510,7 +407,7 @@ export default function Home() {
             {viewMode === 'quick' ? (
               <div className="deep-dive-gate reveal" aria-live="polite">
                 <div><p className="mono">More behind the screens</p><h3>Need the reasoning, QA evidence and operating logic?</h3><p>The quick scan keeps the decision path short. Deep dive reveals how I map friction, structure systems and prepare work for handover.</p></div>
-                <button className="btn" type="button" onClick={() => setViewMode('deep')}>Open deep dive ↓</button>
+                <button className="btn" type="button" onClick={() => setViewMode('deep')}>View detailed experience</button>
               </div>
             ) : null}
           </div>
@@ -605,7 +502,7 @@ export default function Home() {
                 <p className="mono">Proof logic</p>
                 <h3>More than pages. A working first system.</h3>
                 <p>
-                  The strongest proof is not only the final screen. It is the logic that turns unclear human and business needs into a clear path, a live build and a handover the owner can keep using.
+                  What matters is not only the final screen. It is the logic that turns unclear human and business needs into a clear path, a live build and a handover the owner can keep using.
                 </p>
               </div>
               <div className="system-steps" aria-label="From unclear input to live system process">
@@ -759,7 +656,7 @@ export default function Home() {
           <div className="wrap">
             <div className="sec-head">
               <span className="sec-no">{viewMode === 'quick' ? '03' : '06'}</span>
-              <h2>How I would start, first 30 days</h2>
+              <h2>How I would start in the first 30 days</h2>
               <p className="note">A simple structure that makes it easy to say yes. Tasks adapt to the team.</p>
             </div>
             <div className="weeks reveal">
@@ -808,7 +705,7 @@ export default function Home() {
                     <b>French native · English fluent · Danish operational</b>
                   </div>
                   <div className="m">
-                    <span className="mono">Live proof</span>
+                    <span className="mono">Live website</span>
                     <b>
                       <a href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">
                         marziehnail-atelier.dk

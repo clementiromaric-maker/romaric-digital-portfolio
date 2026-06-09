@@ -9,7 +9,7 @@ const liveLinks = {
 const proofSignals = [
   { value: 'Live virksomhed', label: 'Marzieh Nail Atelier i produktion' },
   { value: '3 byggede piloter', label: 'Workflow, praktikmatch og privat introduktion' },
-  { value: '5.0 / 16', label: 'Google-rating og Google-anmeldelser' },
+  { value: 'Fra service til booking', label: 'Tilbud, priser, politikker, besøg og bookingvej' },
   { value: 'Flersprogede sider', label: 'DA / EN plus persisk/engelsk pilotlogik' },
   { value: 'GitHub workflow-klar', label: 'Source packages, deploy-noter, versionsspor og QA' },
   { value: 'Operationsbaggrund', label: 'ERP, leverandører, overdragelser og dokumentation' },
@@ -216,10 +216,10 @@ export default function DanishPortfolio() {
               </p>
               <div className="hero__cta reveal" style={{ transitionDelay: '.38s' }}>
                 <a className="btn" href="#work">
-                  Udvalgt arbejde ↓
+                  Se udvalgt arbejde
                 </a>
                 <a className="btn btn--ghost" href="#process">
-                  Sådan starter jeg
+                  Se de første 30 dage
                 </a>
               </div>
               <div className="view-switch reveal" style={{ transitionDelay: '.46s' }} role="group" aria-label="Vælg portfoliodetalje">
@@ -244,7 +244,7 @@ export default function DanishPortfolio() {
                 </div>
                 <div className="row">
                   <dt className="mono">Dokumentation</dt>
-                  <dd>Live lokal virksomhedssite, 5.0 rating, 16 anmeldelser og DA/EN-sider</dd>
+                  <dd>Live lokalt virksomhedssite, DA/EN-ruter, bookingvej og ejeroverdragelse</dd>
                 </div>
                 <div className="row">
                   <dt className="mono">Base</dt>
@@ -287,26 +287,19 @@ export default function DanishPortfolio() {
               <p className="note">Først et live virksomhedssite, derefter brugbare systemer bygget omkring tillid, workflow og menneskelig vurdering.</p>
             </div>
 
-            <article className="feature reveal" aria-labelledby="marzieh-title-da">
-              <div className="browser">
-                <div className="browser__bar">
-                  <div className="browser__dots" aria-hidden="true"><i /><i /><i /></div>
-                  <span className="browser__url">marziehnail-atelier.dk</span>
-                  <span className="browser__live">● Live</span>
-                </div>
-                <div className="browser__view">
-                  <div className="browser__copy">
-                    <span className="eyebrow">Udvalgt live-case · Nært virksomhedscaseprojekt</span>
-                    <h3>Marzieh Nail Atelier</h3>
-                    <p>Et rigtigt tosproget virksomhedssite bygget omkring serviceklarhed, tillid og en rolig bookingrejse.</p>
-                    <div className="case-actions"><a className="pill" href="/da/arbejde/marzieh-nail-atelier/">Udforsk casen →</a><a className="case-live-link" href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">Åbn live site ↗</a></div>
+            <article className="feature feature--marzieh reveal" aria-labelledby="marzieh-title-da">
+              <div className="featured-case">
+                <div className="featured-case__visual">
+                  <div className="browser__bar">
+                    <div className="browser__dots" aria-hidden="true"><i /><i /><i /></div>
+                    <span className="browser__url">marziehnail-atelier.dk</span>
+                    <span className="browser__live">● Live</span>
                   </div>
-                  <div className="browser__media">
-                    <span className="browser__media-label">Preview af live website</span>
+                  <div className="featured-case__screen">
                     <img
                       src="/assets/marzieh-homepage-ui-snapshot.webp"
-                      alt="Marzieh Nail Atelier hjemmeside UI snapshot med navigation, hero, bookingvej og servicekort"
-                      className="ui-shot case-transition-image"
+                      alt="Marzieh Nail Atelier forside med navigation, servicekort og bookingrejse"
+                      className="case-transition-image"
                       width="1600"
                       height="1050"
                       loading="eager"
@@ -314,50 +307,31 @@ export default function DanishPortfolio() {
                     />
                   </div>
                 </div>
-              </div>
 
-              <div className="case-body">
-                <div className="case-head">
-                  <div id="marzieh-title-da" className="ttl">
-                    Marzieh Nail Atelier<span>Rigtigt lokalt virksomhedssite · live i produktion</span>
+                <div className="featured-case__copy">
+                  <p className="mono">Udvalgt projekt</p>
+                  <h3 id="marzieh-title-da">Marzieh Nail Atelier</h3>
+                  <p className="featured-case__headline">Website-strategi, struktur og produktion for en reel lokal virksomhed.</p>
+                  <p className="featured-case__summary">Jeg samlede spredt information om services, priser, politikker og booking i en tosproget kunderejse, der er tydelig på mobil og praktisk for ejeren at vedligeholde.</p>
+                  <div className="featured-case__facts" aria-label="Projektfakta">
+                    <span><b>Live</b> website i produktion</span>
+                    <span><b>DA / EN</b> tosprogede ruter</span>
+                    <span><b>Fra start til slut</b> struktur og overdragelse</span>
                   </div>
-                  <span className="badge badge--live">Stærkeste dokumentation</span>
-                </div>
-
-                <dl className="field"><dt>Problem</dt><dd>Et premium one-to-one negleatelier havde brug for tydeligere services, mere bookingtryghed, lokal tillid, politikker og mobil læsbarhed.</dd></dl>
-                <dl className="field"><dt>Min rolle</dt><dd>Jeg havde ansvar for retning, informationsstruktur, service- og indholdsbeslutninger, review, mobil QA, deployment og overdragelse i denne reelle case for en nærtstående virksomhed.</dd></dl>
-                <dl className="field"><dt>Bygget</dt><dd>Forside, services og priser, galleri, brudeside, FAQ, politikker, privatliv, besøgsvej, bookinglinks, lokale SEO-signaler og schema-forståelse.</dd></dl>
-                <dl className="field field--ai field--wide"><dt>AI-assisteret produktion</dt><dd>Claude, ChatGPT og andre AI-værktøjer understøttede research, udkast, kodehjælp og sammenligning. Jeg definerede brief og struktur, udvalgte og reviderede output, testede implementeringen og godkendte den endelige levering.</dd></dl>
-                <dl className="field field--highlight"><dt>Bureau-relevans</dt><dd>For et bureau viser det, at jeg kan gøre løst kundemateriale til en struktureret, mobilklar kunderejse med dokumenteret tillid, bookinglogik og overdragelsesdisciplin.</dd></dl>
-
-                <div className="case-proof-row" aria-label="Marzieh Nail Atelier produktionsdokumentation">
-                  <div><span className="mono">Tilbud</span><b>Services og priser</b></div>
-                  <div><span className="mono">Rejse</span><b>Booking og besøg</b></div>
-                  <div><span className="mono">Tillid</span><b>Anmeldelser, politikker og FAQ</b></div>
-                  <div><span className="mono">QA</span><b>Mobil, links og overdragelse</b></div>
-                </div>
-
-                <div className="before-after" aria-label="Marzieh Nail Atelier før og efter">
-                  <div><span className="mono">Før</span><p>Stærke faglige evner var der allerede, men services, politikker, booking, dokumenteret tillid og lokal synlighed manglede én tydelig kilde.</p></div>
-                  <div><span className="mono">Efter</span><p>En tosproget kunderejse samlede services, bookingvej, politikker, tillidssignaler, Planway/Jazzy-logik og roligere brand-sprog.</p></div>
-                  <div><span className="mono">Hvad det viser</span><p>Det synlige output er et website. Det dybere arbejde er at forstå, hvad kunder skal vide før booking: tillid, pris, serviceklarhed og ejerkontrol.</p></div>
-                </div>
-
-                <div className="gallery" aria-label="Marzieh Nail Atelier UI snapshots">
-                  <div className="g"><img src="/assets/marzieh-services-ui-snapshot.webp" width="760" height="520" decoding="async" alt="Marzieh Nail Atelier services UI snapshot" loading="lazy" /></div>
-                  <div className="g"><img src="/assets/marzieh-work-ui-snapshot.webp" width="760" height="520" decoding="async" alt="Marzieh Nail Atelier work gallery UI snapshot" loading="lazy" /></div>
-                  <div className="g"><img src="/assets/marzieh-booking-ui-snapshot.webp" width="760" height="520" decoding="async" alt="Marzieh Nail Atelier visit and booking UI snapshot" loading="lazy" /></div>
-                </div>
-
-                <div className="case-foot">
-                  <div className="case-foot__actions"><a className="linkclay case-cta" href="/da/arbejde/marzieh-nail-atelier/">Se hele casen →</a><a className="linkclay case-secondary-cta" href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">Åbn live website ↗</a></div>
-                  <div className="stat" aria-label="Offentlige dokumentationsfakta">
-                    <div className="s"><b>5.0</b><span>Google-rating</span></div>
-                    <div className="s"><b>16</b><span>Google-anmeldelser</span></div>
-                    <div className="s"><b>DA / EN</b><span>Flersproget</span></div>
+                  <div className="featured-case__actions">
+                    <a className="btn" href="/da/arbejde/marzieh-nail-atelier/">Læs casen</a>
+                    <a className="text-link" href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">Besøg live website ↗</a>
                   </div>
                 </div>
               </div>
+
+              <div className="featured-case__details">
+                <article><h4>Udfordring</h4><p>Kunderne havde brug for tydeligere services, priser, politikker, besøgsinformation og en mere tryg vej til booking.</p></article>
+                <article><h4>Mit bidrag</h4><p>Jeg fastlagde retning og informationsstruktur, gennemgik indhold og implementering, udførte responsiv QA, deployede sitet og forberedte overdragelsen.</p></article>
+                <article><h4>Leveret</h4><p>Et live tosproget website med service- og prisruter, bookinglinks, tillidsindhold, politikker, lokal information og mobilklar navigation.</p></article>
+              </div>
+
+              <p className="featured-case__method"><b>Produktionsform:</b> AI-værktøjer understøttede research, udkast og kodehjælp. Jeg havde ansvaret for brief, beslutninger, review, test, deployment og endelig levering.</p>
             </article>
 
             <div id="systems" className="systems-intro reveal" aria-label="Systemer bygget fra uklare behov">
@@ -395,7 +369,7 @@ export default function DanishPortfolio() {
             {viewMode === 'quick' ? (
               <div className="deep-dive-gate reveal" aria-live="polite">
                 <div><p className="mono">Mere bag skærmene</p><h3>Vil du se vurderingen, QA-dokumentationen og driftslogikken?</h3><p>Det hurtige overblik holder beslutningsvejen kort. Gå i dybden viser, hvordan jeg kortlægger friktion, strukturerer systemer og gør arbejdet klar til overdragelse.</p></div>
-                <button className="btn" type="button" onClick={() => setViewMode('deep')}>Åbn dybdegennemgang ↓</button>
+                <button className="btn" type="button" onClick={() => setViewMode('deep')}>Se detaljeret erfaring</button>
               </div>
             ) : null}
           </div>
@@ -444,7 +418,7 @@ export default function DanishPortfolio() {
           <div className="wrap">
             <div className="sec-head"><span className="sec-no">03</span><h2 id="system-title-da">Fra uklart input til live system</h2><p className="note">Et kompakt billede af, hvordan reel friktion bliver til noget, mennesker kan bruge.</p></div>
             <div className="system-board reveal">
-              <div className="system-intro"><p className="mono">Dokumentationslogik</p><h3>Mere end sider. En brugbar første version.</h3><p>Den stærkeste dokumentation er ikke kun den færdige skærm. Det er logikken, der gør uklare menneskelige og forretningsmæssige behov til en tydelig vej, en lanceret førsteversion og en overdragelse, ejeren kan bruge videre.</p></div>
+              <div className="system-intro"><p className="mono">Dokumentationslogik</p><h3>Mere end sider. En brugbar første version.</h3><p>Det afgørende er ikke kun den færdige skærm. Det er logikken, der gør uklare menneskelige og forretningsmæssige behov til en tydelig vej, en lanceret førsteversion og en overdragelse, ejeren kan bruge videre.</p></div>
               <div className="system-steps" aria-label="Fra uklart input til live system process">
                 {systemSteps.map((step, index) => (
                   <article className="system-step" key={step.label}><span className="system-index">{String(index + 1).padStart(2, '0')}</span><p className="mono">{step.label}</p><h3>{step.title}</h3><p>{step.text}</p></article>
@@ -514,7 +488,7 @@ export default function DanishPortfolio() {
                   <div className="m contact-email-row"><span className="mono">E-mail</span><b><a href="mailto:clementiromaric@protonmail.com">clementiromaric@protonmail.com</a></b></div>
                   <div className="m"><span className="mono">Lokation</span><b>Greater Copenhagen · Tune, Denmark</b></div>
                   <div className="m"><span className="mono">Sprog</span><b>Fransk modersmål · flydende engelsk · operationelt dansk</b></div>
-                  <div className="m"><span className="mono">Live dokumentation</span><b><a href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">marziehnail-atelier.dk</a></b></div>
+                  <div className="m"><span className="mono">Live website</span><b><a href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">marziehnail-atelier.dk</a></b></div>
                 </div>
               </div>
               <p className="avail">Bedste match: website-produktion, UX-implementering, CMS- og indholdssupport, GitHub-baseret workflow, brugbare første versioner, digital leveringssupport, QA og dokumentation. Åben for afgrænset projektsupport, digitale produktionsroller eller en kort <b>praktik</b>, når det er den reneste måde at teste samarbejdet på.</p>

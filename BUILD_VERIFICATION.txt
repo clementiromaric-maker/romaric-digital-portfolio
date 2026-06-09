@@ -1,67 +1,71 @@
-Romaric Clementi Web Digital Portfolio V5.11.3
-Case Clarity, AI Disclosure & Agency Trust Patch
+Romaric Clementi Web Digital Portfolio V5.11.4
+Case Simplification, CTA Clarity & Editorial Separation Patch
 
 SOURCE
-- Built directly from the uploaded V5.11.2 Deployment Registry & Lockfile Portability Fix source package.
-- Uploaded ZIP inspected before editing.
+- Built directly from V5.11.3 Case Clarity, AI Disclosure & Agency Trust Patch.
+- The uploaded V5.11.2 source and the previously generated V5.11.3 source were inspected before editing.
 - No rebuild from memory.
 
 PATCH SCOPE
-- Corrected the featured Marzieh case entry and CTA hierarchy.
-- Added dedicated case-study identity, breadcrumbs and project-context panel.
-- Added explicit EN/DA AI-assisted production disclosure.
-- Clarified Romaric Clementi's responsibility for direction, structure, decisions, review, QA, deployment and handover.
-- Replaced Hand-built wording.
-- Recalibrated Webflow and Shopify to familiarity/readiness language.
-- Replaced GitLab-style claims with GitHub-based workflow / structured handover wording.
-- Preserved routes, live Marzieh link, metadata, static export and bilingual architecture.
+- Simplified the Marzieh homepage presentation instead of adding more explanatory labels.
+- Removed: Featured live case, Close/self-owned project, Live website preview, Strongest proof, duplicate project heading, duplicate CTA row and rating/review metrics as website-performance proof.
+- Added one clear project identity, one screenshot, concise project facts, three contribution areas and one calm AI-production disclosure.
+- Rebuilt the EN/DA Marzieh case pages with a distinct editorial visual system and clearer project-at-a-glance context.
+- Replaced awkward or proof-heavy action labels with direct human wording:
+  Read case study / Læs casen
+  Visit live website / Besøg live website
+  View project details / Se projektdetaljer
+  Back to portfolio / Tilbage til portfolio
+  View detailed experience / Se detaljeret erfaring
+- Replaced the contact label Live proof with Live website.
+- Reframed the project relationship naturally as a real implementation for Romaric's wife's independent business, not a paid external client engagement.
+- Kept one explicit AI-assisted production explanation and clearly separated tool assistance from Romaric's decisions, review, QA, deployment and handover responsibility.
+- Preserved routes, local assets, bilingual parity, metadata, JSON-LD, static Next.js export and Cloudflare deployment architecture.
 
 INSTALL AND BUILD VERIFICATION
-- Node 22.16.0.
-- npm 10.9.2.
-- npm ci: passed.
+- Node 22 environment.
 - Next.js 16.2.7 production build: passed.
-- Static routes generated successfully.
-- package.json and package-lock.json version updated to 5.11.3.
+- TypeScript validation: passed.
+- Static generation: passed.
+- package.json and package-lock.json updated to 5.11.4.
 
-STATIC EXPORT
+STATIC ROUTES
 - /
 - /da/
 - /work/marzieh-nail-atelier/
 - /da/arbejde/marzieh-nail-atelier/
-- /_not-found
+- /_not-found/
 - /icon.png
 - /robots.txt
 - /sitemap.xml
 
 STATIC QA
-- 7 rendered HTML files checked.
+- 7 exported HTML files checked.
 - 0 missing internal routes or local assets.
 - 0 broken in-page anchors.
 - 0 duplicate IDs.
-- Exactly 1 H1 per rendered HTML page.
+- Exactly 1 H1 per public page.
 - 0 images without alt text.
-- 0 unsafe target="_blank" links.
 - JSON-LD parsed successfully.
-- Required EN/DA case identity and AI disclosure wording present.
-- 0 remaining Hand-built / Håndbygget strings.
-- 0 remaining Webflow support / Shopify support claims.
-- 0 remaining GitLab-style or GitHub/GitLab-style workflow claims.
+- 0 remaining Open live / live-proof / Featured live case / Strongest proof / Close-self-owned / Live website preview / View full case / Explore the case / Open deep dive strings.
+- 0 remaining 5.0 / 16 rating-review proof metric blocks.
+- CTA text reviewed on EN and DA home and case routes.
 
 VISUAL / RESPONSIVE QA
-- Generated HTML and CSS rendered in a Chromium browser simulation at 1440px and 390px widths.
-- Homepage and dedicated case-study pages checked in desktop and mobile layouts.
-- 0 horizontal overflow at 1440px or 390px in the simulated render.
-- Featured case actions align on desktop and stack cleanly on mobile.
-- Dedicated case-study context remains visible and readable on mobile.
-- AI disclosure blocks remain readable on desktop and mobile.
-- Local screenshots did not load in the isolated file-based visual simulation; production build asset references passed static QA. Real deployed asset QA is still required.
+- Chromium render checked at 1440px and 390px.
+- Homepage featured project checked in desktop and mobile viewports.
+- Dedicated case-study hero checked in desktop and mobile viewports.
+- Screenshot assets rendered correctly after viewport paint.
+- 0 horizontal overflow at 1440px or 390px.
+- Case-study mobile header, language switch and website CTA fit correctly.
+- Featured project actions align on desktop and stack on mobile.
+- Case study is visually distinct from the portfolio through a clean editorial layout, sans-serif case headings, teal case theme, project-at-a-glance row and separate content structure.
 
 ZIP EXCLUSIONS
 - node_modules
 - .next
 - out
 
-LIVE QA STILL REQUIRED
-- Clear Cloudflare build cache before deployment.
-- Verify the deployed Marzieh images, EN/DA routes, mobile navigation, case-study transition, external live-site link and social preview on real browsers/devices.
+DEPLOYMENT
+- Clear the Cloudflare build cache before deployment.
+- Verify EN/DA routes, Marzieh screenshots, live-site links, mobile navigation and social preview after deployment.
