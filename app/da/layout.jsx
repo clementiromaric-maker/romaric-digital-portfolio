@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Romaric Clementi | Website og digitale arbejdsgange',
   description:
-    'Dansk portfolio for webbureauer, digitale teams og startups. Romaric Clementi gør uklare behov til konkrete websites, UX-flows, QA-noter og første brugbare versioner.',
+    'Dansk portfolio for webbureauer, digitale teams og startups med website-produktion, struktureret indhold, genbrugelige sektioner, CMS-levering, Jira-opfølgning og QA.',
   alternates: {
     canonical: '/da/',
     languages: {
@@ -18,7 +18,7 @@ export const metadata = {
   openGraph: {
     title: 'Romaric Clementi | Website og digitale arbejdsgange',
     description:
-      'Webproduktion, UX-struktur, første brugbare versioner, workflow-prototyper, mobil QA og praktisk digital levering.',
+      'Webproduktion, struktureret indhold, CMS-workflows, genbrugelige sektioner, Jira-opfølgning, mobil QA og praktisk digital levering.',
     type: 'website',
     images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Romaric Clementi portfolio preview' }],
   },
@@ -26,9 +26,6 @@ export const metadata = {
 
 export default function DanishLayout({ children }) {
   return (
-    <>
-      <script dangerouslySetInnerHTML={{ __html: "document.documentElement.lang='da';" }} />
-      <div lang="da">{children}</div>
-    </>
+    <div lang="da">{children}</div>
   );
 }

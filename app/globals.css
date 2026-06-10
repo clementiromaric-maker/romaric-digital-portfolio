@@ -834,7 +834,7 @@ button,
   .field--wide{grid-column:auto}
 }
 
-/* V5.11.7 — fresh live homepage capture + featured-case visual balance */
+/* V5.11.9 — final language, metadata and capability-density QA */
 .feature--marzieh{overflow:hidden;background:var(--white)}
 .featured-case{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(360px,.92fr);align-items:stretch}
 .featured-case__visual{min-width:0;display:flex;flex-direction:column;background:linear-gradient(135deg,#e9dece,#fbf8f1);border-right:1px solid var(--line-soft)}

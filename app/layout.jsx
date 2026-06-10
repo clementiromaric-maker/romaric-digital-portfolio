@@ -12,7 +12,7 @@ export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://romaric-digital-portfolio.clementiromaric.workers.dev'),
   title: 'Romaric Clementi | Website & Digital Workflow Builder',
   description:
-    'Portfolio for web agencies, digital teams and startups. Romaric Clementi turns unclear human and business needs into useful first-version systems: websites, UX flows, content systems, QA notes and AI-assisted prototypes.',
+    'Digital-production portfolio for web agencies and teams: website delivery, structured content, reusable sections, CMS workflows, Jira follow-up and QA.',
   authors: [{ name: 'Romaric Clementi' }],
   creator: 'Romaric Clementi',
   publisher: 'Romaric Clementi',
@@ -26,7 +26,7 @@ export const metadata = {
   openGraph: {
     title: 'Romaric Clementi | Website & Digital Workflow Builder',
     description:
-      'Live business website, UX structure, working first versions, workflow prototypes, mobile QA and AI-assisted digital production.',
+      'Live website delivery, structured content, CMS workflows, reusable sections, Jira-supported follow-up, mobile QA and AI-assisted digital production.',
     type: 'website',
     images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Romaric Clementi portfolio preview' }],
   },
@@ -69,6 +69,10 @@ const personSchema = {
     'Service-system design',
     'Mobile QA',
     'Content structure',
+    'Structured content',
+    'Reusable sections',
+    'Sanity CMS',
+    'Jira issue tracking',
     'Cloudflare Pages',
     'GitHub deployment',
     'AI-assisted prototyping',

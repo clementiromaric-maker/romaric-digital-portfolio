@@ -19,7 +19,7 @@ const roleFitLanes = [
   {
     label: '01',
     title: 'Website-produktion',
-    text: 'Sider, service-/produktsider, CMS- og indholdsimplementering, lokal troværdighed, indholdsstruktur og mobilcheck.',
+    text: 'Sider, struktureret indhold, genbrugelige service-/produktsektioner, CMS-implementering, lokal troværdighed og mobilcheck.',
   },
   {
     label: '02',
@@ -29,7 +29,7 @@ const roleFitLanes = [
   {
     label: '03',
     title: 'Digitalt workflow og QA',
-    text: 'GitHub-baserede arbejdsgange, linkcheck, ankercheck, deploy-noter, oprydning i kildemateriale og praktiske accepttjek.',
+    text: 'GitHub-baserede arbejdsgange, Jira-opfølgning på issues og handlinger, link- og ankercheck, deploy-noter, kildeoprydning og praktiske accepttjek.',
   },
   {
     label: '04',
@@ -124,7 +124,7 @@ const weeks = [
   {
     label: 'Uge 02',
     title: 'Støtte produktion',
-    text: 'Hjælpe med sideopdateringer, produkt-/servicesider, CMS-struktur, GitHub-baserede overdragelsesnoter, interne links, UX-fixes og flersproget oprydning.',
+    text: 'Hjælpe med sideopdateringer, struktureret indhold, genbrugelige sektioner, CMS-modeller, GitHub-baserede overdragelsesnoter, Jira-opfølgning, UX-fixes og flersproget oprydning.',
   },
   {
     label: 'Uge 03',
@@ -446,7 +446,7 @@ export default function DanishPortfolio() {
             <p className="mono audience-label reveal">Bedste målgruppe</p>
             <div className="target-grid reveal">
               <article><span className="mono">Etablerede bureauer</span><h3>Produktionssupport med overdragelsesdisciplin</h3><p>Nyttigt til kundesider, serviceflows, tillidssektioner, mobil QA og praktisk leveringssupport.</p></article>
-              <article><span className="mono">Webflow / WordPress / Shopify shops</span><h3>CMS- og webshop-produktionssupport</h3><p>Nyttigt til sideopdateringer, produkt-/servicesider, indholdshierarki, formularer, SEO-basics, mobilcheck og CMS-klar tænkning.</p></article>
+              <article><span className="mono">Webflow / WordPress / Shopify shops</span><h3>CMS- og webshop-produktionssupport</h3><p>Nyttigt til sideopdateringer, produkt-/servicesider, indholdsmodeller, genbrugelige sektioner, valideringsregler, forhåndsvisning/publicering, formularer og mobilcheck.</p></article>
               <article><span className="mono">Startups og produktteams</span><h3>Første versioner før overbygning</h3><p>Nyttigt til landing pages, onboarding flows, prototyper og dokumentation, der gør næste beslutning lettere.</p></article>
             </div>
           </div>
@@ -456,7 +456,7 @@ export default function DanishPortfolio() {
           <div className="wrap">
             <div className="sec-head"><span className="sec-no">05</span><h2>Build og QA-dokumentation</h2><p className="note">Understøttende dokumentation, ikke en senior engineering-påstand.</p></div>
             <div className="implementation-proof reveal" aria-label="Teknisk implementeringsdokumentation">
-              <div><p className="mono">Teknisk implementeringsdokumentation</p><h3>Portfolioen er også et arbejdende build-eksempel.</h3><p>Statisk Next.js export, Cloudflare deployment, lokale assets, lokalt bundtede fonte, Open Graph metadata, responsivt layout, interne ankre, JSON-LD-forståelse og GitHub-baseret overdragelsesdisciplin.</p><p className="implementation-note">Ikke en senior engineering-påstand. Et arbejdende eksempel på et rent statisk web-build, pakning og praktisk QA-disciplin.</p></div>
+              <div><p className="mono">Teknisk implementeringsdokumentation</p><h3>Portfolioen er også et arbejdende build-eksempel.</h3><p>Statisk Next.js export, Cloudflare deployment, lokale assets, lokalt bundtede fonte, Open Graph metadata, responsivt layout, interne ankre, JSON-LD-forståelse og GitHub-baseret overdragelsesdisciplin. I udvalgte projekter har jeg desuden arbejdet med Sanity CMS-indholdsmodeller, genbrugelige sektioner, valideringsregler, flersproget indhold og forhåndsvisnings-/publiceringsflows samt brugt Jira til opfølgning på issues og handlinger.</p><p className="implementation-note">Ikke en senior engineering-påstand. Et arbejdende eksempel på et rent statisk web-build, pakning og praktisk QA-disciplin.</p></div>
               <div className="implementation-chips" aria-label="Tekniske implementeringssignaler">{['Static export', 'Cloudflare', 'GitHub workflow', 'Local assets', 'OG / metadata', 'Responsive QA'].map((item) => <b key={item}>{item}</b>)}</div>
             </div>
             <aside className="ai-disclosure reveal" aria-label="Oplysning om AI-assisteret produktion">
@@ -476,7 +476,7 @@ export default function DanishPortfolio() {
               </div>
             </div>
 
-            <div className="exposure reveal"><p className="mono lab">Arbejdseksponering, hands-on og ærlig</p><div className="chips" aria-label="Arbejdseksponering">{['HTML / CSS','Responsive layouts','Static site structure','Basic JavaScript','Cloudflare Pages / Workers','GitHub deploy','Struktureret overdragelsesworkflow','Webflow-kendskab','Shopify-kendskab','SEO-metadata','JSON-LD / schema','Forms & journeys','Multilingual content','Mobile QA','Documentation'].map((item) => <b key={item}>{item}</b>)}</div><p className="caveat">Præsenteret ærligt: de seneste builds er custom static og Cloudflare-baserede. Jeg kender Webflow- og Shopify-leveringsmønstre og er klar til at arbejde i etablerede CMS-workflows med GitHub-baserede source packages, deploy-noter og QA-overdragelse.</p></div>
+            <div className="exposure reveal"><p className="mono lab">Arbejdseksponering, hands-on og ærlig</p><div className="chips" aria-label="Arbejdseksponering">{['HTML / CSS','Next.js / statisk levering','Basic JavaScript','Cloudflare / GitHub-levering','Sanity CMS / preview-workflows','Struktureret indhold / genbrugelige sektioner','Valideringsregler','Jira issue-/handlingsopfølgning','Webflow / Shopify-kendskab','SEO-metadata / JSON-LD','Formularer / flersprogede flows','Mobil og responsiv QA','Dokumentation / overdragelse'].map((item) => <b key={item}>{item}</b>)}</div><p className="caveat">Bygget som et custom statisk Next.js/Cloudflare-site. Sanity CMS og Jira afspejler udvalgte projektworkflows, ikke avanceret platformadministration; Webflow og Shopify er fortsat kendskab. Jeg er klar til etablerede CMS-workflows med source packages, deploy-noter og QA-overdragelse.</p></div>
           </div>
         </section>
 
@@ -501,7 +501,7 @@ export default function DanishPortfolio() {
                   <div className="m"><span className="mono">Live website</span><b><a href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">marziehnail-atelier.dk</a></b></div>
                 </div>
               </div>
-              <p className="avail">Bedste match: website-produktion, UX-implementering, CMS- og indholdssupport, GitHub-baseret workflow, brugbare første versioner, digital leveringssupport, QA og dokumentation. Åben for afgrænset projektsupport, digitale produktionsroller eller en kort <b>praktik</b>, når det er den reneste måde at teste samarbejdet på.</p>
+              <p className="avail">Bedste match: website-produktion, UX-implementering, struktureret indhold og CMS-support, GitHub-/Jira-understøttet workflow, brugbare første versioner, digital leveringssupport, QA og dokumentation. Åben for afgrænset projektsupport, digitale produktionsroller eller en kort <b>praktik</b>, når det er den reneste måde at teste samarbejdet på.</p>
             </div>
           </div>
         </section>

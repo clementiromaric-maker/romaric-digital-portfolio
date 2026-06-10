@@ -1,44 +1,18 @@
-Romaric Clementi Web Digital Portfolio V5.11.7
-Fresh Live Homepage Capture
+Romaric Clementi Web Digital Portfolio V5.11.9
+FINAL LANGUAGE, METADATA & CAPABILITY-DENSITY QA
 
 SOURCE
-- Built directly from V5.11.6 Featured Case Visual Balance.
-- No rebuild from memory.
+- Built directly from V5.11.8 Structured Content, CMS & Delivery Workflow Consistency.
 
-PATCH SCOPE
-- Replaced the older Marzieh homepage interface mockup with a fresh capture from the current live English homepage.
-- Removed the old screenshot's partially obscured hero actions.
-- Updated image dimensions to 2048 x 1119 and refreshed EN/DA alt text.
-- Preserved the featured-case layout, supporting interface previews, case-study structure, CTA wording and AI transparency.
+INTENDED BUILD
+- Node 22.16.0
+- Next.js 16.2.7
+- Static export to /out
+- Postbuild Danish html-lang patch
 
-INSTALL AND BUILD VERIFICATION
-- Node 22 environment.
-- Next.js 16.2.7 production build: PASSED with npm run build.
-- Static export generated all expected public routes.
-
-STATIC QA RESULTS
-- 7 exported HTML files checked.
-- 0 missing internal routes.
-- 0 broken same-page anchors.
-- 0 missing referenced local images.
-- 0 duplicate IDs.
-- Exactly 1 H1 per exported page.
-- 0 images without alt text.
-- JSON-LD parsed successfully.
-- Fresh capture referenced across EN/DA homepage and case-study output.
-- Fresh capture dimensions verified at 2048 x 1119.
-
-SOURCE REVIEW OF EXTERNAL AUDIT CLAIMS
-- #work navigation is present and valid: links point to section id="work".
-- Quick scan / Deep dive are functional buttons, not placeholder labels.
-- The portfolio includes embedded Marzieh screenshots and supporting interface previews.
-- No invented performance or conversion metrics were added.
-
-ZIP EXCLUSIONS
-- node_modules
-- .next
-- out
-
-DEPLOYMENT
-- Clear the Cloudflare build cache before deployment.
-- Verify the featured case at desktop, tablet and mobile widths after deployment.
+VERIFICATION TARGETS
+- 7 generated HTML files including 404 outputs.
+- 4 content routes: EN/DA home and EN/DA Marzieh case.
+- Static Danish pages must use html lang="da".
+- 0 broken internal references, duplicate IDs, invalid JSON-LD or missing assets.
+- Package and lockfile versions must match V5.11.9.

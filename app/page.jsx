@@ -38,7 +38,7 @@ const roleFitLanes = [
   {
     label: '01',
     title: 'Website production support',
-    text: 'Page builds, service/product sections, CMS/content implementation support, local proof, content structure and mobile checks.',
+    text: 'Page builds, structured content, reusable service/product sections, CMS implementation support, local proof and mobile checks.',
   },
   {
     label: '02',
@@ -48,7 +48,7 @@ const roleFitLanes = [
   {
     label: '03',
     title: 'Digital workflow and QA support',
-    text: 'GitHub-based workflow support, link checks, anchor checks, deployment notes, source cleanup and practical acceptance checks.',
+    text: 'GitHub-based workflow support, Jira issue/action follow-up, link and anchor checks, deployment notes, source cleanup and practical acceptance checks.',
   },
   {
     label: '04',
@@ -148,7 +148,7 @@ const weeks = [
   {
     label: 'Week 02',
     title: 'Support production',
-    text: 'Help with page updates, product/service pages, CMS structure, GitHub-based handover notes, internal links, UX fixes and multilingual cleanup.',
+    text: 'Help with page updates, structured content, reusable sections, CMS schemas, GitHub-based handover notes, Jira follow-up, UX fixes and multilingual cleanup.',
   },
   {
     label: 'Week 03',
@@ -568,7 +568,7 @@ export default function Home() {
                 <span className="mono">Webflow / WordPress / Shopify shops</span>
                 <h3>CMS and ecommerce production support</h3>
                 <p>
-                  Useful for page updates, product/service pages, content hierarchy, forms, SEO basics, mobile checks and CMS-ready thinking.
+                  Useful for page updates, product/service pages, content schemas, reusable sections, validation rules, preview/publishing flows, forms and mobile checks.
                 </p>
               </article>
               <article>
@@ -595,7 +595,7 @@ export default function Home() {
                 <p className="mono">Technical implementation proof</p>
                 <h3>This portfolio is also a working build sample.</h3>
                 <p>
-                  Static Next.js export, Cloudflare deployment, local assets, locally bundled fonts, Open Graph metadata, responsive layout, internal anchors, JSON-LD awareness and GitHub-based handover discipline.
+                  Static Next.js export, Cloudflare deployment, local assets, locally bundled fonts, Open Graph metadata, responsive layout, internal anchors, JSON-LD awareness and GitHub-based handover discipline. Across selected projects, I have also worked with Sanity CMS content models, reusable sections, validation rules, multilingual content and preview/publishing flows, using Jira for issue and action follow-up.
                 </p>
                 <p className="implementation-note">
                   Not a senior-engineering claim. A working sample of clean static web build, packaging and practical QA discipline.
@@ -637,26 +637,24 @@ export default function Home() {
               <div className="chips" aria-label="Working exposure">
                 {[
                   'HTML / CSS',
-                  'Responsive layouts',
-                  'Static site structure',
+                  'Next.js / static delivery',
                   'Basic JavaScript',
-                  'Cloudflare Pages / Workers',
-                  'GitHub deploy',
-                  'Structured handover workflow',
-                  'Webflow familiarity',
-                  'Shopify familiarity',
-                  'SEO metadata',
-                  'JSON-LD / schema',
-                  'Forms & journeys',
-                  'Multilingual content',
-                  'Mobile QA',
-                  'Documentation',
+                  'Cloudflare / GitHub delivery',
+                  'Sanity CMS / preview workflows',
+                  'Structured content / reusable sections',
+                  'Validation rules',
+                  'Jira issue / action follow-up',
+                  'Webflow / Shopify familiarity',
+                  'SEO metadata / JSON-LD',
+                  'Forms / multilingual journeys',
+                  'Mobile & responsive QA',
+                  'Documentation / handover',
                 ].map((item) => (
                   <b key={item}>{item}</b>
                 ))}
               </div>
               <p className="caveat">
-                Presented honestly: recent builds are custom static and Cloudflare-based. I am familiar with Webflow and Shopify delivery patterns and ready to work within established CMS workflows, with GitHub-based source packages, deployment notes and QA handover.
+                Built as a custom static Next.js/Cloudflare site. Sanity CMS and Jira reflect selected project workflows, not advanced platform administration; Webflow and Shopify remain familiarity. I am ready to work within established CMS workflows with source packages, deployment notes and QA handover.
               </p>
             </div>
           </div>
@@ -725,7 +723,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="avail">
-                Best fit: website production, UX implementation, CMS/content support, GitHub-based workflow, working first-version systems, digital delivery support, QA and documentation. Open to scoped project support, digital production roles or a short <b>praktik</b> when that is the cleanest way to test cooperation.
+                Best fit: website production, UX implementation, structured content and CMS support, GitHub/Jira-supported workflow, working first-version systems, digital delivery support, QA and documentation. Open to scoped project support, digital production roles or a short <b>praktik</b> when that is the cleanest way to test cooperation.
               </p>
             </div>
           </div>

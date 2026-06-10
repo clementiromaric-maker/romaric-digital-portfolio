@@ -1,0 +1,33 @@
+V5.11.9 FINAL QA — LANGUAGE, METADATA & CAPABILITY DENSITY
+
+CORRECTIONS
+- Static exported Danish pages now carry html lang="da" before JavaScript runs.
+- English meta description shortened to recruiter- and search-friendly length.
+- Sanity/Jira wording remains selected-project working exposure, not advanced administration.
+- Capability inventory consolidated to reduce mobile density and repetitive chips.
+
+PRESERVED
+- EN/DA routes and equivalent case pages.
+- Quick scan / Deep dive controls.
+- Static Next.js/Cloudflare architecture.
+- Live Marzieh proof links and AI-assisted-production disclosure.
+
+REQUIRED VERIFICATION
+- Production build and postbuild must pass.
+- Static HTML, anchors, assets, H1, JSON-LD, canonical/hreflang and language tags must pass.
+- Final live deployment still requires one Android/iPhone/browser check because local static QA cannot reproduce every device renderer.
+
+VERIFIED RESULTS — 10 JUNE 2026
+- Next.js 16.2.7 production build: PASS.
+- Static export routes: PASS.
+- Danish postbuild patch: 2 HTML pages patched.
+- Content HTML pages checked: 4.
+- Broken internal links/anchors: 0.
+- Missing assets: 0.
+- Duplicate IDs: 0.
+- H1 errors: 0.
+- Invalid JSON-LD: 0.
+- Canonical/hreflang errors: 0.
+- HTML language errors: 0.
+- Meta-length warnings: 0.
+- npm production vulnerability audit: 0 vulnerabilities.

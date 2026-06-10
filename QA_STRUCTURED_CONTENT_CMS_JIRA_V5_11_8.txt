@@ -1,0 +1,27 @@
+V5.11.8 QA — STRUCTURED CONTENT, CMS & JIRA CONSISTENCY
+
+CV-TO-PORTFOLIO ALIGNMENT — PASSED
+- Next.js/static delivery present.
+- Sanity CMS present only under working exposure / selected project workflows.
+- Structured content, reusable sections, validation rules and preview/publishing flows present.
+- Jira present as issue/action follow-up, not advanced administration.
+- Webflow and Shopify remain familiarity only.
+
+POSITIONING BOUNDARIES — PASSED
+- Portfolio remains digital-production and delivery-QA led.
+- No claim that this portfolio is powered by Sanity.
+- No senior engineering, enterprise CMS architecture or Jira administration claim.
+- Current portfolio build remains identified as static Next.js/Cloudflare.
+
+EN/DA PARITY — PASSED
+- Equivalent capability meaning on both language routes.
+- Natural Danish wording used: indholdsmodeller, genbrugelige sektioner, valideringsregler and forhåndsvisning/publicering.
+
+TECHNICAL QA — PASSED
+- Next.js 16.2.7 production build and static export.
+- 7 HTML files generated.
+- Routes, anchors, images/assets, H1 structure, duplicate IDs, alt text and JSON-LD checked.
+- 0 errors found in automated static QA.
+
+POST-DEPLOY VISUAL CHECK
+- Confirm chip wrapping and caveat length on real Android/iPhone browsers and at common desktop widths.
