@@ -1,11 +1,13 @@
 {
-  "name": "romaric-digital-portfolio-v6",
-  "version": "6.0.0",
+  "name": "romaric-digital-portfolio-v6-1-cloudflare-route-hardened",
+  "version": "6.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "node scripts/postbuild.mjs"
+    "postbuild": "node scripts/postbuild.mjs",
+    "clean": "node scripts/clean.mjs",
+    "prebuild": "node scripts/clean.mjs"
   },
   "dependencies": {
     "next": "16.2.11",

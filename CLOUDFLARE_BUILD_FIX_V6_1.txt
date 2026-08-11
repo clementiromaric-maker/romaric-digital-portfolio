@@ -1,0 +1,18 @@
+Digital Portfolio V6.1 Cloudflare route hardening
+
+The supplied screenshot points to a stale/broken top-level app/layout.jsx in the deployed repository. The V6.0 package used multiple root layouts and did not contain app/layout.jsx, so merging V6.0 over an older repository could leave the older broken file in place.
+
+V6.1 fixes that failure mode by:
+- adding a clean top-level app/layout.jsx with only the local globals.css import;
+- moving English routes out of app/(en) to app/page.jsx and app/work/...;
+- keeping /da as a nested route and patching exported Danish HTML lang in postbuild;
+- adding prebuild cleanup for .next and out;
+- retaining static export, trailing slashes, unoptimised images and postbuild route/content validation;
+- explicitly telling deployment to replace the repository tree instead of merging files.
+
+Recommended Cloudflare:
+- Node: 22.16.0
+- pnpm: 10.11.1
+- Build command: pnpm run build
+- Output directory: out
+- Dependency installation: enabled

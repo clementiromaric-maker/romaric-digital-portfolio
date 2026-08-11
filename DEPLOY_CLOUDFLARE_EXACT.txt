@@ -1,0 +1,17 @@
+Cloudflare deployment settings for this repository
+
+IMPORTANT
+1. Replace the repository contents instead of merging over an older tree. This prevents stale app/layout.jsx or old route-group files from remaining in GitHub.
+2. In Cloudflare build variables, REMOVE SKIP_DEPENDENCY_INSTALL if it is set to 1.
+3. Keep Node 22.16.0 and pnpm 10.11.1 if you already use them.
+
+Build command:
+pnpm run build
+
+Build output directory:
+out
+
+If you intentionally keep SKIP_DEPENDENCY_INSTALL=1, use:
+pnpm install --no-frozen-lockfile && pnpm run build
+
+V6.1 contains a clean top-level app/layout.jsx and conventional English routes, so it overwrites the failure-prone stale layout path visible in the supplied Cloudflare log.

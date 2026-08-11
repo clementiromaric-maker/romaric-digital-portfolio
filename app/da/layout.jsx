@@ -1,7 +1,4 @@
-import '../globals.css';
-
 export const metadata = {
-  metadataBase: new URL('https://romaric-digital-portfolio.clementiromaric.workers.dev'),
   title: 'Romaric Clementi | Digital produktion · webindhold · QA',
   description: 'Digital produktion, webindhold, CMS-support, responsiv QA og flersproget levering.',
   openGraph: {
@@ -13,5 +10,5 @@ export const metadata = {
 };
 
 export default function DanishLayout({ children }) {
-  return <html lang="da"><body>{children}</body></html>;
+  return <div lang="da">{children}</div>;
 }

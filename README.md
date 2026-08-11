@@ -1,4 +1,4 @@
-# Romaric Clementi Digital Portfolio V6.0
+# Romaric Clementi Digital Portfolio V6.1
 
 Research-backed human-delivery rewrite for digital production, web content, CMS implementation support and QA roles.
 
@@ -28,7 +28,7 @@ Next.js exports the static site to `out/`. `postbuild` then validates key routes
 
 ## Cloudflare
 
-Current deployment pattern can remain:
+Cloudflare-safe deployment:
 
 ```bash
 pnpm install --no-frozen-lockfile && pnpm run build
@@ -39,7 +39,6 @@ Recommended build variables:
 
 - `NODE_VERSION=22.16.0`
 - `PNPM_VERSION=10.11.1`
-- `SKIP_DEPENDENCY_INSTALL=1`
 
 `public/_headers` adds Cloudflare-compatible response hardening and immutable caching for hashed Next static assets.
 
@@ -63,4 +62,12 @@ Recommended build variables:
 
 ## Source provenance
 
-The project notes reference V5.10.1 as the previous intended source package, but that exact ZIP was unavailable in this workspace. V6.0 is therefore a clean successor based on the live portfolio, current project notes, accessible earlier source styling and current project assets. See `PROVENANCE_V6_0.txt` for the precise boundary.
+The project notes reference V5.10.1 as the previous intended source package, but that exact ZIP was unavailable in this workspace. V6.1 is therefore a clean successor based on the live portfolio, current project notes, accessible earlier source styling and current project assets. See `PROVENANCE_V6_0.txt` for the precise boundary.
+
+## V6.1 Cloudflare hardening
+
+V6.1 uses one top-level `app/layout.jsx` and conventional top-level English routes. This deliberately overwrites any stale `app/layout.jsx` left in an older GitHub repository and removes the multiple-root-layout dependency from the deployment path. Danish remains under `/da/`; postbuild patches exported Danish HTML to `lang="da"`.
+
+When updating GitHub, replace the repository contents rather than only adding files. Old route files can otherwise remain and still be compiled by Next.js.
+
+Do not set `SKIP_DEPENDENCY_INSTALL=1` unless your build command explicitly runs `pnpm install` first.

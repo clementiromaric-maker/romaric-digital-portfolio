@@ -11,6 +11,15 @@ const required = [
 const forbidden = ['I find the real friction behind messy briefs', 'Friction first. Tools second.', 'Friction → Source → Owner → Review → Reuse', 'Friktionslinse', 'Friktion først. Værktøjer bagefter.', '5.0 / 16', 'Website & Digital Workflow Builder', 'First 30 days', 'hamdambridge-private-pilot'];
 const normalize = v => v.replaceAll('&amp;','&').replaceAll('&#38;','&').replaceAll('&nbsp;',' ').replace(/\s+/g,' ').toLowerCase();
 if (!fs.existsSync(out)) throw new Error('Static export directory out/ is missing.');
+// Patch exported Danish documents to the correct root language after the single-root-layout static export.
+for (const rel of ['da/index.html', 'da/work/marzieh-nail-atelier/index.html']) {
+  const p = path.join(out, rel);
+  if (fs.existsSync(p)) {
+    const raw = fs.readFileSync(p, 'utf8');
+    fs.writeFileSync(p, raw.replace('<html lang=\"en\">', '<html lang=\"da\">').replace('<html lang="en">', '<html lang="da">'), 'utf8');
+  }
+}
+
 for (const asset of ['_headers', 'robots.txt', 'sitemap.xml', 'assets/marzieh-homepage.webp']) {
   if (!fs.existsSync(path.join(out, asset))) throw new Error(`Missing exported public asset: ${asset}`);
 }
