@@ -1,0 +1,23 @@
+V6.7 FINAL QA
+
+RESULT: PASS at source / asset level
+
+CORRECTIONS VERIFIED
+- Exactly one hero workflow concept remains: From rough input -> Clear first version.
+- No featured-case__workflow JSX remains in English or Danish Selected Work.
+- Selected Work uses two proof views only: real archived desktop capture + real mobile capture.
+- Marzieh case cover uses the real archived desktop capture.
+- Marzieh case gallery uses real mobile site captures.
+- Reconstructed V6.6 desktop/mobile/service/work/booking proof assets are not shipped.
+- Custom cursor is retained.
+
+PRIVACY
+- Clementi AI Workflow remains walkthrough-only.
+- FørsteMatch remains walkthrough-only.
+- HamdamBridge remains walkthrough-only.
+
+TECHNICAL
+- package.json and package-lock root metadata are V6.7.0.
+- postbuild requires the four real screenshot assets and cursor assets.
+- postbuild forbids featured-case__workflow from exported HTML so the duplicate cannot silently return.
+- Final Next.js compile remains the Cloudflare validation step if dependencies are unavailable locally.

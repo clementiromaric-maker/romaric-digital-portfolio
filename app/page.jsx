@@ -316,45 +316,31 @@ export default function Home() {
                     <span className="browser__url">marziehnail-atelier.dk</span>
                     <span className="browser__live">● Live</span>
                   </div>
-                  <div className="featured-case__visual-grid featured-case__visual-grid--story">
-                    <figure className="featured-case__desktop">
-                      <div className="desktop-proof-frame">
-                        <img
-                          src="/assets/marzieh-desktop-proof-clean.webp"
-                          alt="Current desktop interface preview of the Marzieh Nail Atelier website"
-                          width="1600"
-                          height="900"
-                          loading="eager"
-                          decoding="async"
-                        />
-                      </div>
-                      <figcaption>Current desktop interface preview · live website linked below</figcaption>
+                  <div className="featured-case__visual-grid">
+                    <figure className="featured-case__desktop featured-case__desktop--real">
+                      <img
+                        src="/assets/marzieh-live-desktop-actual.webp"
+                        alt="Real desktop screenshot of the Marzieh Nail Atelier website"
+                        width="820"
+                        height="455"
+                        loading="eager"
+                        decoding="async"
+                      />
+                      <figcaption>Real desktop screenshot · live website linked below</figcaption>
                     </figure>
-                    <div className="featured-case__workflow" aria-label="From rough input to a usable first version">
-                      <p className="mono">From rough input</p>
-                      <div className="featured-case__workflow-chips" aria-hidden="true">
-                        <span>Brief</span><span>Content</span><span>Trust</span><span>Booking</span><span>QA</span>
-                      </div>
-                      <div className="featured-case__workflow-route" aria-hidden="true"><i /></div>
-                      <div className="featured-case__workflow-output">
-                        <b>Clear first version</b>
-                        <small>usable · reviewable · ready to hand over</small>
-                      </div>
-                      <p className="featured-case__workflow-caption">From rough input to usable output</p>
-                    </div>
-                    <figure className="featured-case__mobile">
-                      <div className="mobile-proof-frame">
+                    <figure className="featured-case__mobile featured-case__mobile--real">
+                      <div className="mobile-proof-frame mobile-proof-frame--real">
                         <span className="mobile-proof-frame__speaker" aria-hidden="true" />
                         <img
-                          src="/assets/marzieh-mobile-proof-clean.webp"
-                          alt="Real mobile capture of the Marzieh Nail Atelier website, cropped before the sticky booking overlay"
-                          width="676"
-                          height="1030"
+                          src="/assets/marzieh-live-mobile-service-actual.webp"
+                          alt="Real mobile screenshot of the Marzieh Nail Atelier service page"
+                          width="688"
+                          height="1210"
                           loading="lazy"
                           decoding="async"
                         />
                       </div>
-                      <figcaption>Real mobile capture · browser UI cropped</figcaption>
+                      <figcaption>Real mobile screenshot · browser chrome removed</figcaption>
                     </figure>
                   </div>
                 </div>

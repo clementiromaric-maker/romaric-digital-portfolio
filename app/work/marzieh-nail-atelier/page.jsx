@@ -15,7 +15,7 @@ export const metadata = {
     title: 'Marzieh Nail Atelier Case Study | Romaric Clementi',
     description: 'From scattered business information to a clear bilingual booking journey.',
     type: 'article',
-    images: [{ url: '/assets/marzieh-desktop-proof-clean.webp', alt: 'Marzieh Nail Atelier website interface' }],
+    images: [{ url: '/assets/marzieh-live-desktop-actual.webp', alt: 'Marzieh Nail Atelier website interface' }],
   },
 };
 
@@ -79,8 +79,8 @@ export default function MarziehCaseStudy() {
             </div>
 
             <figure className="case-cover">
-              <img className="case-transition-image" src="/assets/marzieh-desktop-proof-clean.webp" width="1600" height="900" fetchPriority="high" decoding="async" alt="Current Marzieh Nail Atelier interface preview using live-site content and imagery" />
-              <figcaption>Current interface preview using live-site content and imagery · English and Danish routes</figcaption>
+              <img className="case-transition-image" src="/assets/marzieh-live-desktop-actual.webp" width="805" height="380" fetchPriority="high" decoding="async" alt="Real desktop screenshot of the Marzieh Nail Atelier website" />
+              <figcaption>Real desktop screenshot · English and Danish routes</figcaption>
             </figure>
           </div>
         </section>
@@ -109,10 +109,10 @@ export default function MarziehCaseStudy() {
         <section className="case-section case-section--screens">
           <div className="wrap">
             <div className="case-section__heading case-section__heading--wide"><p className="mono">04 / Interface</p><h2>The screens follow the questions clients ask before booking.</h2></div>
-            <div className="case-gallery-editorial">
-              <figure className="case-shot case-shot--large"><img src="/assets/marzieh-services-current.webp" width="1520" height="1040" loading="lazy" decoding="async" alt="Marzieh Nail Atelier service and pricing interface" /><figcaption><span>Services and prices</span>Clarify the offer before the booking decision.</figcaption></figure>
-              <figure className="case-shot"><img src="/assets/marzieh-work-current.webp" width="1520" height="1040" loading="lazy" decoding="async" alt="Marzieh Nail Atelier selected work interface preview" /><figcaption><span>Work and trust</span>Show the quality and style clients can expect.</figcaption></figure>
-              <figure className="case-shot"><img src="/assets/marzieh-booking-current.webp" width="1520" height="1040" loading="lazy" decoding="async" alt="Marzieh Nail Atelier booking and visit interface" /><figcaption><span>Booking and visit</span>Make the next step and practical details easy to find.</figcaption></figure>
+            <div className="case-gallery-editorial case-gallery-editorial--real">
+              <figure className="case-shot case-shot--large"><img src="/assets/marzieh-live-mobile-composition-actual.webp" width="688" height="980" loading="lazy" decoding="async" alt="Real mobile screenshot of The Atelier Composition page" /><figcaption><span>Signature service</span>Real mobile capture of the live Atelier Composition journey.</figcaption></figure>
+              <figure className="case-shot"><img src="/assets/marzieh-live-mobile-service-actual.webp" width="688" height="1210" loading="lazy" decoding="async" alt="Real mobile screenshot of the Marzieh Nail Atelier service menu" /><figcaption><span>Services</span>Real mobile capture showing service choices and pricing context.</figcaption></figure>
+              <figure className="case-shot"><img src="/assets/marzieh-live-mobile-guide-actual.webp" width="688" height="1430" loading="lazy" decoding="async" alt="Real mobile screenshot of a Marzieh Nail Atelier guide" /><figcaption><span>Guidance content</span>Real mobile capture of the live Gel Nails vs Shellac guide.</figcaption></figure>
             </div>
           </div>
         </section>

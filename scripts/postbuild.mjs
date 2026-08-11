@@ -36,12 +36,11 @@ const required = [
   'FørsteMatch',
   'Marzieh Nail Atelier',
   'romaric-portrait.webp',
-  'marzieh-desktop-proof-clean.webp',
-  'marzieh-mobile-proof-clean.webp',
+  'marzieh-live-desktop-actual.webp',
+  'marzieh-live-mobile-service-actual.webp',
+  'marzieh-live-mobile-composition-actual.webp',
+  'marzieh-live-mobile-guide-actual.webp',
   'marzieh-pearl-proof.webp',
-  'marzieh-services-current.webp',
-  'marzieh-work-current.webp',
-  'marzieh-booking-current.webp',
   'Walkthrough available on request',
   'Gennemgang efter aftale',
 ];
@@ -64,11 +63,15 @@ const forbidden = [
   'Public pilot',
   'Offentlig preview',
   'Offentlig pilot',
+  'featured-case__workflow',
 ];
 for (const marker of forbidden) {
   if (combined.includes(marker)) throw new Error(`Retired/private copy leaked into exported HTML: ${marker}`);
 }
 for (const route of ['index.html','da/index.html','work/marzieh-nail-atelier/index.html','da/arbejde/marzieh-nail-atelier/index.html']) {
   await access(join(outRoot, route));
+}
+for (const asset of ['assets/cursor-default.svg','assets/cursor-action.svg','assets/marzieh-live-desktop-actual.webp','assets/marzieh-live-mobile-service-actual.webp','assets/marzieh-live-mobile-composition-actual.webp','assets/marzieh-live-mobile-guide-actual.webp']) {
+  await access(join(outRoot, asset));
 }
 console.log(`Patched lang="da" into ${patched} Danish exported HTML file(s). Portfolio regression checks passed.`);

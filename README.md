@@ -1,31 +1,28 @@
-# Romaric Clementi Digital Portfolio V6.5
+# Romaric Clementi Digital Portfolio V6.7
 
-Visual-proof polish built from V6.4. Content positioning, private-project guardrails and the restored V5.11.9 portfolio depth are unchanged.
+Real-screenshot correction built from the V6.6 three-part-proof/custom-cursor branch.
 
-## V6.5 visual fixes
-- Hero proof panel is wider and vertically centred so it uses the previously empty right-hand space.
-- `From rough input` module is larger, with roomier chips and a larger output block.
-- `Clear first version` and its supporting line no longer feel cramped.
-- Marzieh desktop proof was rebuilt with a cleaner crop and a taller Atelier Path card, removing text/tile overlap.
-- Featured mobile proof is cropped before the sticky booking overlay.
-- Mobile proof now sits in a light editorial device frame instead of a black fill area.
-- Desktop proof uses a clean 16:9 presentation and the mobile proof keeps its natural aspect ratio.
-- Clementi AI Workflow, FørsteMatch and HamdamBridge remain private walkthrough-only projects.
+## What changed
+- The hero keeps the single `From rough input -> Clear first version` concept.
+- The duplicated workflow block was removed completely from the Marzieh Selected Work presentation.
+- Marzieh Selected Work now shows only a real archived desktop website capture and a real mobile website capture.
+- The Marzieh case-study cover and visual gallery use captured website pixels rather than reconstructed interface cards.
+- Reconstructed V6.6 proof assets were removed from the package so they cannot accidentally return.
+- Clementi AI Workflow, FørsteMatch and HamdamBridge remain walkthrough-only.
+- The custom desktop cursor remains enabled, with native behaviour on touch devices and text inputs.
 
-## Private commercial projects
-Clementi AI Workflow, FørsteMatch and HamdamBridge do not expose public preview/pilot URLs from the portfolio. Visible treatment is walkthrough-on-request only.
+## Screenshot provenance
+The desktop proof is a crop of an archived screenshot of the actual Marzieh Nail Atelier homepage, using only the website area and excluding surrounding portfolio/browser presentation. The mobile proof images are actual mobile captures of the live Marzieh website with browser chrome cropped away for presentation. No website UI is redrawn in these proof assets.
 
 ## Cloudflare
-Recommended:
-- Node 22.16.0
-- pnpm 10.11.1
-- Build command: `pnpm install --frozen-lockfile && pnpm run build`
-- Output directory: `out`
+Node 22.16.0 / pnpm 10.11.1.
 
-The prebuild route guard from earlier hardened releases remains in place.
+```bash
+pnpm install --frozen-lockfile && pnpm run build
+```
 
-## V6.6 visual composition
-- Implements the approved three-part Marzieh proof composition: desktop preview, delivery logic, mobile proof.
-- Enlarges the hero proof module on desktop to use the right-hand space more effectively.
-- Uses contained image framing so the Marzieh desktop preview stays centred rather than being cropped.
-- Adds a local custom SVG cursor for fine-pointer devices, with a distinct interactive cursor on links and buttons and native fallback on touch/mobile.
+Static output directory: `out`.
+
+
+## V6.7.1
+Corrected the Selected Work desktop screenshot framing: the fuller archived real screenshot is used, the old forced crop ratio is removed, and extra bottom breathing room prevents the lower part of the proof from looking cut off.

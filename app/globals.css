@@ -1080,95 +1080,41 @@ button,
   .mobile-proof-frame{padding:24px 8px 8px;border-radius:26px}
 }
 
-/* V6.6 — mockup composition + custom cursor */
-@media (pointer:fine){
-  html,body{cursor:url('/cursor-default.svg') 6 4,auto}
-  a,button,[role='button'],summary,label[for],select,input[type='button'],input[type='submit']{cursor:url('/cursor-link.svg') 18 18,pointer}
-  input[type='text'],input[type='email'],textarea{cursor:text}
+/* V6.7 — custom cursor retained from V6.6 */
+@media (hover:hover) and (pointer:fine){
+  html,body{cursor:url('/assets/cursor-default.svg') 14 14,auto}
+  a,button,[role="button"],summary,label,.btn,.pill,.text-link,.lang-switch a{cursor:url('/assets/cursor-action.svg') 15 15,pointer}
+  input,textarea,[contenteditable="true"]{cursor:text}
 }
 
-/* Give the hero proof module more authority without crowding the copy. */
-@media(min-width:1081px){
-  .hero__grid{grid-template-columns:minmax(0,1.23fr) minmax(455px,.92fr);gap:clamp(2.4rem,4.4vw,4rem)}
-  .spec{padding:clamp(1.75rem,2.6vw,2.15rem)}
-  .signal-map__input{height:154px}
-  .signal-map__input span{font-size:.68rem;padding:.52rem .8rem}
-  .signal-map__output{min-height:142px;padding:1.4rem 1.5rem}
-  .signal-map__output b{font-size:clamp(1.52rem,2.15vw,1.82rem)}
-  .signal-map__output small{font-size:.82rem}
-}
-
-/* Three-part case-study story: desktop proof -> delivery logic -> mobile proof. */
-.featured-case__visual-grid--story{
-  grid-template-columns:minmax(0,1.72fr) minmax(220px,.56fr) minmax(160px,.38fr);
-  gap:clamp(1rem,1.9vw,1.5rem);
-  padding:clamp(1rem,2vw,1.4rem);
+/* V6.7 — real live-site screenshots; workflow appears only in the hero */
+.featured-case__visual-grid{
+  grid-template-columns:minmax(0,1fr) minmax(185px,245px);
+  gap:clamp(1rem,2vw,1.7rem);
   align-items:center;
+  padding-bottom:clamp(1.3rem,2.3vw,2rem);
 }
-.desktop-proof-frame{
-  padding:clamp(.75rem,1.4vw,1.05rem);
-  border:1px solid var(--line-soft);
-  border-radius:18px;
-  background:linear-gradient(145deg,#e7ddcf,#fbf8f1);
-  box-shadow:0 26px 80px -60px rgba(23,19,13,.58);
-  overflow:hidden;
+.featured-case__desktop--real img{
+  width:100%;height:auto;object-fit:contain;object-position:center;
+  background:#fbf8f1;border-radius:18px;
 }
-.featured-case__desktop img{
-  width:100%;
-  height:auto;
-  aspect-ratio:16/9;
-  object-fit:contain;
-  object-position:center;
-  background:#fbf8f1;
-  border:0;
-  border-radius:12px;
-  box-shadow:none;
+.featured-case__mobile--real{width:100%;max-width:245px;justify-self:center}
+.mobile-proof-frame--real{
+  padding:24px 8px 8px;border-radius:30px;background:#f8f4ec;border:1px solid rgba(23,19,13,.13);
+  box-shadow:0 22px 65px -48px rgba(23,19,13,.58);
 }
-.featured-case__workflow{
-  align-self:center;
-  padding:clamp(1rem,1.5vw,1.25rem);
-  border:1px solid var(--line-soft);
-  border-radius:20px;
-  background:color-mix(in srgb,var(--white) 88%,var(--paper));
-  box-shadow:0 24px 68px -58px rgba(23,19,13,.58);
-  min-width:0;
+.featured-case__mobile--real img{
+  display:block;width:100%;height:auto;max-height:510px;object-fit:cover;object-position:top center;
+  border-radius:20px;background:#f8f4ec;
 }
-.featured-case__workflow>.mono{margin:0 0 .85rem;color:var(--ink-faint);font-size:.62rem}
-.featured-case__workflow-chips{display:flex;flex-wrap:wrap;gap:.55rem;margin-bottom:.9rem}
-.featured-case__workflow-chips span{
-  display:inline-flex;align-items:center;justify-content:center;
-  min-height:34px;padding:.42rem .68rem;border-radius:999px;
-  border:1px solid var(--line-soft);background:var(--white);
-  font-family:var(--font-mono),monospace;font-size:.56rem;font-weight:600;
-  letter-spacing:.07em;text-transform:uppercase;color:var(--ink-soft);
+.case-cover .case-transition-image{width:100%;height:auto;object-fit:contain;object-position:center;background:#fbf8f1}
+.case-gallery-editorial--real{align-items:start}
+.case-gallery-editorial--real .case-shot img{
+  width:100%;height:auto;max-height:720px;object-fit:contain;object-position:top center;background:#f8f4ec;
 }
-.featured-case__workflow-route{height:42px;position:relative;display:grid;place-items:center}
-.featured-case__workflow-route::before{content:"";width:1px;height:100%;background:var(--line)}
-.featured-case__workflow-route i{position:absolute;width:8px;height:8px;border-radius:50%;background:var(--clay);box-shadow:0 0 0 5px color-mix(in srgb,var(--clay) 12%,transparent)}
-.featured-case__workflow-output{background:var(--ink);color:var(--paper);border-radius:18px;padding:1.25rem 1.15rem;min-height:142px;display:flex;flex-direction:column;justify-content:center;gap:.55rem}
-.featured-case__workflow-output b{font-family:var(--font-fraunces),serif;font-size:clamp(1.28rem,1.9vw,1.6rem);line-height:1.05;font-weight:650}
-.featured-case__workflow-output small{font-size:.72rem;line-height:1.4;color:rgba(244,239,229,.72)}
-.featured-case__workflow-caption{margin:.8rem 0 0;text-align:center;font-family:var(--font-mono),monospace;font-size:.56rem;letter-spacing:.04em;color:var(--ink-faint);line-height:1.4}
-.featured-case__mobile{max-width:230px;justify-self:center}
-.mobile-proof-frame{padding:30px 9px 9px;border-radius:34px;background:#f7f2ea}
-.mobile-proof-frame__speaker{top:11px;width:54px;height:5px}
-.featured-case__mobile img{border-radius:22px;object-fit:contain;object-position:center top;background:#fbf8f1}
-
-@media(max-width:1180px){
-  .featured-case__visual-grid--story{grid-template-columns:minmax(0,1.55fr) minmax(210px,.55fr)}
-  .featured-case__mobile{grid-column:2;max-width:220px}
-  .featured-case__workflow{grid-column:2;grid-row:1}
-  .featured-case__desktop{grid-row:1 / span 2}
+@media(max-width:900px){
+  .featured-case__visual-grid{grid-template-columns:1fr;align-items:start}
+  .featured-case__desktop--real{grid-column:auto}
+  .featured-case__mobile--real{max-width:280px}
 }
-@media(max-width:880px){
-  .featured-case__visual-grid--story{grid-template-columns:1fr;gap:1.2rem}
-  .featured-case__desktop,.featured-case__workflow,.featured-case__mobile{grid-column:auto;grid-row:auto}
-  .featured-case__workflow{max-width:520px;width:100%;justify-self:center}
-  .featured-case__mobile{max-width:245px}
-}
-@media(max-width:560px){
-  .featured-case__workflow{padding:.95rem}
-  .featured-case__workflow-chips{gap:.45rem}
-  .featured-case__workflow-output{min-height:120px;padding:1.05rem}
-  .desktop-proof-frame{padding:.55rem;border-radius:14px}
-}
+@media(max-width:560px){.featured-case__mobile--real{max-width:250px}}

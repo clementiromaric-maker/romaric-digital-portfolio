@@ -1,11 +1,5 @@
-Romaric Clementi Digital Portfolio V6.5
-VISUAL PROOF POLISH + PRIVATE WALKTHROUGH QA
-
-INTENDED BUILD
-- Node 22.16.0
-- Next.js 16.2.7
-- Static export to /out
-- Postbuild Danish html-lang patch and content guards
+Romaric Clementi Digital Portfolio V6.7
+REAL SCREENSHOTS + SINGLE WORKFLOW + CUSTOM CURSOR
 
 ROUTES
 - /
@@ -13,22 +7,26 @@ ROUTES
 - /work/marzieh-nail-atelier/
 - /da/arbejde/marzieh-nail-atelier/
 
-V6.5 HERO
-- Wider right-hand proof panel
-- Vertically centred against hero copy
-- Larger rough-input field and chips
-- Larger clear-first-version output
-- Larger live-site proof thumbnail
+HOMEPAGE WORKFLOW
+- The rough-input -> clear-first-version visual exists once, in the hero only.
+- The Marzieh Selected Work block contains no second workflow diagram.
 
-V6.5 MARZIEH PROOF
-- desktop interface preview: 1600x900, overlap-free Atelier Path card
-- real mobile proof: 676x1030, cropped before sticky booking CTA
-- light editorial mobile device frame, no black filler background
+MARZIEH PROOF
+- Real archived desktop website screenshot, cropped to website pixels only.
+- Real mobile website screenshot, cropped to remove browser chrome.
+- Marzieh case gallery uses real mobile captures from the live website.
+- Reconstructed V6.6 proof assets are not shipped.
 
-PRIVATE COMMERCIAL PROJECTS
-- Clementi AI Workflow: walkthrough on request only
-- FørsteMatch: walkthrough on request only
-- HamdamBridge: walkthrough on request only
+CUSTOM CURSOR
+- Custom cursor remains on hover-capable fine-pointer devices.
+- Interactive cursor for links/buttons.
+- Native text cursor for editable fields.
+- Touch/coarse-pointer devices keep native behaviour.
+
+PRIVACY
+- Clementi AI Workflow: walkthrough only.
+- FørsteMatch: walkthrough only.
+- HamdamBridge: walkthrough only.
 
 FINAL COMPILE
-Run on Cloudflare with dependencies installed.
+Cloudflare remains the final Next.js production compile validation if local dependencies are unavailable.

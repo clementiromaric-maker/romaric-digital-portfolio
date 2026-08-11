@@ -290,45 +290,31 @@ export default function DanishPortfolio() {
                     <span className="browser__url">marziehnail-atelier.dk</span>
                     <span className="browser__live">● Live</span>
                   </div>
-                  <div className="featured-case__visual-grid featured-case__visual-grid--story">
-                    <figure className="featured-case__desktop">
-                      <div className="desktop-proof-frame">
-                        <img
-                          src="/assets/marzieh-desktop-proof-clean.webp"
-                          alt="Aktuelt desktop-interface-preview af Marzieh Nail Atelier-websitet"
-                          width="1600"
-                          height="900"
-                          loading="eager"
-                          decoding="async"
-                        />
-                      </div>
-                      <figcaption>Aktuelt desktop-interface-preview · live website linket nedenfor</figcaption>
+                  <div className="featured-case__visual-grid">
+                    <figure className="featured-case__desktop featured-case__desktop--real">
+                      <img
+                        src="/assets/marzieh-live-desktop-actual.webp"
+                        alt="Reelt desktop-skærmbillede af Marzieh Nail Atelier-websitet"
+                        width="820"
+                        height="455"
+                        loading="eager"
+                        decoding="async"
+                      />
+                      <figcaption>Reelt desktop-skærmbillede · live website er linket nedenfor</figcaption>
                     </figure>
-                    <div className="featured-case__workflow" aria-label="Fra uklart input til en brugbar første version">
-                      <p className="mono">Fra uklart input</p>
-                      <div className="featured-case__workflow-chips" aria-hidden="true">
-                        <span>Oplæg</span><span>Indhold</span><span>Tillid</span><span>Booking</span><span>QA</span>
-                      </div>
-                      <div className="featured-case__workflow-route" aria-hidden="true"><i /></div>
-                      <div className="featured-case__workflow-output">
-                        <b>Klar første version</b>
-                        <small>brugbar · nem at gennemgå · klar til overdragelse</small>
-                      </div>
-                      <p className="featured-case__workflow-caption">Fra uklart input til brugbart resultat</p>
-                    </div>
-                    <figure className="featured-case__mobile">
-                      <div className="mobile-proof-frame">
+                    <figure className="featured-case__mobile featured-case__mobile--real">
+                      <div className="mobile-proof-frame mobile-proof-frame--real">
                         <span className="mobile-proof-frame__speaker" aria-hidden="true" />
                         <img
-                          src="/assets/marzieh-mobile-proof-clean.webp"
-                          alt="Reelt mobiludsnit af Marzieh Nail Atelier-websitet, beskåret før den faste bookingbjælke"
-                          width="676"
-                          height="1030"
+                          src="/assets/marzieh-live-mobile-service-actual.webp"
+                          alt="Reelt mobilskærmbillede af Marzieh Nail Ateliers serviceside"
+                          width="688"
+                          height="1210"
                           loading="lazy"
                           decoding="async"
                         />
                       </div>
-                      <figcaption>Reelt mobiludsnit · browser-UI beskåret</figcaption>
+                      <figcaption>Reelt mobilskærmbillede · browserramme fjernet</figcaption>
                     </figure>
                   </div>
                 </div>

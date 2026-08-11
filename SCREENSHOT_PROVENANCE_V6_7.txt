@@ -1,0 +1,18 @@
+V6.7 MARZIEH SCREENSHOT PROVENANCE
+
+marzieh-live-desktop-actual.webp
+- Cropped from an archived screenshot of the actual Marzieh Nail Atelier homepage.
+- Only website pixels are retained; surrounding portfolio/browser presentation is excluded.
+- No UI elements were redrawn or regenerated.
+
+marzieh-live-mobile-service-actual.webp
+- Cropped from a real mobile browser capture of the live Marzieh Nail Atelier website.
+- Browser/device chrome is removed for presentation only.
+
+marzieh-live-mobile-composition-actual.webp
+- Cropped from a real mobile browser capture of the live Atelier Composition content.
+- Browser/device chrome is removed for presentation only.
+
+marzieh-live-mobile-guide-actual.webp
+- Cropped from a real mobile capture of the live Gel Nails vs Shellac guide.
+- Browser/device chrome is removed for presentation only.

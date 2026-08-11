@@ -1,0 +1,11 @@
+Digital Portfolio V6.7.1 - Full Desktop Screenshot Fix
+
+PASS
+- V6.7 real-screenshot architecture retained.
+- The desktop Marzieh proof now uses the fuller real screenshot crop (820 x 455) including the lower proof row.
+- Forced 805/380 CSS aspect ratio removed, so the screenshot renders at its natural proportion.
+- Added additional bottom breathing room to the Selected Work visual grid.
+- Mobile real screenshot unchanged.
+- From rough input -> Clear first version remains only in the hero.
+- Custom cursor retained.
+- Private project URLs remain absent.
