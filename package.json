@@ -1,6 +1,6 @@
 {
-  "name": "romaric-digital-portfolio-v6-1-cloudflare-route-hardened",
-  "version": "6.1.0",
+  "name": "romaric-digital-portfolio-v6-1-1-stale-route-auto-prune",
+  "version": "6.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -1,0 +1,35 @@
+V6.1.1 - stale route auto-prune
+================================
+
+Cloudflare screenshot diagnosis
+-------------------------------
+Dependency installation succeeds and Next.js 16.2.11 starts normally.
+The build then fails because two source pages resolve to the same public path:
+
+  /(en)/work/marzieh-nail-atelier
+  /work/marzieh-nail-atelier
+
+The V6.1 package itself does not contain app/(en). Therefore the old app/(en)
+folder is a stale file tree left in the GitHub repository from an earlier version.
+Uploading a newer source package does not necessarily delete files that no longer
+exist in the package.
+
+Fix in V6.1.1
+-------------
+The prebuild script now:
+1. removes .next and out;
+2. removes the retired app/(en) tree if it exists in Cloudflare's build checkout;
+3. scans all Next.js page files;
+4. normalises route groups and parallel-route slots;
+5. fails before next build with a precise list if any duplicate public route remains.
+
+The intended public routes are:
+  /
+  /work/marzieh-nail-atelier
+  /da
+  /da/work/marzieh-nail-atelier
+
+Repository cleanup still recommended
+------------------------------------
+For a clean Git history, delete app/(en) from GitHub once. The new prebuild guard
+makes deployment safe even if that stale tree is accidentally left behind.
