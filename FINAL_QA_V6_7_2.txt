@@ -1,0 +1,21 @@
+V6.7.2 MOBILE PROOF LAYOUT FIX
+
+Scope: mobile-only presentation correction for Selected Work > Marzieh Nail Atelier.
+
+Changes:
+- Desktop screenshot remains the real screenshot asset and now renders full-width/contained on <=700px.
+- Removed inherited forced aspect/crop behavior on phone viewports.
+- Mobile proof reduced to max 190px (172px on very narrow screens) and centered.
+- Mobile screenshot uses natural aspect ratio; no forced max-height crop.
+- Captions are centered and constrained independently.
+- Browser bar text is compacted for small screens.
+- Desktop/tablet (>700px), content, routes, privacy rules and custom cursor are unchanged.
+
+Source checks:
+- package version 6.7.2
+- custom cursor assets retained
+- real screenshot assets retained
+- private walkthrough rules retained
+- postbuild script unchanged
+
+Final production compile remains Cloudflare validation.

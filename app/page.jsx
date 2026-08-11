@@ -332,15 +332,15 @@ export default function Home() {
                       <div className="mobile-proof-frame mobile-proof-frame--real">
                         <span className="mobile-proof-frame__speaker" aria-hidden="true" />
                         <img
-                          src="/assets/marzieh-live-mobile-service-actual.webp"
-                          alt="Real mobile screenshot of the Marzieh Nail Atelier service page"
+                          src="/assets/marzieh-live-mobile-composition-actual.webp"
+                          alt="Real mobile screenshot of the Marzieh Nail Atelier composition page"
                           width="688"
-                          height="1210"
+                          height="980"
                           loading="lazy"
                           decoding="async"
                         />
                       </div>
-                      <figcaption>Real mobile screenshot · browser chrome removed</figcaption>
+                      <figcaption>Real mobile screenshot · clean live-site crop</figcaption>
                     </figure>
                   </div>
                 </div>

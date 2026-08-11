@@ -1,0 +1,16 @@
+V6.7.3 FINAL QA
+
+PASS
+- Selected Work EN/DA no longer uses the mobile screenshot containing the cramped BY AGREEMENT / PERSONALISED / DESIGN-LED badge row.
+- Selected Work uses the real marzieh-live-mobile-composition-actual.webp capture.
+- Case-study service proof uses marzieh-live-mobile-service-clean-actual.webp, created by cropping the real screenshot only.
+- No reconstructed UI introduced.
+- V6.7.2 mobile sizing remains intact.
+- Custom cursor remains intact.
+- Private project URLs remain blocked.
+- EN/DA routes retained.
+- package.json/package-lock synced to 6.7.3.
+- postbuild and next.config syntax checks pass.
+
+LIMITATION
+Full Next.js production compilation remains Cloudflare's final deployment validation.

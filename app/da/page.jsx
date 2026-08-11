@@ -306,15 +306,15 @@ export default function DanishPortfolio() {
                       <div className="mobile-proof-frame mobile-proof-frame--real">
                         <span className="mobile-proof-frame__speaker" aria-hidden="true" />
                         <img
-                          src="/assets/marzieh-live-mobile-service-actual.webp"
-                          alt="Reelt mobilskærmbillede af Marzieh Nail Ateliers serviceside"
+                          src="/assets/marzieh-live-mobile-composition-actual.webp"
+                          alt="Reelt mobilskærmbillede af Marzieh Nail Ateliers kompositionsside"
                           width="688"
-                          height="1210"
+                          height="980"
                           loading="lazy"
                           decoding="async"
                         />
                       </div>
-                      <figcaption>Reelt mobilskærmbillede · browserramme fjernet</figcaption>
+                      <figcaption>Reelt mobilskærmbillede · rent udsnit fra live-sitet</figcaption>
                     </figure>
                   </div>
                 </div>

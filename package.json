@@ -1,6 +1,6 @@
 {
-  "name": "romaric-digital-portfolio-v6-7-1-full-desktop-screenshot-fix",
-  "version": "6.7.1",
+  "name": "romaric-digital-portfolio-v6-7-3-mobile-badge-proof-fix",
+  "version": "6.7.3",
   "private": true,
   "scripts": {
     "dev": "next dev",
