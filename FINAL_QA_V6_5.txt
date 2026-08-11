@@ -1,0 +1,28 @@
+V6.5 FINAL QA
+
+RESULT: PASS at source / asset level
+
+VISUAL FIXES VERIFIED
+- Hero proof card enlarged and vertically centred.
+- Rough-input area increased from 102px to 138px at desktop width.
+- Rough-input chips enlarged with more padding.
+- Output block enlarged to at least 128px at desktop width.
+- Hero live-proof thumbnail enlarged from 74px to 92px.
+- Desktop Marzieh proof rebuilt to 1600x900.
+- Atelier Path card has dedicated vertical space between body copy and the four navigation tiles.
+- Mobile proof cropped to 676x1030 before the sticky booking overlay.
+- Mobile proof black background removed; a light device frame is used instead.
+- Featured desktop proof is rendered at 16:9 with no forced tall stretch.
+- Featured mobile proof uses natural image height, not a stretched 100% grid height.
+
+PRIVACY
+- Clementi AI Workflow remains walkthrough-only.
+- FørsteMatch remains walkthrough-only.
+- HamdamBridge remains walkthrough-only.
+
+TECHNICAL
+- package.json / package-lock root version set to 6.5.0.
+- postbuild required asset markers updated to V6.5 assets.
+- postbuild.mjs syntax check passed.
+- next.config.mjs syntax check passed.
+- Final Next.js production compile remains the Cloudflare validation step because dependencies are not installed locally.

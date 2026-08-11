@@ -11,7 +11,7 @@ export const metadata = {
     title: 'Marzieh Nail Atelier case | Romaric Clementi',
     description: 'Fra spredt virksomhedsinformation til en tydelig tosproget bookingrejse.',
     type: 'article',
-    images: [{ url: '/assets/marzieh-desktop-current.webp', alt: 'Marzieh Nail Atelier website-interface' }],
+    images: [{ url: '/assets/marzieh-desktop-proof-clean.webp', alt: 'Marzieh Nail Atelier website-interface' }],
   },
 };
 
@@ -52,7 +52,7 @@ export default function MarziehCaseStudyDa() {
 
         <div className="project-glance" aria-label="Projektet kort fortalt"><div><span>Kontekst</span><p>Et reelt implementeret projekt for min kones selvstændige virksomhed; ikke en betalt ekstern kundeopgave.</p></div><div><span>Mit ansvar</span><p>Retning, informationsarkitektur, indholdsbeslutninger, implementeringsreview, responsiv QA, deployment og overdragelse.</p></div><div><span>Levering</span><p>Live dansk og engelsk website med service-, booking-, tillids-, politik- og besøgsruter.</p></div></div>
 
-        <figure className="case-cover"><img className="case-transition-image" src="/assets/marzieh-desktop-current.webp" width="1600" height="1000" fetchPriority="high" decoding="async" alt="Aktuelt Marzieh Nail Atelier-interface-preview med indhold og billedmateriale fra live-sitet" /><figcaption>Aktuelt interface-preview med indhold og billedmateriale fra live-sitet · danske og engelske ruter</figcaption></figure></div></section>
+        <figure className="case-cover"><img className="case-transition-image" src="/assets/marzieh-desktop-proof-clean.webp" width="1600" height="900" fetchPriority="high" decoding="async" alt="Aktuelt Marzieh Nail Atelier-interface-preview med indhold og billedmateriale fra live-sitet" /><figcaption>Aktuelt interface-preview med indhold og billedmateriale fra live-sitet · danske og engelske ruter</figcaption></figure></div></section>
 
         <section id="project" className="case-section"><div className="wrap case-section__grid"><div className="case-section__heading"><p className="mono">01 / Kontekst</p><h2>En stærk service med spredt kundeinformation.</h2></div><div className="case-copy"><p>Atelieret skulle gøre forskelle mellem services, priser, tidsforbrug, nail-art-muligheder, politikker, placering og booking lettere at forstå. Ejeren havde også brug for én pålidelig kilde til den information, der vises gennem websitet og bookingrejsen.</p><p>Udfordringen var at skabe en rolig premium-oplevelse uden at skjule de praktiske detaljer, mennesker har brug for før en aftale.</p></div></div></section>
 

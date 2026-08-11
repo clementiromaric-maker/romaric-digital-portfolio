@@ -1,11 +1,11 @@
-Romaric Clementi Digital Portfolio V6.4
-PRIVATE WALKTHROUGH + PROFESSIONAL PROOF QA
+Romaric Clementi Digital Portfolio V6.5
+VISUAL PROOF POLISH + PRIVATE WALKTHROUGH QA
 
 INTENDED BUILD
 - Node 22.16.0
 - Next.js 16.2.7
 - Static export to /out
-- Postbuild Danish html-lang patch
+- Postbuild Danish html-lang patch and content guards
 
 ROUTES
 - /
@@ -13,27 +13,22 @@ ROUTES
 - /work/marzieh-nail-atelier/
 - /da/arbejde/marzieh-nail-atelier/
 
-PRIVACY / COMMERCIAL GUARDRAILS
-- Clementi AI Workflow has no public preview URL in portfolio/source content.
-- FørsteMatch has no public pilot URL in portfolio/source content.
-- HamdamBridge remains walkthrough-only.
-- EN wording: Walkthrough available on request.
-- DA wording: Gennemgang efter aftale.
+V6.5 HERO
+- Wider right-hand proof panel
+- Vertically centred against hero copy
+- Larger rough-input field and chips
+- Larger clear-first-version output
+- Larger live-site proof thumbnail
 
-VISUAL PROOF
-- Current Marzieh desktop interface preview
-- Cropped real mobile capture without browser/device chrome
-- Current service preview
-- Selected-work preview
-- Current visit/booking preview
-- Pearl Satin Glaze live-site proof image
+V6.5 MARZIEH PROOF
+- desktop interface preview: 1600x900, overlap-free Atelier Path card
+- real mobile proof: 676x1030, cropped before sticky booking CTA
+- light editorial mobile device frame, no black filler background
 
-SOURCE QA
-- 4 page files / 4 intended public routes
-- all referenced /assets paths resolve
-- no duplicate literal JSX IDs
-- no node_modules, .next or out shipped
-- package/lock root metadata synced at 6.4.0
+PRIVATE COMMERCIAL PROJECTS
+- Clementi AI Workflow: walkthrough on request only
+- FørsteMatch: walkthrough on request only
+- HamdamBridge: walkthrough on request only
 
 FINAL COMPILE
-The final Next.js production compile remains the Cloudflare build step when dependencies are installed.
+Run on Cloudflare with dependencies installed.

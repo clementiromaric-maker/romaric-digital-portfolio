@@ -1,35 +1,25 @@
-# Romaric Clementi Digital Portfolio V6.4
+# Romaric Clementi Digital Portfolio V6.5
 
-Private-walkthrough and professional-proof update built from the restored V6.3 / uploaded V5.11.9 production baseline.
+Visual-proof polish built from V6.4. Content positioning, private-project guardrails and the restored V5.11.9 portfolio depth are unchanged.
 
-## What changed in V6.4
-- Clementi AI Workflow: no public preview URL; walkthrough available on request only.
-- FørsteMatch: no public pilot URL; walkthrough available on request only.
-- HamdamBridge remains walkthrough-only.
-- Supporting-project proof now says `3 supporting projects` instead of `3 built pilots`.
-- Replaced the raw phone/browser presentation with a cropped real mobile capture that removes browser and device chrome.
-- Replaced the older Marzieh desktop proof with a cleaner current interface preview built from verified live-site copy and existing site imagery.
-- Updated service and visit interface previews to current service/visit information.
-- Rebuilt the selected-work preview at higher resolution with a consistent editorial treatment.
-- Replaced the tiny hero screenshot with a clean Pearl Satin Glaze proof image.
-- Retired the older raw/stale proof assets so they cannot accidentally return later.
-- Updated OG image to the new proof treatment.
-- EN/DA routes and language switch remain intact.
-- V6.3 Cloudflare route guards remain intact.
+## V6.5 visual fixes
+- Hero proof panel is wider and vertically centred so it uses the previously empty right-hand space.
+- `From rough input` module is larger, with roomier chips and a larger output block.
+- `Clear first version` and its supporting line no longer feel cramped.
+- Marzieh desktop proof was rebuilt with a cleaner crop and a taller Atelier Path card, removing text/tile overlap.
+- Featured mobile proof is cropped before the sticky booking overlay.
+- Mobile proof now sits in a light editorial device frame instead of a black fill area.
+- Desktop proof uses a clean 16:9 presentation and the mobile proof keeps its natural aspect ratio.
+- Clementi AI Workflow, FørsteMatch and HamdamBridge remain private walkthrough-only projects.
 
-## Proof-image terminology
-The portfolio intentionally distinguishes between:
-- **Interface preview**: a curated portfolio visual using verified live-site copy and genuine project imagery. It is not presented as a literal browser screenshot.
-- **Real mobile capture**: an actual mobile capture of the Marzieh website, cropped only to remove browser/device chrome.
-
-This avoids presenting reconstructed interface visuals as literal screenshots.
+## Private commercial projects
+Clementi AI Workflow, FørsteMatch and HamdamBridge do not expose public preview/pilot URLs from the portfolio. Visible treatment is walkthrough-on-request only.
 
 ## Cloudflare
-Use Node 22.16.0 and pnpm 10.11.1.
+Recommended:
+- Node 22.16.0
+- pnpm 10.11.1
+- Build command: `pnpm install --frozen-lockfile && pnpm run build`
+- Output directory: `out`
 
-Build command:
-```bash
-pnpm install --frozen-lockfile && pnpm run build
-```
-
-Output directory: `out`
+The prebuild route guard from earlier hardened releases remains in place.

@@ -293,25 +293,28 @@ export default function DanishPortfolio() {
                   <div className="featured-case__visual-grid">
                     <figure className="featured-case__desktop">
                       <img
-                        src="/assets/marzieh-desktop-current.webp"
+                        src="/assets/marzieh-desktop-proof-clean.webp"
                         alt="Aktuelt desktop-interface-preview af Marzieh Nail Atelier-websitet"
                         width="1600"
-                        height="1000"
+                        height="900"
                         loading="eager"
                         decoding="async"
                       />
                       <figcaption>Aktuelt desktop-interface-preview · live website er linket nedenfor</figcaption>
                     </figure>
                     <figure className="featured-case__mobile">
-                      <img
-                        src="/assets/marzieh-mobile-live-cropped.webp"
-                        alt="Reelt mobiludsnit af Marzieh Nail Atelier-websitet uden browserens top- og bundlinjer"
+                      <div className="mobile-proof-frame">
+                        <span className="mobile-proof-frame__speaker" aria-hidden="true" />
+                        <img
+                        src="/assets/marzieh-mobile-proof-clean.webp"
+                        alt="Reelt mobiludsnit af Marzieh Nail Atelier-websitet, beskåret før den faste bookingknap"
                         width="676"
-                        height="1218"
+                        height="1030"
                         loading="lazy"
                         decoding="async"
-                      />
-                      <figcaption>Reelt mobiludsnit · browserramme fjernet</figcaption>
+                        />
+                      </div>
+                      <figcaption>Reelt mobiludsnit · browserens UI beskåret</figcaption>
                     </figure>
                   </div>
                 </div>

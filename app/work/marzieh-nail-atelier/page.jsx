@@ -15,7 +15,7 @@ export const metadata = {
     title: 'Marzieh Nail Atelier Case Study | Romaric Clementi',
     description: 'From scattered business information to a clear bilingual booking journey.',
     type: 'article',
-    images: [{ url: '/assets/marzieh-desktop-current.webp', alt: 'Marzieh Nail Atelier website interface' }],
+    images: [{ url: '/assets/marzieh-desktop-proof-clean.webp', alt: 'Marzieh Nail Atelier website interface' }],
   },
 };
 
@@ -79,7 +79,7 @@ export default function MarziehCaseStudy() {
             </div>
 
             <figure className="case-cover">
-              <img className="case-transition-image" src="/assets/marzieh-desktop-current.webp" width="1600" height="1000" fetchPriority="high" decoding="async" alt="Current Marzieh Nail Atelier interface preview using live-site content and imagery" />
+              <img className="case-transition-image" src="/assets/marzieh-desktop-proof-clean.webp" width="1600" height="900" fetchPriority="high" decoding="async" alt="Current Marzieh Nail Atelier interface preview using live-site content and imagery" />
               <figcaption>Current interface preview using live-site content and imagery · English and Danish routes</figcaption>
             </figure>
           </div>

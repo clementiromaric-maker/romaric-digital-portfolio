@@ -1,0 +1,19 @@
+MARZIEH PROOF ASSETS - V6.5
+
+marzieh-desktop-proof-clean.webp
+- Curated current interface preview.
+- Uses genuine Marzieh project imagery and verified project copy.
+- Rebuilt at 1600x900 with a taller Atelier Path card so copy and navigation tiles do not overlap.
+- Presented as an interface preview, not a literal browser screenshot.
+
+marzieh-mobile-proof-clean.webp
+- Real mobile capture of the Marzieh site.
+- Cropped before the sticky booking overlay, removing the unprofessional overlap.
+- Browser/device chrome is not part of the displayed crop.
+- Displayed inside a light portfolio device frame via CSS; no black filler background.
+
+marzieh-pearl-proof.webp
+- Genuine Pearl Satin Glaze project imagery used as compact live-site proof in the hero.
+
+marzieh-services-current.webp / marzieh-work-current.webp / marzieh-booking-current.webp
+- Supporting curated interface previews retained from V6.4.

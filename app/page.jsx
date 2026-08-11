@@ -319,25 +319,28 @@ export default function Home() {
                   <div className="featured-case__visual-grid">
                     <figure className="featured-case__desktop">
                       <img
-                        src="/assets/marzieh-desktop-current.webp"
+                        src="/assets/marzieh-desktop-proof-clean.webp"
                         alt="Current desktop interface preview of the Marzieh Nail Atelier website"
                         width="1600"
-                        height="1000"
+                        height="900"
                         loading="eager"
                         decoding="async"
                       />
                       <figcaption>Current desktop interface preview · live website linked below</figcaption>
                     </figure>
                     <figure className="featured-case__mobile">
-                      <img
-                        src="/assets/marzieh-mobile-live-cropped.webp"
-                        alt="Real mobile capture of the Marzieh Nail Atelier website with browser chrome removed"
+                      <div className="mobile-proof-frame">
+                        <span className="mobile-proof-frame__speaker" aria-hidden="true" />
+                        <img
+                        src="/assets/marzieh-mobile-proof-clean.webp"
+                        alt="Real mobile capture of the Marzieh Nail Atelier website, cropped before the sticky booking overlay"
                         width="676"
-                        height="1218"
+                        height="1030"
                         loading="lazy"
                         decoding="async"
-                      />
-                      <figcaption>Real mobile capture · browser chrome removed</figcaption>
+                        />
+                      </div>
+                      <figcaption>Real mobile capture · browser UI cropped</figcaption>
                     </figure>
                   </div>
                 </div>
