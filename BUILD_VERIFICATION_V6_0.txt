@@ -1,0 +1,25 @@
+V6.0 BUILD / QA VERIFICATION
+
+Completed in this environment
+1. node --check scripts/postbuild.mjs: PASS
+2. node --check next.config.mjs: PASS
+3. app/content.js ESM import/runtime parse: PASS
+4. Recursive EN/DA content-tree parity: PASS
+5. Relative component import targets: PASS
+6. JSX delimiter balance and primary component source checks: PASS
+7. One H1 per primary component: PASS
+8. Primary images have alt text: PASS
+9. target=_blank links without rel protection: none
+10. Public-copy regression scan: PASS
+11. Security/platform configuration review: PASS
+
+Not executable here
+- pnpm/Next dependency installation: registry access is blocked.
+- next build: cannot run without installed dependencies.
+- browser-level local render automation: local headless browser access is restricted in this environment.
+
+Production validation
+GitHub/Cloudflare should run:
+  pnpm install --no-frozen-lockfile && pnpm run build
+
+The build script automatically runs scripts/postbuild.mjs after Next export and will fail if required routes/assets are missing or retired copy reappears.

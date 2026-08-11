@@ -1,0 +1,23 @@
+RC DIGITAL PORTFOLIO V6.0 - SOURCE PROVENANCE
+
+The project history identifies this package as the expected latest prior source:
+Romaric_Clementi_Web_Digital_Portfolio_V5_10_1_System_Card_CTA_Alignment_Source_Package.zip
+
+That exact ZIP was referenced in the project notes but was not accessible in the current conversation/library workspace when V6.0 was built.
+
+To avoid silently editing an older source as though it were V5.10.1, V6.0 was rebuilt cleanly from:
+- the current live portfolio content and routes,
+- the latest V5.10.1 project/source-of-truth notes available in the file library,
+- the accessible older V4 HTML source for continuity of the established visual direction,
+- the current Marzieh Nail Atelier interface-preview asset from the library,
+- the externally benchmarked content/portfolio decisions documented in RESEARCH_BENCHMARK_V6_0.txt.
+
+This means V6.0 is a clean successor, not a byte-preserving patch of the unavailable V5.10.1 ZIP.
+
+Important preserved guardrails
+- No public HamdamBridge private-pilot link.
+- No invented metrics.
+- No senior developer / software-engineer positioning.
+- No em dashes in public copy.
+- Marzieh Nail Atelier remains the strongest live proof.
+- GitHub -> Cloudflare static deployment remains the intended delivery path.

@@ -1,0 +1,91 @@
+RC DIGITAL PORTFOLIO V6.0 - THREE-PASS BACKTEST
+Date: 11 Aug 2026
+Scores below are internal reviewer heuristics, not external measurements.
+
+PASS 1 - LIVE PORTFOLIO BASELINE
+Recruiter question: Can I tell in seconds which candidate pool this person belongs in?
+Finding: Not reliably enough. The old self-invented Website & Digital Workflow Builder label and repeated friction/framework language made the profile interesting but harder to place.
+
+Main issues found
+- Friction was repeated as a personal brand concept across hero, method and project cards.
+- Several different projects were forced into near-identical arrow frameworks.
+- The portfolio explained its methodology more than necessary.
+- AI and seniority boundaries were repeated too often.
+- A generic 30-day plan used space that could support actual work.
+- Danish contained English-shaped digital/consulting phrases and stale review-count evidence.
+- The strongest proof, Marzieh Nail Atelier, needed to dominate the story more clearly.
+
+Baseline heuristic
+- Recruiter clarity: 8.6/10
+- Role-market clarity: 8.4/10
+- Evidence: 9.2/10
+- Natural English: 8.6/10
+- Natural Danish: ~7.8/10
+- Over-framework / AI-polish risk: medium
+
+FIXES APPLIED
+- New identity: Digital Production · Web Content · QA.
+- Kept distinctive H1: Clear digital structure from unclear needs.
+- Rewrote hero around actual deliverables.
+- Put live work first.
+- Reframed pilots as What it was / What I worked on / What it demonstrates.
+- Removed friction from the portfolio's visible personal methodology.
+- Removed generic 30-day plan.
+- Consolidated AI disclosure.
+- Reduced seniority disclaimer to one clear line.
+- Rewrote Danish independently.
+
+PASS 2 - HUMAN / AGENCY REVIEW
+Recruiter question: Does the rewrite still feel engineered or translated?
+Finding: Much better, but several remaining micro-signals still felt like portfolio taxonomy or English-shaped Danish.
+
+Issues caught and fixed
+- Supporting project copy still repeated AI unnecessarily. Reduced it to the project context and one central disclosure.
+- 'The portfolio is part of the evidence' still sounded self-conscious. Replaced with 'The site itself is part of the work.'
+- Danish anglicisms were cleaned: onboarding, workflow-support, preview-/udgivelsesforløb, raw/input wording, and similar constructions.
+- Danish best-fit and delivery wording were made more native and concrete.
+- Contact navigation was added so the main action is reachable directly.
+- Current EN/DA content structures were checked recursively and match exactly.
+
+PASS 3 - CREDIBILITY / QA REVIEW
+Hiring-manager question: Is anything still likely to create distrust, confusion or technical regression?
+
+Issues caught and fixed
+- The Marzieh visual is an interface preview based on the live work, not a literal browser capture. It is now explicitly labelled 'Interface preview' instead of being presented ambiguously as a live screenshot.
+- EN/DA image alt text was localized.
+- The Danish case now links to the Danish live site; English links to the English live site.
+- Canonical and language-alternate metadata were added to the homepage and case-study routes.
+- Current Next.js security guidance was checked and the project was set to Next.js 16.2.11 with React 19.2.0.
+- Cloudflare-compatible response hardening was added through public/_headers.
+- Postbuild QA now checks required routes/assets and blocks old framework copy, stale review proof, old title, old 30-day wording and accidental public HamdamBridge URL exposure.
+- .gitignore, .nvmrc, pnpm package-manager metadata and Node engine requirements were added for a cleaner GitHub handover.
+
+FINAL SOURCE AUDIT
+- EN/DA content tree parity: PASS, zero structural differences.
+- Em dash in source/public copy: none.
+- Visible friction/friktion wording: none.
+- Stale 5.0 / 16 review proof in visible copy: none.
+- Public HamdamBridge private URL: none.
+- Old Website & Digital Workflow Builder title in visible copy: none.
+- Generic First 30 days section: none.
+- Image alt coverage in primary components: PASS.
+- target=_blank without rel: none.
+- Relative component imports resolved: PASS.
+- postbuild.mjs syntax: PASS.
+- next.config.mjs syntax: PASS.
+- content.js import/runtime parse: PASS.
+- Total EN content including labels/chips: ~1,050 words, roughly a 4.2-minute full read at 250 wpm.
+- Total DA content including labels/chips: ~1,000 words, roughly a 4.0-minute full read at 250 wpm.
+
+FINAL HEURISTIC
+- Recruiter scan: 9.7/10
+- Role-market clarity: 9.7/10
+- Human professional English: 9.7/10
+- Natural professional Danish: 9.4-9.5/10
+- Marzieh case credibility: 9.7/10
+- Agency/digital-production relevance: 9.6/10
+- Seniority calibration: 9.8/10
+- Framework / obvious-AI feel: very low
+
+REMAINING EXTERNAL VALIDATION
+A full Next production build could not be executed in this environment because npm registry access is blocked and dependencies are not installed. GitHub -> Cloudflare must therefore perform the final framework compile and deployed-browser/header validation.

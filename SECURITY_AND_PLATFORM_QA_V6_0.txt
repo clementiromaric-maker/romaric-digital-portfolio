@@ -1,0 +1,24 @@
+RC DIGITAL PORTFOLIO V6.0 - SECURITY AND PLATFORM QA
+
+Platform decisions
+- Next.js 16.2.11, the Active LTS security patch level published in the July 2026 Next.js security release.
+- React / React DOM 19.2.0.
+- Static export via output: 'export'. No server API or dynamic server route is required for this portfolio.
+- GitHub source -> Cloudflare Workers static assets deployment.
+
+Cloudflare response hardening
+public/_headers adds:
+- X-Frame-Options: DENY
+- X-Content-Type-Options: nosniff
+- Referrer-Policy: strict-origin-when-cross-origin
+- Permissions-Policy with unused sensitive browser features disabled
+- A conservative Content-Security-Policy compatible with a static Next.js export
+- Long-lived immutable caching only for hashed /_next/static assets
+
+Official references checked 11 Aug 2026
+- Next.js July 2026 Security Release / Next.js blog
+- Cloudflare Workers Static Assets: Headers
+- Cloudflare Workers Static Assets documentation
+
+Deployment caveat
+The final production build and header behavior must still be verified after GitHub -> Cloudflare deployment because this working environment does not contain the project's installed Node dependencies or a permitted local browser runtime.

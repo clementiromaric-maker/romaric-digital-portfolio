@@ -1,0 +1,35 @@
+RC DIGITAL PORTFOLIO V6.0 - EXTERNAL BENCHMARK
+Date: 11 Aug 2026
+
+Sources checked before the rewrite
+1. Interaction Design Foundation portfolio and case-study guidance
+   - Recruiters/hiring managers may decide within a few minutes whether a portfolio is worth a screening call.
+   - The opening should quickly answer who the candidate is, what they can do and how they work.
+   - Keep the best relevant cases prominent and side projects supporting.
+   - Case studies should show context, decisions, process and outcomes without unnecessary description.
+
+2. Hays Denmark career guidance
+   - Clear hierarchy, concise language, readable presentation and concrete outcomes are stronger than jargon-heavy descriptions.
+   - Plain language should not be sacrificed for technical terminology.
+
+3. Current portfolio examples
+   - Nicholos Palmer: clear Web Producer / Web Content identity, immediate production/CMS/QA proof and concrete case studies.
+   - Dominic James: challenge, role, implementation, constraints/outcome, with AI described as support rather than identity.
+   - Creative Bloq 2026 portfolio examples: clean, project-focused portfolios are effective when the work remains the main attraction.
+
+4. Practitioner/forum signal
+   - Current experienced UX discussion explicitly identifies both too much process and too little process as failure modes.
+   - Treat forum evidence as anecdotal, but it supports the broader benchmark: show enough process to prove judgement, not so much that the portfolio becomes a methodology presentation.
+
+5. Current technical/security sources
+   - Next.js July 2026 security release: 16.2.11 is the Active LTS patch addressing the published July security issues.
+   - Next.js App Router docs: route groups support multiple root layouts; static export remains supported through output: 'export'.
+   - Cloudflare Workers static assets docs: public/_headers is supported for custom security headers.
+
+Decision taken
+- Keep structure where the work is genuinely sequential.
+- Remove repeated self-branded frameworks from personal philosophy.
+- Put live work before supporting pilots.
+- Use an established role-market identity instead of a self-invented title.
+- Keep one concise professional boundary and one central AI disclosure.
+- Write Danish independently rather than translating English phrasing literally.

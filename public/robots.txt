@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://romaric-digital-portfolio.clementiromaric.workers.dev/sitemap.xml

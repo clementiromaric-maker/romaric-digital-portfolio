@@ -1,0 +1,32 @@
+V6.0 HUMAN DELIVERY REFRAME
+
+CONTENT / POSITIONING
+- Repositioned from self-invented Website & Digital Workflow Builder to Digital Production · Web Content · QA.
+- Retained Clear digital structure from unclear needs as the distinctive H1.
+- Rewrote the hero in direct role-market language.
+- Removed repeated friction/framework language from visible portfolio copy.
+- Removed the generic first-30-days section from the permanent portfolio.
+- Kept real production structure for Source / Structure / Build / Handover without consultant framing.
+- Reframed three supporting pilots as What it was / What I worked on / What it demonstrates.
+- Put Marzieh Nail Atelier clearly first and kept its real premium-vs-practical-information trade-off.
+- Consolidated AI disclosure and reduced defensive seniority language.
+- Removed stale review-count proof.
+- Rewrote Danish independently and completed a second native-language cleanup pass.
+- Preserved HamdamBridge privacy: walkthrough on request only.
+
+TRUST / UX
+- Labelled the Marzieh visual honestly as an interface preview rather than implying a literal browser capture.
+- Localized image alt text.
+- Added Contact to main navigation.
+- Danish case links to the Danish live site; English case links to English.
+
+SEO / DELIVERY
+- Added canonical and EN/DA language-alternate metadata to homepage and case routes.
+- Added postbuild checks for routes, public assets and retired-copy regressions.
+- Added .gitignore, .nvmrc, pnpm package-manager metadata and Node engine requirement.
+
+SECURITY
+- Set Next.js 16.2.11, the July 2026 Active LTS security patch level.
+- Uses React / React DOM 19.2.0.
+- Added Cloudflare-compatible public/_headers security policy.
+- Added immutable caching for hashed /_next/static assets only.
