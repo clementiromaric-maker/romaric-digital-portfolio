@@ -23,3 +23,9 @@ Recommended:
 - Output directory: `out`
 
 The prebuild route guard from earlier hardened releases remains in place.
+
+## V6.6 visual composition
+- Implements the approved three-part Marzieh proof composition: desktop preview, delivery logic, mobile proof.
+- Enlarges the hero proof module on desktop to use the right-hand space more effectively.
+- Uses contained image framing so the Marzieh desktop preview stays centred rather than being cropped.
+- Adds a local custom SVG cursor for fine-pointer devices, with a distinct interactive cursor on links and buttons and native fallback on touch/mobile.

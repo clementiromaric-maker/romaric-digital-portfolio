@@ -1,0 +1,15 @@
+Digital Portfolio V6.6 - Mockup Composition + Custom Cursor
+
+SOURCE QA
+- EN and DA home routes retained.
+- Marzieh featured proof now uses a three-part visual story: desktop interface preview, rough-input-to-output panel, and real mobile capture.
+- Desktop preview uses contain framing inside its own warm editorial frame; no cover crop.
+- Mobile proof keeps the light device frame and no black fill.
+- Hero proof module enlarged at desktop breakpoints.
+- Custom cursor uses local SVG assets only and automatically falls back on touch/coarse-pointer devices.
+- Links/buttons receive a distinct hover cursor; text fields keep the native text cursor.
+- Clementi AI Workflow, FørsteMatch and HamdamBridge remain walkthrough-only.
+- No public preview URLs restored.
+
+FINAL COMPILE
+Cloudflare remains the final Next.js production compile/deploy validation.

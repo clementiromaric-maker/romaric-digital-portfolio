@@ -1,6 +1,6 @@
 {
-  "name": "romaric-digital-portfolio-v6-5-visual-proof-polish",
-  "version": "6.5.0",
+  "name": "romaric-digital-portfolio-v6-6-mockup-composition-custom-cursor",
+  "version": "6.6.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
