@@ -1,0 +1,22 @@
+V6.2 - DEPTH RESTORED / LIVE QA CORRECTION
+
+Reason:
+The first V6 deployment fixed Cloudflare but simplified the portfolio too far. Live QA showed that the hero lost visual proof, the language switch was not explicit enough, and several useful V5.10.1 elements had been removed.
+
+Changes:
+1. Restored an explicit EN / DA pill with active-language state.
+2. Added the same language switch to both Marzieh case-study routes.
+3. Rebalanced the desktop hero so the right-side proof panel is visible above the fold.
+4. Restored a proof-rich right panel with input chips, useful-output block, best-fit summary and proof summary.
+5. Added a real Marzieh Nail Atelier mobile screenshot to the hero.
+6. Kept the existing interface preview and added the real mobile screenshot to the Marzieh project presentation.
+7. Expanded the live case from three summary blocks to Challenge, My role, Built, Proof and Why it matters to a team.
+8. Restored direct public CTAs for Clementi AI Workflow and FørsteMatch.
+9. Kept HamdamBridge private / walkthrough only.
+10. Expanded Where I help a team to six concrete capability areas.
+11. Kept the Operations Backbone evidence and real delivery sequence.
+12. Restored a revised First 30 days section using plain delivery language rather than a branded framework.
+13. Strengthened contact information and live-proof link.
+14. Removed a duplicated Danish Digital QA role found during QA.
+15. Preserved stale app/(en) auto-prune and duplicate-route guard from V6.1.1.
+16. Preserved the no-friction, no-consultant-framework language direction.

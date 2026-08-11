@@ -1,0 +1,19 @@
+V6.2 LOCAL VERIFICATION
+
+PASS - content.js parses as an ES module.
+PASS - English and Danish content have identical structural shape.
+PASS - English and Danish each contain 3 supporting projects and 6 fit capabilities.
+PASS - TypeScript compiler parses all JSX route/component files successfully with JSX preserved.
+PASS - scripts/clean.mjs syntax.
+PASS - scripts/postbuild.mjs syntax.
+PASS - prebuild route guard: 4 page files -> 4 unique routes.
+PASS - all /assets references point to existing public files.
+PASS - all target=_blank anchors include rel=noopener.
+PASS - 0 visible occurrences of retired friction copy.
+PASS - 0 visible occurrences of Website & Digital Workflow Builder.
+PASS - 0 public HamdamBridge private-pilot URL.
+PASS - 0 visible em-dash characters in app copy.
+PASS - Marzieh interface preview asset present.
+PASS - real Marzieh mobile screenshot asset present.
+
+NOT RUN LOCALLY - full next build, because registry access is unavailable in this environment. Cloudflare remains the final compilation/deployment validation.

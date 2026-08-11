@@ -22,7 +22,7 @@ export default function MarziehCase({ da=false }) {
   const home = da ? '/da/' : '/';
   const liveHref = da ? 'https://marziehnail-atelier.dk/' : 'https://marziehnail-atelier.dk/en/';
   return <main className="casePage"><div className="wrap">
-    <Link className="back" href={home}>← {t.back}</Link>
+    <div className="caseTop"><Link className="back" href={home}>← {t.back}</Link><div className="languageSwitch" aria-label={da ? 'Sprogvalg' : 'Language switcher'}><a className={!da ? 'active' : ''} href="/work/marzieh-nail-atelier/">EN</a><span>/</span><a className={da ? 'active' : ''} href="/da/work/marzieh-nail-atelier/">DA</a></div></div>
     <div className="caseHero"><div><p className="eyebrow">{t.eyebrow}</p><h1>{t.title}</h1><p className="lede">{t.intro}</p></div><img src="/assets/marzieh-homepage.webp" alt={t.previewAlt}/></div>
     <div className="caseFacts"><article><h2>{t.contextH}</h2><p>{t.context}</p></article><article><h2>{t.roleH}</h2><p>{t.role}</p></article></div>
     <article className="tradeoff"><p className="eyebrow">{t.tensionH}</p><p>{t.tension}</p></article>

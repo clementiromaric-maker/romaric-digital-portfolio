@@ -1,6 +1,6 @@
 {
-  "name": "romaric-digital-portfolio-v6-1-1-stale-route-auto-prune",
-  "version": "6.1.1",
+  "name": "romaric-digital-portfolio-v6-2-depth-restored",
+  "version": "6.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
