@@ -8,7 +8,7 @@ const liveLinks = {
 
 const proofSignals = [
   { value: 'Live virksomhed', label: 'Marzieh Nail Atelier i produktion' },
-  { value: '3 byggede piloter', label: 'Workflow, praktikmatch og privat introduktion' },
+  { value: '3 støtteprojekter', label: 'Workflow, beskæftigelse og privatlivsfokuserede systemer' },
   { value: 'Fra service til booking', label: 'Tilbud, priser, politikker, besøg og bookingvej' },
   { value: 'Flersprogede sider', label: 'DA / EN plus persisk/engelsk pilotlogik' },
   { value: 'GitHub workflow-klar', label: 'Source packages, deploy-noter, versionsspor og QA' },
@@ -41,7 +41,7 @@ const roleFitLanes = [
 const pilotProjects = [
   {
     eyebrow: 'Service- og workflowsystem',
-    status: 'Offentlig preview',
+    status: 'Privat gennemgang',
     title: 'Clementi AI Workflow',
     role: 'SME-services, workflow-gennemgang og praktiske AI-grænser',
     text:
@@ -51,13 +51,13 @@ const pilotProjects = [
       'Noter, værktøjer og PDF-leverancer',
       'Én pålidelig kilde og ansvarlige AI-grænser',
     ],
-    link: 'https://clementi-ai-workflow-pages-preview.pages.dev/',
-    linkLabel: 'Åbn preview',
+    link: null,
+    linkLabel: 'Gennemgang efter aftale',
     bestFor: 'Viser servicearkitektur, workflowforståelse og evnen til at gøre et uklart tilbud lettere at gennemgå og bruge.',
   },
   {
     eyebrow: 'Pilot for flere aktører',
-    status: 'Offentlig pilot',
+    status: 'Privat gennemgang',
     title: 'FørsteMatch',
     role: 'Klarhed for kandidat, virksomhed og rådgiver før officiel overdragelse',
     text:
@@ -67,8 +67,8 @@ const pilotProjects = [
       'Matchbrief, formularer og dokumenter',
       'Privatlivsgrænser uden CPR eller diagnoser',
     ],
-    link: 'https://foerstematch-pilot.pages.dev/',
-    linkLabel: 'Åbn pilot',
+    link: null,
+    linkLabel: 'Gennemgang efter aftale',
     bestFor: 'Viser aktørkortlægning, tosproget kommunikation, privatlivsgrænser og menneskelig vurdering.',
   },
   {
@@ -237,7 +237,7 @@ export default function DanishPortfolio() {
                 <div className="signal-map__output"><span className="mono">Brugbart output</span><b>Klar første version</b><small>brugbart · let at gennemgå · klar til overdragelse</small></div>
               </div>
               <figure className="hero-live-proof">
-                <img src="/assets/marzieh-mobile-live.jpg" alt="Reelt mobilskærmbillede af Marzieh Nail Atelier-websitet" width="688" height="1536" loading="lazy" decoding="async" />
+                <img src="/assets/marzieh-pearl-proof.webp" alt="Pearl Satin Glaze-neglebillede fra Marzieh Nail Atelier live-websitet" width="600" height="600" loading="lazy" decoding="async" />
                 <figcaption><span className="mono">Live dokumentation</span><b>Marzieh Nail Atelier</b></figcaption>
               </figure>
               <dl>
@@ -293,25 +293,25 @@ export default function DanishPortfolio() {
                   <div className="featured-case__visual-grid">
                     <figure className="featured-case__desktop">
                       <img
-                        src="/assets/marzieh-homepage-v5114.webp"
-                        alt="Desktop-preview af Marzieh Nail Atelier-websitet"
-                        width="1365"
-                        height="768"
+                        src="/assets/marzieh-desktop-current.webp"
+                        alt="Aktuelt desktop-interface-preview af Marzieh Nail Atelier-websitet"
+                        width="1600"
+                        height="1000"
                         loading="eager"
                         decoding="async"
                       />
-                      <figcaption>Interface-preview · live website er linket nedenfor</figcaption>
+                      <figcaption>Aktuelt desktop-interface-preview · live website er linket nedenfor</figcaption>
                     </figure>
                     <figure className="featured-case__mobile">
                       <img
-                        src="/assets/marzieh-mobile-live.jpg"
-                        alt="Reelt mobilskærmbillede af Marzieh Nail Atelier-websitet"
-                        width="688"
-                        height="1536"
+                        src="/assets/marzieh-mobile-live-cropped.webp"
+                        alt="Reelt mobiludsnit af Marzieh Nail Atelier-websitet uden browserens top- og bundlinjer"
+                        width="676"
+                        height="1218"
                         loading="lazy"
                         decoding="async"
                       />
-                      <figcaption>Reelt mobilskærmbillede</figcaption>
+                      <figcaption>Reelt mobiludsnit · browserramme fjernet</figcaption>
                     </figure>
                   </div>
                 </div>

@@ -1,8 +1,5 @@
-Romaric Clementi Web Digital Portfolio V5.11.9
-FINAL LANGUAGE, METADATA & CAPABILITY-DENSITY QA
-
-SOURCE
-- Built directly from V5.11.8 Structured Content, CMS & Delivery Workflow Consistency.
+Romaric Clementi Digital Portfolio V6.4
+PRIVATE WALKTHROUGH + PROFESSIONAL PROOF QA
 
 INTENDED BUILD
 - Node 22.16.0
@@ -10,9 +7,33 @@ INTENDED BUILD
 - Static export to /out
 - Postbuild Danish html-lang patch
 
-VERIFICATION TARGETS
-- 7 generated HTML files including 404 outputs.
-- 4 content routes: EN/DA home and EN/DA Marzieh case.
-- Static Danish pages must use html lang="da".
-- 0 broken internal references, duplicate IDs, invalid JSON-LD or missing assets.
-- Package and lockfile versions must match V5.11.9.
+ROUTES
+- /
+- /da/
+- /work/marzieh-nail-atelier/
+- /da/arbejde/marzieh-nail-atelier/
+
+PRIVACY / COMMERCIAL GUARDRAILS
+- Clementi AI Workflow has no public preview URL in portfolio/source content.
+- FørsteMatch has no public pilot URL in portfolio/source content.
+- HamdamBridge remains walkthrough-only.
+- EN wording: Walkthrough available on request.
+- DA wording: Gennemgang efter aftale.
+
+VISUAL PROOF
+- Current Marzieh desktop interface preview
+- Cropped real mobile capture without browser/device chrome
+- Current service preview
+- Selected-work preview
+- Current visit/booking preview
+- Pearl Satin Glaze live-site proof image
+
+SOURCE QA
+- 4 page files / 4 intended public routes
+- all referenced /assets paths resolve
+- no duplicate literal JSX IDs
+- no node_modules, .next or out shipped
+- package/lock root metadata synced at 6.4.0
+
+FINAL COMPILE
+The final Next.js production compile remains the Cloudflare build step when dependencies are installed.

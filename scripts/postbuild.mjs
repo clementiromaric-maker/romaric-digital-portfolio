@@ -36,8 +36,14 @@ const required = [
   'FørsteMatch',
   'Marzieh Nail Atelier',
   'romaric-portrait.webp',
-  'marzieh-homepage-v5114.webp',
-  'marzieh-mobile-live.jpg',
+  'marzieh-desktop-current.webp',
+  'marzieh-mobile-live-cropped.webp',
+  'marzieh-pearl-proof.webp',
+  'marzieh-services-current.webp',
+  'marzieh-work-current.webp',
+  'marzieh-booking-current.webp',
+  'Walkthrough available on request',
+  'Gennemgang efter aftale',
 ];
 for (const marker of required) {
   if (!combined.includes(marker)) throw new Error(`Required portfolio marker missing after build: ${marker}`);
@@ -50,6 +56,14 @@ const forbidden = [
   'Friktionslinse',
   'Friktion først. Værktøjer bagefter.',
   'hamdambridge-private-pilot.clementiromaric.workers.dev',
+  'Open preview',
+  'Open pilot',
+  'Åbn preview',
+  'Åbn pilot',
+  'Public preview',
+  'Public pilot',
+  'Offentlig preview',
+  'Offentlig pilot',
 ];
 for (const marker of forbidden) {
   if (combined.includes(marker)) throw new Error(`Retired/private copy leaked into exported HTML: ${marker}`);

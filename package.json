@@ -1,6 +1,6 @@
 {
-  "name": "romaric-clementi-web-digital-portfolio",
-  "version": "6.3.0",
+  "name": "romaric-digital-portfolio-v6-4-private-walkthrough-professional-proof",
+  "version": "6.4.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

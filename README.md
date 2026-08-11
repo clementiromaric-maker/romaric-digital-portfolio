@@ -1,29 +1,28 @@
-# Romaric Clementi Digital Portfolio V6.3 - Restored Fidelity
+# Romaric Clementi Digital Portfolio V6.4
 
-Built directly from the uploaded, production-verified V5.11.9 source. This version restores the visual and evidential depth that was lost in the simplified V6 rebuild while keeping the approved human-language improvements.
+Private-walkthrough and professional-proof update built from the restored V6.3 / uploaded V5.11.9 production baseline.
 
-## Restored from V5.11.9
-- Self-hosted Fraunces, Hanken Grotesk and IBM Plex Mono typography
-- Quick scan / Deep dive
-- Proof dashboard
-- Rich Marzieh selected-project presentation and full case-study routes
-- Three supporting project cards
-- Operations backbone and numeric proof
-- Real Source / Structure / Build / Handover production sequence
-- Role-fit, Build & QA, evidence board, CMS/Jira proof and First 30 days
-- Romaric portrait in Contact
-- Full EN / DA switch and routes
+## What changed in V6.4
+- Clementi AI Workflow: no public preview URL; walkthrough available on request only.
+- FørsteMatch: no public pilot URL; walkthrough available on request only.
+- HamdamBridge remains walkthrough-only.
+- Supporting-project proof now says `3 supporting projects` instead of `3 built pilots`.
+- Replaced the raw phone/browser presentation with a cropped real mobile capture that removes browser and device chrome.
+- Replaced the older Marzieh desktop proof with a cleaner current interface preview built from verified live-site copy and existing site imagery.
+- Updated service and visit interface previews to current service/visit information.
+- Rebuilt the selected-work preview at higher resolution with a consistent editorial treatment.
+- Replaced the tiny hero screenshot with a clean Pearl Satin Glaze proof image.
+- Retired the older raw/stale proof assets so they cannot accidentally return later.
+- Updated OG image to the new proof treatment.
+- EN/DA routes and language switch remain intact.
+- V6.3 Cloudflare route guards remain intact.
 
-## V6.3 improvements
-- Role identity: Digital Production · Web Content · QA
-- Human hero language without the repeated friction framework
-- Current Marzieh desktop preview plus a real mobile screenshot
-- Clementi AI Workflow and FørsteMatch public links restored
-- HamdamBridge remains private, walkthrough only
-- AI disclosure consolidated rather than repeated across the homepage
-- Danish re-authored rather than translated literally
-- Prebuild guard removes stale app/(en) routes and detects duplicate public routes
-- Cloudflare security headers retained
+## Proof-image terminology
+The portfolio intentionally distinguishes between:
+- **Interface preview**: a curated portfolio visual using verified live-site copy and genuine project imagery. It is not presented as a literal browser screenshot.
+- **Real mobile capture**: an actual mobile capture of the Marzieh website, cropped only to remove browser/device chrome.
+
+This avoids presenting reconstructed interface visuals as literal screenshots.
 
 ## Cloudflare
 Use Node 22.16.0 and pnpm 10.11.1.

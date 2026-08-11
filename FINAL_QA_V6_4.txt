@@ -1,0 +1,27 @@
+V6.4 FINAL QA
+
+RESULT: PASS (source-level / artifact QA)
+
+PASS
+- 4 page files resolve to the intended EN/DA home + Marzieh case routes.
+- 18 application asset references resolve to shipped files.
+- Clementi AI Workflow public preview URL removed.
+- FørsteMatch public pilot URL removed.
+- All three supporting projects are walkthrough-only in EN/DA.
+- Professional Marzieh desktop, mobile, service, work and visit proof assets are present.
+- Old raw/stale Marzieh proof assets are removed from the package.
+- package.json and package-lock root metadata are synced at V6.4.0.
+- No node_modules, .next or out directories are shipped.
+- No duplicate literal JSX IDs found.
+- postbuild.mjs syntax check passed.
+- next.config.mjs syntax check passed.
+
+VISUAL BACKTEST
+- Raw Android/browser chrome no longer appears in the featured mobile proof.
+- Desktop proof no longer contains the old review-count/pricing snapshot treatment.
+- Proof hierarchy is now: real live business -> current interface preview -> real cropped mobile capture -> deeper interface views.
+- Interface previews are labelled as previews rather than literal screenshots.
+- Real mobile capture is labelled as a real capture with browser chrome removed.
+
+LIMITATION
+A full Next.js production build was not run in the current container because dependencies are not installed and registry access is unavailable. Cloudflare remains the final compile/deploy validation.

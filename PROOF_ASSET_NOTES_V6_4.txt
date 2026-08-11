@@ -1,0 +1,23 @@
+MARZIEH PROOF ASSET NOTES - V6.4
+
+marzieh-desktop-current.webp
+- Curated current interface preview.
+- Uses verified live-site wording and genuine Marzieh project imagery.
+- Not described as a literal browser screenshot.
+
+marzieh-mobile-live-cropped.webp
+- Real mobile capture from the Marzieh site.
+- Only browser/device chrome was cropped away.
+- Website content itself was not redrawn.
+
+marzieh-services-current.webp
+- Curated service interface preview using current service names/prices verified against the live site at the time of the V6.4 update.
+
+marzieh-work-current.webp
+- Curated selected-work interface preview using genuine project imagery already present in the portfolio source.
+
+marzieh-booking-current.webp
+- Curated visit/booking interface preview using current address, opening hours and Planway booking context verified against the live site at the time of the V6.4 update.
+
+marzieh-pearl-proof.webp
+- Clean crop of the genuine Pearl Satin Glaze project imagery used by Marzieh Nail Atelier.

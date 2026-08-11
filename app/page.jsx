@@ -12,8 +12,8 @@ const proofSignals = [
     label: 'Marzieh Nail Atelier in production',
   },
   {
-    value: '3 built pilots',
-    label: 'Workflow, employment and private-introduction systems',
+    value: '3 supporting projects',
+    label: 'Workflow, employment and privacy-first systems',
   },
   {
     value: 'Service to booking',
@@ -60,7 +60,7 @@ const roleFitLanes = [
 const pilotProjects = [
   {
     eyebrow: 'Service and workflow system',
-    status: 'Public preview',
+    status: 'Private walkthrough',
     title: 'Clementi AI Workflow',
     role: 'SME services, workflow reviews and practical AI boundaries',
     text:
@@ -70,13 +70,13 @@ const pilotProjects = [
       'Notes, tools and PDF deliverables',
       'Source-of-truth thinking and responsible AI boundaries',
     ],
-    link: 'https://clementi-ai-workflow-pages-preview.pages.dev/',
-    linkLabel: 'Open preview',
+    link: null,
+    linkLabel: 'Walkthrough available on request',
     bestFor: 'Shows service architecture, workflow judgement and the ability to turn an unclear offer into something people can review and use.',
   },
   {
     eyebrow: 'Stakeholder-flow pilot',
-    status: 'Public pilot',
+    status: 'Private walkthrough',
     title: 'FørsteMatch',
     role: 'Candidate, company and advisor clarity before official handoff',
     text:
@@ -86,8 +86,8 @@ const pilotProjects = [
       'Match brief, forms and documents',
       'Privacy boundaries with no CPR or diagnoses',
     ],
-    link: 'https://foerstematch-pilot.pages.dev/',
-    linkLabel: 'Open pilot',
+    link: null,
+    linkLabel: 'Walkthrough available on request',
     bestFor: 'Shows stakeholder mapping, bilingual communication, privacy boundaries and human-reviewed decision flow.',
   },
   {
@@ -261,8 +261,8 @@ export default function Home() {
                 <div className="signal-map__output"><span className="mono">Useful output</span><b>Clear first version</b><small>usable · reviewable · ready to hand over</small></div>
               </div>
               <figure className="hero-live-proof">
-                <img src="/assets/marzieh-mobile-live.jpg" alt="Real mobile screenshot of the live Marzieh Nail Atelier website" width="688" height="1536" loading="lazy" decoding="async" />
-                <figcaption><span className="mono">Live proof</span><b>Marzieh Nail Atelier</b></figcaption>
+                <img src="/assets/marzieh-pearl-proof.webp" alt="Pearl Satin Glaze nail image from the Marzieh Nail Atelier live website" width="600" height="600" loading="lazy" decoding="async" />
+                <figcaption><span className="mono">Live-site proof</span><b>Marzieh Nail Atelier</b></figcaption>
               </figure>
               <dl>
                 <div className="row">
@@ -319,25 +319,25 @@ export default function Home() {
                   <div className="featured-case__visual-grid">
                     <figure className="featured-case__desktop">
                       <img
-                        src="/assets/marzieh-homepage-v5114.webp"
-                        alt="Desktop interface preview of the Marzieh Nail Atelier website"
-                        width="1365"
-                        height="768"
+                        src="/assets/marzieh-desktop-current.webp"
+                        alt="Current desktop interface preview of the Marzieh Nail Atelier website"
+                        width="1600"
+                        height="1000"
                         loading="eager"
                         decoding="async"
                       />
-                      <figcaption>Interface preview · live website linked below</figcaption>
+                      <figcaption>Current desktop interface preview · live website linked below</figcaption>
                     </figure>
                     <figure className="featured-case__mobile">
                       <img
-                        src="/assets/marzieh-mobile-live.jpg"
-                        alt="Real mobile screenshot of the live Marzieh Nail Atelier website"
-                        width="688"
-                        height="1536"
+                        src="/assets/marzieh-mobile-live-cropped.webp"
+                        alt="Real mobile capture of the Marzieh Nail Atelier website with browser chrome removed"
+                        width="676"
+                        height="1218"
                         loading="lazy"
                         decoding="async"
                       />
-                      <figcaption>Real mobile screenshot</figcaption>
+                      <figcaption>Real mobile capture · browser chrome removed</figcaption>
                     </figure>
                   </div>
                 </div>
