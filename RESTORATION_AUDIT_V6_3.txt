@@ -1,0 +1,23 @@
+V6.3 RESTORATION AUDIT
+======================
+
+Source of truth: user-uploaded V5.11.9 production source.
+
+Why V6.3 exists
+----------------
+The simplified V6 branch reduced more than copy density. Compared with V5.11.9 it removed or weakened the premium font system, Quick/Deep viewing, proof dashboard, the rich selected-project visual, portrait trust detail, evidence board and some CMS/Jira/QA depth. V6.3 restores those strengths instead of trying to recreate them from the simplified branch.
+
+What stays changed
+------------------
+- No repeated friction-based personal methodology.
+- No public HamdamBridge private URL.
+- Clear role label for digital production / web content / QA.
+- Public Clementi AI Workflow and FørsteMatch links.
+- Human EN copy and independently written DA copy.
+- Current Marzieh preview rather than the old screenshot that displayed a stale review count.
+- One main AI disclosure plus project-specific disclosure on the detailed case.
+- Employment-first contact positioning.
+
+What remains structured
+-----------------------
+Real processes stay structured: Source / Structure / Build / Handover, QA evidence, project facts and 30-day onboarding. Personal philosophy is written in normal prose.

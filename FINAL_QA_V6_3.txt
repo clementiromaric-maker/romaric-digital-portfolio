@@ -1,0 +1,54 @@
+RC DIGITAL PORTFOLIO V6.3 - RESTORED FIDELITY
+FINAL SOURCE QA
+============================================================
+
+SOURCE BASIS
+- Built from the user-uploaded V5.11.9 production source, not from the simplified V6 branch.
+- V5.11.9 historical QA recorded a successful Next.js production build, static export, EN/DA routes and clean links/assets/metadata at that time.
+
+RESTORED PRESENTATION / EVIDENCE
+PASS - Self-hosted Fraunces, Hanken Grotesk and IBM Plex Mono preserved.
+PASS - Quick scan / Deep dive preserved.
+PASS - Proof dashboard preserved.
+PASS - Full Marzieh case-study routes preserved in EN and DA.
+PASS - Rich main Marzieh visual restored as a full-width browser presentation.
+PASS - Current desktop interface preview included.
+PASS - Real mobile screenshot shown beside the desktop proof.
+PASS - Three supporting projects retained.
+PASS - Clementi AI Workflow public preview link restored.
+PASS - FørsteMatch public pilot link restored.
+PASS - HamdamBridge remains walkthrough-only; private URL absent from public app source.
+PASS - Operations backbone and 2,000+ / 200+ / 30+ / 5-40+ evidence preserved.
+PASS - Source / Structure / Build / Handover production sequence preserved.
+PASS - Where I fit, Build & QA, evidence board, CMS/Jira proof and First 30 days preserved.
+PASS - Romaric portrait restored in Contact.
+PASS - EN / DA switch preserved.
+
+LANGUAGE / POSITIONING
+PASS - Hero role is Digital Production · Web Content · QA.
+PASS - Hero copy is human and direct, not framed around a personal friction methodology.
+PASS - Repeated friction / hidden-friction / friction-first copy removed from public EN/DA source.
+PASS - AI positioning reduced: one dedicated disclosure, practical Clementi project context, no AI-first role identity.
+PASS - Danish revised independently and checked for the old literal framing terms.
+PASS - No em dashes in homepage/case public JSX.
+PASS - No stale 5.0 / 16-review text in public source.
+
+TECHNICAL SOURCE QA
+PASS - Prebuild stale-route cleanup enabled.
+PASS - 4 page files resolve to 4 unique public routes:
+       /
+       /da
+       /work/marzieh-nail-atelier
+       /da/arbejde/marzieh-nail-atelier
+PASS - TypeScript parser: 0 JSX syntax errors across app source.
+PASS - Node syntax: clean.mjs, postbuild.mjs and next.config.mjs.
+PASS - Missing referenced /assets files: 0.
+PASS - Unknown internal static route references: 0.
+PASS - Private HamdamBridge URL in public app source: 0.
+PASS - Cloudflare _headers security file retained.
+PASS - Static export configuration retained.
+
+BUILD LIMITATION
+- A new full Next.js build could not be run in this workspace because Corepack/npm registry access is blocked.
+- The dependency set is inherited from the uploaded V5.11.9 source whose historical build verification passed.
+- Cloudflare remains the final production compilation/render test for V6.3.

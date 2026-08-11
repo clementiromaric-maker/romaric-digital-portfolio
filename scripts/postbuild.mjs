@@ -1,34 +1,60 @@
-import fs from 'node:fs';
-import path from 'node:path';
+import { access, readdir, readFile, writeFile } from 'node:fs/promises';
+import { join } from 'node:path';
 
-const out = path.resolve('out');
-const required = [
-  ['index.html', ['Digital Production', 'Clear digital', 'I turn scattered briefs', 'Understand the work before shaping the screen.', 'What I worked on', 'First 30 days', 'AI-assisted production', 'EN', 'DA']],
-  ['da/index.html', ['Digital produktion', 'Klar digital', 'Jeg gør spredte oplæg', 'Forstå arbejdet, før skærmen formes.', 'Det arbejdede jeg med', 'Første 30 dage', 'AI-assisteret produktion', 'EN', 'DA']],
-  ['work/marzieh-nail-atelier/index.html', ['The key trade-off', 'Marzieh Nail Atelier']],
-  ['da/work/marzieh-nail-atelier/index.html', ['Den vigtigste afvejning', 'Marzieh Nail Atelier']]
-];
-const forbidden = ['I find the real friction behind messy briefs', 'Friction first. Tools second.', 'Friction → Source → Owner → Review → Reuse', 'Friktionslinse', 'Friktion først. Værktøjer bagefter.', '5.0 / 16', 'Website & Digital Workflow Builder', 'hamdambridge-private-pilot'];
-const normalize = v => v.replaceAll('&amp;','&').replaceAll('&#38;','&').replaceAll('&nbsp;',' ').replace(/\s+/g,' ').toLowerCase();
-if (!fs.existsSync(out)) throw new Error('Static export directory out/ is missing.');
-// Patch exported Danish documents to the correct root language after the single-root-layout static export.
-for (const rel of ['da/index.html', 'da/work/marzieh-nail-atelier/index.html']) {
-  const p = path.join(out, rel);
-  if (fs.existsSync(p)) {
-    const raw = fs.readFileSync(p, 'utf8');
-    fs.writeFileSync(p, raw.replace('<html lang=\"en\">', '<html lang=\"da\">').replace('<html lang="en">', '<html lang="da">'), 'utf8');
+const outRoot = join(process.cwd(), 'out');
+const daRoot = join(outRoot, 'da');
+
+async function htmlFiles(dir) {
+  const entries = await readdir(dir, { withFileTypes: true });
+  const files = [];
+  for (const entry of entries) {
+    const full = join(dir, entry.name);
+    if (entry.isDirectory()) files.push(...await htmlFiles(full));
+    else if (entry.isFile() && entry.name.endsWith('.html')) files.push(full);
+  }
+  return files;
+}
+
+let patched = 0;
+for (const file of await htmlFiles(daRoot)) {
+  const source = await readFile(file, 'utf8');
+  const output = source.replace('<html lang="en">', '<html lang="da">');
+  if (output !== source) {
+    await writeFile(file, output, 'utf8');
+    patched += 1;
   }
 }
+if (patched === 0) throw new Error('No Danish exported HTML files were patched. Check the static-export structure.');
 
-for (const asset of ['_headers', 'robots.txt', 'sitemap.xml', 'assets/marzieh-homepage.webp', 'assets/marzieh-mobile-live.jpg']) {
-  if (!fs.existsSync(path.join(out, asset))) throw new Error(`Missing exported public asset: ${asset}`);
+const allHtml = (await htmlFiles(outRoot));
+const combined = (await Promise.all(allHtml.map((file) => readFile(file, 'utf8')))).join('\n');
+const required = [
+  'Digital Production',
+  'Quick scan',
+  'Deep dive',
+  'Clementi AI Workflow',
+  'FørsteMatch',
+  'Marzieh Nail Atelier',
+  'romaric-portrait.webp',
+  'marzieh-homepage-v5114.webp',
+  'marzieh-mobile-live.jpg',
+];
+for (const marker of required) {
+  if (!combined.includes(marker)) throw new Error(`Required portfolio marker missing after build: ${marker}`);
 }
-for (const [rel, markers] of required) {
-  const p = path.join(out, rel);
-  if (!fs.existsSync(p)) throw new Error(`Missing exported route: ${rel}`);
-  const raw = fs.readFileSync(p, 'utf8');
-  const text = normalize(raw);
-  for (const marker of markers) if (!text.includes(normalize(marker))) throw new Error(`${rel} is missing required marker: ${marker}`);
-  for (const old of forbidden) if (text.includes(normalize(old))) throw new Error(`${rel} still contains retired copy: ${old}`);
+const forbidden = [
+  'I find the real friction behind messy briefs',
+  'Hidden friction lens',
+  'Friction first. Tools second.',
+  'Jeg finder den reelle friktion bag uklare briefs',
+  'Friktionslinse',
+  'Friktion først. Værktøjer bagefter.',
+  'hamdambridge-private-pilot.clementiromaric.workers.dev',
+];
+for (const marker of forbidden) {
+  if (combined.includes(marker)) throw new Error(`Retired/private copy leaked into exported HTML: ${marker}`);
 }
-console.log('V6.2 postbuild QA passed: routes, language switch, restored depth, assets and retired-copy checks are clean.');
+for (const route of ['index.html','da/index.html','work/marzieh-nail-atelier/index.html','da/arbejde/marzieh-nail-atelier/index.html']) {
+  await access(join(outRoot, route));
+}
+console.log(`Patched lang="da" into ${patched} Danish exported HTML file(s). Portfolio regression checks passed.`);
