@@ -1,0 +1,15 @@
+RC Operations Portfolio V1.8.3 - Verification
+
+PASS - app/content.js imports successfully as an ES module.
+PASS - scripts/postbuild.mjs passes Node syntax check.
+PASS - build_workflow_readiness_pdf.py and build_procurement_decision_demo.py compile and rebuild successfully.
+PASS - Main portfolio PDF preflight: 5 pages, openable, not encrypted, searchable/non-scanned.
+PASS - Procurement decision demo preflight: 3 pages, openable, not encrypted, searchable/non-scanned.
+PASS - Main PDF rendered and visually inspected at 160 dpi; no clipping or overlap found.
+PASS - Demo page 1 rendered and visually inspected; updated sourcing areas fit without clipping.
+PASS - V1.8.2 vs V1.8.3 render diff confirms intended changes on evidence-heavy pages plus version footer changes.
+PASS - Named former-customer scan found no Kongsberg, BAE Systems, Weibel, Siemens, Struers, FOSS or Orbex in app/public website text or bundled PDF text.
+PASS - No specific resistance-test wording appears in public content.
+PASS - package.json reports rc-operations-portfolio-v1-8-3 / 1.8.3.
+
+NOT RUN - Full Next.js production build because dependencies are not installed in the current container. V1.8.3 does not change JSX structure or CSS layout.

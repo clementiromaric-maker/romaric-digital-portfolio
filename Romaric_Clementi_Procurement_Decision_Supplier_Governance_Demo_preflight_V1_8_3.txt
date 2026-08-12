@@ -1,0 +1,6 @@
+PDF: public/docs/Romaric_Clementi_Procurement_Decision_Supplier_Governance_Demo.pdf
+Pages: 3
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False

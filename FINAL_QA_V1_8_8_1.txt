@@ -1,0 +1,18 @@
+FINAL QA V1.8.8.1 - POSTBUILD GUARD SYNC
+Date: 12 August 2026
+
+Root cause from Cloudflare log:
+The Next.js export completed, then scripts/postbuild.mjs failed because the guard still required the pre-V1.8.8.0 English hero sentence. Two additional stale guard conflicts were also found proactively: the old English/Danish Python markers and a generic forbidden "selvlært" marker that would reject the approved Danish Python wording.
+
+Fixes:
+PASS - English hero required marker synced to current content.
+PASS - Danish hero required marker synced to current content.
+PASS - English Python required marker synced to current content.
+PASS - Danish Python required marker synced to current content.
+PASS - stale generic forbidden "selvlært" guard removed.
+PASS - no current forbidden wording detected in authored EN/DA content.
+PASS - current postbuild required markers checked against current source content/components.
+PASS - digital V6.9.1 postbuild guard separately inspected; no equivalent stale-marker conflict found.
+
+Deployment instruction:
+Deploy this V1.8.8.1 ZIP instead of V1.8.8.0. Cloudflare should rerun the same Next.js build and the corrected postbuild guard.

@@ -1,0 +1,40 @@
+V1.8.4 LANGUAGE BACKTEST
+
+Purpose
+Make the portfolio sound like a capable procurement/operations professional speaking clearly, not like a translated document, a consulting deck or AI-generated career copy.
+
+Benchmark used
+- Current Danish career-language guidance: reader-level language, active verbs, concrete examples, short sentences, avoid clichés, critically rewrite AI-assisted text until it becomes personal.
+- Current FalCom Planning & Procurement Specialist wording: direct task verbs, concrete procurement/planning language, clear ownership, supplier follow-up, MRP/ERP, risk and trade-offs.
+
+Recruiter 10-15 second test: PASS
+- Identity is immediate: Technical Procurement / ERP / Operational Improvement.
+- First-page proof remains concrete: 2,000+, 200+, 30+, 100+.
+- Navigation no longer advertises AI as a separate identity.
+- Role-fit hierarchy remains five primary industrial lanes; commercial/O2C experience stays subordinate.
+
+Hiring-manager deeper-read test: PASS
+- Case 01 shows connected ERP/material/production consequences without claiming engineering authority.
+- Case 02 shows broad technical purchasing, recurring surface-treatment sourcing, specialist subcontracting, external testing/inspection, alternatives, negotiation, delegated awards and follow-through.
+- Strategic Buyer / developing Category Buyer remains a next step rather than a current title claim.
+- Management remains longer-term.
+
+Human-language test: PASS
+- English: direct, concise, active and specific. Long meta/consulting constructions removed.
+- Danish: rewritten independently rather than sentence-by-sentence translation; major English hybrids and literal translations removed.
+- Final source-level sentence audit: average about 10-11 words; English homepage max 25 words; Danish homepage max 27 words.
+- No em dash or en dash in public copy.
+
+AI-impression test: PASS
+- AI is no longer in the navigation label.
+- Repetition was reduced.
+- One distinctive working principle, one practical technology section and one transparent disclosure remain.
+- Concrete work evidence dominates the page.
+
+Regression test: PASS after correction
+- An over-broad wording edit temporarily altered the procurement-demo PDF href; detected and restored.
+- A Danish Quarter 4 typo was detected and corrected.
+- Postbuild now keeps stale/translated wording on the forbidden list and retains HTML-entity normalization.
+
+Final decision
+Freeze the architecture and evidence. V1.8.4 should be treated as a language refinement of V1.8.3, not a new positioning strategy.

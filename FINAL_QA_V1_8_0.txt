@@ -1,0 +1,21 @@
+FINAL QA - V1.8.0
+
+PASS
+- DOCX rendered to 2 A4 pages and inspected at 100%.
+- CV experience order is reverse chronological after the main A.K.S. role.
+- CV page distribution is intentional and readable.
+- CV PDF is tagged and fonts are embedded.
+- Workflow Readiness Portfolio rendered to 5 pages with no clipping or overlap.
+- Procurement Decision Demo rendered to 3 pages with no clipping or overlap.
+- Change Impact Brief rendered to 2 pages.
+- Demonstration data is explicitly labelled as illustrative and not former-employer results.
+- Exact 100+ item outcome wording is used.
+- JSX transpilation/parsing check passed for all app JavaScript and JSX files.
+- Website semantic roles improved for key visual groups.
+- Canonical domain remains io.clementiromaric.workers.dev.
+- __pycache__ and .pyc files removed.
+- ZIP/source integrity checked.
+
+LIMITATION
+- Full Next.js/Cloudflare production build could not be completed locally because the package registry was unavailable.
+- Fixed-layout supporting PDFs remain untagged; website content provides the structured accessible equivalent.

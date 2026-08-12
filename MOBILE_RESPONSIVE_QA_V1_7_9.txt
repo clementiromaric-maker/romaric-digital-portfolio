@@ -1,0 +1,18 @@
+MOBILE RESPONSIVE QA - V1.8.0
+
+SCOPE
+V1.8.0 preserves the V1.7.6 mobile navigation and system-map fixes while adding new evidence and technology sections.
+
+CHECKS
+- Mobile menu remains available for Cases, CV and Contact.
+- EN and DA controls retain accessible touch targets.
+- System-map inputs retain spacing above the amber divider.
+- The priority chip does not touch the divider.
+- Four system-map stages remain readable at narrow widths.
+- Case snapshots collapse to one column on small screens.
+- Technology-practice cards and progression cards stack without page overflow.
+- Case navigation remains horizontally scrollable with a visual cue.
+- No forced mid-word breaks are introduced.
+
+FINAL DEPLOYMENT CHECK
+Confirm at 390 px and 360 px after Cloudflare deployment because the local environment did not contain the complete Next.js dependency installation.

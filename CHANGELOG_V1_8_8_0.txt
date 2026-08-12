@@ -1,0 +1,9 @@
+V1.8.8.0 - 2026-08-12
+- Tightened recruiter-facing hero by ~15%.
+- Added compact Materials & Planning proof module.
+- Added Materials Management and Business Systems to role-fit language.
+- Kept Configuration/change control and QMS/process support in evidence text, not inflated headlines.
+- Standardised Python wording.
+- Refined quick/deep Working Principles behaviour.
+- Broadened final CTA.
+- Completed two backtest/fix cycles with source, language, asset and responsive visual QA.

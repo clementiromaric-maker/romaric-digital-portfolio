@@ -1,0 +1,38 @@
+V1.8.4 FINAL QA
+
+Language and positioning:
+[PASS] English reads as direct, professional and evidence-led rather than portfolio-engineered or AI-polished.
+[PASS] Danish was rewritten for natural professional Danish; major translated constructions and unnecessary English hybrids were removed.
+[PASS] Concrete evidence remains stronger than adjectives or generic claims.
+[PASS] Procurement/ERP/planning identity remains dominant.
+[PASS] Customer/order operations remain supporting breadth only.
+[PASS] AI remains a practical supporting tool, not a career identity.
+[PASS] Strategic Buyer / developing Category Buyer remain next-step roles; management remains longer-term.
+
+Evidence integrity:
+[PASS] No new career evidence was invented during the language pass.
+[PASS] Broad A.K.S. technical purchasing, frequent surface treatments, specialist subcontracting and external testing/inspection remain explicit.
+[PASS] Alternative sourcing, supplier reallocation and routine awards remain bounded by delegated authority.
+[PASS] No named former A.K.S. customers are published.
+[PASS] No specific unverified resistance-test claim is published.
+
+Technical/artifact QA:
+[PASS] Broken procurement-demo href introduced during wording edits was detected and restored to the existing bundled PDF path.
+[PASS] Main workflow portfolio PDF rebuilt as V1.8.4 and visually checked.
+[PASS] Procurement decision demo rebuilt as V1.8.4 and visually checked.
+[PASS] No page clipping or overlap after final language refinements.
+[PASS] Node syntax checks pass for content/postbuild; Python PDF builders compile.
+[PASS] No en dash or em dash in public copy/scripts.
+[PASS] Postbuild still normalises escaped HTML entities before text checks.
+
+Build limitation:
+A full Next.js production build was not run locally because dependencies are not installed in this environment.
+
+Second-pass backtest corrections:
+[PASS] Detected and fixed a broken procurement-demo href caused by an over-broad wording replacement.
+[PASS] Detected and fixed a Danish typo in the Quarter 4 improvement copy.
+[PASS] Reduced homepage AI repetition while keeping the explicit AI working principle and disclosure.
+[PASS] Changed English navigation to Experience / Methods / Roles and Danish navigation to Erfaring / Metoder / Roller.
+[PASS] Replaced translated Danish hybrids such as godkendelsesgates, overdragelsesrytme, leverandør-recovery, performance-opfølgning and release wording with natural Danish equivalents.
+[PASS] Shortened long homepage sentences: final average sentence length is about 10-11 words; no English homepage sentence exceeds 25 words and no Danish homepage sentence exceeds 27 words in the source-level text audit.
+[PASS] Final PDF language pass removed remaining approval-boundary / decision-owner jargon where a simpler phrase worked better.

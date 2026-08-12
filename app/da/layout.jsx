@@ -1,31 +1,16 @@
 export const metadata = {
-  title: 'Romaric Clementi | Digital produktion · Webindhold · QA',
-  description:
-    'Dansk portfolio for webbureauer og digitale teams med website-produktion, struktureret indhold, CMS-implementering, responsiv QA og flersproget levering.',
-  alternates: {
-    canonical: '/da/',
-    languages: {
-      en: '/',
-      da: '/da/',
-    },
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Romaric Clementi | Digital produktion · Webindhold · QA',
-    description: 'Klar digital struktur fra uklare behov.',
-    images: ['/og.png'],
-  },
+  title: 'Romaric Clementi | Teknisk indkøb, planlægning og ERP',
+  description: 'Portfolio med dokumenteret erfaring inden for teknisk indkøb, materialeplanlægning, leverandørbeslutninger, Dynamics AX/D365, stamdata, kvalitet og produktionsparathed, med en tydelig retning mod større sourcingansvar.',
+  alternates: { canonical: '/da/', languages: { en: '/', da: '/da/' } },
   openGraph: {
-    title: 'Romaric Clementi | Digital produktion · Webindhold · QA',
-    description:
-      'Webproduktion, struktureret indhold, CMS-workflows, genbrugelige sektioner, Jira-opfølgning, mobil QA og praktisk digital levering.',
+    title: 'Romaric Clementi | Teknisk indkøb, planlægning og ERP',
+    description: 'Dokumenteret erfaring med teknisk indkøb, planlægning og ERP, med en tydelig retning mod større ansvar for sourcing og leverandørudvikling.',
     type: 'website',
-    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Romaric Clementi portfolio preview' }],
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Romaric Clementi portfolio for teknisk indkøb, planlægning, ERP og stamdata' }],
   },
+  twitter: { card: 'summary_large_image', title: 'Romaric Clementi | Teknisk indkøb, planlægning og ERP', description: 'Dokumenteret erfaring med teknisk indkøb, planlægning og ERP, med en tydelig retning mod større ansvar for sourcing og leverandørudvikling.', images: ['/og.png'] },
 };
 
 export default function DanishLayout({ children }) {
-  return (
-    <div lang="da">{children}</div>
-  );
+  return <><script dangerouslySetInnerHTML={{ __html: "document.documentElement.lang='da';" }} /><div lang="da">{children}</div></>;
 }

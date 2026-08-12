@@ -1,18 +1,17 @@
 {
-  "name": "romaric-digital-portfolio-v6-9-1-proof-depth-refinement",
-  "version": "6.9.1",
+  "name": "rc-operations-portfolio-v1-8-8-1-postbuild-guard-sync",
+  "version": "1.8.8.1",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "postbuild": "node scripts/postbuild.mjs",
+    "clean": "node scripts/clean.mjs",
     "prebuild": "node scripts/clean.mjs"
   },
   "dependencies": {
-    "@fontsource-variable/fraunces": "5.2.9",
-    "@fontsource-variable/hanken-grotesk": "5.2.8",
-    "@fontsource/ibm-plex-mono": "5.2.7",
     "next": "16.2.7",
     "postcss": "8.5.10",
     "react": "19.2.3",

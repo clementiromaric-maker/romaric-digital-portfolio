@@ -1,0 +1,19 @@
+V1.8.0 GOLD MASTER - EVIDENCE, ACCESSIBILITY AND PRODUCTION READINESS
+Date: 31 July 2026
+
+1. Corrected the workflow portfolio outcome wording to the exact verified event: conflicting cost and sales-price data affecting 100+ items identified before a major quotation.
+2. Rebalanced the two-page procurement CV and placed earlier experience in a clear reverse-chronological sequence.
+3. Moved leadership evidence beside the strongest A.K.S. proof and retained a clean page break before earlier experience.
+4. Increased PDF robustness by rebuilding the two generated portfolio PDFs with embedded DejaVu fonts.
+5. Updated the bilingual Change Impact Brief metadata to V1.8.0.
+6. Improved visual semantics in the website source by using figure/group roles for portfolio diagrams and evidence boards.
+7. Refined selected Danish procurement wording to reduce unnecessary English influence.
+8. Removed Python cache and compiled files from the release.
+9. Updated package, metadata and release references to V1.8.0.
+10. Re-rendered and visually checked all 12 PDF pages and both DOCX pages.
+
+Known production limitation:
+A complete Next.js build could not be executed in the isolated environment because the pinned pnpm package could not be downloaded from the npm registry. JSX source parsing and static checks passed. The connected Cloudflare build remains the final deployment verification.
+
+Accessibility note:
+The CV PDF is tagged and uses embedded fonts. The two fixed-layout ReportLab portfolio PDFs use embedded main fonts but remain untagged. Equivalent structured content is available in the website pages. This limitation is documented rather than hidden.

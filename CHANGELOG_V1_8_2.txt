@@ -1,0 +1,13 @@
+RC Operations Portfolio V1.8.2 - Recruiter Language Refinement
+
+Changes from V1.8.1:
+- Kept the five primary industrial role-fit lanes and the existing balanced 3+2 desktop layout.
+- Kept Customer & Order Operations as subordinate supporting breadth, not a primary destination.
+- Replaced "Broader scope next" with the more natural "Natural next step".
+- Replaced "Selective next roles" with "Next-step roles".
+- Rewrote the Customer & Order Operations explanation to state positive end-to-end commercial context without defensive language.
+- Applied equivalent Danish refinements.
+- Kept Strategic Buyer / developing Category Buyer as next-step positioning.
+- Kept management as a longer-term destination.
+- Kept First 90 Days, Beyond 90 Days, responsible AI and the quiet Digital Portfolio link unchanged.
+- Rebuilt the downloadable Workflow Readiness Portfolio PDF as V1.8.2.

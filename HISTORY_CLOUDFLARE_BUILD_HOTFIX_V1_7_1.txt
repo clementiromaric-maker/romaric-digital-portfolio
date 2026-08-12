@@ -1,0 +1,15 @@
+HISTORICAL RELEASE NOTE - retained for traceability
+
+RC Operations Portfolio: V1.7.1 Cloudflare build hotfix
+
+Fixed the postbuild failure reported by Cloudflare:
+- The verification script expected a lower-case Python phrase while the generated page used an initial capital.
+- The Danish Python marker was also not present in visible page content.
+
+Changes:
+1. Added the verified Python capability visibly to the English and Danish ERP/data capability lists.
+2. Aligned the English and Danish postbuild markers with the displayed wording.
+3. Made marker verification case-insensitive and whitespace-normalised so harmless capitalisation changes do not break deployment.
+4. Preserved all stale-wording and bilingual-route safeguards.
+
+No career claims or visual layout were otherwise changed.

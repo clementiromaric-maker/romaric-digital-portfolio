@@ -1,0 +1,18 @@
+V1.8.5.2 Cloudflare build fix
+
+Root cause from the supplied Cloudflare screenshot:
+- app/layout.jsx lines 1-8 were external @fontsource imports.
+- Cloudflare reported module-not-found at those exact lines.
+
+Fixes:
+- Removed all @fontsource imports and dependencies.
+- Replaced them with system serif/sans/mono stacks in globals.css.
+- No font files are bundled or required.
+- Strengthened the hero experience and progression wording in EN and DA.
+- Updated postbuild copy markers.
+
+Deployment:
+- Replace the repository contents, do not merge over an old tree.
+- Allow dependency installation.
+- Build: pnpm run build (or pnpm install --frozen-lockfile && pnpm run build if Cloudflare install is intentionally skipped).
+- Output directory: out

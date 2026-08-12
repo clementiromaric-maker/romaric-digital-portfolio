@@ -1,0 +1,14 @@
+V1.8.5.8 FINAL QA
+
+PASS - Production canonical domain in active app source
+PASS - Retired io domain absent from active app source
+PASS - Robots uses production domain
+PASS - Sitemap uses production domain
+PASS - English metadata title avoids amp entity ambiguity
+PASS - Open Graph URL explicitly set
+PASS - OG image exists
+PASS - Digital portfolio cross-link retained
+PASS - Digital-style green cursor retained
+PASS - No em dash in authored operations content
+
+Full Next.js production compilation remains the Cloudflare deployment validation step.

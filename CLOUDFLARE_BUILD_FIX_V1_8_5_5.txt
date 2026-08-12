@@ -1,0 +1,28 @@
+V1.8.5.5 - postbuild stale-copy guard fix
+=========================================
+
+Cloudflare screenshot diagnosis
+-------------------------------
+The Next.js static export completed successfully. The failure happened only in
+scripts/postbuild.mjs after export.
+
+Root cause:
+- the forbidden stale-wording array contained an en dash (–) as a one-character
+  forbidden marker;
+- the approved hero copy used the valid numeric range "15–20 suppliers";
+- the postbuild script therefore rejected ordinary typography as if it were stale copy.
+
+Fix:
+- numeric range is now written "15-20" in EN and DA;
+- en dash and em dash were removed from the stale-wording array;
+- stale markers shorter than 3 characters now trigger a configuration error instead
+  of being used as broad HTML substring checks;
+- forbidden phrase checks now use the same normalized text used by required-marker QA;
+- the no-em-dash preference is checked separately against authored app/content.js only,
+  not against generated Next.js HTML.
+
+Expected Cloudflare result
+--------------------------
+Next build -> static export -> postbuild -> deployment.
+The postbuild should end with:
+  Verified V1.8.5.5 procurement-planning hero and hardened stale-copy guard...

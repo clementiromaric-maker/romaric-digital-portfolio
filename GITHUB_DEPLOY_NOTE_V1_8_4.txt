@@ -1,0 +1,7 @@
+GitHub -> Cloudflare deployment
+
+1. Replace/update the repository contents with this V1.8.4 project.
+2. Commit to the branch connected to Cloudflare.
+3. Cloudflare should run the existing build command and redeploy automatically.
+
+This package includes the V1.8.3 Cloudflare postbuild HTML-entity hotfix, the page-3 PDF overflow correction and the V1.8.4 human-language polish.

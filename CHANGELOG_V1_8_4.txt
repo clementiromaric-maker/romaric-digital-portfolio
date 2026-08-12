@@ -1,0 +1,20 @@
+RC Operations Portfolio V1.8.4 - Human Language Polish
+
+Changes from V1.8.3:
+- Kept all V1.8.3 evidence, hierarchy, role calibration, authority boundaries and visual structure.
+- Rewrote English framing to sound more direct, natural and human, with shorter sentences and fewer portfolio/consulting-style abstractions.
+- Rewrote Danish copy independently for natural Danish professional usage rather than literal English translation.
+- Replaced meta wording such as recruiter-engineering language, operating-core language, practical-governance wording and translated career-framework labels.
+- Reduced repeated AI framing while retaining one clear working principle, a practical technology section and transparent disclosure.
+- Changed navigation from Proof / Methods & AI / Role fit to Experience / Methods / Roles in English, with corresponding Danish wording.
+- Humanised case labels, review/checkpoint language, handoff wording and strategic-development labels.
+- Kept procurement terminology where it is normal and useful: RFQ, MRP, FAI, NCR/SCAR, sourcing, call-offs and supplier performance.
+- Repaired the procurement-demo PDF href after a language-edit regression and added it to QA checks.
+- Rebuilt both generated PDFs as V1.8.4.
+
+Evidence boundary:
+- No new career claims were added in this language pass.
+- No named former A.K.S. customers are published.
+- External testing remains generic testing/inspection; no unverified specific test label is claimed.
+- Strategic Buyer / developing Category Buyer remain next-step roles.
+- Management remains a longer-term direction.

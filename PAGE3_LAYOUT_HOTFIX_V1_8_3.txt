@@ -1,0 +1,14 @@
+V1.8.3 PAGE 3 LAYOUT HOTFIX
+Date: 2026-08-10
+
+Scope
+- Fixed the Case 02 page-3 BOUNDARY block overflow in the Workflow Readiness Portfolio PDF.
+- No wording, evidence, seniority positioning, role hierarchy or website content was changed.
+- Recovered vertical space only by tightening page-3 spacing.
+
+Verification
+- Rebuilt 5-page PDF successfully.
+- Rendered all 5 pages at 200 dpi.
+- Page 3 visually verified: full BOUNDARY block is above the footer, with no clipping or overlap.
+- PDF preflight: 5 pages, openable, not encrypted.
+- Render comparison against prior V1.8.3: pages 1, 2, 4 and 5 unchanged; only page 3 changed.

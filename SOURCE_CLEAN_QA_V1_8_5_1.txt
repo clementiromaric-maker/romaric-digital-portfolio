@@ -1,0 +1,16 @@
+RC Operations Portfolio V1.8.5.1 - source-clean QA
+
+Checks completed
+- app/content.js syntax: PASS (node --check)
+- scripts/postbuild.mjs syntax: PASS (node --check)
+- Removed EN/DA bridgeFlow arrays: PASS
+- Removed EN/DA labSteps arrays: PASS
+- All 102 HomePage c.<key> references exist in both EN and DA content: PASS
+- homeContent is byte-equivalent in data after removing only bridgeFlow/labSteps from the original comparison object: PASS
+- site object unchanged: PASS
+- No unexpected repository files changed beyond app/content.js, package.json, README.md and source-clean notes: PASS
+- All four shipped PDFs are SHA-256 identical to V1.8.5: PASS
+- Rendered site/PDF version intentionally remains V1.8.5: PASS
+
+Note
+The old 'friction' wording remains only inside postbuild forbidden-string regression checks and historical documentation. It is not rendered. Those guards are intentionally retained so stale copy cannot return unnoticed.

@@ -1,0 +1,38 @@
+RC Operations Portfolio V1.8.8.0 - Final backtest
+Date: 2026-08-12
+
+Change set
+- Recruiter-facing hero copy reduced from 148 to 126 English words (~15%) while preserving recent A.K.S. authority and breadth.
+- Added compact Materials & Planning proof: Kraft Heinz 5 lines / 40+ variants and Fletcher Building SAP purchasing/goods receipt.
+- Broadened role-fit labels to Materials Management and Business Systems without implying formal QMS ownership or a higher seniority.
+- Standardised Python to: Python (basic, self-taught).
+- Quick view now surfaces the strongest working principle; Hiring-manager view keeps all three.
+- CTA widened to technical procurement, materials planning/management, ERP/master data, business systems and operational improvement.
+
+Backtest cycle 1
+- Content/positioning: strong; planning proof materially improved role breadth.
+- Found and fixed one CSS variable mismatch in the new materials module.
+- Found and fixed the quick-view principle grid so the single visible card uses the full width.
+- Rewrote the materials proof headline/intro to be positive and evidence-led rather than defensive.
+
+Backtest cycle 2
+- TypeScript parser: 0 syntax errors across combined portfolio JS/JSX source set.
+- TypeScript transpile diagnostics: 0 errors across combined portfolio JS/JSX source set.
+- Source-level assertions: pass.
+- EN/DA Operations content key parity: 109 / 109, no missing keys.
+- Public asset/document references: pass.
+- Desktop visual QA of the exact new modules: pass.
+- 390px mobile visual QA of the exact new modules: pass.
+- No clipping, awkward empty grid state or mobile overflow found in the added modules.
+
+Positioning backtest
+- Procurement / Buyer: excellent
+- Materials / Supply Planning: materially stronger
+- ERP / Master Data / Business Systems: stronger and more discoverable
+- Process Improvement / Quality Documentation: strong, with QMS kept as support evidence rather than headline ownership
+- Credibility boundaries: preserved
+
+Estimated portfolio grade after refinement: 96-97/100 for its intended Operations / Procurement / Planning / ERP audience.
+
+Build limitation
+A full Next.js production build could not be rerun in this sandbox because the npm registry was unavailable (DNS/network error). The source was instead parsed and transpiled with TypeScript, checked for local asset references and language parity, and the exact new UI modules were rendered in Chromium at desktop and mobile sizes. Existing Cloudflare/Next build configuration was not structurally changed.

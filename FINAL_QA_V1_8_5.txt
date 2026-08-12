@@ -1,0 +1,15 @@
+V1.8.5 FINAL QA
+
+[PASS] app/content.js syntax check.
+[PASS] scripts/postbuild.mjs syntax check.
+[PASS] PDF builder scripts compile.
+[PASS] Main portfolio PDF: 5 pages, openable, searchable, no out-of-bounds text blocks.
+[PASS] Procurement decision demo: 3 pages, openable, searchable, no out-of-bounds text blocks.
+[PASS] Page 3 boundary remains inside the page.
+[PASS] Page 5 progression labels wrap cleanly.
+[PASS] Procurement demo page 1 final panels and footer fit on page.
+[PASS] No visible legacy "friction" wording remains in app/PDF source.
+[PASS] New human-judgement markers present in EN and DA.
+[PASS] Cloudflare HTML-entity normalisation hotfix retained.
+
+Not executed locally: complete Next.js production build, because project dependencies/node_modules are not installed in this runtime. GitHub -> Cloudflare remains the final production-build validation.

@@ -1,34 +1,11 @@
-Romaric Clementi Digital Portfolio V6.8
-STRUCTURAL QA + POSITIONING POLISH
+BUILD VERIFICATION - V1.8.0
 
-ROUTES
-- /
-- /da/
-- /work/marzieh-nail-atelier/
-- /da/arbejde/marzieh-nail-atelier/
+Static source verification: PASS
+- All JavaScript/JSX files parsed through the TypeScript transpiler with zero diagnostics.
+- Python PDF-generation scripts executed successfully.
+- All generated PDFs opened, rendered and passed visual inspection.
+- Package metadata and version references updated.
 
-SECTION NUMBERING
-- Quick scan visual sequence: 01 Selected Work / 02 Where I Fit / 03 First 30 Days.
-- Deep dive visual sequence: 01 / 02 / 03 / 04 / 05 / 06.
-- Section numbers are CSS-generated from data attributes, so machine-readable HTML no longer exposes contradictory literal section numbers.
-- Print and no-JS views use deep six-section numbering.
-
-POSITIONING
-- Public portfolio remains a digital-production job-search track for agencies, digital teams and startups.
-- Public contact copy prioritizes roles and scoped production/QA/handover support.
-- Short praktik wording is removed from EN and DA public copy.
-- Private supporting projects remain unlinked and walkthrough-only.
-
-PROOF
-- Marzieh Nail Atelier remains the live linked production proof.
-- Three supporting projects remain described without public project URLs.
-- Proof dashboard uses concrete GitHub + Cloudflare delivery wording.
-
-EXISTING V6.7.3 FIXES RETAINED
-- Real desktop/mobile Marzieh screenshots.
-- Mobile proof sizing/cropping fixes.
-- Custom cursor.
-- EN/DA routes and language switch.
-
-FINAL COMPILE
-Cloudflare remains the final Next.js production compile validation if local dependencies are unavailable.
+Production build: NOT COMPLETED LOCALLY
+Reason: the isolated runtime could not download pnpm 10.11.1 from registry.npmjs.org.
+Required final deployment check: run the connected Cloudflare build, then verify desktop, 390 px and 360 px layouts, links, downloads, canonical output and Lighthouse/accessibility results.

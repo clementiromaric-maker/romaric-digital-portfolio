@@ -1,0 +1,9 @@
+V1.8.5.6 - hero layout + custom cursor
+
+- Protects the headline from the Current operating range panel at desktop widths.
+- Gives the copy column more usable width and caps the proof card at 430px.
+- Adds a second desktop breakpoint for 1051-1240px.
+- Adds a restrained forest/amber custom cursor for mouse/trackpad devices only.
+- Interactive elements use a round amber hover cursor; form text keeps the native text cursor.
+- Touch devices are unaffected.
+- No portfolio claims or evidence changed.

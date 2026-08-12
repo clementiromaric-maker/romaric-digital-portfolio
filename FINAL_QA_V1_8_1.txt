@@ -1,0 +1,10 @@
+V1.8.1 QA targets
+- EN/DA content parity for the hierarchy changes.
+- Five primary role-fit lanes only.
+- Customer/order/O2C retained only as subordinate operating-depth evidence.
+- Strategic next-step and long-term leadership direction retained.
+- First 90 Days and Beyond 90 Days retained.
+- Responsible AI wording retained.
+- Digital portfolio cross-link retained.
+- PDF rebuilt and visually inspected.
+- No en dash or em dash introduced in public copy.

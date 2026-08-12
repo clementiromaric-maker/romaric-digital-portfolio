@@ -1,0 +1,5 @@
+V1.8.6.0
+- Fixed the poor Source of Truth case hero proof composition
+- Replaced the zoomed landscape mobile overlay with a clean portrait mobile proof based on the provided live screenshot
+- Resized and reframed the small proof so desktop and mobile evidence feel balanced
+- Updated alt text in EN and DA

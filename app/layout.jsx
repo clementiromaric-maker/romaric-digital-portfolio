@@ -1,49 +1,32 @@
-import '@fontsource-variable/fraunces';
-import '@fontsource-variable/fraunces/wght-italic.css';
-import '@fontsource-variable/hanken-grotesk';
-import '@fontsource-variable/hanken-grotesk/wght-italic.css';
-import '@fontsource/ibm-plex-mono/400.css';
-import '@fontsource/ibm-plex-mono/500.css';
-import '@fontsource/ibm-plex-mono/600.css';
-import '@fontsource/ibm-plex-mono/700.css';
 import './globals.css';
+import { site } from './content';
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://romaric-digital-portfolio.clementiromaric.workers.dev'),
-  title: 'Romaric Clementi | Digital Production · Web Content · QA',
-  description:
-    'Digital-production portfolio for web agencies and teams: website delivery, structured content, CMS workflows, responsive QA and multilingual delivery.',
+  metadataBase: new URL(site.url),
+  title: 'Romaric Clementi | Technical Procurement, Materials Planning, ERP & Business Systems',
+  description: 'Portfolio with documented experience in technical procurement, materials and supply planning, Dynamics AX/D365, master data, business systems, quality and production readiness, with clear sourcing authority boundaries.',
   authors: [{ name: 'Romaric Clementi' }],
   creator: 'Romaric Clementi',
   publisher: 'Romaric Clementi',
-  alternates: {
-    canonical: '/',
-    languages: {
-      en: '/',
-      da: '/da/',
-    },
-  },
+  alternates: { canonical: '/', languages: { en: '/', da: '/da/' } },
   openGraph: {
-    title: 'Romaric Clementi | Digital Production · Web Content · QA',
-    description:
-      'Live website delivery, structured content, CMS workflows, responsive QA, multilingual delivery and practical handover.',
+    title: 'Romaric Clementi | Technical Procurement, Materials Planning, ERP & Business Systems',
+    description: 'Documented technical procurement, materials planning, ERP/master-data and business-systems experience, with clear evidence and sourcing authority boundaries.',
     type: 'website',
-    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Romaric Clementi portfolio preview' }],
+    url: '/',
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Romaric Clementi technical procurement, supply planning, ERP and master-data portfolio' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Romaric Clementi | Digital Production · Web Content · QA',
-    description: 'Clear digital structure from unclear needs.',
+    title: 'Romaric Clementi | Technical Procurement, Materials Planning, ERP & Business Systems',
+    description: 'Documented technical procurement, materials planning, ERP/master-data and business-systems experience, with clear evidence and sourcing authority boundaries.',
     images: ['/og.png'],
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: { index: true, follow: true },
 };
 
 export const viewport = {
-  themeColor: '#F4EFE5',
+  themeColor: '#F2EEE4',
   width: 'device-width',
   initialScale: 1,
   viewportFit: 'cover',
@@ -53,56 +36,29 @@ const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Romaric Clementi',
-  email: 'mailto:clementiromaric@protonmail.com',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Greater Copenhagen / Tune',
-    addressCountry: 'DK',
-  },
-  jobTitle: 'Digital Production / Web Content / QA',
+  email: `mailto:${site.email}`,
+  telephone: site.phone,
+  address: { '@type': 'PostalAddress', addressLocality: 'Tune / Greater Copenhagen', addressCountry: 'DK' },
+  jobTitle: 'Technical Procurement and Supplier Operations Professional',
+  url: site.url,
+  mainEntityOfPage: site.url,
   knowsAbout: [
-    'Website production',
-    'UX implementation',
-    'Digital workflow',
-    'First-version systems',
-    'Trust UX',
-    'Service-system design',
-    'Mobile QA',
-    'Content structure',
-    'Structured content',
-    'Reusable sections',
-    'Sanity CMS',
-    'Jira issue tracking',
-    'Cloudflare Pages',
-    'GitHub deployment',
-    'AI-assisted prototyping',
+    'Dynamics AX', 'Dynamics 365', 'ERP master data', 'MRP follow-up', 'BOMs and routings',
+    'Planning parameters', 'Broad technical purchasing', 'Surface-treatment and special-process procurement', 'External testing and inspection coordination', 'Alternative sourcing and supplier reallocation', 'Sourcing and supplier management', 'Supplier performance', 'Procurement decision support', 'Project-to-operations coordination', 'Prototype and first production readiness',
+    'Engineering change follow-up', 'Business applications support', 'Workflow documentation', 'Requirements notes',
+    'Testing observations', 'Clear user guidance', 'FAT and SAT principles', 'PLC programming and automated production systems', 'Electrotechnical and industrial systems', 'Internal and process audits', '5 Why and Ishikawa/Fishbone analysis', 'Scrap and rework analysis', 'Lean and Kaizen', 'Excel Power Query', 'Power BI and DAX', 'SQL fundamentals', 'Python (basic, self-taught)',
+    'Customer operations and order-to-cash', 'SAP purchasing and goods receipt', 'FMCG materials planning and food-safety controlled operations', 'WMS stock accuracy and operational KPI follow-up', 'Category analysis and supplier segmentation', 'Total cost and supplier development', 'Procurement systems and process improvement', 'Restricted data handling and privacy awareness', 'AI-assisted research and documentation with human review',
   ],
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://romaric-digital-portfolio.clementiromaric.workers.dev',
-  mainEntityOfPage: process.env.NEXT_PUBLIC_SITE_URL || 'https://romaric-digital-portfolio.clementiromaric.workers.dev',
-  workExample: [
-    'https://marziehnail-atelier.dk/en/',
-  ],
+  workExample: ['https://marziehnail-atelier.dk/en/'],
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        {/* Fonts are installed through npm and bundled locally into the static build. No Google Fonts or external font requests. */}
-      </head>
       <body>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: "document.documentElement.classList.add('js');",
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-        />
-        <noscript>
-          <style>{'.reveal{opacity:1!important;transform:none!important}.portfolio-view.is-quick .deep-dive-section{display:block!important}.portfolio-view .sec-no::before{content:attr(data-deep)!important}'}</style>
-        </noscript>
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js');" }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
+        <noscript><style>{'.reveal{opacity:1!important;transform:none!important}.mode-quick .deep-section{display:block!important}'}</style></noscript>
         {children}
       </body>
     </html>

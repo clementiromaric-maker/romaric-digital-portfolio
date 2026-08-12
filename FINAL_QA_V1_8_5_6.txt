@@ -1,0 +1,26 @@
+V1.8.5.6 FINAL QA
+
+RESULT: PASS (source + rendered hero layout QA)
+
+LAYOUT
+- Desktop hero headline and Current operating range card tested at 1051, 1100, 1180, 1280, 1366, 1440, 1600, 1778 and 1920 px.
+- Zero headline/card overlaps at every tested width.
+- Proof card capped at 430px on wide screens and given a dedicated laptop breakpoint.
+- Mobile/tablet one-column behaviour remains under the existing <=820px rules.
+
+CUSTOM CURSOR
+- public/cursors/ops-pointer.svg present.
+- public/cursors/ops-active.svg present.
+- Custom cursor enabled only for `(hover:hover) and (pointer:fine)`.
+- Links/buttons/interactive controls use the amber active cursor.
+- Text inputs keep the native text cursor.
+- Touch devices are unaffected.
+
+SOURCE
+- postbuild.mjs syntax check passed.
+- next.config.mjs syntax check passed.
+- Existing V1.8.5.5 stale-copy guard retained.
+- No portfolio evidence or claims changed.
+
+LIMITATION
+- Full Next.js production compile remains the Cloudflare deployment validation because node_modules are not included in the source package.

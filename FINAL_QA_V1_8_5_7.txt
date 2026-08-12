@@ -1,0 +1,25 @@
+V1.8.5.7 FINAL QA
+
+RESULT: PASS
+
+CHECKS
+- PASS: default_28px
+- PASS: action_46px
+- PASS: forest_default
+- PASS: forest_action
+- PASS: default_hotspot
+- PASS: action_hotspot
+- PASS: fine_pointer
+- PASS: touch_unchanged
+- PASS: text_cursor
+- PASS: clickable_button
+- PASS: clickable_lang
+- PASS: clickable_toggle
+- PASS: 8 page route files retained.
+- PASS: old arrow cursor geometry removed.
+
+CHANGES
+- Cursor only. No content or hero-layout edits.
+- Normal: 28px circular Operations cursor.
+- Clickable: 46px circular Operations cursor.
+- Touch/mobile: native cursor behaviour.

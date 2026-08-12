@@ -1,0 +1,12 @@
+Operations Portfolio V1.8.5.9 QA
+
+PASS - Old reconstructed marzieh-services-ui-snapshot.webp removed.
+PASS - Old visible phrase "Choose based on need" absent from source package.
+PASS - CasePage now references marzieh-services-live-actual.webp.
+PASS - New asset is a crop from a genuine Marzieh Nail Atelier mobile browser screenshot.
+PASS - Visible wording in the real capture: "Choose the right service path first."
+PASS - No text or service cards were reconstructed in the replacement asset.
+PASS - V1.8.5.8 canonical and social metadata corrections retained.
+PASS - Operations custom green cursor retained.
+
+The final Cloudflare build remains the production compile and deployment check.

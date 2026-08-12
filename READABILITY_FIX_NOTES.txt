@@ -1,0 +1,8 @@
+RC Operations Portfolio — readability correction
+
+READABILITY FIX
+- Corrected the “Beyond the first 90 days” panel, which used light-on-light colours inside the light route section.
+- Restored accessible dark text for the panel heading, quarter titles and descriptions.
+- Replaced near-invisible borders/backgrounds with the established light-card system.
+- Increased quarter-label and supporting-copy size slightly for easier scanning.
+- No content, routing, evidence, document or responsive-structure changes.

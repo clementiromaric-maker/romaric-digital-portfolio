@@ -1,0 +1,47 @@
+V1.8.5.4 FINAL QA
+
+Scope
+Procurement + Planning hero update, EN/DA consistency, PDF consistency, social preview and regression checks.
+
+Content
+PASS - English hero identity: Technical Procurement · Supply Planning · ERP
+PASS - English headline connects purchasing decisions, material plans and ERP data to production readiness.
+PASS - Technical purchasing breadth explicitly includes materials, customer-specific components, surface treatments, specialist subcontracting and external testing/inspection.
+PASS - RFQ, supplier/quotation comparison, negotiation, sourcing route, PO, shortage/delay and delivery-recovery responsibility is stated directly.
+PASS - Earlier FMCG planning, SAP purchasing support, Nordic distribution and ISO 9001 / Lean foundation retained.
+PASS - Danish hero independently rewritten and aligned to the same evidence.
+PASS - EN and DA homepage content objects: 104 keys each, zero key mismatches.
+PASS - Old active hero identity/copy markers removed from app/scripts.
+
+Positioning
+PASS - Current identity is procurement/planning/ERP first.
+PASS - Operational improvement remains deeper in the portfolio rather than occupying a primary hero slot.
+PASS - No Category Manager, procurement strategy, TCO ownership, unrestricted contract authority or senior SRM claims added.
+PASS - Broader strategic/category progression remains in Growth rather than the hero.
+
+Technical
+PASS - package version updated to 1.8.5-4.
+PASS - public/version.txt updated to 1.8.5.4.
+PASS - English and Danish metadata updated.
+PASS - Header/footer identity updated on home and case pages.
+PASS - postbuild.mjs syntax check passed.
+PASS - next.config.mjs syntax check passed.
+PASS - content.js imports successfully in Node.
+PASS - zero unresolved local relative imports found.
+PASS - zero active @fontsource imports/dependencies.
+PASS - Cloudflare self-contained font fix retained.
+
+PDF
+PASS - main Workflow Readiness Portfolio regenerated at 5 pages.
+PASS - PDF is openable, searchable and unencrypted.
+PASS - 0 out-of-page text blocks across all 5 pages.
+PASS - rendered at 180 DPI and visually inspected; no clipping/overlap found on changed page 1 or retained page architecture.
+PASS - header/footer now show Technical Procurement | Supply Planning | ERP and Portfolio V1.8.5.4.
+
+Social preview
+PASS - public/og.png regenerated at 1200 x 630.
+PASS - old Trusted records / Connected impact / Decision ownership / Reliable execution framework removed from OG image.
+PASS - OG now foregrounds Technical Procurement, Supply Planning & ERP plus 30+, 2,000+ and 200+ proof.
+
+Build limitation
+NOT RUN - full pnpm install / next build cannot execute in this environment because Corepack attempts to reach registry.npmjs.org and outbound npm registry access is unavailable. Cloudflare clean build remains the final production compilation test.

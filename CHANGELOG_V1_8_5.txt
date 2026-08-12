@@ -1,0 +1,10 @@
+RC Operations Portfolio V1.8.5 - Human Judgement Polish
+
+- Preserved all verified procurement, ERP, planning, quality and authority-boundary evidence.
+- Replaced "I do not start with AI. I start with friction." with "I do not start with the tool. I start with the problem."
+- Replaced the conceptual five-step problem/source/owner/review/control display with one natural working statement.
+- Reframed career progression as: What I handle today / What I am ready to take on next / Where I want to grow.
+- Replaced the five-part procurement slogan strip with one concise judgement statement.
+- Simplified the methods section so tools support the explanation rather than becoming the explanation.
+- Updated Danish independently for the same natural, professional tone.
+- Updated main portfolio PDF and procurement decision demo to V1.8.5.

@@ -1,0 +1,13 @@
+V1.8.7.0 FINAL QA — CV source-of-truth sync
+Date: 2026-08-12
+
+PASS — current professional CV embedded at /public/docs/Romaric_Clementi_Professional_CV.pdf (2 pages, A4, unencrypted).
+PASS — legacy technical-procurement CV URL retained as a compatibility alias pointing to the same current PDF.
+PASS — source DOCX replaced with current professional CV source.
+PASS — visible EN/DA copy synced with verified earlier experience where relevant: SAP purchasing/goods receipt; IKEA inbound/outbound KPI follow-up and assigned safety responsibility; ArcelorMittal internal/process audits, daily quality meetings, 5 Why, Ishikawa, scrap/rework; AOT customer-file ownership; FMCG food-safety/HACCP/GMP-related routines; Bac Pro PSPA/PLC/electrotechnical foundation.
+PASS — Python remains basic/independently developed, not overstated.
+PASS — A.K.S. documented case content and authority boundaries preserved.
+PASS — all /docs references in app source resolve to files present in /public/docs.
+PASS — app/content.js and scripts/postbuild.mjs pass Node syntax checks.
+PASS — production and Digital-portfolio cross-links retained; retired io.clementiromaric.workers.dev domain absent from active app source.
+NOTE — full Next.js rebuild could not be rerun in this sandbox because the npm registry was unavailable. Architecture/components were not structurally changed; changes are copy, metadata, document-link and bundled-document updates.

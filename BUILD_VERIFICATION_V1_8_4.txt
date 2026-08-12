@@ -1,0 +1,15 @@
+V1.8.4 BUILD VERIFICATION
+
+Verified in this environment:
+- app/content.js imports successfully with Node.
+- scripts/postbuild.mjs passes node --check.
+- Python PDF builders pass py_compile.
+- V1.8.4 required English and Danish markers are present in the source-level export simulation.
+- Stale/translated wording regression list is enforced in postbuild.
+- Procurement decision demo link points to the existing bundled PDF filename.
+- Main workflow portfolio PDF rebuilt and passed PDF preflight.
+- Procurement decision demo PDF rebuilt and passed PDF preflight.
+- Rendered pages were visually inspected for clipping, overlap and unexpected wrapping.
+
+Environment limitation:
+- A full Next.js production build was not run because this working container does not contain the project node_modules/pnpm installation. GitHub/Cloudflare remains the production build environment.

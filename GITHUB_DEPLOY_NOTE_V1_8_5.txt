@@ -1,0 +1,3 @@
+GITHUB DEPLOY NOTE - V1.8.5
+
+Replace the repository contents with this project and commit to the branch connected to Cloudflare. The existing Cloudflare postbuild HTML-entity normalisation fix is retained. V1.8.5 changes language and presentation logic only; the verified evidence and authority boundaries remain unchanged.

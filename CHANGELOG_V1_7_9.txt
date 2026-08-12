@@ -1,0 +1,35 @@
+RC Operations Portfolio V1.8.0 - Evidence-Focused Hiring-Manager Refinement
+
+PURPOSE
+Strengthen the V1.7.8 strategic-growth message with clearer proof, less repetition and faster hiring-manager verification.
+
+WEBSITE
+- Added case snapshots covering context, Romaric's role, stakeholders, systems and documented outcome.
+- Strengthened outcome visibility in the ERP and procurement cases.
+- Replaced generic leadership competencies with concrete examples from documented work.
+- Consolidated technology and AI content into one section.
+- Narrowed progression language and removed premature team-management wording.
+- Retained the six coherent role lanes and the recruiter / hiring-manager detail switch.
+
+PROCUREMENT DEMO PDF
+- Added a prominent demonstration-data notice above the model.
+- Removed fictional DKK and performance headline metrics.
+- Replaced them with neutral counts describing the model structure.
+- Added evidence-based leadership examples and a more grounded strategic-development page.
+
+WORKFLOW PORTFOLIO PDF
+- Added Case at a Glance and documented-outcome blocks.
+- Strengthened leadership proof and focused career progression.
+- Reduced repeated future-ready and AI language.
+
+CV
+- Increased body readability.
+- Reduced bullet volume.
+- Prioritised A.K.S., Fletcher Building, Kraft Heinz and directly relevant evidence.
+- Added a compact Leadership through Ownership section.
+- Kept strategic sourcing and management as progression, not prior title claims.
+
+BOUNDARIES
+- No formal Category Manager, Procurement Manager or people-manager history is claimed.
+- No fictional employer results are presented as achievements.
+- Delegated authority, escalation boundaries and sanitised reconstructions remain explicit.

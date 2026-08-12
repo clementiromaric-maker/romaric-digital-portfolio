@@ -1,0 +1,6 @@
+PDF: public/docs/Romaric_Clementi_Workflow_Readiness_Portfolio.pdf
+Pages: 5
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False

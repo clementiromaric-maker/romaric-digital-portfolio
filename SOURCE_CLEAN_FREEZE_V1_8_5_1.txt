@@ -1,0 +1,11 @@
+RC Operations Portfolio V1.8.5.1 - source-clean freeze
+
+Scope
+- Removed unused homeContent.bridgeFlow arrays in EN and DA.
+- Removed unused homeContent.labSteps arrays in EN and DA.
+- These arrays were legacy framework data and were not referenced by the rendered HomePage component.
+- Kept bridgeFlowTitle / bridgeFlowText because they are rendered.
+- Kept labIntro / labApproach / labCards because they are rendered.
+- Kept postbuild forbidden-string checks, including the old friction wording, because those checks prevent stale copy from returning.
+- No rendered website copy, layout, routes, evidence, PDFs or authority boundaries changed.
+- Visible portfolio/PDF version remains V1.8.5 intentionally; V1.8.5.1 identifies this source-only repository cleanup.

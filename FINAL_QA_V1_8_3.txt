@@ -1,0 +1,22 @@
+V1.8.3 FINAL QA - PASS
+
+[x] English and Danish homepage preserve the V1.8.2 recruiter hierarchy.
+[x] Technical procurement evidence explicitly includes frequent surface-treatment work and external testing/inspection.
+[x] Alternative sourcing, new-supplier introduction and selective supplier reallocation remain within delegated-authority wording.
+[x] Planning evidence includes stock/incoming supply, shortages/backlogs, phase-in/phase-out and production-order readiness.
+[x] Earlier operating foundation includes 5 lines / 40+ variants, WMS/stock accuracy, SAP purchasing support across 15-20 suppliers and ISO 9001 / Lean.
+[x] Case 01 and Case 02 remain evidence-led and do not claim final engineering, quality or formal category authority.
+[x] No named former A.K.S. customers appear in public website or bundled PDF content.
+[x] No specific resistance-test claim is made; testing remains generic external testing/inspection.
+[x] Strategic Buyer / developing Category Buyer remain next-step roles, not current seniority.
+[x] Management remains a longer-term destination.
+[x] Responsible AI, First 90 Days, Beyond 90 Days and the quiet Digital Portfolio link remain intact.
+[x] Main portfolio PDF and procurement decision demo rebuilt successfully.
+[x] Main portfolio PDF: 5 pages, openable, searchable, not encrypted, visually inspected with no clipping/overlap.
+[x] Procurement decision demo: 3 pages, openable, searchable, not encrypted; updated sourcing categories visually inspected.
+[x] V1.8.2 vs V1.8.3 render comparison contains only intended evidence/version changes.
+[x] app/content.js and scripts/postbuild.mjs pass Node syntax checks; PDF Python builders pass py_compile.
+[x] Internal package name/version corrected to rc-operations-portfolio-v1-8-3 / 1.8.3.
+
+Build note:
+- Full Next.js production build was not rerun in this container because node_modules are not present. No JSX structure or CSS layout was changed in V1.8.3; edits are content, metadata and PDF-data changes only.

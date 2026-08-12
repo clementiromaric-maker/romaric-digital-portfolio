@@ -1,0 +1,21 @@
+RC Operations Portfolio V1.8.5.3 - Recruiter-First Hero
+
+Homepage hero
+- Replaced abstract transaction/downstream-impact wording with concrete purchase-order and production language.
+- Split recent manufacturing/procurement evidence from earlier FMCG/SAP/distribution/ISO-Lean foundation.
+- Removed the large orange career-progression manifesto from the hero.
+- Moved that progression logic into Growth.
+
+Right-hand proof panel
+- Removed Trusted records -> Connected impact -> Decision ownership -> Reliable execution.
+- Added 30+ suppliers, 2,000+ ERP/master-data records and 200+ complex BOM structures as immediate proof.
+- Reordered current scope to Procurement & suppliers, Planning & ERP, Product & master data, Quality & documentation.
+
+Positioning
+- Current responsibility is foregrounded; future sourcing/category growth is no longer mixed into the first-screen pitch.
+- No evidence, authority boundary, role hierarchy, case content or AI/technology boundary was inflated.
+
+Technical
+- Cloudflare-safe self-contained system-font setup from V1.8.5.2 retained.
+- EN/DA top-level content parity retained.
+- Postbuild guards updated for the new hero.

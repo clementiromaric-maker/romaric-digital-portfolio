@@ -1,0 +1,35 @@
+RC Operations Portfolio V1.8.5.4 - Procurement + Planning Hero
+
+Purpose
+Strengthen the opening around Romaric Clementi's clearest current market position without inflating seniority: Technical Procurement, Supply Planning and ERP.
+
+Public English changes
+- Hero kicker: Technical Procurement · Supply Planning · ERP
+- Hero headline: I connect purchasing decisions, material plans and ERP data to keep production ready.
+- Lead now focuses on early supply-risk visibility and follow-through before production is affected.
+- Support copy now uses concrete procurement/production language rather than abstract operational framing.
+- Recent experience now states broad technical purchasing scope across materials, customer-specific components, surface treatments, specialist subcontracting and external testing/inspection.
+- RFQs, supplier/quotation comparison, negotiation, sourcing routes, purchase orders, shortages, delays and delivery recovery are stated directly.
+- Earlier FMCG planning, SAP purchasing support, Nordic distribution and ISO 9001 / Lean experience remain as the professional foundation.
+- Header/footer identity changed to Procurement · Supply Planning · ERP.
+- EN metadata/Open Graph title updated to Technical Procurement, Supply Planning & ERP.
+
+Public Danish changes
+- Hero identity changed to Teknisk indkøb · Planlægning · ERP.
+- Danish hero was rewritten natively around indkøbsbeslutninger, materialeplaner, ERP-data and produktionsparathed.
+- Technical purchasing breadth, RFQ work, supplier/offer comparison, negotiation, sourcing choices, PO follow-up, shortages, delays and delivery recovery are stated in natural Danish.
+- Header/footer identity and Danish metadata updated in parallel.
+
+PDF consistency
+- Regenerated the 5-page Workflow Readiness Portfolio PDF.
+- Page 1 now uses the same procurement + planning + ERP identity and updated headline/lead.
+- PDF header and metadata updated across all pages.
+- Existing case evidence, page architecture and authority boundaries were retained.
+
+Social preview
+- Rebuilt public/og.png around Technical Procurement · Supply Planning · ERP and quantified proof instead of the older conceptual framework.
+
+Technical safeguards retained
+- No external Fontsource dependency reintroduced.
+- V1.8.5.2 Cloudflare self-contained font fix retained.
+- Postbuild content markers updated for the new EN/DA hero.

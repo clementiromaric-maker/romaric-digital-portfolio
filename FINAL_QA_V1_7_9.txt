@@ -1,0 +1,21 @@
+FINAL QA - V1.8.0
+
+PASS - CV renders as two A4 pages with no clipping or overlap.
+PASS - Workflow portfolio renders as five pages with no clipping or overlap.
+PASS - Procurement decision demo renders as three pages with no clipping or overlap.
+PASS - Illustrative procurement data is labelled before the figures and in the footer.
+PASS - Core cases include context, role, people, systems and documented outcome.
+PASS - Leadership statements are tied to documented examples.
+PASS - Career progression separates current fit, natural next step and longer-term direction.
+PASS - No formal manager, category-owner or people-manager experience is invented.
+PASS - Technology and AI are consolidated under human accountability and approved-data boundaries.
+PASS - English and Danish content retain aligned strategic boundaries.
+PASS - Canonical source domain remains io.clementiromaric.workers.dev.
+PASS - Current CV filename and download links remain aligned.
+PASS - PDF page sizes, page counts and extractable text verified.
+PASS - Python PDF scripts compile.
+PASS - JavaScript content file passes syntax check.
+PASS - ZIP integrity verified after packaging.
+
+NOT RUN LOCALLY
+A complete Next.js production build requires installing the pinned pnpm dependencies. The Cloudflare build remains the final static-export and browser verification step.

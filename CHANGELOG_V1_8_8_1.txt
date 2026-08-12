@@ -1,0 +1,10 @@
+RC Operations Portfolio V1.8.8.1 - Postbuild Guard Sync
+Date: 12 August 2026
+
+- Fixed Cloudflare postbuild failure introduced by V1.8.8.0 copy refinement.
+- Updated required English hero marker to the current recruiter-scan wording.
+- Updated required Danish hero marker to the current wording.
+- Updated Python guards to the approved current wording: Python (basic, self-taught) / Python (grundlæggende, selvlært).
+- Removed the stale generic Danish forbidden marker "selvlært", which now conflicts with approved copy.
+- Synced the workflow-readiness PDF helper with the current hero support line.
+- No portfolio content, design, CV, routes or Cloudflare configuration were otherwise changed.

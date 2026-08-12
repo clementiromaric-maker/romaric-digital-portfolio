@@ -1,0 +1,13 @@
+V1.8.5.7 CURSOR TRANSFER
+
+Source behaviour: Digital portfolio V6.7.1 custom cursor.
+Target: Operations portfolio V1.8.5.6 baseline.
+
+IMPLEMENTED
+- Normal cursor uses the same circular 28x28 geometry as the Digital portfolio.
+- Digital clay/orange accent is replaced by Operations forest green (#143D34).
+- Clickable cursor keeps the same circular concept but is intentionally enlarged to 46x46.
+- Clickable hotspot is centred at 23,23.
+- Fine-pointer desktop only; touch/mobile native behaviour remains unchanged.
+- Text inputs retain native text cursor.
+- No Operations content or layout changes.

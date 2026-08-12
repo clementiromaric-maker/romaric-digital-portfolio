@@ -1,0 +1,17 @@
+RC Operations Portfolio V1.8.3 - A.K.S. Procurement Evidence Refinement
+
+Changes from V1.8.2:
+- Kept the V1.8.2 recruiter hierarchy, five primary industrial role-fit lanes and subordinate Customer & Order Operations depth.
+- Strengthened the Technical Procurement story from generic purchasing to broad technical purchasing across materials, customer-specific components, frequent surface-treatment orders, specialist subcontracting and external testing/inspection.
+- Added framework/call-off execution, alternative sourcing, new-supplier introduction and selective supplier reallocation within delegated authority.
+- Strengthened planning/readiness proof with stock and incoming supply, shortages/backlogs, phase-in/phase-out and production-order readiness.
+- Made earlier operating proof more concrete: FMCG planning across 5 production lines / 40+ variants, high-volume Nordic WMS/stock accuracy, SAP purchasing support across 15-20 suppliers and ISO 9001 / Lean production-quality foundation.
+- Updated Case 01 so approved changes can explicitly affect surface-treatment or test/inspection requirements and downstream production readiness.
+- Updated Case 02 so purchasing breadth and supplier-choice actions are visible without exposing former customer names or confidential records.
+- Updated the bundled procurement decision demo with illustrative sourcing areas for materials/components, surface/special processes and testing/inspection.
+- Rebuilt the Workflow Readiness Portfolio PDF as V1.8.3.
+- Corrected the internal package name to rc-operations-portfolio-v1-8-3.
+
+Publishing boundary:
+- No named former A.K.S. customers are published in the site or PDF.
+- No specific resistance-test claim is made; testing is described generically as external testing/inspection because the exact test labels varied by requirement and are not fully documented in the public portfolio evidence.

@@ -1,0 +1,12 @@
+V1.8.2 FINAL QA - PASS
+
+[x] English homepage contains Natural next step and Next-step roles.
+[x] Danish homepage contains Naturligt næste skridt and Næste karrieretrin.
+[x] Old phrases Broader scope next / Selective next roles are absent.
+[x] Customer & Order Operations remains subordinate supporting breadth.
+[x] O2C copy no longer contains defensive identity wording.
+[x] Desktop role-fit layout remains balanced 3+2 for five primary lanes.
+[x] Strategic Buyer / developing Category Buyer positioning remains next-step only.
+[x] Longer-term management, First 90 Days, Beyond 90 Days and responsible AI remain intact.
+[x] Digital Portfolio remains a quiet secondary link.
+[x] PDF rebuilt, preflighted and visually inspected.

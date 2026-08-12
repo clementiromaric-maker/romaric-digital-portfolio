@@ -1,11 +1,17 @@
-# V6.9.1
+# V1.8.8.0
 
-Light source-of-truth sync with the final professional CV. Kept the Digital portfolio focused on digital production while strengthening the operations/quality backbone and widening job-search geography to Greater Copenhagen / Øresund.
+Source-of-truth sync with the final professional CV.
+
+- Replaced the stale embedded procurement CV with the current two-page professional CV, while retaining the old public filename as a compatibility alias.
+- Synced verified earlier experience: SAP purchasing/goods receipt, IKEA inbound/outbound KPI follow-up and assigned safety responsibility, ArcelorMittal process audits/root-cause/scrap-rework work, and stronger AOT customer-file ownership.
+- Strengthened visible process/quality evidence without turning the portfolio into a CV duplicate.
+- Synced structured-data knowledge signals for PSPA/PLC/electrotechnical foundation and verified process methods.
+- Kept the portfolio focused on procurement, planning, ERP and operational improvement.
 
 
-## V6.9.1 refinement
-- Marzieh case now leads with Context / Role / Outcome.
-- Existing production section reframed around technical decisions and maintainable handover.
-- Added a sanitised CMS content-model workflow artefact, explicitly separated from the static Marzieh implementation.
-- Replaced defensive software-engineer wording with positive production/CMS/front-end positioning.
-- Kept the existing Quick Scan / Deep Dive architecture and public/private project distinction unchanged.
+## V1.8.8.0 refinement
+- Tightened recruiter-facing hero copy without reducing evidence depth.
+- Added compact materials/planning proof from Kraft Heinz and Fletcher Building.
+- Broadened role-fit language to Materials Management and Business Systems while retaining configuration/QMS support in descriptions.
+- Standardised Python wording to "Python (basic, self-taught)".
+- Quick view now keeps the strongest working principle prominent; Hiring-manager view retains all three.

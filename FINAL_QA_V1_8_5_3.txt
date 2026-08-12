@@ -1,0 +1,15 @@
+V1.8.5.3 FINAL QA
+
+PASS - English and Danish top-level content keys match.
+PASS - HomePage content references resolve in both languages.
+PASS - Old hero map keys mapMeta/mapInput/mapStages removed.
+PASS - Large manifesto key removed from the hero.
+PASS - Three hero proof metrics present in EN and DA.
+PASS - Procurement & suppliers / Indkøb & leverandører is first in current scope.
+PASS - Career progression retained under Growth, not hero.
+PASS - postbuild.mjs, clean.mjs and next.config.mjs syntax checks pass.
+PASS - HomePage.jsx parses with TypeScript JSX parser.
+PASS - No external font packages or @fontsource imports reintroduced.
+PASS - Existing PDFs and case evidence unchanged in this website-only hero refinement.
+
+Full Next.js production compilation was not executed locally because the environment cannot reach the npm registry. Cloudflare remains the final production compile test.

@@ -1,0 +1,15 @@
+V1.8.5.5 FINAL QA
+
+PASS
+- Cloudflare screenshot root cause identified as postbuild QA, not Next.js compilation.
+- Removed en/em dash single-character markers from stale-wording array.
+- Forbidden stale markers are now required to be at least 3 normalized characters.
+- Stale-copy validation now uses normalized EN/DA text.
+- Authored-copy em-dash preference checked separately against app/content.js.
+- 15–20 supplier ranges normalized to 15-20 in EN and DA.
+- postbuild.mjs syntax check passed.
+- next.config.mjs syntax check passed.
+- no em dash or en dash remains in app JS/JSX/CSS authored copy.
+- Portfolio content, layout, cases and PDFs otherwise unchanged from V1.8.5.4.
+
+Cloudflare remains the final end-to-end deployment validation.

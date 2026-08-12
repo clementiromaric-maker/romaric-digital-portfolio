@@ -1,0 +1,18 @@
+V1.8.3 CLOUDFLARE BUILD HOTFIX
+Date: 2026-08-10
+
+Issue
+- Next.js static export completed successfully on Cloudflare.
+- The postbuild QA assertion then failed on the required marker:
+  International Customer & Order Operations
+- The visible ampersand is HTML-escaped by the static export as &amp;.
+- The old postbuild normalizer compared raw exported HTML with the unescaped marker, causing a false-negative build failure.
+
+Fix
+- Keep all required-marker checks in place.
+- Normalize common HTML entities before checking exported English/Danish HTML.
+- No portfolio content, layout, routing, CSS, PDF, or public wording changed.
+
+Validation
+- scripts/postbuild.mjs passes node --check.
+- The expected escaped form "International Customer &amp; Order Operations" normalizes to the required marker.

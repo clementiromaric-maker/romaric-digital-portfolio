@@ -1,0 +1,17 @@
+RC Operations Portfolio V1.8.1 - Verification
+
+Completed in this environment:
+- Loaded and edited the actual V1.8.0 Readability Fixed source package.
+- Verified EN and DA content objects parse successfully in Node.
+- Verified exactly five primary role-fit lanes in both languages.
+- Verified Customer Operations / O2C is retained only as subordinate operating-depth evidence.
+- Verified strategic next-step roles, long-term leadership direction, First 90 Days, Beyond 90 Days, responsible AI and Digital Portfolio cross-link remain present.
+- Verified no en dash or em dash was introduced in public source copy.
+- Rebuilt the downloadable Workflow Readiness Portfolio PDF as V1.8.1.
+- PDF preflight passed: 5 pages, openable, unencrypted, searchable/non-scanned.
+- Rendered and visually inspected PDF pages 4 and 5; no clipping or overlap found.
+- Visual diff against V1.8.0 confirms substantive changes are concentrated on role hierarchy/progression pages; other page differences are version-marker only.
+
+Environment limitation:
+- A full Next.js production build was not executed because pnpm/dependency retrieval is unavailable in this offline runtime.
+- The source package preserves the existing V1.8.0 project/deployment structure and changes only content, one small rendering block, supporting CSS, QA markers, PDF builder output and version metadata.
