@@ -28,6 +28,18 @@ if (patched === 0) throw new Error('No Danish exported HTML files were patched. 
 
 const allHtml = (await htmlFiles(outRoot));
 const combined = (await Promise.all(allHtml.map((file) => readFile(file, 'utf8')))).join('\n');
+
+// Next/React serialises characters such as "&" as HTML entities (for example "&amp;").
+// Validate against a normalised export so the guard checks visible copy rather than raw HTML encoding.
+const normalizedCombined = combined
+  .replaceAll('&amp;', '&')
+  .replaceAll('&#38;', '&')
+  .replaceAll('&#x26;', '&')
+  .replaceAll('&middot;', '·')
+  .replaceAll('&#183;', '·')
+  .replaceAll('&#xB7;', '·')
+  .replaceAll('&#xb7;', '·');
+
 const required = [
   'Digital Production',
   'Quick scan',
@@ -78,7 +90,7 @@ const required = [
   'Samme beslutningslogik på offentlige ruter',
 ];
 for (const marker of required) {
-  if (!combined.includes(marker)) throw new Error(`Required portfolio marker missing after build: ${marker}`);
+  if (!normalizedCombined.includes(marker)) throw new Error(`Required portfolio marker missing after build: ${marker}`);
 }
 const forbidden = [
   'I find the real friction behind messy briefs',
@@ -102,7 +114,7 @@ const forbidden = [
   '—',
 ];
 for (const marker of forbidden) {
-  if (combined.includes(marker)) throw new Error(`Retired/private copy leaked into exported HTML: ${marker}`);
+  if (normalizedCombined.includes(marker)) throw new Error(`Retired/private copy leaked into exported HTML: ${marker}`);
 }
 for (const route of ['index.html','da/index.html','work/marzieh-nail-atelier/index.html','da/arbejde/marzieh-nail-atelier/index.html']) {
   await access(join(outRoot, route));
@@ -110,4 +122,4 @@ for (const route of ['index.html','da/index.html','work/marzieh-nail-atelier/ind
 for (const asset of ['assets/cursor-default.svg','assets/cursor-action.svg','assets/marzieh-desktop-proof-4p9-37-v687.webp','assets/marzieh-service-path-proof-v687.webp','assets/marzieh-composition-full-v687.webp','assets/marzieh-guide-proof-v687.webp']) {
   await access(join(outRoot, asset));
 }
-console.log(`V6.10.1: patched lang="da" into ${patched} Danish exported HTML file(s). Portfolio regression checks passed.`);
+console.log(`V6.10.2: patched lang="da" into ${patched} Danish exported HTML file(s). Portfolio regression checks passed.`);

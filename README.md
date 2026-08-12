@@ -21,3 +21,7 @@ Light source-of-truth sync with the final professional CV. Kept the Digital port
 - Added a sanitised CMS content-model workflow artefact, explicitly separated from the static Marzieh implementation.
 - Replaced defensive software-engineer wording with positive production/CMS/front-end positioning.
 - Kept the existing Quick Scan / Deep Dive architecture and public/private project distinction unchanged.
+
+
+## V6.10.2 Cloudflare patch
+The postbuild regression guard now normalises HTML entities before copy validation. This prevents false failures when Next/React serialises visible `&` characters as `&amp;`. Portfolio content/design is unchanged from V6.10.1.

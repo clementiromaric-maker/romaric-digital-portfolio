@@ -1,0 +1,25 @@
+DIGITAL PORTFOLIO V6.10.2 - CLOUDFLARE HTML-ENTITY GUARD FIX
+Date: 12 August 2026
+
+Observed Cloudflare failure:
+The Next.js static build completed, then scripts/postbuild.mjs failed on:
+Digital Production · Content Systems · Web & QA
+
+Root cause:
+The rendered HTML serialises the ampersand in visible text as &amp;.
+The old postbuild guard compared the raw source marker containing "&" against raw exported HTML, so it produced a false negative even though the correct heading was present in the page.
+
+Fix:
+- Normalise common exported HTML entities before required/forbidden marker checks.
+- Required copy remains unchanged.
+- No portfolio content or design was rolled back.
+- Guard version bumped to V6.10.2.
+
+Regression proof:
+- scripts/postbuild.mjs syntax check passes.
+- Synthetic Cloudflare-like static-export fixture uses &amp; in the English and Danish role labels.
+- Corrected postbuild passes the fixture.
+- Required route and asset existence checks still execute.
+- Forbidden/private-copy checks still execute against normalised HTML.
+
+This patch addresses the exact Cloudflare failure shown in the 12 August 2026 build log.
