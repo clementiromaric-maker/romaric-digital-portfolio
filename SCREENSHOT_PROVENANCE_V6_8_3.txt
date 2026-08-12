@@ -1,0 +1,8 @@
+V6.8.3 SCREENSHOT PROVENANCE
+
+marzieh-live-mobile-service-path-actual.webp
+- Source: genuine archived mobile browser capture of https://marziehnail-atelier.dk/en/
+- Source file: 1000050158.jpg
+- Visible live-site section: Services / Choose the right service path first.
+- Transformation: crop only. No text, layout, cards or UI were redrawn.
+- Browser/status chrome and the lower paragraph and sticky booking overlay are outside the crop.

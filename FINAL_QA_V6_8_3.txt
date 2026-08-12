@@ -1,0 +1,18 @@
+V6.8.3 FINAL QA
+
+PASS - True live service-path screenshot asset exists
+PASS - EN case uses true service-path screenshot
+PASS - DA case uses same true service-path screenshot
+PASS - Reconstructed Choose based on need phrase absent
+PASS - Retired service-clean asset no longer referenced
+PASS - Postbuild requires new real service screenshot
+PASS - Postbuild requires current live heading
+PASS - Operations reverse link retained
+PASS - Phone contact retained
+PASS - Custom cursor retained
+PASS - No em dash in public JSX copy
+PASS - All JSX asset references resolve
+
+Screenshot source: archived genuine mobile browser capture 1000050158.jpg. Crop only. No UI reconstruction.
+Current live site wording verified: Choose the right service path first.
+Full Next.js production compilation remains the Cloudflare deployment validation step.

@@ -1,0 +1,21 @@
+V6.8.7 FINAL QA
+
+Purpose
+- Fix Marzieh case-study image presentation.
+- Prevent Cloudflare/browser stale proof images by changing all proof asset filenames.
+
+Verified changes
+- Desktop proof uses versioned 4.9 Google rating / 37 client reviews capture.
+- Atelier Composition proof uses full real mobile capture.
+- Service-path proof rebuilt from genuine archived live-site mobile screenshot, crop only.
+- Gel Nails vs Shellac guide remains a real live-site mobile capture.
+- Case-study desktop cover has no forced max-height.
+- Interface evidence uses three balanced proof cards instead of one oversized card plus fragments.
+- New versioned filenames are referenced in EN and DA source and postbuild checks.
+- Old reused Marzieh proof filenames removed from shipped assets.
+- No public copy changes outside case-study captions.
+- No em dash introduced.
+
+Local build note
+- Source-level regression checks passed.
+- A local Next.js build could not be executed in this sandbox because pnpm/npm dependencies are not cached and outbound registry access is unavailable. Cloudflare should run the normal install/build pipeline from package.json and lockfiles.

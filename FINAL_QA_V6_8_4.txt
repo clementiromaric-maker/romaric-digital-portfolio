@@ -1,0 +1,6 @@
+V6.8.4 screenshot patch
+- Replaced marzieh-live-mobile-composition-actual.webp with improved crop derived from user-provided screenshot
+- Asset updated in both homepage Selected Work and Marzieh case page
+- Updated intrinsic size references from 688x980 to 688x1402
+- No copy changes
+- No em dash added

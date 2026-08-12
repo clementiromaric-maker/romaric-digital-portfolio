@@ -36,11 +36,11 @@ const required = [
   'FørsteMatch',
   'Marzieh Nail Atelier',
   'romaric-portrait.webp',
-  'marzieh-live-desktop-actual.webp',
-  'marzieh-live-mobile-service-clean-actual.webp',
-  'marzieh-live-mobile-composition-actual.webp',
-  'marzieh-live-mobile-guide-actual.webp',
-  'marzieh-pearl-proof.webp',
+  'marzieh-desktop-proof-4p9-37-v687.webp',
+  'marzieh-service-path-proof-v687.webp',
+  'marzieh-composition-full-v687.webp',
+  'marzieh-guide-proof-v687.webp',
+  'marzieh-pearl-proof-v687.webp',
   'Walkthrough available on request',
   'Gennemgang efter aftale',
   'GitHub + Cloudflare',
@@ -50,6 +50,7 @@ const required = [
   'Email Romaric',
   'Operations portfolio',
   'Clear structure. Practical delivery. Work that is easier to use and easier to continue.',
+  'Choose the right service path first',
 ];
 for (const marker of required) {
   if (!combined.includes(marker)) throw new Error(`Required portfolio marker missing after build: ${marker}`);
@@ -81,7 +82,7 @@ for (const marker of forbidden) {
 for (const route of ['index.html','da/index.html','work/marzieh-nail-atelier/index.html','da/arbejde/marzieh-nail-atelier/index.html']) {
   await access(join(outRoot, route));
 }
-for (const asset of ['assets/cursor-default.svg','assets/cursor-action.svg','assets/marzieh-live-desktop-actual.webp','assets/marzieh-live-mobile-service-clean-actual.webp','assets/marzieh-live-mobile-composition-actual.webp','assets/marzieh-live-mobile-guide-actual.webp']) {
+for (const asset of ['assets/cursor-default.svg','assets/cursor-action.svg','assets/marzieh-desktop-proof-4p9-37-v687.webp','assets/marzieh-service-path-proof-v687.webp','assets/marzieh-composition-full-v687.webp','assets/marzieh-guide-proof-v687.webp']) {
   await access(join(outRoot, asset));
 }
 console.log(`Patched lang="da" into ${patched} Danish exported HTML file(s). Portfolio regression checks passed.`);

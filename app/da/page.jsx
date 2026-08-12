@@ -237,7 +237,7 @@ export default function DanishPortfolio() {
                 <div className="signal-map__output"><span className="mono">Brugbart output</span><b>Klar første version</b><small>brugbart · let at gennemgå · klar til overdragelse</small></div>
               </div>
               <figure className="hero-live-proof">
-                <img src="/assets/marzieh-pearl-proof.webp" alt="Pearl Satin Glaze-neglebillede fra Marzieh Nail Atelier live-websitet" width="600" height="600" loading="lazy" decoding="async" />
+                <img src="/assets/marzieh-pearl-proof-v687.webp" alt="Pearl Satin Glaze-neglebillede fra Marzieh Nail Atelier live-websitet" width="600" height="600" loading="lazy" decoding="async" />
                 <figcaption><span className="mono">Live dokumentation</span><b>Marzieh Nail Atelier</b></figcaption>
               </figure>
               <dl>
@@ -293,10 +293,10 @@ export default function DanishPortfolio() {
                   <div className="featured-case__visual-grid">
                     <figure className="featured-case__desktop featured-case__desktop--real">
                       <img
-                        src="/assets/marzieh-live-desktop-actual.webp"
+                        src="/assets/marzieh-desktop-proof-4p9-37-v687.webp"
                         alt="Reelt desktop-skærmbillede af Marzieh Nail Atelier-websitet"
-                        width="820"
-                        height="455"
+                        width="1600"
+                        height="873"
                         loading="eager"
                         decoding="async"
                       />
@@ -306,10 +306,10 @@ export default function DanishPortfolio() {
                       <div className="mobile-proof-frame mobile-proof-frame--real">
                         <span className="mobile-proof-frame__speaker" aria-hidden="true" />
                         <img
-                          src="/assets/marzieh-live-mobile-composition-actual.webp"
+                          src="/assets/marzieh-composition-full-v687.webp"
                           alt="Reelt mobilskærmbillede af Marzieh Nail Ateliers kompositionsside"
                           width="688"
-                          height="980"
+                          height="1487"
                           loading="lazy"
                           decoding="async"
                         />

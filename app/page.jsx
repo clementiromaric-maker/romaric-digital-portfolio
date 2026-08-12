@@ -261,7 +261,7 @@ export default function Home() {
                 <div className="signal-map__output"><span className="mono">Useful output</span><b>Clear first version</b><small>usable · reviewable · ready to hand over</small></div>
               </div>
               <figure className="hero-live-proof">
-                <img src="/assets/marzieh-pearl-proof.webp" alt="Pearl Satin Glaze nail image from the Marzieh Nail Atelier live website" width="600" height="600" loading="lazy" decoding="async" />
+                <img src="/assets/marzieh-pearl-proof-v687.webp" alt="Pearl Satin Glaze nail image from the Marzieh Nail Atelier live website" width="600" height="600" loading="lazy" decoding="async" />
                 <figcaption><span className="mono">Live-site proof</span><b>Marzieh Nail Atelier</b></figcaption>
               </figure>
               <dl>
@@ -319,10 +319,10 @@ export default function Home() {
                   <div className="featured-case__visual-grid">
                     <figure className="featured-case__desktop featured-case__desktop--real">
                       <img
-                        src="/assets/marzieh-live-desktop-actual.webp"
+                        src="/assets/marzieh-desktop-proof-4p9-37-v687.webp"
                         alt="Real desktop screenshot of the Marzieh Nail Atelier website"
-                        width="820"
-                        height="455"
+                        width="1600"
+                        height="873"
                         loading="eager"
                         decoding="async"
                       />
@@ -332,10 +332,10 @@ export default function Home() {
                       <div className="mobile-proof-frame mobile-proof-frame--real">
                         <span className="mobile-proof-frame__speaker" aria-hidden="true" />
                         <img
-                          src="/assets/marzieh-live-mobile-composition-actual.webp"
+                          src="/assets/marzieh-composition-full-v687.webp"
                           alt="Real mobile screenshot of the Marzieh Nail Atelier composition page"
                           width="688"
-                          height="980"
+                          height="1487"
                           loading="lazy"
                           decoding="async"
                         />

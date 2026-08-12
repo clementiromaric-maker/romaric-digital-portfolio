@@ -1,0 +1,8 @@
+V6.8.6 FINAL QA
+
+Desktop proof: exact user screenshot source, crop limited to 10 px right scrollbar edge; shipped 1600x873.
+Mobile proof: exact user screenshot source, crop limited to Android status/gesture UI; shipped 688x1487.
+References by file: {'app/page.jsx': (1, 1), 'app/da/page.jsx': (1, 1), 'app/work/marzieh-nail-atelier/page.jsx': (2, 1), 'app/da/arbejde/marzieh-nail-atelier/page.jsx': (2, 1)}
+Em dash in authored app: none
+Missing asset refs: none
+Errors: none
