@@ -1,5 +1,5 @@
-Romaric Clementi Digital Portfolio V6.7
-REAL SCREENSHOTS + SINGLE WORKFLOW + CUSTOM CURSOR
+Romaric Clementi Digital Portfolio V6.8
+STRUCTURAL QA + POSITIONING POLISH
 
 ROUTES
 - /
@@ -7,26 +7,28 @@ ROUTES
 - /work/marzieh-nail-atelier/
 - /da/arbejde/marzieh-nail-atelier/
 
-HOMEPAGE WORKFLOW
-- The rough-input -> clear-first-version visual exists once, in the hero only.
-- The Marzieh Selected Work block contains no second workflow diagram.
+SECTION NUMBERING
+- Quick scan visual sequence: 01 Selected Work / 02 Where I Fit / 03 First 30 Days.
+- Deep dive visual sequence: 01 / 02 / 03 / 04 / 05 / 06.
+- Section numbers are CSS-generated from data attributes, so machine-readable HTML no longer exposes contradictory literal section numbers.
+- Print and no-JS views use deep six-section numbering.
 
-MARZIEH PROOF
-- Real archived desktop website screenshot, cropped to website pixels only.
-- Real mobile website screenshot, cropped to remove browser chrome.
-- Marzieh case gallery uses real mobile captures from the live website.
-- Reconstructed V6.6 proof assets are not shipped.
+POSITIONING
+- Public portfolio remains a digital-production job-search track for agencies, digital teams and startups.
+- Public contact copy prioritizes roles and scoped production/QA/handover support.
+- Short praktik wording is removed from EN and DA public copy.
+- Private supporting projects remain unlinked and walkthrough-only.
 
-CUSTOM CURSOR
-- Custom cursor remains on hover-capable fine-pointer devices.
-- Interactive cursor for links/buttons.
-- Native text cursor for editable fields.
-- Touch/coarse-pointer devices keep native behaviour.
+PROOF
+- Marzieh Nail Atelier remains the live linked production proof.
+- Three supporting projects remain described without public project URLs.
+- Proof dashboard uses concrete GitHub + Cloudflare delivery wording.
 
-PRIVACY
-- Clementi AI Workflow: walkthrough only.
-- FørsteMatch: walkthrough only.
-- HamdamBridge: walkthrough only.
+EXISTING V6.7.3 FIXES RETAINED
+- Real desktop/mobile Marzieh screenshots.
+- Mobile proof sizing/cropping fixes.
+- Custom cursor.
+- EN/DA routes and language switch.
 
 FINAL COMPILE
 Cloudflare remains the final Next.js production compile validation if local dependencies are unavailable.

@@ -21,11 +21,11 @@ const proofSignals = [
   },
   {
     value: 'Multilingual routes',
-    label: 'DA / EN plus Farsi/English pilot logic',
+    label: 'DA / EN plus Persian/English pilot logic',
   },
   {
-    value: 'GitHub workflow ready',
-    label: 'Source packages, version notes, deploy QA and handover',
+    value: 'GitHub + Cloudflare',
+    label: 'Versioned source, deployment QA, release notes and handover',
   },
   {
     value: 'Operations backbone',
@@ -60,7 +60,7 @@ const roleFitLanes = [
 const pilotProjects = [
   {
     eyebrow: 'Service and workflow system',
-    status: 'Private walkthrough',
+    status: 'Private project',
     title: 'Clementi AI Workflow',
     role: 'SME services, workflow reviews and practical AI boundaries',
     text:
@@ -76,7 +76,7 @@ const pilotProjects = [
   },
   {
     eyebrow: 'Stakeholder-flow pilot',
-    status: 'Private walkthrough',
+    status: 'Private project',
     title: 'FørsteMatch',
     role: 'Candidate, company and advisor clarity before official handoff',
     text:
@@ -92,7 +92,7 @@ const pilotProjects = [
   },
   {
     eyebrow: 'Privacy-first product concept',
-    status: 'Private walkthrough',
+    status: 'Private project',
     title: 'HamdamBridge',
     role: 'Consent-led cultural introduction system',
     text:
@@ -303,7 +303,7 @@ export default function Home() {
         <section id="work">
           <div className="wrap">
             <div className="sec-head">
-              <span className="sec-no">01</span>
+              <span className="sec-no" data-deep="01" data-quick="01" aria-hidden="true" />
               <h2>Selected work and systems</h2>
               <p className="note">A live business first, then three supporting projects with different problems and constraints.</p>
             </div>
@@ -417,7 +417,7 @@ export default function Home() {
         <section id="approach" className="deep-dive-section">
           <div className="wrap">
             <div className="sec-head">
-              <span className="sec-no">02</span>
+              <span className="sec-no" data-deep="02" data-quick="02" aria-hidden="true" />
               <h2>How I work</h2>
               <p className="note">The operations habits I carry into digital production.</p>
             </div>
@@ -484,7 +484,7 @@ export default function Home() {
         <section id="system" className="deep-dive-section" aria-labelledby="system-title">
           <div className="wrap">
             <div className="sec-head">
-              <span className="sec-no">03</span>
+              <span className="sec-no" data-deep="03" data-quick="03" aria-hidden="true" />
               <h2 id="system-title">From unclear input to a working first version</h2>
               <p className="note">A real production sequence: understand the source, shape the structure, build, test and hand over.</p>
             </div>
@@ -511,7 +511,7 @@ export default function Home() {
         <section id="fit">
           <div className="wrap">
             <div className="sec-head">
-              <span className="sec-no">{viewMode === 'quick' ? '02' : '04'}</span>
+              <span className="sec-no" data-deep="04" data-quick="02" aria-hidden="true" />
               <h2>Where I fit</h2>
               <p className="note">A practical decision path for agencies, studios and startups.</p>
             </div>
@@ -564,7 +564,7 @@ export default function Home() {
         <section id="capabilities" className="deep-dive-section">
           <div className="wrap">
             <div className="sec-head">
-              <span className="sec-no">05</span>
+              <span className="sec-no" data-deep="05" data-quick="05" aria-hidden="true" />
               <h2>Build and QA proof</h2>
               <p className="note">Practical implementation and delivery evidence.</p>
             </div>
@@ -642,9 +642,9 @@ export default function Home() {
         <section id="process">
           <div className="wrap">
             <div className="sec-head">
-              <span className="sec-no">{viewMode === 'quick' ? '03' : '06'}</span>
+              <span className="sec-no" data-deep="06" data-quick="03" aria-hidden="true" />
               <h2>How I would start in the first 30 days</h2>
-              <p className="note">A simple structure that makes it easy to say yes. Tasks adapt to the team.</p>
+              <p className="note">A practical starting point. Tasks adapt to the team and the work already in motion.</p>
             </div>
             <div className="weeks reveal">
               {weeks.map((week) => (
@@ -658,50 +658,37 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="contact-section">
+        <section id="contact" className="contact-section contact-section--professional">
           <div className="wrap">
-            <div className="contact reveal">
-              <div className="contact__identity">
-                <img src="/assets/romaric-portrait.webp" width="512" height="512" decoding="async" alt="Portrait of Romaric Clementi" loading="lazy" />
-                <div>
-                  <p className="mono">Contact</p>
-                  <b>Romaric Clementi</b>
-                </div>
-              </div>
-              <h2>
-                Let&apos;s build the first <em>useful</em> version.
-              </h2>
-              <div className="row2">
-                <a className="btn email-cta" href="mailto:clementiromaric@protonmail.com">
-                  <span className="email-cta__desktop">clementiromaric@protonmail.com</span>
-                  <span className="email-cta__mobile">Email me</span>
-                </a>
-                <div className="meta">
-                  <div className="m contact-email-row">
-                    <span className="mono">Email</span>
-                    <b>
-                      <a href="mailto:clementiromaric@protonmail.com">clementiromaric@protonmail.com</a>
-                    </b>
-                  </div>
-                  <div className="m">
-                    <span className="mono">Location</span>
-                    <b>Greater Copenhagen · Tune, Denmark</b>
-                  </div>
-                  <div className="m">
-                    <span className="mono">Languages</span>
-                    <b>French native · English fluent · Danish operational</b>
-                  </div>
-                  <div className="m">
-                    <span className="mono">Live website</span>
-                    <b>
-                      <a href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">
-                        marziehnail-atelier.dk
-                      </a>
-                    </b>
+            <div className="contact contact--professional reveal">
+              <div className="contact-pro__main">
+                <div className="contact__identity contact-pro__identity">
+                  <img src="/assets/romaric-portrait.webp" width="512" height="512" decoding="async" alt="Portrait of Romaric Clementi" loading="lazy" />
+                  <div>
+                    <p className="mono">Digital Production · Web Content · QA</p>
+                    <b>Romaric Clementi</b>
                   </div>
                 </div>
+                <p className="mono contact-pro__label">Contact</p>
+                <h2>Need someone who can turn unclear digital work into something <em>usable?</em></h2>
+                <p className="contact-pro__intro">I help teams bring structure to websites, content, implementation and QA, from rough input and scattered requirements to a clear first version that can be reviewed, shipped and handed over properly.</p>
+                <p className="contact-pro__intro contact-pro__intro--secondary">I am looking for digital production, web content, CMS implementation and QA roles across Greater Copenhagen. I am also open to scoped project work where a team needs practical delivery support.</p>
+                <div className="contact-pro__details" aria-label="Contact details">
+                  <a href="tel:+4528737485"><span className="mono">Phone</span><b>+45 28 73 74 85</b></a>
+                  <a href="mailto:clementiromaric@protonmail.com"><span className="mono">Email</span><b>clementiromaric@protonmail.com</b></a>
+                  <div><span className="mono">Location</span><b>Greater Copenhagen · Tune, Denmark</b></div>
+                  <div><span className="mono">Languages</span><b>French native · English fluent · Danish operational (PD2/B1+)</b></div>
+                </div>
               </div>
-              <p className="avail">Open to digital production, web content/implementation and delivery-support roles across Greater Copenhagen. I can also support scoped project work or a short <b>praktik</b> where that is the most practical way for a team to test the fit.</p>
+              <aside className="contact-pro__aside" aria-label="Contact actions">
+                <a className="btn contact-pro__email" href="mailto:clementiromaric@protonmail.com">Email Romaric</a>
+                <nav className="contact-pro__links" aria-label="Portfolio links">
+                  <a href="tel:+4528737485"><span>Call</span><b>+45 28 73 74 85</b></a>
+                  <a href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer"><span>View live work</span><b>Marzieh Nail Atelier</b></a>
+                  <a href="https://romaric-operations-portfolio.clementiromaric.workers.dev/" target="_blank" rel="noopener noreferrer"><span>Operations portfolio</span><b>Procurement · Planning · ERP</b></a>
+                </nav>
+              </aside>
+              <p className="contact-pro__closing">Clear structure. Practical delivery. Work that is easier to use and easier to continue.</p>
             </div>
           </div>
         </section>

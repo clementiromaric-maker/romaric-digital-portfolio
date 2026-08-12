@@ -1,18 +1,22 @@
-# Romaric Clementi Digital Portfolio V6.7.3
+# Romaric Clementi Digital Portfolio V6.8.2
 
-Mobile badge-proof cleanup on top of V6.7.2.
+Professional contact and selected-work proof balance release.
 
-## What changed
-- Selected Work now uses the cleaner real mobile composition capture, which ends before the cramped BY AGREEMENT / PERSONALISED / DESIGN-LED badge row.
-- The deeper service proof uses a crop of the real service screenshot beginning below that row. No reconstructed UI and no pixel retouching.
-- Desktop proof, mobile sizing, custom cursor, portfolio copy and private-project rules are unchanged.
-- EN and DA are updated together.
+## Changes
+- Added a full professional contact close with portrait, phone, email, location and languages.
+- Added direct email, phone, live Marzieh work and Operations portfolio actions.
+- Added a restrained closing line to finish the portfolio cleanly.
+- Reduced the Selected Work mobile proof size.
+- Increased caption spacing.
+- Rebalanced the desktop and mobile proof pair.
+- Retained real Marzieh screenshots and the custom cursor.
+- Removed em dash characters from authored public app source and added an exported-HTML guard.
 
-## Build
-Node 22.16.0, pnpm 10.11.1.
+## Cloudflare
+Use the existing project settings.
 
-```bash
-pnpm install --frozen-lockfile && pnpm run build
-```
+Build command:
+`pnpm install --frozen-lockfile && pnpm run build`
 
-Output directory: `out`.
+Output directory:
+`out`

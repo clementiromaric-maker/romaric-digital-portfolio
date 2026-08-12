@@ -43,6 +43,13 @@ const required = [
   'marzieh-pearl-proof.webp',
   'Walkthrough available on request',
   'Gennemgang efter aftale',
+  'GitHub + Cloudflare',
+  'A practical starting point',
+  'Et praktisk udgangspunkt',
+  '+45 28 73 74 85',
+  'Email Romaric',
+  'Operations portfolio',
+  'Clear structure. Practical delivery. Work that is easier to use and easier to continue.',
 ];
 for (const marker of required) {
   if (!combined.includes(marker)) throw new Error(`Required portfolio marker missing after build: ${marker}`);
@@ -64,6 +71,9 @@ const forbidden = [
   'Offentlig preview',
   'Offentlig pilot',
   'featured-case__workflow',
+  'short <b>praktik</b>',
+  'kort <b>praktik</b>',
+  '—',
 ];
 for (const marker of forbidden) {
   if (combined.includes(marker)) throw new Error(`Retired/private copy leaked into exported HTML: ${marker}`);

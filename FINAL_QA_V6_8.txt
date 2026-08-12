@@ -1,0 +1,16 @@
+V6.8 FINAL QA
+
+RESULT: PASS
+
+PASS - 4 intended page routes present
+PASS - EN/DA section-number maps support sequential quick and deep views
+PASS - CSS-generated section numbering present for screen and print
+PASS - praktik and retired friction-framework wording absent from authored app copy
+PASS - supporting projects remain unlinked in shipped source content
+PASS - custom cursor assets retained
+PASS - all 6 unique app asset references resolve
+PASS - package and package-lock metadata synced at 6.8.0
+PASS - no node_modules/.next/out shipped
+
+LIMITATION
+A full Next.js production build was not run locally because dependencies are not installed. Cloudflare remains the final compile/deploy validation.

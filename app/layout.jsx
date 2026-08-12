@@ -101,7 +101,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
         <noscript>
-          <style>{'.reveal{opacity:1!important;transform:none!important}.portfolio-view.is-quick .deep-dive-section{display:block!important}'}</style>
+          <style>{'.reveal{opacity:1!important;transform:none!important}.portfolio-view.is-quick .deep-dive-section{display:block!important}.portfolio-view .sec-no::before{content:attr(data-deep)!important}'}</style>
         </noscript>
         {children}
       </body>

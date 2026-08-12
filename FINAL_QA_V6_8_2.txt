@@ -1,0 +1,37 @@
+Digital Portfolio V6.8.2
+Professional contact and selected-work proof balance
+
+SOURCE QA: PASS
+
+Contact close
+- Portrait retained.
+- Phone added: +45 28 73 74 85.
+- Email retained: clementiromaric@protonmail.com.
+- Greater Copenhagen / Tune location retained.
+- French / English / Danish language line retained with PD2/B1+.
+- Live Marzieh work remains the primary public proof.
+- Operations portfolio added as a quiet secondary route.
+- Professional two-column contact layout added for desktop.
+- Mobile contact layout collapses to one column.
+
+Selected Work proof
+- Mobile proof reduced to 210px maximum on desktop.
+- Mobile proof reduced further on phone layouts.
+- Desktop/mobile proof gap increased for better balance.
+- Caption spacing increased.
+- Existing real screenshot assets retained.
+- Atelier Composition title remains fully visible in the real mobile capture.
+
+Language and style
+- EN and DA contact sections updated together.
+- No em dash character remains in authored app source.
+- Postbuild now rejects em dash characters in exported HTML.
+
+Technical checks
+- scripts/clean.mjs syntax: pass
+- scripts/postbuild.mjs syntax: pass
+- next.config.mjs syntax: pass
+- private project public URLs absent from app/public source
+- custom cursor assets retained
+
+Final production compile remains the Cloudflare build validation step.

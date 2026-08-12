@@ -11,7 +11,7 @@ const proofSignals = [
   { value: '3 støtteprojekter', label: 'Workflow, beskæftigelse og privatlivsfokuserede systemer' },
   { value: 'Fra service til booking', label: 'Tilbud, priser, politikker, besøg og bookingvej' },
   { value: 'Flersprogede sider', label: 'DA / EN plus persisk/engelsk pilotlogik' },
-  { value: 'GitHub workflow-klar', label: 'Source packages, deploy-noter, versionsspor og QA' },
+  { value: 'GitHub + Cloudflare', label: 'Versioneret kilde, deployment-QA, release-noter og overdragelse' },
   { value: 'Operationsbaggrund', label: 'ERP, leverandører, overdragelser og dokumentation' },
 ];
 
@@ -41,7 +41,7 @@ const roleFitLanes = [
 const pilotProjects = [
   {
     eyebrow: 'Service- og workflowsystem',
-    status: 'Privat gennemgang',
+    status: 'Privat projekt',
     title: 'Clementi AI Workflow',
     role: 'SME-services, workflow-gennemgang og praktiske AI-grænser',
     text:
@@ -57,7 +57,7 @@ const pilotProjects = [
   },
   {
     eyebrow: 'Pilot for flere aktører',
-    status: 'Privat gennemgang',
+    status: 'Privat projekt',
     title: 'FørsteMatch',
     role: 'Klarhed for kandidat, virksomhed og rådgiver før officiel overdragelse',
     text:
@@ -73,7 +73,7 @@ const pilotProjects = [
   },
   {
     eyebrow: 'Privatlivsfokuseret produktkoncept',
-    status: 'Privat gennemgang',
+    status: 'Privat projekt',
     title: 'HamdamBridge',
     role: 'Kulturelt introduktionssystem med samtykke før kontakt',
     text:
@@ -277,7 +277,7 @@ export default function DanishPortfolio() {
         <section id="work">
           <div className="wrap">
             <div className="sec-head">
-              <span className="sec-no">01</span>
+              <span className="sec-no" data-deep="01" data-quick="01" aria-hidden="true" />
               <h2>Udvalgt arbejde og systemer</h2>
               <p className="note">Først et live virksomhedssite, derefter brugbare systemer bygget omkring tillid, workflow og menneskelig vurdering.</p>
             </div>
@@ -381,7 +381,7 @@ export default function DanishPortfolio() {
 
         <section id="approach" className="deep-dive-section">
           <div className="wrap">
-            <div className="sec-head"><span className="sec-no">02</span><h2>Sådan arbejder jeg</h2><p className="note">De arbejdsvaner fra drift, som jeg tager med ind i digital produktion.</p></div>
+            <div className="sec-head"><span className="sec-no" data-deep="02" data-quick="02" aria-hidden="true" /><h2>Sådan arbejder jeg</h2><p className="note">De arbejdsvaner fra drift, som jeg tager med ind i digital produktion.</p></div>
             <div className="approach-grid">
               <p className="approach reveal">Jeg vil først forstå <b>hvad mennesker har brug for, hvad der stadig er uafklaret, og hvad der skal ske efter lancering</b>, før jeg bygger.</p>
               <div className="reveal">
@@ -418,7 +418,7 @@ export default function DanishPortfolio() {
 
         <section id="system" className="deep-dive-section" aria-labelledby="system-title-da">
           <div className="wrap">
-            <div className="sec-head"><span className="sec-no">03</span><h2 id="system-title-da">Fra uklart input til en brugbar første version</h2><p className="note">En reel produktionsrækkefølge: forstå kilden, form strukturen, byg, test og overdrag.</p></div>
+            <div className="sec-head"><span className="sec-no" data-deep="03" data-quick="03" aria-hidden="true" /><h2 id="system-title-da">Fra uklart input til en brugbar første version</h2><p className="note">En reel produktionsrækkefølge: forstå kilden, form strukturen, byg, test og overdrag.</p></div>
             <div className="system-board reveal">
               <div className="system-intro"><p className="mono">Produktionsrækkefølge</p><h3>Skærmen er kun én del af leveringen.</h3><p>Jeg starter med kildematerialet og de åbne beslutninger, former en brugbar struktur, bygger og tester første version og efterlader tydelige noter, så arbejdet er nemmere at fortsætte.</p></div>
               <div className="system-steps" aria-label="Fra uklart input til live system process">
@@ -432,7 +432,7 @@ export default function DanishPortfolio() {
 
         <section id="fit">
           <div className="wrap">
-            <div className="sec-head"><span className="sec-no">{viewMode === 'quick' ? '02' : '04'}</span><h2>Hvor jeg passer ind</h2><p className="note">En praktisk beslutningsvej for bureauer, studios og startups.</p></div>
+            <div className="sec-head"><span className="sec-no" data-deep="04" data-quick="02" aria-hidden="true" /><h2>Hvor jeg passer ind</h2><p className="note">En praktisk beslutningsvej for bureauer, studios og startups.</p></div>
             <div className="fit-summary reveal"><p className="mono">Bedst match lige nu</p><h3>Teams der har brug for brugbart digitalt output fra rodet input.</h3><p>Jeg forbinder kundemateriale, indhold, UX, implementering, QA og overdragelse. Min værdi er at gøre spredt materiale lettere at forstå, bygge, teste, lancere og vedligeholde.</p></div>
             <div className="fit-lanes reveal" aria-label="Praktiske rolleområder">{roleFitLanes.map((lane) => <article key={lane.title}><span className="mono">{lane.label}</span><h3>{lane.title}</h3><p>{lane.text}</p></article>)}</div>
             <p className="mono audience-label reveal">Bedste målgruppe</p>
@@ -446,7 +446,7 @@ export default function DanishPortfolio() {
 
         <section id="capabilities" className="deep-dive-section">
           <div className="wrap">
-            <div className="sec-head"><span className="sec-no">05</span><h2>Build og QA-dokumentation</h2><p className="note">Praktisk dokumentation for implementering og levering.</p></div>
+            <div className="sec-head"><span className="sec-no" data-deep="05" data-quick="05" aria-hidden="true" /><h2>Build og QA-dokumentation</h2><p className="note">Praktisk dokumentation for implementering og levering.</p></div>
             <div className="implementation-proof reveal" aria-label="Teknisk implementeringsdokumentation">
               <div><p className="mono">Teknisk implementeringsdokumentation</p><h3>Portfolioen er også et arbejdende build-eksempel.</h3><p>Statisk Next.js export, Cloudflare deployment, lokale assets, lokalt bundtede fonte, Open Graph metadata, responsivt layout, interne ankre, JSON-LD-forståelse og GitHub-baseret overdragelsesdisciplin. I udvalgte projekter har jeg desuden arbejdet med Sanity CMS-indholdsmodeller, genbrugelige sektioner, valideringsregler, flersproget indhold og forhåndsvisnings-/publiceringsflows samt brugt Jira til opfølgning på issues og handlinger.</p><p className="implementation-note">Min styrke er digital produktion, indholdsstruktur, QA og overdragelse. Jeg er komfortabel med kode og CMS-workflows, men positionerer mig ikke som softwareudvikler.</p></div>
               <div className="implementation-chips" aria-label="Tekniske implementeringssignaler">{['Static export', 'Cloudflare', 'GitHub workflow', 'Local assets', 'OG / metadata', 'Responsive QA'].map((item) => <b key={item}>{item}</b>)}</div>
@@ -474,26 +474,36 @@ export default function DanishPortfolio() {
 
         <section id="process">
           <div className="wrap">
-            <div className="sec-head"><span className="sec-no">{viewMode === 'quick' ? '03' : '06'}</span><h2>Sådan ville jeg starte, første 30 dage</h2><p className="note">En enkel struktur, der gør det let at sige ja. Opgaverne tilpasses teamet.</p></div>
+            <div className="sec-head"><span className="sec-no" data-deep="06" data-quick="03" aria-hidden="true" /><h2>Sådan ville jeg starte, første 30 dage</h2><p className="note">Et praktisk udgangspunkt. Opgaverne tilpasses teamet og det arbejde, der allerede er i gang.</p></div>
             <div className="weeks reveal">{weeks.map((week) => <div className="week" key={week.label}><div className="wno">{week.label}</div><h3>{week.title}</h3><p>{week.text}</p></div>)}</div>
           </div>
         </section>
 
-        <section id="contact" className="contact-section">
+        <section id="contact" className="contact-section contact-section--professional">
           <div className="wrap">
-            <div className="contact reveal">
-              <div className="contact__identity"><img src="/assets/romaric-portrait.webp" width="512" height="512" decoding="async" alt="Portræt af Romaric Clementi" loading="lazy" /><div><p className="mono">Kontakt</p><b>Romaric Clementi</b></div></div>
-              <h2>Lad os bygge den første <em>brugbare</em> version.</h2>
-              <div className="row2">
-                <a className="btn email-cta" href="mailto:clementiromaric@protonmail.com"><span className="email-cta__desktop">clementiromaric@protonmail.com</span><span className="email-cta__mobile">Skriv til mig</span></a>
-                <div className="meta">
-                  <div className="m contact-email-row"><span className="mono">E-mail</span><b><a href="mailto:clementiromaric@protonmail.com">clementiromaric@protonmail.com</a></b></div>
-                  <div className="m"><span className="mono">Lokation</span><b>Greater Copenhagen · Tune, Denmark</b></div>
-                  <div className="m"><span className="mono">Sprog</span><b>Fransk modersmål · flydende engelsk · operationelt dansk</b></div>
-                  <div className="m"><span className="mono">Live website</span><b><a href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer">marziehnail-atelier.dk</a></b></div>
+            <div className="contact contact--professional reveal">
+              <div className="contact-pro__main">
+                <div className="contact__identity contact-pro__identity"><img src="/assets/romaric-portrait.webp" width="512" height="512" decoding="async" alt="Portræt af Romaric Clementi" loading="lazy" /><div><p className="mono">Digital produktion · Webindhold · QA</p><b>Romaric Clementi</b></div></div>
+                <p className="mono contact-pro__label">Kontakt</p>
+                <h2>Har I brug for en, der kan gøre uklart digitalt arbejde <em>brugbart?</em></h2>
+                <p className="contact-pro__intro">Jeg hjælper teams med at skabe struktur i websites, indhold, implementering og QA, fra spredt input og uklare krav til en tydelig første version, der kan gennemgås, udgives og overdrages ordentligt.</p>
+                <p className="contact-pro__intro contact-pro__intro--secondary">Jeg søger roller inden for digital produktion, webindhold, CMS-implementering og QA i Greater Copenhagen. Jeg er også åben for afgrænsede projekter, hvor et team har brug for praktisk leveringssupport.</p>
+                <div className="contact-pro__details" aria-label="Kontaktoplysninger">
+                  <a href="tel:+4528737485"><span className="mono">Telefon</span><b>+45 28 73 74 85</b></a>
+                  <a href="mailto:clementiromaric@protonmail.com"><span className="mono">E-mail</span><b>clementiromaric@protonmail.com</b></a>
+                  <div><span className="mono">Lokation</span><b>Greater Copenhagen · Tune, Danmark</b></div>
+                  <div><span className="mono">Sprog</span><b>Fransk modersmål · flydende engelsk · operationelt dansk (PD2/B1+)</b></div>
                 </div>
               </div>
-              <p className="avail">Åben for roller inden for digital produktion, webindhold/implementering og leveringssupport i Greater Copenhagen. Jeg kan også bidrage til afgrænsede projekter eller en kort <b>praktik</b>, når det er den mest praktiske måde for et team at afprøve samarbejdet på.</p>
+              <aside className="contact-pro__aside" aria-label="Kontakthandlinger">
+                <a className="btn contact-pro__email" href="mailto:clementiromaric@protonmail.com">Skriv til Romaric</a>
+                <nav className="contact-pro__links" aria-label="Portfolio-links">
+                  <a href="tel:+4528737485"><span>Ring</span><b>+45 28 73 74 85</b></a>
+                  <a href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer"><span>Se live arbejde</span><b>Marzieh Nail Atelier</b></a>
+                  <a href="https://romaric-operations-portfolio.clementiromaric.workers.dev/" target="_blank" rel="noopener noreferrer"><span>Operations-portfolio</span><b>Indkøb · Planlægning · ERP</b></a>
+                </nav>
+              </aside>
+              <p className="contact-pro__closing">Klar struktur. Praktisk levering. Arbejde, der er nemmere at bruge og nemmere at arbejde videre med.</p>
             </div>
           </div>
         </section>

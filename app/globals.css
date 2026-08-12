@@ -99,6 +99,8 @@ section{position:relative;padding:clamp(3.55rem,7.8vw,6.8rem) 0;border-top:1px s
 #work{padding-top:clamp(4.2rem,8.4vw,7.4rem)}
 .sec-head{display:flex;align-items:baseline;gap:1rem;margin-bottom:2.9rem;flex-wrap:wrap}
 .sec-no{font-family:var(--font-fraunces),serif;font-weight:900;font-size:1.1rem;color:var(--clay)}
+.sec-no::before{content:attr(data-deep)}
+.portfolio-view.is-quick .sec-no::before{content:attr(data-quick)}
 .sec-head h2{font-family:var(--font-fraunces),serif;font-weight:600;letter-spacing:-.015em;font-size:clamp(1.7rem,4vw,2.8rem);line-height:1.05;margin:0;text-wrap:balance}
 .sec-head .note{margin-left:auto;max-width:34ch;color:var(--ink-faint);font-size:.92rem}
 @media(max-width:720px){.sec-head .note{margin-left:0;flex-basis:100%}}
@@ -257,7 +259,7 @@ footer{
   border:0!important;
 }
 
-/* ---- V5.9.1 systems and friction-mapping positioning ---- */
+/* ---- Systems and delivery positioning ---- */
 .systems-intro{margin-top:clamp(1.8rem,4vw,3rem);border:1px solid var(--line);border-radius:20px;background:linear-gradient(135deg,var(--ink),color-mix(in srgb,var(--ink) 86%,var(--clay)));color:var(--paper);padding:clamp(1.35rem,3vw,2rem);box-shadow:var(--shadow)}
 .systems-intro .mono{color:rgba(244,239,229,.6)}
 .systems-intro h3{font-family:var(--font-fraunces),serif;font-weight:600;font-size:clamp(1.45rem,3.2vw,2.2rem);line-height:1.06;letter-spacing:-.015em;margin:.55rem 0 .65rem;text-wrap:balance}
@@ -742,6 +744,7 @@ button,
 @media print{
   .view-switch,.deep-dive-gate{display:none!important}
   .portfolio-view.is-quick .deep-dive-section{display:block!important}
+  .portfolio-view .sec-no::before{content:attr(data-deep)!important}
 }
 
 /* V5.11 mobile navigation fit correction */
@@ -839,7 +842,7 @@ button,
   .field--wide{grid-column:auto}
 }
 
-/* V5.11.9 — final language, metadata and capability-density QA */
+/* V5.11.9 - final language, metadata and capability-density QA */
 .feature--marzieh{overflow:hidden;background:var(--white)}
 .featured-case{display:block}
 .featured-case__visual{background:linear-gradient(180deg,#efe5d2,#f7f1e7);border-bottom:1px solid var(--line-soft);min-width:0}
@@ -965,7 +968,7 @@ button,
 
 @media(max-width:560px){.featured-case__visual-grid{padding:.6rem}.featured-case__mobile{max-width:220px}}
 
-/* V6.5 — visual proof polish */
+/* V6.5 - visual proof polish */
 .hero__grid{
   grid-template-columns:minmax(0,1.34fr) minmax(390px,1fr);
   gap:clamp(2rem,4vw,3.35rem);
@@ -1080,14 +1083,14 @@ button,
   .mobile-proof-frame{padding:24px 8px 8px;border-radius:26px}
 }
 
-/* V6.7 — custom cursor retained from V6.6 */
+/* V6.7 - custom cursor retained from V6.6 */
 @media (hover:hover) and (pointer:fine){
   html,body{cursor:url('/assets/cursor-default.svg') 14 14,auto}
   a,button,[role="button"],summary,label,.btn,.pill,.text-link,.lang-switch a{cursor:url('/assets/cursor-action.svg') 15 15,pointer}
   input,textarea,[contenteditable="true"]{cursor:text}
 }
 
-/* V6.7 — real live-site screenshots; workflow appears only in the hero */
+/* V6.7 - real live-site screenshots; workflow appears only in the hero */
 .featured-case__visual-grid{
   grid-template-columns:minmax(0,1fr) minmax(185px,245px);
   gap:clamp(1rem,2vw,1.7rem);
@@ -1119,7 +1122,7 @@ button,
 }
 @media(max-width:560px){.featured-case__mobile--real{max-width:250px}}
 
-/* V6.7.2 — mobile proof layout correction
+/* V6.7.2 - mobile proof layout correction
    Keep the real desktop/mobile screenshots, but give phone viewports their own
    proportions so the desktop proof is fully readable and the phone proof does
    not dominate the page. Desktop/tablet presentation above 700px is unchanged. */
@@ -1206,3 +1209,71 @@ button,
   .featured-case__mobile--real figcaption{font-size:.54rem}
 }
 
+
+/* V6.8.2 professional contact close and selected-work proof balance */
+.contact--professional{
+  display:grid;
+  grid-template-columns:minmax(0,1.55fr) minmax(260px,.7fr);
+  column-gap:clamp(2.5rem,6vw,6rem);
+  row-gap:clamp(2rem,4vw,3rem);
+  align-items:start;
+  padding:clamp(2.8rem,6vw,5rem);
+}
+.contact-pro__main{min-width:0}
+.contact-pro__identity{margin-bottom:1.55rem}
+.contact-pro__identity img{width:92px;height:92px;border-radius:24px}
+.contact-pro__identity .mono{font-size:.64rem;letter-spacing:.09em;text-transform:uppercase}
+.contact-pro__identity b{font-size:1.06rem}
+.contact-pro__label{margin:0 0 1rem;color:#E79376!important;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase}
+.contact--professional h2{margin:0;max-width:13ch;font-size:clamp(2.55rem,5.4vw,4.7rem);line-height:.98}
+.contact-pro__intro{max-width:59ch;margin:1.4rem 0 0;color:rgba(244,239,229,.79);font-size:1rem;line-height:1.65}
+.contact-pro__intro--secondary{margin-top:.75rem;color:rgba(244,239,229,.66)}
+.contact-pro__details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 2rem;margin-top:2rem;padding-top:1.65rem;border-top:1px solid rgba(244,239,229,.16)}
+.contact-pro__details>a,.contact-pro__details>div{display:grid;gap:.28rem;min-width:0;color:inherit;text-decoration:none}
+.contact-pro__details .mono{font-size:.58rem;letter-spacing:.09em;text-transform:uppercase}
+.contact-pro__details b{font-size:.9rem;line-height:1.35;overflow-wrap:anywhere}
+.contact-pro__aside{padding-top:1.25rem;min-width:0}
+.contact-pro__email{display:inline-flex;justify-content:center;min-width:170px;margin-bottom:1.35rem}
+.contact-pro__links{display:grid;border-top:1px solid rgba(244,239,229,.16)}
+.contact-pro__links a{display:grid;gap:.24rem;padding:1rem 0;border-bottom:1px solid rgba(244,239,229,.16);color:inherit;text-decoration:none;transition:opacity .2s ease,transform .2s ease}
+.contact-pro__links a:hover{opacity:.78;transform:translateX(3px)}
+.contact-pro__links span{font-size:.88rem;color:rgba(244,239,229,.68)}
+.contact-pro__links b{font-size:.94rem;color:var(--paper);font-weight:700;line-height:1.35}
+.contact-pro__closing{grid-column:1/-1;margin:0;padding-top:1.55rem;border-top:1px solid rgba(244,239,229,.16);font-family:var(--font-fraunces),serif;font-size:clamp(1.05rem,2vw,1.35rem);font-style:italic;color:rgba(244,239,229,.72)}
+
+/* Make the real screenshot duo read as one balanced proof composition. */
+.featured-case__visual-grid{
+  grid-template-columns:minmax(0,1fr) minmax(160px,210px);
+  gap:clamp(1.5rem,3vw,2.5rem);
+  align-items:center;
+  padding:clamp(.9rem,1.8vw,1.2rem) clamp(.9rem,1.8vw,1.2rem) clamp(1.8rem,3vw,2.5rem);
+}
+.featured-case__desktop--real{align-self:center}
+.featured-case__mobile--real{max-width:210px;align-self:center}
+.mobile-proof-frame--real{padding:22px 8px 8px;border-radius:28px;box-shadow:0 28px 72px -52px rgba(23,19,13,.58)}
+.featured-case__desktop--real figcaption,.featured-case__mobile--real figcaption{margin-top:.8rem;line-height:1.5}
+.featured-case__mobile--real figcaption{max-width:24ch;margin-left:auto;margin-right:auto}
+
+@media(max-width:900px){
+  .contact--professional{grid-template-columns:1fr;gap:2rem}
+  .contact-pro__aside{padding-top:0}
+  .contact-pro__links{max-width:520px}
+  .featured-case__visual-grid{grid-template-columns:1fr;gap:1.6rem}
+  .featured-case__mobile--real{max-width:190px}
+}
+@media(max-width:700px){
+  .contact--professional{padding:2.15rem 1.35rem;border-radius:22px}
+  .contact-pro__identity img{width:76px;height:76px;border-radius:19px}
+  .contact--professional h2{font-size:clamp(2.3rem,11vw,3.2rem);max-width:11ch}
+  .contact-pro__details{grid-template-columns:1fr;gap:.9rem}
+  .contact-pro__email{width:100%}
+  .contact-pro__closing{font-size:1rem;line-height:1.5}
+  .featured-case__visual-grid{padding:.85rem .72rem 1.5rem;gap:1.55rem}
+  .featured-case__desktop--real figcaption{margin-top:.75rem}
+  .featured-case__mobile--real{width:min(44vw,168px);max-width:168px;margin:.2rem auto 0}
+  .featured-case__mobile--real figcaption{width:min(68vw,250px);margin-top:.75rem}
+}
+@media(max-width:420px){
+  .featured-case__mobile--real{width:min(43vw,154px);max-width:154px}
+  .featured-case__desktop--real figcaption,.featured-case__mobile--real figcaption{font-size:.55rem}
+}
