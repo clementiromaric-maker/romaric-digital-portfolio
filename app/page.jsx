@@ -577,13 +577,27 @@ export default function Home() {
                   Static Next.js export, Cloudflare deployment, local assets, locally bundled fonts, Open Graph metadata, responsive layout, internal anchors, JSON-LD awareness and GitHub-based handover discipline. Across selected projects, I have also worked with Sanity CMS content models, reusable sections, validation rules, multilingual content and preview/publishing flows, using Jira for issue and action follow-up.
                 </p>
                 <p className="implementation-note">
-                  My strength is digital production, content structure, QA and handover. I am comfortable working with code and CMS workflows; I do not position myself as a software engineer.
+                  My strongest contribution is structured digital production, content systems, implementation QA and maintainable handover, supported by practical front-end and CMS capability.
                 </p>
               </div>
               <div className="implementation-chips" aria-label="Technical implementation signals">
                 {['Static export', 'Cloudflare', 'GitHub workflow', 'Local assets', 'OG / metadata', 'Responsive QA'].map((item) => (
                   <b key={item}>{item}</b>
                 ))}
+              </div>
+            </div>
+
+            <div className="cms-model-proof reveal" aria-label="Sanitised CMS content model example">
+              <div className="cms-model-proof__copy">
+                <p className="mono">Sanitised CMS structure example</p>
+                <h3>Turn recurring business facts into reusable, reviewable content.</h3>
+                <p>Selected CMS project work included structured content models, validation rules and multilingual preview/publishing flows. This sanitised artefact shows how source facts become reusable, reviewable content. Marzieh is shown separately as a static implementation.</p>
+              </div>
+              <div className="cms-model-flow" aria-label="Source to content model to validation to preview and publish">
+                <article><span>01</span><b>Source</b><small>service · price · duration · booking group</small></article>
+                <article><span>02</span><b>Content model</b><small>reusable fields · sections · ownership</small></article>
+                <article><span>03</span><b>Validation</b><small>required values · EN/DA parity · review state</small></article>
+                <article><span>04</span><b>Preview / publish</b><small>check the page · release · hand over</small></article>
               </div>
             </div>
 

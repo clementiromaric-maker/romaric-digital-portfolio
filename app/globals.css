@@ -1318,3 +1318,16 @@ button,
   .case-gallery-editorial--balanced .case-shot__media img{max-height:680px!important}
   .case-gallery-editorial--balanced .case-shot figcaption{min-height:0}
 }
+
+/* V6.9.1 - CMS proof artefact and hiring-scan refinement */
+.cms-model-proof{margin-top:1.5rem;border:1px solid var(--line);border-radius:22px;background:linear-gradient(135deg,var(--white),color-mix(in srgb,var(--paper-2) 62%,var(--white)));padding:clamp(1.3rem,3vw,2rem);display:grid;grid-template-columns:.82fr 1.18fr;gap:clamp(1.2rem,4vw,3rem);align-items:start;box-shadow:0 24px 68px -58px rgba(23,19,13,.55)}
+.cms-model-proof__copy>.mono{margin:0 0 .5rem;color:var(--clay-deep)}
+.cms-model-proof__copy h3{font-family:var(--font-fraunces),serif;font-size:clamp(1.45rem,3vw,2.15rem);line-height:1.06;margin:0 0 .8rem;max-width:22ch}
+.cms-model-proof__copy p:last-child{margin:0;color:var(--ink-soft);font-size:.92rem;line-height:1.6;max-width:58ch}
+.cms-model-flow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem}
+.cms-model-flow article{position:relative;min-width:0;border:1px solid var(--line-soft);border-radius:14px;background:rgba(255,255,255,.82);padding:1rem}
+.cms-model-flow article>span{display:block;font-family:var(--font-mono),monospace;font-size:.55rem;letter-spacing:.08em;color:var(--clay-deep);margin-bottom:.45rem}
+.cms-model-flow b{display:block;color:var(--ink);font-size:.92rem;margin-bottom:.35rem}
+.cms-model-flow small{display:block;color:var(--ink-faint);font-size:.72rem;line-height:1.45;overflow-wrap:anywhere}
+@media(max-width:860px){.cms-model-proof{grid-template-columns:1fr}}
+@media(max-width:560px){.cms-model-flow{grid-template-columns:1fr}}

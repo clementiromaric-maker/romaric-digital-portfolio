@@ -27,10 +27,10 @@ const decisions = [
 ];
 
 const evidence = [
-  ['Information architecture', 'Homepage, services, work, bridal, FAQ, policies, privacy, visit and booking paths'],
-  ['Responsive QA', 'Navigation, cards, screenshots, tap targets, long labels and booking actions'],
-  ['Production checks', 'Links, metadata, structured data awareness, local assets and release verification'],
-  ['Handover', 'Versioned source package, deployment notes, owner decisions and clear next steps'],
+  ['Lightweight delivery', 'Kept the live implementation practical to deploy, review and hand over, with local assets and clear source control.'],
+  ['Language parity', 'Checked English and Danish service, pricing, policy and booking logic together to reduce content drift.'],
+  ['Release QA', 'Verified navigation, responsive behaviour, booking actions, links, metadata, local assets and content parity before release.'],
+  ['Owner handover', 'Versioned source package, deployment notes, business-source decisions and clear next steps.'],
 ];
 
 export default function MarziehCaseStudy() {
@@ -75,7 +75,7 @@ export default function MarziehCaseStudy() {
             <div className="project-glance" aria-label="Project at a glance">
               <div><span>Context</span><p>A real implemented project for my wife’s independent business; not a paid external client engagement.</p></div>
               <div><span>My role</span><p>Direction, information architecture, content decisions, implementation review, responsive QA, deployment and handover.</p></div>
-              <div><span>Delivery</span><p>Live English and Danish website with service, booking, trust, policy and visit routes.</p></div>
+              <div><span>Outcome</span><p>Live EN/DA service-to-booking system with aligned service, pricing and policy information, responsive booking paths and versioned owner handover.</p></div>
             </div>
 
             <figure className="case-cover case-cover--liveproof">
@@ -128,7 +128,7 @@ export default function MarziehCaseStudy() {
 
         <section className="case-section case-section--production">
           <div className="wrap">
-            <div className="case-section__heading case-section__heading--wide"><p className="mono">05 / Production and handover</p><h2>The work behind the visible pages.</h2></div>
+            <div className="case-section__heading case-section__heading--wide"><p className="mono">05 / Technical decisions and handover</p><h2>Keep the build practical after launch.</h2></div>
             <div className="case-evidence-board">{evidence.map(([title, text], index) => <article key={title}><span>{String(index + 1).padStart(2, '0')}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
             <div className="production-disclosure"><h3>AI-assisted production</h3><p>Claude, ChatGPT and other AI tools supported research, drafting, code assistance and comparison. I defined the brief and direction, selected and revised the outputs, tested the implementation, made the final decisions and remained responsible for deployment and handover.</p></div>
           </div>

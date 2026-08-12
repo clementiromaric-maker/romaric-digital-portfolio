@@ -448,9 +448,24 @@ export default function DanishPortfolio() {
           <div className="wrap">
             <div className="sec-head"><span className="sec-no" data-deep="05" data-quick="05" aria-hidden="true" /><h2>Build og QA-dokumentation</h2><p className="note">Praktisk dokumentation for implementering og levering.</p></div>
             <div className="implementation-proof reveal" aria-label="Teknisk implementeringsdokumentation">
-              <div><p className="mono">Teknisk implementeringsdokumentation</p><h3>Portfolioen er også et arbejdende build-eksempel.</h3><p>Statisk Next.js export, Cloudflare deployment, lokale assets, lokalt bundtede fonte, Open Graph metadata, responsivt layout, interne ankre, JSON-LD-forståelse og GitHub-baseret overdragelsesdisciplin. I udvalgte projekter har jeg desuden arbejdet med Sanity CMS-indholdsmodeller, genbrugelige sektioner, valideringsregler, flersproget indhold og forhåndsvisnings-/publiceringsflows samt brugt Jira til opfølgning på issues og handlinger.</p><p className="implementation-note">Min styrke er digital produktion, indholdsstruktur, QA og overdragelse. Jeg er komfortabel med kode og CMS-workflows, men positionerer mig ikke som softwareudvikler.</p></div>
+              <div><p className="mono">Teknisk implementeringsdokumentation</p><h3>Portfolioen er også et arbejdende build-eksempel.</h3><p>Statisk Next.js export, Cloudflare deployment, lokale assets, lokalt bundtede fonte, Open Graph metadata, responsivt layout, interne ankre, JSON-LD-forståelse og GitHub-baseret overdragelsesdisciplin. I udvalgte projekter har jeg desuden arbejdet med Sanity CMS-indholdsmodeller, genbrugelige sektioner, valideringsregler, flersproget indhold og forhåndsvisnings-/publiceringsflows samt brugt Jira til opfølgning på issues og handlinger.</p><p className="implementation-note">Mit stærkeste bidrag er struktureret digital produktion, indholdssystemer, implementerings-QA og vedligeholdbar overdragelse, understøttet af praktisk frontend- og CMS-kapacitet.</p></div>
               <div className="implementation-chips" aria-label="Tekniske implementeringssignaler">{['Static export', 'Cloudflare', 'GitHub workflow', 'Local assets', 'OG / metadata', 'Responsive QA'].map((item) => <b key={item}>{item}</b>)}</div>
             </div>
+
+            <div className="cms-model-proof reveal" aria-label="Anonymiseret eksempel på CMS-indholdsmodel">
+              <div className="cms-model-proof__copy">
+                <p className="mono">Anonymiseret CMS-struktureksempel</p>
+                <h3>Gør tilbagevendende virksomhedsdata til genbrugeligt og reviewbart indhold.</h3>
+                <p>Udvalgt CMS-projektarbejde omfattede strukturerede indholdsmodeller, valideringsregler og flersprogede preview-/publiceringsflows. Dette anonymiserede artefakt viser, hvordan kildedata bliver til genbrugeligt og reviewbart indhold. Marzieh vises separat som en statisk implementering.</p>
+              </div>
+              <div className="cms-model-flow" aria-label="Fra kilde til indholdsmodel, validering, preview og publicering">
+                <article><span>01</span><b>Kilde</b><small>service · pris · varighed · bookinggruppe</small></article>
+                <article><span>02</span><b>Indholdsmodel</b><small>genbrugelige felter · sektioner · ejerskab</small></article>
+                <article><span>03</span><b>Validering</b><small>obligatoriske værdier · EN/DA-paritet · reviewstatus</small></article>
+                <article><span>04</span><b>Preview / publicér</b><small>kontrollér siden · release · overdrag</small></article>
+              </div>
+            </div>
+
             <aside className="ai-disclosure reveal" aria-label="Oplysning om AI-assisteret produktion">
               <div><p className="mono">AI-assisteret produktion</p><h3>AI understøtter workflowet. Jeg har ansvaret for arbejdet.</h3></div>
               <p>Claude, ChatGPT og andre AI-værktøjer understøtter research, udkast, kodehjælp, sammenligning og iteration. Jeg definerer brief og retning, træffer de endelige indholds- og designbeslutninger, gennemgår og tester implementeringen og har ansvaret for deployment og overdragelse.</p>

@@ -1,6 +1,6 @@
 {
-  "name": "romaric-digital-portfolio-v6-9-0-cv-backbone-sync",
-  "version": "6.9.0",
+  "name": "romaric-digital-portfolio-v6-9-1-proof-depth-refinement",
+  "version": "6.9.1",
   "private": true,
   "scripts": {
     "dev": "next dev",

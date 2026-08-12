@@ -1,0 +1,40 @@
+RC Digital Portfolio V6.9.1 - Final backtest
+Date: 2026-08-12
+
+Change set
+- Marzieh case top summary changed from Context / My role / Delivery to Context / My role / Outcome.
+- Marzieh production section reframed as Technical decisions and handover.
+- Existing production evidence rewritten around lightweight delivery, EN/DA parity, release QA and owner handover.
+- Added a sanitised CMS structure artefact showing Source -> Content model -> Validation -> Preview / publish.
+- Explicitly kept the CMS artefact separate from the static Marzieh implementation.
+- Replaced defensive 'not a software engineer' wording with positive production/CMS/front-end positioning.
+- Quick Scan / Deep Dive and public/private project architecture kept intact.
+
+Backtest cycle 1
+- CMS artefact added useful visual proof without turning the portfolio into a code gallery.
+- Positive technical-positioning sentence tested well visually.
+- Found and fixed the Danish Marzieh project-glance label so it also uses Result/Outcome framing.
+- Shortened the CMS explanation after visual review to improve scan speed.
+
+Backtest cycle 2
+- TypeScript parser: 0 syntax errors across combined portfolio JS/JSX source set.
+- TypeScript transpile diagnostics: 0 errors across combined portfolio JS/JSX source set.
+- Source-level assertions: pass.
+- Public asset references: pass.
+- EN/DA new CMS proof present.
+- EN/DA Marzieh Outcome and Technical decisions sections present.
+- Desktop visual QA of exact CMS / Outcome modules: pass.
+- 390px mobile visual QA of exact CMS / Outcome modules: pass.
+- No mobile overflow or hierarchy issue found in the added modules.
+
+Positioning backtest
+- Digital Production / Web Content / QA identity: preserved
+- CMS/content-systems credibility: stronger
+- Technical judgement: stronger without inviting senior front-end engineer comparison
+- Real shipped-work evidence: stronger presentation, but the natural long-term ceiling remains one additional genuine public implementation
+- Credibility boundaries: preserved
+
+Estimated portfolio grade after refinement: 94-95/100 today. The remaining gap to 96+ is evidence volume, not wording or design; one more genuine public shipped implementation would create more value than further polishing.
+
+Build limitation
+A full Next.js production build could not be rerun in this sandbox because the npm registry was unavailable (DNS/network error). The source was instead parsed and transpiled with TypeScript, checked for local asset references, and the exact new UI modules were rendered in Chromium at desktop and mobile sizes. Existing Cloudflare/Next build configuration was not structurally changed.
