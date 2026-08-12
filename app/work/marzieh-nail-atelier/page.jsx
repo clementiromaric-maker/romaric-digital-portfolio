@@ -1,145 +1,69 @@
 const liveUrl = 'https://marziehnail-atelier.dk/en/';
 
 export const metadata = {
-  title: 'Marzieh Nail Atelier Case Study | Romaric Clementi',
-  description:
-    'Website strategy, structure and production for Marzieh Nail Atelier, a live bilingual website for an independent nail atelier in Valby.',
-  alternates: {
-    canonical: '/work/marzieh-nail-atelier/',
-    languages: {
-      en: '/work/marzieh-nail-atelier/',
-      da: '/da/arbejde/marzieh-nail-atelier/',
-    },
-  },
-  openGraph: {
-    title: 'Marzieh Nail Atelier Case Study | Romaric Clementi',
-    description: 'From scattered business information to a clear bilingual booking journey.',
-    type: 'article',
-    images: [{ url: '/assets/marzieh-desktop-proof-4p9-37-v687.webp', alt: 'Marzieh Nail Atelier website interface' }],
-  },
+  title: 'Marzieh Nail Atelier Brand & Digital Launch Case | Romaric Clementi',
+  description: 'Market research, identity direction, offer architecture, bilingual website production, local-search foundations, QA and handover for Marzieh Nail Atelier in Valby.',
+  alternates: { canonical: '/work/marzieh-nail-atelier/', languages: { en: '/work/marzieh-nail-atelier/', da: '/da/arbejde/marzieh-nail-atelier/' } },
+  openGraph: { title: 'Marzieh Nail Atelier Brand & Digital Launch Case | Romaric Clementi', description: 'From local market signals and identity directions to a live bilingual brand-to-booking system.', type: 'article', images: [{ url: '/assets/marzieh-desktop-proof-4p9-37-v687.webp', alt: 'Marzieh Nail Atelier website interface' }] },
 };
 
-const decisions = [
-  ['Clarify the offer', 'Group services and prices around the questions a client needs answered before booking.'],
-  ['Build trust before action', 'Place work examples, policies, visit information and practical expectations before the booking decision.'],
-  ['Keep both languages aligned', 'Give English and Danish visitors the same service, policy and booking logic.'],
-  ['Leave the owner in control', 'Keep business facts, booking links and policy information visible and straightforward to update.'],
+const marketSignals = [
+  ['Service-led salon communication', 'Make the private 1:1 atelier experience part of the value, not just the treatment list.'],
+  ['Busy or volume-oriented cues', 'Use a calmer editorial system built around time, precision and personal attention.'],
+  ['Generic menus with little guidance', 'Create service paths, practical guidance and a signature composition concept before booking.'],
+  ['Booking before confidence', 'Put proof, pricing, policies, visit information and expectations in the decision path.'],
 ];
-
+const identityDirections = [
+  { code: 'A', title: 'Sculptural editorial', text: 'Art-led, tactile and expressive. Strong mood, but too dominant for the everyday service system.', mark: 'M' },
+  { code: 'B', title: 'Botanical monogram', text: 'A refined M-led route with a delicate organic accent and stronger recognition at small sizes.', mark: 'M' },
+  { code: 'C', title: 'Quiet atelier system', text: 'Selected direction. Monogram, editorial wordmark, restrained warm neutrals and a calmer premium rhythm.', mark: 'M', selected: true },
+];
+const launchSystem = [
+  ['01', 'Market', 'Local competitor signals and customer expectations'], ['02', 'Positioning', 'Private 1:1, calm care, personal art and clear guidance'], ['03', 'Identity', 'Logo routes, selected monogram, typography and visual tone'], ['04', 'Offer', 'Services, pricing, signature concepts, policies and booking logic'], ['05', 'Content', 'EN/DA source structure, trust, guidance and local information'], ['06', 'Experience', 'Responsive routes from discovery to service choice and booking'], ['07', 'Visibility', 'Metadata, structured data, Business Profile and indexing work'], ['08', 'Release', 'QA, deployment, measurement, versioning and owner handover'],
+];
+const searchProof = [
+  ['Local-search foundations', 'Page metadata, structured-data work, language routes, sitemap/indexing checks and local business information.'],
+  ['Google ecosystem', 'Business Profile alignment, services and visual proof, Search Console work and review/trust visibility.'],
+  ['Booking measurement', 'Google-related conversion instrumentation and Planway booking-link checks were built into audited production packages.'],
+  ['Trust before conversion', 'Reviews, address, policies, service guidance and booking expectations were treated as part of the acquisition journey.'],
+];
 const evidence = [
-  ['Lightweight delivery', 'Kept the live implementation practical to deploy, review and hand over, with local assets and clear source control.'],
+  ['Lightweight delivery', 'Kept the implementation practical to deploy, review and hand over, with local assets and clear source control.'],
   ['Language parity', 'Checked English and Danish service, pricing, policy and booking logic together to reduce content drift.'],
   ['Release QA', 'Verified navigation, responsive behaviour, booking actions, links, metadata, local assets and content parity before release.'],
   ['Owner handover', 'Versioned source package, deployment notes, business-source decisions and clear next steps.'],
 ];
 
+const routeArchitecture = [
+  ['Customer path', ['Home', 'Services', 'Work', 'Bridal', 'Visit', 'Book']],
+  ['Trust and guidance', ['Atelier', 'Standards', 'Reviews', 'Guides', 'FAQ']],
+  ['Practical', ['Policies', 'Privacy']],
+];
+const releaseControl = [
+  ['Mobile', ['Narrow-width layouts', 'Navigation and booking CTA', 'Image crops and readability']],
+  ['Language', ['EN / DA route parity', 'Service, price and policy parity', 'Booking logic']],
+  ['Release', ['Links and anchors', 'Metadata and structured data', 'Local assets and build state']],
+  ['Handover', ['Versioned source', 'Deployment notes', 'Business-source decisions']],
+];
+
 export default function MarziehCaseStudy() {
-  const caseSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'CreativeWork',
-    name: 'Marzieh Nail Atelier website case study',
-    creator: { '@type': 'Person', name: 'Romaric Clementi' },
-    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://romaric-digital-portfolio.clementiromaric.workers.dev'}/work/marzieh-nail-atelier/`,
-    mainEntityOfPage: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://romaric-digital-portfolio.clementiromaric.workers.dev'}/work/marzieh-nail-atelier/`,
-    about: { '@type': 'WebSite', name: 'Marzieh Nail Atelier', url: liveUrl },
-    inLanguage: ['en', 'da'],
-    description: 'Bilingual website for an independent nail atelier, covering services, booking, trust and mobile QA.',
-  };
-
-  return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseSchema) }} />
-      <header className="bar case-bar">
-        <div className="wrap bar__in">
-          <a className="brand" href="/#work" aria-label="Back to Romaric Clementi portfolio"><b>RC</b><span>Romaric Clementi</span></a>
-          <nav className="case-nav" aria-label="Case study navigation">
-            <a href="/#work">← Back to portfolio</a>
-            <span className="lang-switch" role="group" aria-label="Language switch"><a aria-current="page" href="/work/marzieh-nail-atelier/">EN</a><span aria-hidden="true">/</span><a href="/da/arbejde/marzieh-nail-atelier/">DA</a></span>
-            <a className="btn case-live-cta" href={liveUrl} target="_blank" rel="noopener noreferrer"><span className="case-live-cta__desktop">Visit website ↗</span><span className="case-live-cta__mobile">Website ↗</span></a>
-          </nav>
-        </div>
-      </header>
-
-      <main className="case-page case-page--editorial">
-        <section className="case-hero case-hero--editorial">
-          <div className="wrap">
-            <nav className="case-breadcrumb" aria-label="Breadcrumb"><a href="/">Portfolio</a><span>/</span><strong>Marzieh Nail Atelier</strong></nav>
-            <div className="case-title-block">
-              <p className="mono">Case study 01</p>
-              <h1>Marzieh Nail Atelier</h1>
-              <p className="case-subtitle">Website strategy, structure and production for an independent nail atelier in Valby.</p>
-              <p className="case-hero__lede">I turned scattered service, pricing, policy and booking information into a bilingual customer journey that is clear on mobile and practical for the owner to maintain.</p>
-              <div className="case-hero__actions"><a className="btn" href="#project">View project details</a><a className="text-link" href={liveUrl} target="_blank" rel="noopener noreferrer">Visit live website ↗</a></div>
-            </div>
-
-            <div className="project-glance" aria-label="Project at a glance">
-              <div><span>Context</span><p>A real implemented project for my wife’s independent business; not a paid external client engagement.</p></div>
-              <div><span>My role</span><p>Direction, information architecture, content decisions, implementation review, responsive QA, deployment and handover.</p></div>
-              <div><span>Outcome</span><p>Live EN/DA service-to-booking system with aligned service, pricing and policy information, responsive booking paths and versioned owner handover.</p></div>
-            </div>
-
-            <figure className="case-cover case-cover--liveproof">
-              <img className="case-transition-image" src="/assets/marzieh-desktop-proof-4p9-37-v687.webp" width="1600" height="873" fetchPriority="high" decoding="async" alt="Real desktop screenshot of the Marzieh Nail Atelier website" />
-              <figcaption>Real desktop screenshot · English and Danish routes</figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <section id="project" className="case-section">
-          <div className="wrap case-section__grid">
-            <div className="case-section__heading"><p className="mono">01 / Context</p><h2>A strong service with scattered customer information.</h2></div>
-            <div className="case-copy"><p>The atelier needed to make service differences, prices, timing, nail-art options, policies, location and booking easier to understand. The owner also needed one reliable source for the information shown across the website and booking journey.</p><p>The challenge was to create a premium, calm experience without hiding the practical details people need before making an appointment.</p></div>
-          </div>
-        </section>
-
-        <section className="case-section case-section--role">
-          <div className="wrap case-section__grid">
-            <div className="case-section__heading"><p className="mono">02 / My contribution</p><h2>From loose material to a working website and handover.</h2></div>
-            <div className="case-copy"><ul className="case-contribution-list"><li>Defined the project direction, page structure and customer journey.</li><li>Organised service, pricing, booking, policy and local information.</li><li>Reviewed and revised content and implementation decisions.</li><li>Tested navigation, responsive behaviour, links, labels and booking actions.</li><li>Prepared production releases, deployment notes and owner handover.</li></ul></div>
-          </div>
-        </section>
-
-        <section className="case-section case-section--dark">
-          <div className="wrap">
-            <div className="case-section__heading case-section__heading--wide"><p className="mono">03 / Key decisions</p><h2>Four choices shaped the customer journey.</h2></div>
-            <div className="decision-grid">{decisions.map(([title, text], index) => <article key={title}><span>{String(index + 1).padStart(2, '0')}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
-          </div>
-        </section>
-
-        <section className="case-section case-section--screens">
-          <div className="wrap">
-            <div className="case-section__heading case-section__heading--wide"><p className="mono">04 / Interface</p><h2>The screens follow the questions clients ask before booking.</h2></div>
-            <div className="case-gallery-editorial case-gallery-editorial--real case-gallery-editorial--balanced">
-              <figure className="case-shot case-shot--signature">
-                <div className="case-shot__media"><img src="/assets/marzieh-composition-full-v687.webp" width="688" height="1487" loading="lazy" decoding="async" alt="Real mobile screenshot of The Atelier Composition page" /></div>
-                <figcaption><span>Signature service</span>Full live mobile capture with the service name, explanation and booking path visible.</figcaption>
-              </figure>
-              <figure className="case-shot case-shot--service">
-                <div className="case-shot__media"><img src="/assets/marzieh-service-path-proof-v687.webp" width="688" height="1020" loading="lazy" decoding="async" alt="Real mobile screenshot of the Marzieh Nail Atelier services section: Choose the right service path first" /></div>
-                <figcaption><span>Service path</span>Real live-site crop showing the transition from brand context into service selection.</figcaption>
-              </figure>
-              <figure className="case-shot case-shot--guide">
-                <div className="case-shot__media"><img src="/assets/marzieh-guide-proof-v687.webp" width="688" height="1430" loading="lazy" decoding="async" alt="Real mobile screenshot of the Gel Nails vs Shellac guide" /></div>
-                <figcaption><span>Guidance content</span>Real mobile capture showing how practical booking guidance is structured and maintained.</figcaption>
-              </figure>
-            </div>
-          </div>
-        </section>
-
-        <section className="case-section case-section--production">
-          <div className="wrap">
-            <div className="case-section__heading case-section__heading--wide"><p className="mono">05 / Technical decisions and handover</p><h2>Keep the build practical after launch.</h2></div>
-            <div className="case-evidence-board">{evidence.map(([title, text], index) => <article key={title}><span>{String(index + 1).padStart(2, '0')}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
-            <div className="production-disclosure"><h3>AI-assisted production</h3><p>Claude, ChatGPT and other AI tools supported research, drafting, code assistance and comparison. I defined the brief and direction, selected and revised the outputs, tested the implementation, made the final decisions and remained responsible for deployment and handover.</p></div>
-          </div>
-        </section>
-
-        <section className="case-outcome case-outcome--editorial">
-          <div className="wrap case-outcome__grid"><div><p className="mono">What I can contribute</p><h2>Clearer structure, careful production and a handover people can use.</h2></div><div><p>This project shows how I work with incomplete business material: identify the decisions, organise the customer journey, direct the production process, test the result and leave the owner with a clearer system.</p><div className="case-outcome__actions"><a className="btn" href={liveUrl} target="_blank" rel="noopener noreferrer">Visit live website ↗</a><a className="btn btn--ghost" href="/#contact">Contact me</a></div></div></div>
-        </section>
-      </main>
-
-      <footer><div className="wrap foot"><div className="mark"><b>RC</b><span>Unclear human and business need → clear digital system.</span></div><div className="fine">Marzieh Nail Atelier case study · Romaric Clementi</div></div></footer>
-    </>
-  );
+  const caseSchema = { '@context': 'https://schema.org', '@type': 'CreativeWork', name: 'Marzieh Nail Atelier brand and digital launch case study', creator: { '@type': 'Person', name: 'Romaric Clementi' }, url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://romaric-digital-portfolio.clementiromaric.workers.dev'}/work/marzieh-nail-atelier/`, mainEntityOfPage: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://romaric-digital-portfolio.clementiromaric.workers.dev'}/work/marzieh-nail-atelier/`, about: { '@type': 'WebSite', name: 'Marzieh Nail Atelier', url: liveUrl }, inLanguage: ['en', 'da'], description: 'Market, identity, content, website, local-search and production work for a live bilingual independent nail atelier.' };
+  return <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseSchema) }} />
+    <header className="bar case-bar"><div className="wrap bar__in"><a className="brand" href="/#work" aria-label="Back to Romaric Clementi portfolio"><b>RC</b><span>Romaric Clementi</span></a><nav className="case-nav" aria-label="Case study navigation"><a href="/#work">← Back to portfolio</a><span className="lang-switch" role="group" aria-label="Language switch"><a aria-current="page" href="/work/marzieh-nail-atelier/">EN</a><span aria-hidden="true">/</span><a href="/da/arbejde/marzieh-nail-atelier/">DA</a></span><a className="btn case-live-cta" href={liveUrl} target="_blank" rel="noopener noreferrer"><span className="case-live-cta__desktop">Visit website ↗</span><span className="case-live-cta__mobile">Website ↗</span></a></nav></div></header>
+    <main className="case-page case-page--editorial">
+      <section className="case-hero case-hero--editorial"><div className="wrap"><nav className="case-breadcrumb" aria-label="Breadcrumb"><a href="/">Portfolio</a><span>/</span><strong>Marzieh Nail Atelier</strong></nav><div className="case-title-block"><p className="mono">Case study 01 · live business</p><h1>Marzieh Nail Atelier</h1><p className="case-subtitle">Brand, market and digital launch system for an independent nail atelier in Valby.</p><p className="case-hero__lede">I helped shape the atelier proposition from local market and competitor signals, developed identity directions with the owner, then translated the selected direction into the offer, bilingual website, local-search setup, booking journey, QA and handover.</p><div className="case-hero__actions"><a className="btn" href="#project">View project details</a><a className="text-link" href={liveUrl} target="_blank" rel="noopener noreferrer">Visit live website ↗</a></div></div>
+      <div className="project-glance" aria-label="Project at a glance"><div><span>Context</span><p>A real implemented project for my wife’s independent business; not a paid external client engagement.</p></div><div><span>My role</span><p>Market and competitor review, positioning, identity directions, offer/content architecture, website production, local-search foundations, responsive QA, deployment and handover.</p></div><div><span>Outcome</span><p>A live EN/DA brand-to-booking system with aligned services, pricing, policies, local trust, search foundations and owner-controlled source material.</p></div></div>
+      <div className="case-proof-strip" aria-label="Current and dated business proof"><div><b>EN / DA</b><span>Live bilingual system</span></div><div><b>4.9 / 37</b><span>Google rating / reviews · live 12 Aug 2026</span></div><div><b>163</b><span>Business Profile interactions · Jul 2026</span></div><div><b>1:1</b><span>Private atelier proposition</span></div></div><p className="case-proof-note">Visibility metrics are business-level signals during the live period. They are not presented as website-only attribution.</p>
+      <figure className="case-cover case-cover--liveproof"><img className="case-transition-image" src="/assets/marzieh-desktop-proof-4p9-37-v687.webp" width="1600" height="873" fetchPriority="high" decoding="async" alt="Real desktop screenshot of the Marzieh Nail Atelier website" /><figcaption>Real desktop screenshot · English and Danish routes</figcaption></figure></div></section>
+      <section id="project" className="case-section"><div className="wrap case-section__grid"><div className="case-section__heading"><p className="mono">01 / Research and opportunity</p><h2>The website started before the website.</h2></div><div className="case-copy"><p>The early work was not only page design. I reviewed local nail and beauty competitors with the owner, looking at how offers, pricing, visual tone, trust and booking were presented. The purpose was practical: identify where a private one-to-one atelier could be meaningfully different without copying the category.</p><p>This was a small local competitor review, not a formal market-research programme. It gave us enough signal to choose a calmer, more personal and guidance-led direction.</p></div></div><div className="wrap market-signal-grid" aria-label="Sanitised market signals and opportunities">{marketSignals.map(([pattern, opportunity]) => <article key={pattern}><span>Observed pattern</span><h3>{pattern}</h3><p>{opportunity}</p></article>)}</div></section>
+      <section className="case-section case-section--identity"><div className="wrap"><div className="case-section__heading case-section__heading--wide"><p className="mono">02 / Positioning and identity</p><h2>Turn the market direction into a recognisable atelier system.</h2></div><div className="case-section__grid case-section__grid--identity"><div className="case-copy"><p>The positioning became a private one-to-one atelier built around calm time, precise preparation, personal art and clear guidance before product. I developed multiple logo and identity directions, reviewed them with Marzieh, refined the chosen route and carried it into the digital experience and selected physical touchpoints.</p><p>Marzieh remained the business owner and final decision-maker. My role was to research, frame options, build directions, make the trade-offs visible and turn the selected direction into a consistent system.</p></div><div className="identity-final-card"><p className="mono">Selected system</p><div className="identity-final-card__mark" aria-hidden="true">M</div><h3>Quiet atelier</h3><p>Editorial wordmark, restrained warm neutrals, a refined monogram and enough space for the nail work and founder voice to remain the focus.</p><div className="identity-palette" aria-label="Sanitised palette direction"><i /><i /><i /><i /></div></div></div><div className="identity-directions" aria-label="Sanitised identity direction map">{identityDirections.map((item) => <article key={item.code} className={item.selected ? 'is-selected' : ''}><span className="identity-directions__code">{item.code}</span><div className="identity-directions__mark" aria-hidden="true">{item.mark}</div><div><h3>{item.title}{item.selected ? <small>Selected</small> : null}</h3><p>{item.text}</p></div></article>)}</div><p className="artefact-note">Sanitised direction map. It summarises the identity exploration rather than reproducing every original draft logo.</p></div></section>
+      <section className="case-section case-section--launch"><div className="wrap"><div className="case-section__heading case-section__heading--wide"><p className="mono">03 / Launch system</p><h2>Connect brand decisions to the system people actually use.</h2></div><p className="launch-system__intro">The strongest part of this project is the connection between research, business decisions and implementation. Each layer had to stay coherent with the next.</p><div className="launch-system" aria-label="Market to release launch system">{launchSystem.map(([number, title, text]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>
+      <section className="case-section case-section--screens"><div className="wrap"><div className="case-section__heading case-section__heading--wide"><p className="mono">04 / Live experience</p><h2>The brand becomes useful when clients can make a confident decision.</h2></div><div className="case-gallery-editorial case-gallery-editorial--real case-gallery-editorial--balanced"><figure className="case-shot case-shot--signature"><div className="case-shot__media"><img src="/assets/marzieh-composition-full-v687.webp" width="688" height="1487" loading="lazy" decoding="async" alt="Real mobile screenshot of The Atelier Composition page" /></div><figcaption><span>Signature service</span>The positioning becomes a concrete design-led service with a clear explanation and booking path.</figcaption></figure><figure className="case-shot case-shot--service"><div className="case-shot__media"><img src="/assets/marzieh-service-path-proof-v687.webp" width="688" height="1020" loading="lazy" decoding="async" alt="Real mobile screenshot of the Marzieh Nail Atelier services section: Choose the right service path first" /></div><figcaption><span>Service architecture</span>Brand context gives way to practical choice, timing, pricing and the correct next action.</figcaption></figure><figure className="case-shot case-shot--guide"><div className="case-shot__media"><img src="/assets/marzieh-guide-proof-v687.webp" width="688" height="1430" loading="lazy" decoding="async" alt="Real mobile screenshot of the Gel Nails vs Shellac guide" /></div><figcaption><span>Guidance content</span>Useful information reduces guesswork before booking and supports a more considered service decision.</figcaption></figure></div></div></section>
+      <section className="case-section case-section--visibility"><div className="wrap"><div className="case-section__heading case-section__heading--wide"><p className="mono">05 / Search, Google and local visibility</p><h2>A local business launch is not finished when the pages render.</h2></div><div className="case-section__grid"><div className="case-copy"><p>I treated discovery, trust and booking as connected parts of the customer journey. The work extended beyond on-page copy into local-search foundations, Google-facing business information, indexing checks and booking measurement.</p><p>I do not claim that website work alone produced the business metrics. The numbers shown here are transparent operating signals from the live period, useful as context for the system around the site.</p></div><div className="visibility-metrics" aria-label="Search and local business proof"><article><b>163</b><span>Google Business Profile interactions</span><small>July 2026</small></article><article><b>4.9</b><span>Google rating</span><small>37 reviews on live site · 12 Aug 2026</small></article><article><b>EN / DA</b><span>Language architecture</span><small>Search and customer routes kept aligned</small></article></div></div><div className="case-evidence-board case-evidence-board--visibility">{searchProof.map(([title, text], index) => <article key={title}><span>{String(index + 1).padStart(2, '0')}</span><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>
+      <section className="case-section case-section--production"><div className="wrap"><div className="case-section__heading case-section__heading--wide"><p className="mono">06 / Technical decisions and handover</p><h2>Keep the build practical after launch.</h2></div><p className="production-artefacts__intro">Two sanitised production artefacts make the implementation work visible rather than only describing it. The route map reflects the current live navigation; the release board summarises the checks used to keep mobile, language, release and handover aligned.</p><div className="production-artefacts"><article className="production-artefact production-artefact--routes"><div className="production-artefact__head"><span className="mono">Artefact 01</span><h3>Live content and route architecture</h3><p>Public content grouped around decision, trust and practical needs, with English and Danish parity treated as one system.</p></div><div className="route-architecture" aria-label="Sanitised live route and content architecture">{routeArchitecture.map(([group, items]) => <div className="route-architecture__group" key={group}><b>{group}</b><div>{items.map((item, index) => <span key={item}>{item}{index < items.length - 1 ? <i aria-hidden="true">→</i> : null}</span>)}</div></div>)}<div className="route-architecture__parity"><span>EN</span><i aria-hidden="true">↔</i><span>DA</span><small>Same decision logic across public routes</small></div></div></article><article className="production-artefact production-artefact--release"><div className="production-artefact__head"><span className="mono">Artefact 02</span><h3>QA, release and handover control</h3><p>A compact view of the checks that turn a finished-looking page into a release that can be trusted and maintained.</p></div><div className="release-control" aria-label="Sanitised QA release and handover checklist">{releaseControl.map(([group, items]) => <div key={group}><b>{group}</b><ul>{items.map((item) => <li key={item}>{item}</li>)}</ul></div>)}</div></article></div><p className="artefact-note">Sanitised operating artefacts based on the live project and release workflow. They do not expose private credentials, internal account data or implementation secrets.</p><div className="case-evidence-board">{evidence.map(([title, text], index) => <article key={title}><span>{String(index + 1).padStart(2, '0')}</span><h3>{title}</h3><p>{text}</p></article>)}</div><div className="production-disclosure"><h3>AI-assisted production</h3><p>Claude, ChatGPT and other AI tools supported research, drafting, code assistance and comparison. I defined the brief and direction, selected and revised the outputs, tested the implementation, made the final decisions and remained responsible for deployment and handover.</p></div></div></section>
+      <section className="case-outcome case-outcome--editorial"><div className="wrap case-outcome__grid"><div><p className="mono">What this proves</p><h2>Research, brand implementation and digital production can stay connected all the way to handover.</h2></div><div><p>This project shows a broader delivery pattern than a website build alone: read the market, make the positioning choices visible, develop identity options, structure the offer and source material, build the customer journey, support local visibility, test the release and leave the owner with a system that can continue.</p><div className="case-outcome__actions"><a className="btn" href={liveUrl} target="_blank" rel="noopener noreferrer">Visit live website ↗</a><a className="btn btn--ghost" href="/#contact">Contact me</a></div></div></div></section>
+    </main>
+    <footer><div className="wrap foot"><div className="mark"><b>RC</b><span>Unclear human and business need → clear digital system.</span></div><div className="fine">Marzieh Nail Atelier case study · Romaric Clementi</div></div></footer>
+  </>;
 }

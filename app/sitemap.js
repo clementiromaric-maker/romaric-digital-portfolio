@@ -1,10 +1,12 @@
 export const dynamic = 'force-static';
-const siteUrl = 'https://romaric-operations-portfolio.clementiromaric.workers.dev';
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://romaric-digital-portfolio.clementiromaric.workers.dev';
+
 export default function sitemap() {
-  const routes = [
-    ['/', 1], ['/da/', .9],
-    ['/work/erp-master-data/', .86], ['/work/planning-visibility/', .84], ['/work/source-of-truth/', .84],
-    ['/da/arbejde/erp-masterdata/', .8], ['/da/arbejde/planlaegning-synlighed/', .78], ['/da/arbejde/kildegrundlag/', .78],
+  return [
+    { url: `${siteUrl}/`, changeFrequency: 'monthly', priority: 1 },
+    { url: `${siteUrl}/da/`, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${siteUrl}/work/marzieh-nail-atelier/`, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${siteUrl}/da/arbejde/marzieh-nail-atelier/`, changeFrequency: 'monthly', priority: 0.8 },
   ];
-  return routes.map(([route, priority]) => ({ url: `${siteUrl}${route}`, changeFrequency: 'monthly', priority }));
 }

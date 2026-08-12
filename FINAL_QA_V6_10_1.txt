@@ -1,0 +1,53 @@
+FINAL QA - DIGITAL PORTFOLIO V6.10.1
+Date: 12 August 2026
+
+RESULT: PASS at source / regression / exact-component visual level.
+
+Purpose
+V6.10.1 turns the remaining "described rather than visible" production evidence in the Marzieh Nail Atelier case into two inspectable sanitised artefacts without adding a code gallery, decorative interaction or new unverified claims.
+
+New visible production proof
+1. Live content and route architecture
+   - Customer path: Home -> Services -> Work -> Bridal -> Visit -> Book
+   - Trust and guidance: Atelier -> Standards -> Reviews -> Guides -> FAQ
+   - Practical: Policies -> Privacy
+   - EN <-> DA parity shown as one controlled system.
+   - Route structure is grounded in the current live Marzieh Nail Atelier navigation checked on 12 August 2026.
+
+2. QA, release and handover control
+   - Mobile: narrow-width layouts, navigation/booking CTA, image crops/readability.
+   - Language: EN/DA route parity, service/price/policy parity, booking logic.
+   - Release: links/anchors, metadata/structured data, local assets/build state.
+   - Handover: versioned source, deployment notes, business-source decisions.
+
+Credibility boundaries
+- Artefacts are explicitly labelled sanitised operating artefacts.
+- No credentials, private account data or implementation secrets are shown.
+- Existing owner/final-decision, market-research-scope and business-metric attribution boundaries remain intact.
+- No additional front-end engineering, brand-strategist, SEO-performance or AI-expert claim was introduced.
+
+Backtest cycle 1
+- Added the two artefact cards in EN/DA and the responsive editorial styling.
+- Extended postbuild required-marker protection to the new EN/DA artefacts.
+
+Backtest cycle 2
+- Rendered the exact new section with the actual portfolio CSS at 1700px desktop and 390px mobile.
+- Desktop: two cards read as one balanced evidence pair; hierarchy, chip flow and release grid are clear.
+- Mobile: cards stack cleanly; route chips wrap without clipping; EN/DA parity strip remains legible; release checklist becomes a clean one-column flow.
+- No further density or hierarchy fix required.
+
+Technical QA
+- 12 JS/JSX/MJS files transpiled with TypeScript: 0 errors.
+- Postbuild guard successfully executed on a synthetic static-export fixture.
+- 47 required portfolio markers were exercised, including all new EN/DA artefact markers.
+- EN/DA Marzieh case contains the new route-architecture and release-control proof.
+- Local /assets references: all present.
+- CSS brace balance: pass.
+- Public app source: no em dash regression.
+- No private HamdamBridge URL in public app/public files; the private URL appears only as a postbuild forbidden regression marker.
+
+Build limitation
+- A complete local Next.js production build was not rerun because a full local dependency/build environment was not available. No full-build success claim is made.
+- Source transpile, asset checks, postbuild regression and exact-section responsive visual QA passed.
+
+Final verdict: deploy V6.10.1. This closes the main immediate evidence-visibility gap. Further meaningful improvement should come from new genuine public work or measured evidence, not additional sections.

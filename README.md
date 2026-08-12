@@ -1,17 +1,23 @@
-# V1.8.8.0
+# RC Digital Portfolio V6.10.1 - Visible Production Artefacts
 
-Source-of-truth sync with the final professional CV.
+V6.10.1 keeps the V6.10.0 research, identity, local-search and launch-system expansion and adds the two missing pieces of direct production evidence inside the live Marzieh case:
+- a sanitised route/content architecture based on the current live navigation;
+- a sanitised mobile/language/release/handover control board based on the actual delivery workflow.
 
-- Replaced the stale embedded procurement CV with the current two-page professional CV, while retaining the old public filename as a compatibility alias.
-- Synced verified earlier experience: SAP purchasing/goods receipt, IKEA inbound/outbound KPI follow-up and assigned safety responsibility, ArcelorMittal process audits/root-cause/scrap-rework work, and stronger AOT customer-file ownership.
-- Strengthened visible process/quality evidence without turning the portfolio into a CV duplicate.
-- Synced structured-data knowledge signals for PSPA/PLC/electrotechnical foundation and verified process methods.
-- Kept the portfolio focused on procurement, planning, ERP and operational improvement.
+These artefacts make the production discipline inspectable without exposing credentials, private account data or confidential implementation detail.
+
+V6.10.0 expands the Marzieh Nail Atelier case from website-production proof into the verified end-to-end project story: local competitor signals, positioning, identity directions, offer/content architecture, bilingual website, local search/Google work, QA and owner handover.
+
+Guardrails: no Brand Strategist title, no senior-engineer claim, no website-only attribution of Google/business outcomes, Marzieh remains owner/final decision-maker, and the identity cards are explicitly a sanitised direction map rather than literal archived logo drafts.
+
+# V6.9.1
+
+Light source-of-truth sync with the final professional CV. Kept the Digital portfolio focused on digital production while strengthening the operations/quality backbone and widening job-search geography to Greater Copenhagen / Øresund.
 
 
-## V1.8.8.0 refinement
-- Tightened recruiter-facing hero copy without reducing evidence depth.
-- Added compact materials/planning proof from Kraft Heinz and Fletcher Building.
-- Broadened role-fit language to Materials Management and Business Systems while retaining configuration/QMS support in descriptions.
-- Standardised Python wording to "Python (basic, self-taught)".
-- Quick view now keeps the strongest working principle prominent; Hiring-manager view retains all three.
+## V6.9.1 refinement
+- Marzieh case now leads with Context / Role / Outcome.
+- Existing production section reframed around technical decisions and maintainable handover.
+- Added a sanitised CMS content-model workflow artefact, explicitly separated from the static Marzieh implementation.
+- Replaced defensive software-engineer wording with positive production/CMS/front-end positioning.
+- Kept the existing Quick Scan / Deep Dive architecture and public/private project distinction unchanged.
