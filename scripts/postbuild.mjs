@@ -40,7 +40,6 @@ const required = [
   'marzieh-service-path-proof-v687.webp',
   'marzieh-composition-full-v687.webp',
   'marzieh-guide-proof-v687.webp',
-  'marzieh-pearl-proof-v687.webp',
   'Walkthrough available on request',
   'Gennemgang efter aftale',
   'GitHub + Cloudflare',

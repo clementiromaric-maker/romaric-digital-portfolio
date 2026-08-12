@@ -1,6 +1,6 @@
 {
-  "name": "romaric-digital-portfolio-v6-8-7-case-study-proof-gallery-fix",
-  "version": "6.8.7",
+  "name": "romaric-digital-portfolio-v6-8-9-postbuild-guard-sync",
+  "version": "6.8.9",
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -1,0 +1,13 @@
+V6.8.9 FINAL QA
+
+Root cause fixed:
+- V6.8.8 removed the weak homepage thumbnail marzieh-pearl-proof-v687.webp.
+- scripts/postbuild.mjs still required that retired filename in exported HTML, so Cloudflare completed the Next.js static build and then failed our custom postbuild guard.
+
+Fixes:
+- Removed marzieh-pearl-proof-v687.webp from required HTML markers.
+- Removed the now-unused obsolete asset from the package.
+- Kept the current desktop, composition, service-path and guide proof markers and asset-existence guards.
+- Synchronized package.json and package-lock.json to release 6.8.9.
+- No public copy or visual layout changed in this release.
+- No em dash added to authored app content.

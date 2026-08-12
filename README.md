@@ -1,2 +1,2 @@
-# V6.8.8
-Removed the weak cropped hero thumbnail from the homepage fact card and replaced it with a cleaner text proof row.
+# V6.8.9
+Postbuild guard synchronized with the current Digital portfolio. The deliberately removed hero thumbnail is no longer required by Cloudflare QA. Package metadata is synchronized to 6.8.9.
