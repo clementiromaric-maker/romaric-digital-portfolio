@@ -260,11 +260,11 @@ export default function Home() {
                 <div className="signal-map__route" aria-hidden="true"><i /></div>
                 <div className="signal-map__output"><span className="mono">Useful output</span><b>Clear first version</b><small>usable · reviewable · ready to hand over</small></div>
               </div>
-              <figure className="hero-live-proof">
-                <img src="/assets/marzieh-pearl-proof-v687.webp" alt="Pearl Satin Glaze nail image from the Marzieh Nail Atelier live website" width="600" height="600" loading="lazy" decoding="async" />
-                <figcaption><span className="mono">Live-site proof</span><b>Marzieh Nail Atelier</b></figcaption>
-              </figure>
               <dl>
+                <div className="row">
+                  <dt className="mono">Live-site proof</dt>
+                  <dd>Marzieh Nail Atelier</dd>
+                </div>
                 <div className="row">
                   <dt className="mono">Best fit</dt>
                   <dd>Website production, UX implementation, CMS/content support, delivery support and QA</dd>

@@ -1,0 +1,6 @@
+V6.8.8
+- Removed weak hero-live-proof thumbnail from homepage/right fact card in EN and DA
+- Replaced with clean text proof row: Live-site proof / Marzieh Nail Atelier
+- Best fit and Proof rows retained
+- No copy changes elsewhere
+- No em dash added

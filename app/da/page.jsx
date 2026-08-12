@@ -236,11 +236,11 @@ export default function DanishPortfolio() {
                 <div className="signal-map__route" aria-hidden="true"><i /></div>
                 <div className="signal-map__output"><span className="mono">Brugbart output</span><b>Klar første version</b><small>brugbart · let at gennemgå · klar til overdragelse</small></div>
               </div>
-              <figure className="hero-live-proof">
-                <img src="/assets/marzieh-pearl-proof-v687.webp" alt="Pearl Satin Glaze-neglebillede fra Marzieh Nail Atelier live-websitet" width="600" height="600" loading="lazy" decoding="async" />
-                <figcaption><span className="mono">Live dokumentation</span><b>Marzieh Nail Atelier</b></figcaption>
-              </figure>
               <dl>
+                <div className="row">
+                  <dt className="mono">Live dokumentation</dt>
+                  <dd>Marzieh Nail Atelier</dd>
+                </div>
                 <div className="row">
                   <dt className="mono">Bedst match</dt>
                   <dd>Website-produktion, UX-implementering, CMS og indhold, digital levering og QA</dd>
