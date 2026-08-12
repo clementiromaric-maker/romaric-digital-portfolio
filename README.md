@@ -1,2 +1,3 @@
-# V6.8.9
-Postbuild guard synchronized with the current Digital portfolio. The deliberately removed hero thumbnail is no longer required by Cloudflare QA. Package metadata is synchronized to 6.8.9.
+# V6.9.0
+
+Light source-of-truth sync with the final professional CV. Kept the Digital portfolio focused on digital production while strengthening the operations/quality backbone and widening job-search geography to Greater Copenhagen / Øresund.

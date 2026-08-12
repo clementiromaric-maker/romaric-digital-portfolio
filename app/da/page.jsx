@@ -12,7 +12,7 @@ const proofSignals = [
   { value: 'Fra service til booking', label: 'Tilbud, priser, politikker, besøg og bookingvej' },
   { value: 'Flersprogede sider', label: 'DA / EN plus persisk/engelsk pilotlogik' },
   { value: 'GitHub + Cloudflare', label: 'Versioneret kilde, deployment-QA, release-noter og overdragelse' },
-  { value: 'Operationsbaggrund', label: 'ERP, leverandører, overdragelser og dokumentation' },
+  { value: 'Operationsbaggrund', label: 'ERP, leverandører, kvalitetsdisciplin, overdragelser og dokumentation' },
 ];
 
 const roleFitLanes = [
@@ -385,7 +385,7 @@ export default function DanishPortfolio() {
             <div className="approach-grid">
               <p className="approach reveal">Jeg vil først forstå <b>hvad mennesker har brug for, hvad der stadig er uafklaret, og hvad der skal ske efter lancering</b>, før jeg bygger.</p>
               <div className="reveal">
-                <p>Drift, ERP, planlægning, master data og leverandørarbejde har trænet mig i at følge afhængigheder, udfordre uklar information og holde ejerskab synligt.</p>
+                <p>Drift, ERP, planlægning, master data, leverandør- og kvalitets-/procesarbejde har trænet mig i at følge afhængigheder, udfordre uklar information og holde ejerskab synligt.</p>
                 <p>Jeg tager den samme disciplin med ind i webarbejde: afklar oplæg og kildemateriale, byg den første brugbare version, test den ordentligt og efterlad noget, den næste person kan arbejde videre med.</p>
               </div>
             </div>
@@ -404,7 +404,7 @@ export default function DanishPortfolio() {
               <div className="backbone__copy">
                 <p className="mono">Driftsbaggrund</p>
                 <h3>Jeg starter med problemet, ikke værktøjet.</h3>
-                <p>ERP, planlægning, master data og leverandørarbejde har trænet mig i at følge afhængigheder, opdage manglende information og holde ejerskab tydeligt. Den disciplin tager jeg med ind i digital produktion, QA og overdragelse.</p>
+                <p>ERP, planlægning, master data, leverandør- og kvalitets-/procesarbejde har trænet mig i at følge afhængigheder, opdage manglende information og holde ejerskab tydeligt. Den disciplin tager jeg med ind i digital produktion, QA og overdragelse.</p>
               </div>
               <div className="metric-grid" aria-label="Operations proof metrics">
                 <div aria-label="2.000 plus ERP- og masterdata-poster"><b>2.000+ </b><span>ERP- og masterdata-poster</span></div>
@@ -487,11 +487,11 @@ export default function DanishPortfolio() {
                 <p className="mono contact-pro__label">Kontakt</p>
                 <h2>Har I brug for en, der kan gøre uklart digitalt arbejde <em>brugbart?</em></h2>
                 <p className="contact-pro__intro">Jeg hjælper teams med at skabe struktur i websites, indhold, implementering og QA, fra spredt input og uklare krav til en tydelig første version, der kan gennemgås, udgives og overdrages ordentligt.</p>
-                <p className="contact-pro__intro contact-pro__intro--secondary">Jeg søger roller inden for digital produktion, webindhold, CMS-implementering og QA i Greater Copenhagen. Jeg er også åben for afgrænsede projekter, hvor et team har brug for praktisk leveringssupport.</p>
+                <p className="contact-pro__intro contact-pro__intro--secondary">Jeg søger roller inden for digital produktion, webindhold, CMS-implementering og QA i Storkøbenhavn og Øresundsregionen. Jeg er også åben for afgrænsede projekter, hvor et team har brug for praktisk leveringssupport.</p>
                 <div className="contact-pro__details" aria-label="Kontaktoplysninger">
                   <a href="tel:+4528737485"><span className="mono">Telefon</span><b>+45 28 73 74 85</b></a>
                   <a href="mailto:clementiromaric@protonmail.com"><span className="mono">E-mail</span><b>clementiromaric@protonmail.com</b></a>
-                  <div><span className="mono">Lokation</span><b>Greater Copenhagen · Tune, Danmark</b></div>
+                  <div><span className="mono">Lokation</span><b>Tune, Danmark · Storkøbenhavn / Øresund</b></div>
                   <div><span className="mono">Sprog</span><b>Fransk modersmål · flydende engelsk · operationelt dansk (PD2/B1+)</b></div>
                 </div>
               </div>

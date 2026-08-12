@@ -50,6 +50,9 @@ const required = [
   'Operations portfolio',
   'Clear structure. Practical delivery. Work that is easier to use and easier to continue.',
   'Choose the right service path first',
+  'Greater Copenhagen and the Øresund region',
+  'quality/process work trained me to follow dependencies',
+  'Storkøbenhavn og Øresundsregionen',
 ];
 for (const marker of required) {
   if (!combined.includes(marker)) throw new Error(`Required portfolio marker missing after build: ${marker}`);

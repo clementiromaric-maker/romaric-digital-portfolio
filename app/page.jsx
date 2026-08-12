@@ -29,7 +29,7 @@ const proofSignals = [
   },
   {
     value: 'Operations backbone',
-    label: 'ERP, suppliers, handovers and documentation',
+    label: 'ERP, suppliers, quality discipline, handovers and documentation',
   },
 ];
 
@@ -427,7 +427,7 @@ export default function Home() {
               </p>
               <div className="reveal">
                 <p>
-                  Operations, ERP, planning, master data and supplier work trained me to follow dependencies, question unclear information and keep ownership visible.
+                  Operations, ERP, planning, master data, supplier and quality/process work trained me to follow dependencies, question unclear information and keep ownership visible.
                 </p>
                 <p>
                   I bring the same discipline to web work: clarify the brief and source material, make the first useful version, test it properly and leave the next person with something they can continue.
@@ -456,7 +456,7 @@ export default function Home() {
                 <p className="mono">Operations backbone</p>
                 <h3>I start with the problem, not the tool.</h3>
                 <p>
-                  ERP, planning, master-data and supplier work trained me to follow dependencies, spot missing information and keep ownership visible. I bring that discipline into digital production, QA and handover.
+                  ERP, planning, master-data, supplier and quality/process work trained me to follow dependencies, spot missing information and keep ownership visible. I bring that discipline into digital production, QA and handover.
                 </p>
               </div>
               <div className="metric-grid" aria-label="Operations proof metrics">
@@ -672,11 +672,11 @@ export default function Home() {
                 <p className="mono contact-pro__label">Contact</p>
                 <h2>Need someone who can turn unclear digital work into something <em>usable?</em></h2>
                 <p className="contact-pro__intro">I help teams bring structure to websites, content, implementation and QA, from rough input and scattered requirements to a clear first version that can be reviewed, shipped and handed over properly.</p>
-                <p className="contact-pro__intro contact-pro__intro--secondary">I am looking for digital production, web content, CMS implementation and QA roles across Greater Copenhagen. I am also open to scoped project work where a team needs practical delivery support.</p>
+                <p className="contact-pro__intro contact-pro__intro--secondary">I am looking for digital production, web content, CMS implementation and QA roles across Greater Copenhagen and the Øresund region. I am also open to scoped project work where a team needs practical delivery support.</p>
                 <div className="contact-pro__details" aria-label="Contact details">
                   <a href="tel:+4528737485"><span className="mono">Phone</span><b>+45 28 73 74 85</b></a>
                   <a href="mailto:clementiromaric@protonmail.com"><span className="mono">Email</span><b>clementiromaric@protonmail.com</b></a>
-                  <div><span className="mono">Location</span><b>Greater Copenhagen · Tune, Denmark</b></div>
+                  <div><span className="mono">Location</span><b>Tune, Denmark · Greater Copenhagen / Øresund</b></div>
                   <div><span className="mono">Languages</span><b>French native · English fluent · Danish operational (PD2/B1+)</b></div>
                 </div>
               </div>

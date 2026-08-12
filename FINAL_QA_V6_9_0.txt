@@ -1,0 +1,10 @@
+V6.9.0 FINAL QA — light CV/backbone sync
+Date: 2026-08-12
+
+PASS — Digital portfolio remains focused on digital production, web content, CMS implementation, QA and handover.
+PASS — no Bac Pro/PLC/SAP/HACCP CV-detail dump added to the Digital portfolio.
+PASS — operations backbone wording now includes quality/process discipline where it directly supports digital QA/handover credibility.
+PASS — job-search geography widened from Greater Copenhagen to Greater Copenhagen / Øresund in EN and DA contact copy.
+PASS — Operations portfolio cross-link retained.
+PASS — scripts/postbuild.mjs passes Node syntax check.
+NOTE — full Next.js rebuild could not be rerun in this sandbox because the npm registry was unavailable. No structural component changes were made.
