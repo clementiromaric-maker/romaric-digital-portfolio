@@ -1,0 +1,5 @@
+DIGITAL PORTFOLIO V6.10.3 - 12 AUGUST 2026
+
+- Added certificate-verified SQL Server/T-SQL and Azure SQL formal-training evidence as a secondary systems foundation.
+- No hero, target-role or primary digital-positioning change.
+- Explicit boundary: course-based exposure, not recent professional Azure use.

@@ -629,7 +629,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="caveat">
-                Built as a custom static Next.js/Cloudflare site. My strongest contribution is production, structured content, QA and handover. Sanity CMS and Jira reflect selected project workflows, while Webflow and Shopify remain working familiarity.
+                Built as a custom static Next.js/Cloudflare site. My strongest contribution is production, structured content, QA and handover. Sanity CMS and Jira reflect selected project workflows, while Webflow and Shopify remain working familiarity. Additional systems foundation: formal SQL 2016 Database Administration training covering SQL Server/T-SQL, relational database design and Azure SQL. This is course-based exposure, not recent professional Azure use.
               </p>
             </div>
           </div>

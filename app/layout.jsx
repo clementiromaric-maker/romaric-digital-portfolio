@@ -81,6 +81,8 @@ const personSchema = {
     'Cloudflare Pages',
     'GitHub deployment',
     'AI-assisted prototyping',
+    'SQL Server / T-SQL (formal training)',
+    'Azure SQL (formal training)',
   ],
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://romaric-digital-portfolio.clementiromaric.workers.dev',
   mainEntityOfPage: process.env.NEXT_PUBLIC_SITE_URL || 'https://romaric-digital-portfolio.clementiromaric.workers.dev',

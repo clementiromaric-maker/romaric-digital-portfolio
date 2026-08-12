@@ -25,3 +25,10 @@ Light source-of-truth sync with the final professional CV. Kept the Digital port
 
 ## V6.10.2 Cloudflare patch
 The postbuild regression guard now normalises HTML entities before copy validation. This prevents false failures when Next/React serialises visible `&` characters as `&amp;`. Portfolio content/design is unchanged from V6.10.1.
+
+
+## V6.10.3 SQL/Azure certificate evidence sync
+- Added a deliberately secondary systems-foundation note in the deep-dive toolkit section.
+- Added structured-data knowledge markers for SQL Server/T-SQL and Azure SQL formal training.
+- Kept the portfolio identity focused on Digital Production, Content Systems, Web & QA.
+- Explicitly avoids implying recent professional Azure ownership.

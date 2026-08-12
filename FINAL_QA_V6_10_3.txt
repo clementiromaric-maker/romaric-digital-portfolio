@@ -1,0 +1,5 @@
+DIGITAL PORTFOLIO V6.10.3 QA
+[PASS] Core digital positioning unchanged.
+[PASS] SQL/Azure evidence appears only as secondary foundation.
+[PASS] No professional Azure/cloud-engineer claim.
+[PASS] EN and DA copy updated.
