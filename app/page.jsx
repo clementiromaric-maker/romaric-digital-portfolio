@@ -409,7 +409,7 @@ export default function Home() {
               </p>
               <div className="reveal">
                 <p>
-                  Operations, ERP, planning, master data, supplier and quality/process work trained me to follow dependencies, question unclear information and keep ownership visible.
+                  Operations, ERP, planning, product/master data, technical information, supplier and quality/process work trained me to follow dependencies, question unclear information and keep ownership visible.
                 </p>
                 <p>
                   I bring the same discipline to web work: clarify the brief and source material, make the first useful version, test it properly and leave the next person with something they can continue.
@@ -619,6 +619,7 @@ export default function Home() {
                   'Structured content / reusable sections',
                   'Validation rules',
                   'Jira issue / action follow-up',
+                  'Salesforce Sales Cloud / Service Cloud / Flow',
                   'Webflow / Shopify familiarity',
                   'SEO / Search Console / LocalBusiness JSON-LD',
                   'Forms / multilingual journeys',
@@ -629,7 +630,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="caveat">
-                Built as a custom static Next.js/Cloudflare site. My strongest contribution is production, structured content, QA and handover. Sanity CMS and Jira reflect selected project workflows, while Webflow and Shopify remain working familiarity. Additional systems foundation: formal SQL 2016 Database Administration training covering SQL Server/T-SQL, relational database design and Azure SQL. This is course-based exposure, not recent professional Azure use.
+                Built as a custom static Next.js/Cloudflare site. My strongest contribution is production, structured content, QA and handover. Sanity CMS and Jira reflect selected project workflows, while Webflow and Shopify remain working familiarity. Salesforce: hands-on familiarity with Sales Cloud and Service Cloud workflows, lead/opportunity and case management, reporting, and low-code automation using Salesforce Flow. Additional systems foundation: formal SQL 2016 Database Administration training covering SQL Server/T-SQL, relational database design and Azure SQL. The Azure evidence is course-based, not recent professional Azure use; the Salesforce evidence does not imply administrator status, enterprise CRM ownership or production deployment/governance.
               </p>
             </div>
           </div>
@@ -681,7 +682,7 @@ export default function Home() {
                 <nav className="contact-pro__links" aria-label="Portfolio links">
                   <a href="tel:+4528737485"><span>Call</span><b>+45 28 73 74 85</b></a>
                   <a href={liveLinks.marzieh} target="_blank" rel="noopener noreferrer"><span>View live work</span><b>Marzieh Nail Atelier</b></a>
-                  <a href="https://romaric-operations-portfolio.clementiromaric.workers.dev/" target="_blank" rel="noopener noreferrer"><span>Operations portfolio</span><b>Procurement · Planning · ERP</b></a>
+                  <a href="https://romaric-operations-portfolio.clementiromaric.workers.dev/" target="_blank" rel="noopener noreferrer"><span>Operations portfolio</span><b>Procurement · Planning · ERP · Product Data</b></a>
                 </nav>
               </aside>
               <p className="contact-pro__closing">Clear structure. Practical delivery. Work that is easier to use and easier to continue.</p>

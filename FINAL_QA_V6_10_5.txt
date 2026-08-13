@@ -1,0 +1,6 @@
+FINAL QA - V6.10.5
+
+Salesforce is visible as relevant workflow/CRM implementation familiarity, not as a separate Salesforce-specialist identity.
+Verified scope: hands-on familiarity with Sales Cloud and Service Cloud workflows, lead/opportunity and case management, reporting, and low-code automation using Salesforce Flow.
+No Salesforce Administrator, enterprise CRM owner, production deployment/governance, Marketing Cloud/Data Cloud/Tableau ownership or Salesforce certification claim added.
+SQL/Azure boundary remains unchanged.

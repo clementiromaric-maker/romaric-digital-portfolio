@@ -1,6 +1,6 @@
 {
-  "name": "romaric-digital-portfolio-v6-10-2-cloudflare-html-entity-guard-fix",
-  "version": "6.10.3",
+  "name": "rc-digital-portfolio-v6-10-5-salesforce-workflow-sync",
+  "version": "6.10.5",
   "private": true,
   "scripts": {
     "dev": "next dev",

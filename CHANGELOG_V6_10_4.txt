@@ -1,0 +1,8 @@
+V6.10.4 - Portfolio hierarchy / Product Data sync - 2026-08-12
+
+- Digital identity unchanged: Digital Production / Content Systems / Web / QA.
+- Operations portfolio cross-link widened to Procurement / Planning / ERP / Product Data.
+- Existing operations-background wording now includes product/master data and technical information.
+- Structured-data keywords extended with Product Data / Technical Information and Information Structures.
+- SQL/Azure wording remains course-based and secondary.
+- No PIM/PLM ownership inflation and no recent professional Azure-use claim.

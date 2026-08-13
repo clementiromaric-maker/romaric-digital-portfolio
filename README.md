@@ -32,3 +32,19 @@ The postbuild regression guard now normalises HTML entities before copy validati
 - Added structured-data knowledge markers for SQL Server/T-SQL and Azure SQL formal training.
 - Kept the portfolio identity focused on Digital Production, Content Systems, Web & QA.
 - Explicitly avoids implying recent professional Azure ownership.
+
+
+## V6.10.4 portfolio hierarchy / Product Data sync
+- Kept the Digital portfolio identity focused on digital production, content systems, web and QA.
+- Updated the Operations cross-link to make Product Data visible alongside Procurement, Planning and ERP.
+- Synchronized the operations/quality backbone wording with the verified Product Data / Technical Information lane used in the Operations portfolio.
+- Kept SQL Server/T-SQL and Azure SQL as a secondary formal-training foundation rather than turning the portfolio into a cloud/database profile.
+- No claim of dedicated enterprise PIM/PLM ownership or recent professional Azure administration was added.
+
+
+## V6.10.5 Salesforce workflow sync
+
+- Added Salesforce Sales Cloud / Service Cloud / Flow to the working toolkit.
+- Verified scope is hands-on familiarity with Sales Cloud and Service Cloud workflows, lead/opportunity and case management, reporting, and low-code automation using Salesforce Flow.
+- Salesforce strengthens the workflow/business-systems side of the Digital portfolio without changing its primary identity in digital production, content systems, web/CMS implementation and QA.
+- No administrator status, enterprise CRM ownership, production deployment/governance, Marketing Cloud/Data Cloud/Tableau ownership or certification claim.

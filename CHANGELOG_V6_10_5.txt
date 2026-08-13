@@ -1,0 +1,7 @@
+V6.10.5 - Salesforce workflow evidence sync - 2026-08-12
+
+- Added Salesforce Sales Cloud / Service Cloud / Flow to the visible working toolkit.
+- Added verified scope in English and Danish: hands-on familiarity with Sales Cloud and Service Cloud workflows, lead/opportunity and case management, reporting, and low-code automation using Salesforce Flow.
+- Added structured metadata for Salesforce and CRM workflow concepts.
+- Preserved the Digital portfolio's primary identity in digital production, content systems, web/CMS implementation and QA.
+- Kept Salesforce within a clear boundary: no administrator status, enterprise CRM ownership, production deployment/governance, Marketing Cloud/Data Cloud/Tableau ownership or certification claim.
